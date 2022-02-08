@@ -5135,17 +5135,6 @@
     "objectFitPolyfill" "^2.3.5"
     "prop-types" "^15.7.2"
 
-"gatsby-plugin-manifest@^4.5.2":
-  "integrity" "sha512-Stvhbz7A9BZ88HJSz+H4abZ18zxNMsv/vPkV8iAStDl55B2dY9IyWW9n5I3mL6GlPvy1mdVbTqwNG2lgMYLSEA=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.5.2.tgz"
-  "version" "4.5.2"
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    "gatsby-core-utils" "^3.5.2"
-    "gatsby-plugin-utils" "^2.5.0"
-    "semver" "^7.3.5"
-    "sharp" "^0.29.3"
-
 "gatsby-plugin-offline@^5.5.2":
   "integrity" "sha512-Z2NTRTOxo02SXMKhJt6YgFZ0gtIUfpBk5aaXn4/vTcL+RqUsj1QtSlWYOPYJJ4Lauj1bMkN1tFwfGelZVAdtdQ=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-offline/-/gatsby-plugin-offline-5.5.2.tgz"
@@ -5285,6 +5274,14 @@
     "valid-url" "^1.0.9"
     "xstate" "^4.26.1"
 
+"gatsby-source-hubspot@^2.2.0":
+  "integrity" "sha512-6/WpyH9IXJz/UAW60Ltqows12TXEhC6lUqz1TKBFZCh70BshgbdQa+0nJgy+2ucP9H4OXv3URoGKDSVg1aDBIw=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-hubspot/-/gatsby-source-hubspot-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "node-fetch" "^2.2.0"
+    "query-string" "^6.1.0"
+
 "gatsby-telemetry@^3.5.2":
   "integrity" "sha512-nL33+AxawRqEjuvHAbyyxoDMZ5GXNMEMzCk5WQu7J/lA6od6cUmXpZMcr4AxwnNFJLfmYKlwalN7cuz5nBL6lw=="
   "resolved" "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-3.5.2.tgz"
@@ -5326,7 +5323,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^3.x || ^4.x", "gatsby@^4.0.0-next", "gatsby@^4.5.4":
+"gatsby@^3.x || ^4.x", "gatsby@^4.0.0-next", "gatsby@^4.5.4", "gatsby@>=2":
   "integrity" "sha512-uXyYl9nq52xdvP/9lwWFp7eGtjFFgdAjG2xNBvpgNgd1AtH/4kU76khm1mmpXea98mnJrcwKmsSZkIbQO9YWCg=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.5.4.tgz"
   "version" "4.5.4"
@@ -7484,7 +7481,7 @@
   "resolved" "https://registry.npmjs.org/node-addon-api/-/node-addon-api-4.2.0.tgz"
   "version" "4.2.0"
 
-"node-fetch@^2.6.1", "node-fetch@^2.6.6", "node-fetch@2":
+"node-fetch@^2.2.0", "node-fetch@^2.6.1", "node-fetch@^2.6.6", "node-fetch@2":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   "version" "2.6.7"
@@ -8529,7 +8526,7 @@
   "resolved" "https://registry.npmjs.org/qs/-/qs-6.9.6.tgz"
   "version" "6.9.6"
 
-"query-string@^6.13.8", "query-string@^6.14.1":
+"query-string@^6.1.0", "query-string@^6.13.8", "query-string@^6.14.1":
   "integrity" "sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw=="
   "resolved" "https://registry.npmjs.org/query-string/-/query-string-6.14.1.tgz"
   "version" "6.14.1"
