@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9921fc44-0624-468d-9fe5-896b20d3c147" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/digilock-2021.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/gatsby-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/gatsby-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/gatsby-node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/gatsby-ssr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/site/src/components/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/components/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/components/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/components/locales/language-switcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/components/seo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/images/aspire-lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/images/logos/digilock-logo2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/locales/en/components/footer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/locales/en/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/locales/es/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/pages/404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/pages/page-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/pages/using-ssr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/pages/using-typescript.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/styles/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/src/templates/using-dsg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,10 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="19">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/src/components/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="192">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#152#183#0" expanded="true" />
               </folding>
@@ -48,10 +90,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/AmericaDealers.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/src/components/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -63,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/site/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -78,6 +129,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -105,26 +157,28 @@
         <option value="$PROJECT_DIR$/site/src/locales/en/index.json" />
         <option value="$PROJECT_DIR$/site/src/components/locales/language-switcher.js" />
         <option value="$PROJECT_DIR$/site/public/sitemap/sitemap-0.xml" />
-        <option value="$PROJECT_DIR$/site/src/pages/index.js" />
         <option value="$PROJECT_DIR$/site/src/styles/styles.scss.css" />
         <option value="$PROJECT_DIR$/site/gatsby-config.js" />
-        <option value="$PROJECT_DIR$/site/src/styles/styles.scss" />
         <option value="$PROJECT_DIR$/site/src/components/header.js" />
         <option value="$PROJECT_DIR$/site/src/components/layout.js" />
+        <option value="$PROJECT_DIR$/site/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/site/src/styles/_home.scss" />
+        <option value="$PROJECT_DIR$/site/src/styles/styles.scss" />
+        <option value="$PROJECT_DIR$/site/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="159" />
-    <option name="y" value="51" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,38 +199,17 @@
             </path>
             <path>
               <item name="digilock-2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digilock-2021" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="digilock-2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digilock-2021" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digilock-2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digilock-2021" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="logos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digilock-2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digilock-2021" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,22 +217,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true&#10;/Users/danwade/Documents/devel/digilock-2021/site/public/sitemap/sitemap-0.xml" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/site/src/images/logos" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/site/src/images" />
+      <recent name="$PROJECT_DIR$/site/src/locales/es" />
+      <recent name="$PROJECT_DIR$/site/src/locales/en" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/site/src/images/logos" />
       <recent name="$PROJECT_DIR$/site/src/locales/en/components/" />
       <recent name="$PROJECT_DIR$/site/src/components/locales/" />
       <recent name="$PROJECT_DIR$/site/src/locales" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/site/src/locales/es" />
-      <recent name="$PROJECT_DIR$/site/src/locales/en" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,16 +263,30 @@
       <workItem from="1642699349165" duration="6288000" />
       <workItem from="1642781574570" duration="1544000" />
       <workItem from="1643038528488" duration="6149000" />
+      <workItem from="1643302764868" duration="634000" />
+      <workItem from="1643317548512" duration="583000" />
+      <workItem from="1643385465659" duration="994000" />
+      <workItem from="1643407256316" duration="506000" />
+      <workItem from="1643642622208" duration="590000" />
+      <workItem from="1643728194007" duration="628000" />
+      <workItem from="1643810988744" duration="659000" />
+      <workItem from="1643910333087" duration="146000" />
+      <workItem from="1643911575643" duration="1366000" />
+      <workItem from="1643988026515" duration="221000" />
+      <workItem from="1644247124712" duration="599000" />
+      <workItem from="1644255760474" duration="472000" />
+      <workItem from="1644332709930" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21341000" />
+    <option name="totallyTimeSpent" value="29944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="88" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16482359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12327688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,7 +298,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26821864" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33207548" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -314,14 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -370,9 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/src/images/gatsby-astronaut.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/src/locales/en/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -387,13 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/src/components/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-428">
-          <caret line="29" column="5" selection-end-line="597" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/components/layout.css" />
     <entry file="file://$PROJECT_DIR$/site/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -401,23 +432,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/src/styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/src/components/header.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/AmericaDealers.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/images/gatsby-astronaut.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/images/aspire-lock.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/images/gatsby-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/src/pages/index.js">
+    <entry file="file://$PROJECT_DIR$/site/src/components/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="342">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -426,11 +470,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site/src/components/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="192">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#152#183#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/styles/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/src/styles/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
