@@ -5,31 +5,46 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { graphql } from 'gatsby';
 
+import lockImage from '../images/aspire-lock.png'
+
 const IndexPage = () => {
   const {t} = useTranslation();
   return (
       <Layout>
         <Seo title={t('Home')} />
-        <h1>
-          <Trans>Hi people</Trans>
-        </h1>
-        <p>
-          Welcome to your new Gatsby site.
-        </p>
-        <p>Now go build something great.</p>
-        <StaticImage
-            src="../images/aspire-lock.png"
-            width={224}
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="Aspire Smart Lock"
-        />
-        <p>
-          <Link to="/page-2/">Go to page 2</Link> <br/>
-          <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br/>
-          <Link to="/using-ssr">Go to "Using SSR"</Link> <br/>
-          <Link to="/using-dsg">Go to "Using DSG"</Link> <br/>
-        </p>
+
+        <section>
+          <div className="container grid">
+            <div className="col">
+              <h1>
+                <Trans>section_one_headline</Trans>
+              </h1>
+              <h2>
+                section one h2
+              </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              {/*<StaticImage*/}
+              {/*    src="../images/aspire-lock.png"*/}
+              {/*    width={148}*/}
+              {/*    quality={95}*/}
+              {/*    formats={["auto", "webp", "avif"]}*/}
+              {/*    alt="Aspire Smart Lock"*/}
+              {/*/>*/}
+              <a href="" className="btn btn--secondary">Secondary Button</a>
+              <a href="" className="btn btn--primary">Primary Button</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container grid">
+            <div className="col">
+              <h1 className={'title-large'}>
+                <Trans>section_two_headline</Trans> Large
+              </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </section>
       </Layout>
   )
 };

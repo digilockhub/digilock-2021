@@ -1,7 +1,5 @@
 {
-  "Home": "Home Spanish",
-  "Hi people": "Hi Spanish people",
-  "Welcome to your new Gatsby site.": "Welcome to your new Spanish Gatsby site.",
-  "Now go build something great.": "Now go build something great.",
-  "Go to page 2": "Go to page 2"
+  "section_one_headline": "Titular de la primera sección",
+  "section_two_headline": "Título de la sección dos",
+  "section_three_headline": "Título de la sección tres"
 }
