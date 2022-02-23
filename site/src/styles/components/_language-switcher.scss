@@ -1,0 +1,9 @@
+.language-switcher {
+  a {
+    display: inline;
+  }
+
+  span:not(:last-child):after {
+    content: ',';
+  }
+}

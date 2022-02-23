@@ -6,15 +6,17 @@ const LanguageSwitcher = () => {
   const {languages, originalPath} = useI18next();
   return (
 
-      <ul className={'language-switcher unstyled-list'}>
+      <div className={'language-switcher'}>
         {languages.map((lng) => (
-            <li key={lng}>
+            <span key={lng}>
               <Link to={originalPath} language={lng}>
-                {lng}
+                {
+                  lng
+                }
               </Link>
-            </li>
+            </span>
         ))}
-      </ul>
+      </div>
 
   )
 
