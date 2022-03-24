@@ -1,5 +1,5 @@
 .main-nav {
-  background: #ffffff;
+  background: $color-white;
   position: absolute;
   top: 0;
   right: 0;
@@ -41,7 +41,7 @@
     }
   }
   a {
-    color: $text-main;
+    color: $color-white;
     text-decoration: none;
     flex-basis: 100%;
     display: flex;
@@ -55,7 +55,7 @@
       background: rgba(0, 0, 0, .10);
       @media (min-width: 725px) {
         background: none;
-        color: darken($accent, 15%);
+        color: darken($color-black, 15%);
       }
     }
   }
@@ -82,7 +82,7 @@
   display: block;
   width: 2em;
   height: 3px;
-  background: $text-main;
+  background: $color-letterhead;
   transition: all ease-in-out 250ms;
 }
 .hamburger::before {

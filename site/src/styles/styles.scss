@@ -1,23 +1,26 @@
-//1. Config files and helpers
+//Config files and helpers
 @import "abstract/colors";
 @import "abstract/fonts";
 
-//2. Vendor
+//Vendor
 @import "vendor/normalize";
 
 @import "layout/grid";
 @import "tools/mixins";
 
-//3. Base Styles
+//Base Styles
 @import "base/base";
 @import "base/typography";
 
-//4 Layout
+//Layout
 @import "layout/nav";
 @import "layout/header";
 @import "layout/footer";
 
-//5 Components
+//Pages
+@import "pages/home";
+
+//Components
 @import "components/buttons";
 @import "components/language-switcher";
 

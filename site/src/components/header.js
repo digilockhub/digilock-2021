@@ -20,15 +20,15 @@ const Header = () => {
       <header className={'main-header'}>
         <div className="container grid">
 
-          <div className="logo">
-            <StaticImage
-                src="../images/logos/digilock-logo2x.png"
-                width={216}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Digilock"
-            />
-          </div>
+          {/*<div className="logo">*/}
+          {/*  <StaticImage*/}
+          {/*      src="../images/logos/digilock.png"*/}
+          {/*      width={186}*/}
+          {/*      quality={95}*/}
+          {/*      formats={["auto", "webp", "avif"]}*/}
+          {/*      alt="Digilock"*/}
+          {/*  />*/}
+          {/*</div>*/}
 
           <nav className="main-nav">
             <ul className="unstyled-list">

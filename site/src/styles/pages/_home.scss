@@ -1,0 +1,7 @@
+.home {
+
+  .hero {
+    @include outline(red);
+  }
+
+}

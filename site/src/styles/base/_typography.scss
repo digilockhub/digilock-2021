@@ -9,21 +9,27 @@ p:last-child {
 }
 
 h1 {
-  font-size: 2rem;
   font-family: AvenirRegular, sans-serif;
-  line-height: 1.15 ;
-  &.title-large {
-    font-family: AvenirBold, sans-serif;
-    span {
-      font-family: AvenirRegular, sans-serif;
-    }
-  }
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: $color-black;
 }
 
 h2 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1;
+  font-family: AvenirDemi, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: $color-letterhead;
+}
+
+p {
+  font-family: AvenirRegular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: $color-letterhead;
 }
