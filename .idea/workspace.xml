@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9921fc44-0624-468d-9fe5-896b20d3c147" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/site/src/components/carousel/carouselWrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/styles/abstract/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/styles/abstract/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/styles/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/styles/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/styles/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/styles/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/styles/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/src/styles/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/src/styles/pages/_home.scss" afterDir="false" />
-    </list>
+    <list default="true" id="9921fc44-0624-468d-9fe5-896b20d3c147" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -61,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/site/src/styles/layout/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -363,18 +352,17 @@
       <workItem from="1648070554912" duration="469000" />
       <workItem from="1648071643656" duration="2357000" />
       <workItem from="1648130761833" duration="517000" />
-      <workItem from="1648134938387" duration="4571000" />
+      <workItem from="1648134938387" duration="5103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78034000" />
+    <option name="totallyTimeSpent" value="78566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-19" y="23" width="2560" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17684127" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17684127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -386,7 +374,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32981133" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28301886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28301886" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -725,7 +713,7 @@
     <entry file="file://$PROJECT_DIR$/site/src/styles/layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
