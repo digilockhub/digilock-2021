@@ -9,6 +9,12 @@ body {
 
 section {
   padding-top: 4em;
+  &:first-of-type {
+    padding-top: 3em;
+  }
+  &:last-of-type {
+    padding-bottom: 4em;
+  }
 }
 
 img {

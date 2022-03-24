@@ -1,10 +1,10 @@
 .main-header {
-  position: absolute;
+  position: fixed;
   background-color: $color-steadfast-blue;
   top: 0;
   left: 0;
   right: 0;
   color: $color-white;
-  //padding-top: 1em;
+  z-index: 1000;
 }
 

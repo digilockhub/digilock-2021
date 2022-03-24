@@ -4,6 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { graphql } from 'gatsby';
+import CarouselWrapper from '../components/carousel/carouselWrapper'
 
 const IndexPage = () => {
   const {t} = useTranslation();
@@ -12,14 +13,7 @@ const IndexPage = () => {
         <Seo title={t('Home')} />
         <div className="home">
           <section className="hero">
-            <img src="https://fpoimg.com/1125x750?text=FPO" alt=""/>
-            {/*<StaticImage*/}
-            {/*    src="https://fpoimg.com/2000x500?text=FPO"*/}
-            {/*    // width={2000}*/}
-            {/*    quality={95}*/}
-            {/*    formats={["auto", "webp", "avif"]}*/}
-            {/*    alt="Aspire Smart Lock"*/}
-            {/*/>*/}
+            <CarouselWrapper />
           </section>
           <section>
             <div className="container grid">
@@ -30,7 +24,12 @@ const IndexPage = () => {
                 <h2>
                   <Trans>section_two_headline</Trans>
                 </h2>
-                <p>That’s why we make our products compatible, flexible, and tailored to the storage security needs of each industry. From wireless cloud-based management, to simple keyless  retrofits, Digilock works as a partner to protect your  workspace today, tomorrow, and well into the future.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
+                </p>
                 {/*<StaticImage*/}
                 {/*    src="../images/aspire-lock.png"*/}
                 {/*    width={148}*/}

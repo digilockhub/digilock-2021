@@ -1,3 +1,7 @@
 footer {
-  padding-top: 4em;
+  background: $color-steadfast-blue;
+  padding: 4em;
+  p {
+    color: $color-white;
+  }
 }
