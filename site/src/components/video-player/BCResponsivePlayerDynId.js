@@ -5,8 +5,6 @@
  translation = label text
 */
 
-
-
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import ReactPlayerLoader from '@brightcove/react-player-loader'
@@ -32,24 +30,17 @@ class BCResponsivePlayerDynId extends Component {
             // two ways to get the underlying player/iframe at this point.
 
             let bcovePlayer = success.ref;
-
             bcovePlayer.player().controlBar.hide();
-
-            let vidElement = document.getElementsByTagName('video')[0];
-
             bcovePlayer.addClass('vjs-fluid');
-
             bcovePlayer.on("loadedmetadata", function (evt) {
               // let img = new Image();
               // let elm = document.getElementsByTagName('video')[0];
               // img.src = elm.getAttribute('poster');
             });
-
             bcovePlayer.on('ended', function () {
               // bcovePlayer.currentTime(0);
               // bcovePlayer.play();
             });
-
             bcovePlayer.on('play', function () {
               // code
             });
@@ -64,7 +55,7 @@ class BCResponsivePlayerDynId extends Component {
 
   render() {
     return (
-        <div className={'video-holder'}>
+        <div className={'fw-video-holder'}>
           <div className="video-overlay" dangerouslySetInnerHTML={{__html: this.props.translation}} />
           <div className={'learn-more-video'} id={this.props.dynId}/>
         </div>

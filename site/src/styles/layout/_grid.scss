@@ -17,7 +17,9 @@
 .col--full {
   flex: 0 0 100%;
 }
-@media (min-width: 725px) {
+
+
+@include md() {
   .col--1-3 {
     flex-basis: 33.3333%;
   }
@@ -27,4 +29,4 @@
   .col--1-2 {
     flex-basis: 50%;
   }
-};
+}

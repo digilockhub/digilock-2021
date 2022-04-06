@@ -1,6 +1,6 @@
 .home {
 
-  .video-holder {
+  .fw-video-holder {
     position: relative;
   }
 
@@ -12,6 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4em;
+    line-height: 1em;
   }
 
 }
