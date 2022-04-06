@@ -4,7 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { graphql } from 'gatsby';
-import CarouselWrapper from '../components/carousel/carouselWrapper'
+import BCResponsivePlayerDynId from '../components/video-player/BCResponsivePlayerDynId'
 
 const IndexPage = () => {
   const {t} = useTranslation();
@@ -13,7 +13,11 @@ const IndexPage = () => {
         <Seo title={t('Home')} />
         <div className="home">
           <section className="hero">
-            <CarouselWrapper />
+            <BCResponsivePlayerDynId
+                vid={'6302604050001'}
+                dynId={'HeroVideo'}
+                translation={t('hero_video_caption')}
+            />
           </section>
           <section>
             <div className="container grid">

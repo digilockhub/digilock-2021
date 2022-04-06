@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Daniel Wade",
   "dependencies": {
+    "@brightcove/react-player-loader": "^1.4.1",
     "gatsby": "^4.5.4",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-image": "^2.5.2",
