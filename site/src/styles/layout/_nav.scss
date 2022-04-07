@@ -5,12 +5,10 @@
   right: 0;
   left: 100%;
   font-size: 1.2rem;
-
   overflow: hidden;
-
   transition: all ease-in-out 250ms;
 
-  @media (min-width: 725px) {
+  @include md() {
     position: relative;
     flex: auto;
     background: none;
@@ -19,27 +17,31 @@
     left: 0;
   }
 
+
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
 
-    @media (min-width: 725px) {
+    @include md() {
       flex-direction: row;
       height: auto;
     }
+
   }
+
   li {
     flex: 1 1 auto;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     display: flex;
-    @media (min-width: 725px) {
+    @include md() {
       display: inline-block;
       border: none;
       text-align: right;
     }
   }
+
   a {
     color: $color-white;
     text-decoration: none;
@@ -47,13 +49,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (min-width: 725px) {
+    @include md() {
       display: inline;
     }
 
     &:hover {
       background: rgba(0, 0, 0, .10);
-      @media (min-width: 725px) {
+      @include md() {
         background: none;
         color: darken($color-black, 15%);
       }
