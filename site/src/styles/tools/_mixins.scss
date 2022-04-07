@@ -1,11 +1,11 @@
 // Small tablets (portrait view) window width and more
-$screen-md-min: 725px;
+$screen-md-min: 768px;
 
 // Tablets and small desktops window width and more
-//$screen-lg-min: 992px;
+$screen-lg-min: 992px;
 
 // Large tablets and desktops window width and more
-//$screen-xl-min: 1200px;
+$screen-xl-min: 1200px;
 
 
 // Medium devices
@@ -15,26 +15,26 @@ $screen-md-min: 725px;
   }
 }
 
-// Large devices
-//@mixin lg {
-//  @media (min-width: #{$screen-lg-min}) {
-//    @content;
-//  }
-//}
+ //Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
 
-// Extra large devices
-//@mixin xl {
-//  @media (min-width: #{$screen-xl-min}) {
-//    @content;
-//  }
-//}
+ //Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
 
-// Custom devices
-//@mixin rwd($screen) {
-//  @media (min-width: $screen+'px') {
-//    @content;
-//  }
-//}
+ //Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
 
 
 
@@ -42,3 +42,5 @@ $screen-md-min: 725px;
 @mixin outline($color) {
   outline: 1px solid $color;
 }
+
+

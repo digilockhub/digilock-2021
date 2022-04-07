@@ -22,7 +22,16 @@ class BCResponsivePlayerDynId extends Component {
           playerId: bcSettings.PLAYER_FULL_SCREEN,
           embedOptions: {
             options: {
-              aspectRatio: '16:9'
+              aspectRatio: '16:9',
+              breakpoints: {
+                tiny: 300,
+                xsmall: 400,
+                small: 500,
+                medium: 600,
+                large: 700,
+                xlarge: 800,
+                huge: 900
+              }
             }
           },
 

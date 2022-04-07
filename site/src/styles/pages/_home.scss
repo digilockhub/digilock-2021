@@ -1,5 +1,18 @@
 .home {
 
+  .hero {
+    min-height: 210px;
+    @include md() {
+      min-height: 455px;
+    }
+    @include lg() {
+      min-height: 558px
+    }
+    @include xl() {
+      min-height: 675px
+    }
+  }
+
   .fw-video-holder {
     position: relative;
   }
