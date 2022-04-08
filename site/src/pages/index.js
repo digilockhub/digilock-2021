@@ -28,6 +28,9 @@ const IndexPage = () => {
                 <h2>
                   <Trans>section_two_headline</Trans>
                 </h2>
+                <a href="" className="btn btn--blue">Primary Button</a>
+                <a href="" className="btn btn--trans">Secondary Button</a>
+                <a href="" className="btn btn--orange">Secondary Button</a>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
                 </p>
@@ -41,8 +44,6 @@ const IndexPage = () => {
                 {/*    formats={["auto", "webp", "avif"]}*/}
                 {/*    alt="Aspire Smart Lock"*/}
                 {/*/>*/}
-                {/*<a href="" className="btn btn--secondary">Secondary Button</a>*/}
-                {/*<a href="" className="btn btn--primary">Primary Button</a>*/}
               </div>
             </div>
           </section>

@@ -10,16 +10,18 @@ const Footer = () => {
   return (
 
       <footer>
-        <p>
-          <sup>&copy;</sup> {new Date().getFullYear()} Footer
-        </p>
-        <p>
-          You clicked {count} times
-        </p>
-        <button onClick={() => setCount(count+1)}>
-          {/*<Trans>button_label</Trans>*/}
-          {t('button_label')}
-        </button>
+        <div className="container">
+          <p>
+            <sup>&copy;</sup> {new Date().getFullYear()} Footer
+          </p>
+          <p>
+            You clicked {count} times
+          </p>
+          <button onClick={() => setCount(count+1)}>
+            {/*<Trans>button_label</Trans>*/}
+            {t('button_label')}
+          </button>
+        </div>
       </footer>
 
   )

@@ -3,12 +3,14 @@
   padding: .75em 2.5em;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 100px;
+  color: $color-white;
 
   &:not(:last-of-type) {
     margin-bottom: .6em;
   }
 
-  &.btn--primary {
+  &.btn--blue {
     background: $color-numeris-blue;
     border: 2px solid $color-numeris-blue;
     color: $color-white;
@@ -17,8 +19,19 @@
     }
   }
 
-  &.btn--secondary {
+  &.btn--trans {
     border: 2px solid $color-numeris-blue;
+    background: transparent;
+    color: $color-letterhead;
+    &:hover, &:focus {
+      background: $color-numeris-blue;
+      color: $color-white;
+    }
+  }
+
+  &.btn--orange {
+    border: 2px solid $package-orange;
+    background: $package-orange;
   }
 
 }
