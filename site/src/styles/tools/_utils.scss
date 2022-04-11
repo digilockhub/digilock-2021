@@ -2,3 +2,14 @@
   width: 100%;
   height: auto;
 }
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
