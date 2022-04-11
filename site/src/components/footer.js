@@ -10,17 +10,33 @@ const Footer = () => {
   return (
 
       <footer>
-        <div className="container">
+        <div className="container grid">
+          <div className="col">
+            <h3>
+              <Trans>have_questions</Trans>
+            </h3>
+            <a href="#" className="btn btn--trans white">
+              <Trans>button_chat</Trans>
+            </a>
+            <a href="#" className="btn btn--trans white">
+              <Trans>button_contact</Trans>
+            </a>
+            <a href="#" className="btn btn--trans white">
+              <Trans>button_faq</Trans>
+            </a>
+
+          </div>
+
           <p>
             <sup>&copy;</sup> {new Date().getFullYear()} Footer
           </p>
-          <p>
-            You clicked {count} times
-          </p>
-          <button onClick={() => setCount(count+1)}>
-            {/*<Trans>button_label</Trans>*/}
-            {t('button_label')}
-          </button>
+          {/*<p>*/}
+          {/*  You clicked {count} times*/}
+          {/*</p>*/}
+          {/*<button onClick={() => setCount(count+1)}>*/}
+          {/*  /!*<Trans>button_label</Trans>*!/*/}
+          {/*  {t('button_label')}*/}
+          {/*</button>*/}
         </div>
       </footer>
 

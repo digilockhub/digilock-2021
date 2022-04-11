@@ -1,10 +1,14 @@
 .btn {
-  display: inline-block;
+
+  display: block;
   padding: .75em 2.5em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 100px;
-  color: $color-white;
+
+  @include md() {
+    display: inline-block;
+  }
 
   &:not(:last-of-type) {
     margin-bottom: .6em;
@@ -25,6 +29,9 @@
     color: $color-letterhead;
     &:hover, &:focus {
       background: $color-numeris-blue;
+      color: $color-white;
+    }
+    &.white {
       color: $color-white;
     }
   }

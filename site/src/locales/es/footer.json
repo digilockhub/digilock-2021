@@ -1,3 +1,7 @@
 {
-  "button_label": "Haz click en mi"
+  "button_label": "Haz click en mi",
+  "have_questions": "Have Questions?",
+  "button_chat": "let's chat",
+  "button_contact": "contact us",
+  "button_faq": "faq"
 }
