@@ -20,7 +20,7 @@ const Header = () => {
   return (
       <header className={'main-header'}>
 
-        <div className="container grid">
+        <div className="container flex">
 
           <div className="logo">
             <StaticImage
@@ -33,7 +33,8 @@ const Header = () => {
           </div>
 
           <nav className="main-nav" aria-label={'primary navigation'}>
-            <ul className={'unstyled-list'}>
+
+            <ul className={'unstyled-list flex'}>
               <li>
                 <LanguageSwitcher/>
               </li>
@@ -43,10 +44,21 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <ul className="unstyled-list">
+
+            <ul className="unstyled-list flex">
               <li>
                 <Link to="#">
                   <Trans>industries</Trans>
+                  <ul className={'dropdown unstyled-list'}>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                    <li>foo</li>
+                  </ul>
                 </Link>
               </li>
               <li>
@@ -86,6 +98,8 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+
+          {/*<button><span className={'sr-only'}>Menu</span></button>*/}
 
           <div className="nav-toggle">
             <div className="hamburger"></div>
