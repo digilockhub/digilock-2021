@@ -8,14 +8,24 @@ import {StaticImage} from "gatsby-plugin-image";
 const Header = () => {
 
   useEffect(() => {
-    const mainNavigation = document.getElementsByClassName('main-nav')[0];
-    const toggler = document.getElementsByClassName('nav-toggle')[0];
-    const hamburger = document.getElementsByClassName('hamburger')[0];
-    toggler.addEventListener('click', () => {
-      mainNavigation.classList.toggle('is-open');
-      hamburger.classList.toggle('is-open');
+    const primaryNavigaton = document.getElementsByClassName('main-nav')[0];
+    const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
+
+    navToggle.addEventListener('click', () => {
+
+      const visibility = primaryNavigaton.getAttribute('data-visible');
+
+      if(visibility === 'false') {
+        primaryNavigaton.setAttribute('data-visible', 'true')
+        navToggle.setAttribute('aria-expanded', 'true')
+      } else {
+        primaryNavigaton.setAttribute('data-visible', 'false')
+        navToggle.setAttribute('aria-expanded', 'false')
+
+      }
+
     })
-  });
+  }, []);
 
   return (
       <header className={'main-header'}>
@@ -32,7 +42,14 @@ const Header = () => {
             />
           </div>
 
-          <nav className="main-nav" aria-label={'primary navigation'}>
+          <button className={'mobile-nav-toggle'} aria-controls={'mainNav'} aria-expanded={'false'}>
+            <span className={'sr-only'}>Menu</span>
+          </button>
+
+          <nav id={'mainNav'}
+               className="main-nav"
+               data-visible={'false'}
+               aria-label={'primary navigation'}>
 
             <ul className={'unstyled-list flex'}>
               <li>
@@ -98,12 +115,6 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-
-          {/*<button><span className={'sr-only'}>Menu</span></button>*/}
-
-          <div className="nav-toggle">
-            <div className="hamburger"></div>
-          </div>
 
         </div>
       </header>
