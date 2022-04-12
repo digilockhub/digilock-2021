@@ -1,20 +1,24 @@
 .main-header {
   position: fixed;
-  background-color: grey;
+  background-color: $color-steadfast-blue;
   top: 0;
   left: 0;
   right: 0;
   color: $color-white;
   z-index: 1000;
-
-
-  .mobile-nav-toggle {
-    display: none;
-  }
-
+  padding-top: 2em;
 
   a {
     color: $color-white;
+    font-size: 0.938rem;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: $color-numeris-blue;
+    }
+  }
+
+  .menu-contact, .menu-main {
+    @include outline(purple);
   }
 
 
@@ -34,6 +38,10 @@
     }
   }
 
+  //MOBILE MENU
+  .mobile-nav-toggle {
+    display: none;
+  }
   @media (max-width: $screen-md-min) {
     .main-nav {
       position: fixed;

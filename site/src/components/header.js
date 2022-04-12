@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import LanguageSwitcher from './locales/language-switcher';
 import {StaticImage} from "gatsby-plugin-image";
+import digilockLogo from '../images/shared/digilock.svg'
 
 const Header = () => {
 
@@ -12,16 +13,13 @@ const Header = () => {
     const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
 
     navToggle.addEventListener('click', () => {
-
       const visibility = primaryNavigaton.getAttribute('data-visible');
-
       if(visibility === 'false') {
         primaryNavigaton.setAttribute('data-visible', 'true')
         navToggle.setAttribute('aria-expanded', 'true')
       } else {
         primaryNavigaton.setAttribute('data-visible', 'false')
         navToggle.setAttribute('aria-expanded', 'false')
-
       }
 
     })
@@ -31,17 +29,7 @@ const Header = () => {
       <header className={'main-header'}>
 
         <div className="container flex">
-
-          <div className="logo">
-            <StaticImage
-                src="../images/logos/digilock.png"
-                width={186}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Digilock"
-            />
-          </div>
-
+          <img src={digilockLogo} width={'135'} height={'32'} alt="Digilock"/>
           <button className={'mobile-nav-toggle'} aria-controls={'mainNav'} aria-expanded={'false'}>
             <span className={'sr-only'}>Menu</span>
           </button>
@@ -51,7 +39,7 @@ const Header = () => {
                data-visible={'false'}
                aria-label={'primary navigation'}>
 
-            <ul className={'unstyled-list flex'}>
+            <ul className={'menu-contact unstyled-list flex'}>
               <li>
                 <LanguageSwitcher/>
               </li>
@@ -62,7 +50,7 @@ const Header = () => {
               </li>
             </ul>
 
-            <ul className="unstyled-list flex">
+            <ul className="menu-main unstyled-list flex">
               <li>
                 <Link to="#">
                   <Trans>industries</Trans>
