@@ -28,17 +28,8 @@ const Header = () => {
   return (
       <header className={'main-header'}>
 
-        <div className="container flex">
-          <img src={digilockLogo} width={'135'} height={'32'} alt="Digilock"/>
-          <button className={'mobile-nav-toggle'} aria-controls={'mainNav'} aria-expanded={'false'}>
-            <span className={'sr-only'}>Menu</span>
-          </button>
-
-          <nav id={'mainNav'}
-               className="main-nav"
-               data-visible={'false'}
-               aria-label={'primary navigation'}>
-
+        <div className="contact">
+          <div className="container flex">
             <ul className={'menu-contact unstyled-list flex'}>
               <li>
                 <LanguageSwitcher/>
@@ -49,62 +40,76 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-
-            <ul className="menu-main unstyled-list flex">
-              <li>
-                <Link to="#">
-                  <Trans>industries</Trans>
-                  <ul className={'dropdown unstyled-list'}>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                    <li>foo</li>
-                  </ul>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>locks</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>specialty_lockers</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>about</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>how_to_buy</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>blog</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>support</Trans>
-                </Link>
-              </li>
-              <li>
-                <Link to="#">
-                  <Trans>search</Trans>
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          </div>
 
         </div>
+
+        <div className="main flex">
+          <div className="container flex">
+            <img src={digilockLogo} width={'135'} height={'32'} alt="Digilock"/>
+            <button className={'mobile-nav-toggle'} aria-controls={'mainNav'} aria-expanded={'false'}>
+              <span className={'sr-only'}>Menu</span>
+            </button>
+            <nav id={'mainNav'}
+                 className="main-nav"
+                 data-visible={'false'}
+                 aria-label={'primary navigation'}>
+              <ul className="menu-main unstyled-list flex">
+                <li>
+                  <Link to="#">
+                    <Trans>industries</Trans>
+                    <ul className={'dropdown unstyled-list'}>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                      <li>foo</li>
+                    </ul>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>locks</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>specialty_lockers</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>about</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>how_to_buy</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>blog</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>support</Trans>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#">
+                    <Trans>search</Trans>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
       </header>
       )
 

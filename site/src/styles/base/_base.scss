@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 1200px;
+  --nav-gap: 1rem;
+}
+
 /* Document
    ========================================================================== */
 
 html {
   font-family: AvenirRegular, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.6; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -34,11 +39,11 @@ img {
 }
 
 .container {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  @include outline(gold);
 
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  //@include outline(gold);
 }
 
 
