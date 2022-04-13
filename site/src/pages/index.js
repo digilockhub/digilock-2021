@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import {StaticImage} from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { graphql } from 'gatsby';
 import BCResponsivePlayerDynId from '../components/video-player/BCResponsivePlayerDynId'
+import Modal from '../components/modals/modal'
 
 const IndexPage = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  function handleShowModal() {
+    setShowModal( prevShowModal =>!prevShowModal)
+  }
+
   const {t} = useTranslation();
   return (
       <Layout>
@@ -31,6 +38,18 @@ const IndexPage = () => {
                 <a href="" className="btn btn--blue">Primary Button</a>
                 <a href="" className="btn btn--trans">Secondary Button</a>
                 <a href="" className="btn btn--orange">Secondary Button</a>
+                <p>
+                  {showModal}
+                  <Modal show={showModal} handleClose={handleShowModal}>
+                    <h1>Announcement</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
+                    </p>
+                  </Modal>
+                  <button type="button" onClick={handleShowModal}>
+                    Open Announcement
+                  </button>
+                </p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
                 </p>
