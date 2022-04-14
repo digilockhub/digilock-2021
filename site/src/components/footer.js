@@ -11,21 +11,21 @@ const Footer = () => {
 
       <footer>
         <div className="container grid">
-          <div className="col">
-            <h3>
-              <Trans>have_questions</Trans>
-            </h3>
-            <a href="#" className="btn btn--trans white">
-              <Trans>button_chat</Trans>
-            </a>
-            <a href="#" className="btn btn--trans white">
-              <Trans>button_contact</Trans>
-            </a>
-            <a href="#" className="btn btn--trans white">
-              <Trans>button_faq</Trans>
-            </a>
+          {/*<div className="col">*/}
+          {/*  <h3>*/}
+          {/*    <Trans>have_questions</Trans>*/}
+          {/*  </h3>*/}
+          {/*  <a href="#" className="btn btn--trans white">*/}
+          {/*    <Trans>button_chat</Trans>*/}
+          {/*  </a>*/}
+          {/*  <a href="#" className="btn btn--trans white">*/}
+          {/*    <Trans>button_contact</Trans>*/}
+          {/*  </a>*/}
+          {/*  <a href="#" className="btn btn--trans white">*/}
+          {/*    <Trans>button_faq</Trans>*/}
+          {/*  </a>*/}
 
-          </div>
+          {/*</div>*/}
 
           <p>
             <sup>&copy;</sup> {new Date().getFullYear()} Footer

@@ -20,16 +20,16 @@ const IndexPage = () => {
         <Seo title={t('Home')} />
         <div className="home">
           <section className="hero">
-            {/*<BCResponsivePlayerDynId*/}
-            {/*    vid={'6302604050001'}*/}
-            {/*    dynId={'HeroVideo'}*/}
-            {/*    translation={t('hero_video_caption')}*/}
-            {/*/>*/}
+            <BCResponsivePlayerDynId
+                vid={'6302604050001'}
+                dynId={'HeroVideo'}
+                translation={t('hero_video_caption')}
+            />
           </section>
           <section>
             <div className="container grid">
               <div className="col">
-                <Link to={'/page-2'}>Page 2</Link>
+                {/*<Link to={'/page-2'}>Page 2</Link>*/}
                 <h1>
                   <Trans>section_one_headline</Trans>
                 </h1>

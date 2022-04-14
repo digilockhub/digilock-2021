@@ -34,11 +34,11 @@ const Header = () => {
               <li>
                 <LanguageSwitcher/>
               </li>
-              <li>
-                <Link to="/contact">
-                  <Trans>contact</Trans>
-                </Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link to="/contact">*/}
+              {/*    <Trans>contact</Trans>*/}
+              {/*  </Link>*/}
+              {/*</li>*/}
             </ul>
           </div>
 
