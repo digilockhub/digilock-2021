@@ -1,4 +1,7 @@
 .main-header {
+
+
+
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +20,7 @@
 
 
   .contact {
-    height: 41px;
+    height: var(--header-contact-height);
     background-color: $color-browser-chrome;
     .container {
       width: 100%;

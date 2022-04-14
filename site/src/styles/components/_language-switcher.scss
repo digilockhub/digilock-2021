@@ -1,9 +1,59 @@
-.language-switcher {
-  a {
-    display: inline;
+//.language-switcher {
+//  a {
+//    display: inline;
+//  }
+//
+//  span:not(:last-child):after {
+//    content: ',';
+//  }
+//}
+
+
+
+.custom-select {
+  position: relative;
+  select {
+    font-size: 1rem;
+    height: var(--header-contact-height);
+    padding: 0 1em 0 7em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/shared/globe.svg');
+    background-repeat: no-repeat;
+    background-position: 28%;
+    background-size: 9%;
+    border: none;
+    max-width: 24em;
   }
 
-  span:not(:last-child):after {
-    content: ',';
+  .custom-arrow {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../images/shared/caret-down.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 62%;
+    height: 100%;
+    width: 3rem;
+    border-right: 1px solid $color-browser-chrome;
+  }
+
+  .custom-arrow::before {
+    //--size: 10px;
+    //content: '';
+    //position: absolute;
+    //width: 0;
+    //height: 0;
+    //background-image: url("../images/shared/caret-down.svg");
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //border-left: var(--size) solid transparent;
+    //border-right:  var(--size) solid transparent;
+    //border-top:  var(--size) solid black;
+    //left: 50%;
+    //top: 50%;
+    //transform: translate(-50%, -50%);
   }
 }
