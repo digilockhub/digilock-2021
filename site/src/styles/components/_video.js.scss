@@ -1,1 +1,11 @@
 //placeholder
+
+.vjs-big-play-button {
+  top: 70% !important;
+  @include md() {
+    top: 72% !important;
+  }
+  @include lg() {
+    top: 63% !important;
+  }
+}
