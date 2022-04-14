@@ -49,5 +49,5 @@ module.exports = {
     path: 'tr',
     locale: 'Turkish',
     native: 'Türk'
-  },
+  }
 };

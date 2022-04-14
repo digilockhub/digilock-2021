@@ -29,6 +29,7 @@ const IndexPage = () => {
           <section>
             <div className="container grid">
               <div className="col">
+                <Link to={'/page-2'}>Page 2</Link>
                 <h1>
                   <Trans>section_one_headline</Trans>
                 </h1>
@@ -39,13 +40,6 @@ const IndexPage = () => {
                 <a href="" className="btn btn--trans">Secondary Button</a>
                 <a href="" className="btn btn--orange">Secondary Button</a>
                 <p>
-                  {showModal}
-                  <Modal show={showModal} handleClose={handleShowModal}>
-                    <h1>Announcement</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
-                    </p>
-                  </Modal>
                   <button type="button" onClick={handleShowModal}>
                     Open Announcement
                   </button>
@@ -66,6 +60,12 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
+          <Modal show={showModal} handleClose={handleShowModal}>
+            <h1>Announcement</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis eros, luctus in interdum a, consectetur in ligula. Aenean non leo vitae purus viverra interdum. Donec nec nulla vitae risus luctus feugiat. Donec aliquam aliquam metus non fermentum. Sed laoreet ultricies luctus. Donec pellentesque ipsum in sapien cursus, vitae faucibus mi dignissim. Donec rhoncus massa suscipit magna tempus, at congue velit congue. Integer tempus est dui. Suspendisse vestibulum vel leo eu eleifend. Nulla ac arcu iaculis, consequat nunc vel, vestibulum arcu. Nullam tellus dui, tincidunt vestibulum nisi vitae, aliquam pharetra ex. In tristique volutpat tellus at blandit. Phasellus diam mi, posuere vel auctor at, placerat nec libero. Nullam quis diam tempus, dictum leo non, ornare leo. Praesent tincidunt malesuada magna vel consequat. Donec vehicula placerat risus.
+            </p>
+          </Modal>
         </div>
       </Layout>
   )
