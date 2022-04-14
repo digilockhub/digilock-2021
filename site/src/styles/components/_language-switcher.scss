@@ -15,12 +15,12 @@
   select {
     font-size: 1rem;
     height: var(--header-contact-height);
-    padding: 0 1em 0 7em;
+    padding: 0 1em 0 5.8em;
     -webkit-appearance: none;
     appearance: none;
     background-image: url('../images/shared/globe.svg');
     background-repeat: no-repeat;
-    background-position: 28%;
+    background-position: 23%;
     background-size: 9%;
     border: none;
     max-width: 24em;
@@ -37,7 +37,7 @@
     background-position: 50% 62%;
     height: 100%;
     width: 3rem;
-    border-right: 1px solid $color-browser-chrome;
+    border-right: 2px solid $color-browser-chrome;
   }
 
   .custom-arrow::before {
