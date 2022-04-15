@@ -20,6 +20,9 @@
   .contact {
     height: var(--header-contact-height);
     background-color: $color-browser-chrome;
+    text-transform: uppercase;
+
+
     .container {
       width: 100%;
       max-width: none;
@@ -37,27 +40,15 @@
     }
   }
 
+  .dropdown {
+    display: none;
+  }
+
 
   .menu-contact, .menu-main {
     //@include outline(purple);
   }
 
-
-  ul.dropdown {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-    li {
-      transition-duration: 0.5s;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
 
   //MOBILE MENU
   .mobile-nav-toggle {
@@ -91,6 +82,21 @@
           margin-bottom: var(--nav-gap);
         }
       }
+
+      .dropdown {
+        display: none;
+        padding: 0 .5rem;
+        &.show {
+          display: block;
+        }
+
+        ul {
+          gap: .1rem !important;
+          margin: 0;
+        }
+      }
+
+
     }
 
     .main-nav[data-visible="true"] {

@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {Link, Trans} from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types";
-
 import LanguageSwitcher from './locales/language-switcher';
-import {StaticImage} from "gatsby-plugin-image";
 import digilockLogo from '../images/shared/digilock.svg'
+import {graphql} from "gatsby";
+import CustomLocalizedLink from '../components/locales/custom-localized-link'
 
 const Header = () => {
 
@@ -14,31 +14,40 @@ const Header = () => {
 
     navToggle.addEventListener('click', () => {
       const visibility = primaryNavigaton.getAttribute('data-visible');
-      if(visibility === 'false') {
-        primaryNavigaton.setAttribute('data-visible', 'true')
+      if (visibility === 'false') {
+        primaryNavigaton.setAttribute('data-visible', 'true');
         navToggle.setAttribute('aria-expanded', 'true')
       } else {
-        primaryNavigaton.setAttribute('data-visible', 'false')
+        primaryNavigaton.setAttribute('data-visible', 'false');
         navToggle.setAttribute('aria-expanded', 'false')
       }
 
     })
   }, []);
 
+  function handleParentNavClick(e) {
+    //IF MOBILE
+    let intViewportWidth = window.innerWidth;
+    if(intViewportWidth <= 771) {
+      e.target.nextElementSibling.classList.toggle('show');
+      console.log(1);
+    }
+  }
+
   return (
       <header className={'main-header'}>
-
         <div className="contact">
           <div className="container flex">
             <ul className={'menu-contact unstyled-list flex'}>
               <li>
                 <LanguageSwitcher/>
               </li>
-              {/*<li>*/}
-              {/*  <Link to="/contact">*/}
-              {/*    <Trans>contact</Trans>*/}
-              {/*  </Link>*/}
-              {/*</li>*/}
+              <li>
+                <CustomLocalizedLink goto={'/page-2'} cls={'btn btn--contact'} label={'Contact'} />
+                {/*<Link to="/contact" className={'btn--contact'}>*/}
+                {/*  <Trans>contact</Trans>*/}
+                {/*</Link>*/}
+              </li>
             </ul>
           </div>
 
@@ -56,19 +65,55 @@ const Header = () => {
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
                 <li>
-                  <Link to="#">
-                    <Trans>industries</Trans>
-                    <ul className={'dropdown unstyled-list'}>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
-                      <li>foo</li>
+
+                    <Link to="#" onClick={handleParentNavClick}>
+                      <Trans>industries</Trans>
+                    </Link>
+
+                  <div className={'dropdown'}>
+                    <ul className={'unstyled-list flex'}>
+                      <li>
+                        <Link to="#">
+                          <Trans>workspace</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>healthcare</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>pro_sports</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>education</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>retail</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>manufacturing</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>health_fitness</Trans>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#">
+                          <Trans>hospitality</Trans>
+                        </Link>
+                      </li>
                     </ul>
-                  </Link>
+                  </div>
                 </li>
                 <li>
                   <Link to="#">
@@ -111,7 +156,7 @@ const Header = () => {
         </div>
 
       </header>
-      )
+  )
 
 };
 
@@ -124,3 +169,16 @@ Header.defaultProps = {
 };
 
 export default Header;
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
