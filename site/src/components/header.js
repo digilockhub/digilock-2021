@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {Link, Trans} from 'gatsby-plugin-react-i18next';
+import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import PropTypes from "prop-types";
 import LanguageSwitcher from './locales/language-switcher';
 import digilockLogo from '../images/shared/digilock.svg'
@@ -7,9 +7,31 @@ import {graphql} from "gatsby";
 import CustomLocalizedLink from '../components/locales/custom-localized-link'
 
 const Header = () => {
+  const {t} = useTranslation();
+  let dropdowns = document.getElementsByClassName('dropdown');
+
+  function clearDropDowns() {
+    for(let i=0; i < dropdowns.length; i++) {
+      dropdowns[i].classList.remove('show');
+    }
+  }
+
+  function handleParentNavClick(e) {
+    //IF MOBILE
+    let intViewportWidth = window.innerWidth;
+    if(intViewportWidth <= 771 && e.target.matches('.has-dropdown')) {
+      clearDropDowns();
+      e.target.nextElementSibling.classList.add('show');
+    } else {
+      clearDropDowns();
+    }
+
+  }
 
   useEffect(() => {
+
     const primaryNavigaton = document.getElementsByClassName('main-nav')[0];
+    primaryNavigaton.addEventListener('click', handleParentNavClick);
     const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
 
     navToggle.addEventListener('click', () => {
@@ -24,15 +46,6 @@ const Header = () => {
 
     })
   }, []);
-
-  function handleParentNavClick(e) {
-    //IF MOBILE
-    let intViewportWidth = window.innerWidth;
-    if(intViewportWidth <= 771) {
-      e.target.nextElementSibling.classList.toggle('show');
-      console.log(1);
-    }
-  }
 
   return (
       <header className={'main-header'}>
@@ -65,13 +78,8 @@ const Header = () => {
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
                 <li>
-
-                    <Link to="#" onClick={handleParentNavClick}>
-                      <Trans>industries</Trans>
-                    </Link>
-
-                  <div className={'dropdown'}>
-                    <ul className={'unstyled-list flex'}>
+                    <CustomLocalizedLink goto="#" cls={'has-dropdown'} label={t('industries')} />
+                    <ul className={'dropdown unstyled-list'}>
                       <li>
                         <Link to="#">
                           <Trans>workspace</Trans>
@@ -113,12 +121,29 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>locks</Trans>
-                  </Link>
+
+                  <CustomLocalizedLink goto={'#'} cls={'has-dropdown'} label={t('locks')} />
+
+                  <ul className="dropdown unstyled-list">
+                    <li>
+                      <Link to={'#'}>
+                          Foo
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={'#'}>
+                        Foo
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={'#'}>
+                        Foo
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link to="#">
