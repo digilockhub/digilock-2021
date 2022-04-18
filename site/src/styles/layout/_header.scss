@@ -9,7 +9,7 @@
 
   a {
     color: $color-white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
     &:hover, &:focus {
       color: $color-numeris-blue;
@@ -22,11 +22,14 @@
     background-color: $color-browser-chrome;
     text-transform: uppercase;
 
-
     .container {
       width: 100%;
       max-width: none;
       justify-content: flex-end;
+    }
+
+    .menu-contact {
+      gap: 0 !important;
     }
   }
 
@@ -75,7 +78,7 @@
 
     .contact {
       .container {
-        width: 90%;
+        //width: 90%;
         max-width: var(--container-width);
         justify-content: flex-end;
       }
@@ -110,7 +113,6 @@
           margin: 0;
         }
       }
-
 
     }
 

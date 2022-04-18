@@ -13,7 +13,7 @@ module.exports = {
     path: 'en',
     locale: 'English',
     default: true,
-    native: ''
+    native: 'English'
   },
   fr: {
     path: 'fr',

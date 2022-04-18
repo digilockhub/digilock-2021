@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
     if(localesArr[ind].locale === 'English') {
       return localesArr[ind].locale;
     } else {
-      return localesArr[ind].locale + ' | '+localesArr[ind].native;
+      return localesArr[ind].locale;
     }
   }
 
