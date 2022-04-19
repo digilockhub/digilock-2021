@@ -1,0 +1,27 @@
+.copy-container {
+
+  &:first-of-type {
+    margin-bottom: 2rem;
+  }
+  &.right {
+    @include md() {
+      text-align: right;
+    }
+  }
+  &.left {
+    @include md() {
+      text-align: left;
+    }
+  }
+}
+
+.delimeter {
+  display: none;
+  width: 1px;
+  background: $color-numeris-blue;
+  margin-top: .8rem;
+
+  @include md() {
+    display: block;
+  }
+}

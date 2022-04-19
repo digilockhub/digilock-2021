@@ -4,6 +4,7 @@
 
 :root {
   --container-width: 1040px;
+  --container-width-copy: 900px;
   --nav-gap: 1.8rem;
   --sub-nav-gap: 1rem;
   --header-contact-height: 41px;
@@ -27,15 +28,41 @@ body {
   text-align: center;
 }
 
-section, footer {
+section {
   padding-top: 4em;
-  &:first-of-type {
-    padding-top: 3em;
+  padding-bottom: 4em;
+
+  &:last-of-type {
   }
+  &:first-of-type {
+    margin-top: 91px;
+    @include md() {
+      margin-top: 161px;
+    }
+  }
+}
+
+.section-delimeter {
+  height: 1px;
+  background: $color-browser-chrome;
+}
+
+footer {
+  padding-top: 4em;
   &:last-of-type {
     padding-bottom: 4em;
   }
 }
+
+
+//@include outline(gold);
+//&:first-of-type {
+//  margin-top: var(--content-mobile-top);
+//  @include md() {
+//    margin-top: var(--content-mobile-desktop);
+//  }
+//}
+
 
 img {
   max-width: 100%;
@@ -43,7 +70,6 @@ img {
 }
 
 .container {
-
   width: 90%;
   max-width: var(--container-width);
   margin: 0 auto;
@@ -53,7 +79,7 @@ img {
 
 .lg-screen {
   display: none;
-  @media(min-width: 725px) {
+  @media(min-width: $screen-md-min) {
     display: block;
   }
 }

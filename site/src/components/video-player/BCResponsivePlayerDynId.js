@@ -56,7 +56,7 @@ class BCResponsivePlayerDynId extends Component {
   render() {
     return (
         <div className={'fw-video-holder'}>
-          <div className="video-overlay" dangerouslySetInnerHTML={{__html: this.props.translation}} />
+            <div className="video-overlay" dangerouslySetInnerHTML={{__html: this.props.translation}} />
           <div className={'learn-more-video'} id={this.props.dynId}/>
         </div>
     )

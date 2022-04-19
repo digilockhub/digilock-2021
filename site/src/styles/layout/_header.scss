@@ -75,7 +75,9 @@
     display: none;
   }
   @media (max-width: $screen-md-min) {
-
+    .main {
+      height: 50px;
+    }
     .contact {
       .container {
         //width: 90%;
@@ -129,7 +131,7 @@
       border: 0;
       width: 1.6rem;
       aspect-ratio: 1;
-      top: 3rem;
+      top: 1rem;
       right: 2rem;
       z-index: 9999;
     }

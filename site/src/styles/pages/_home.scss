@@ -1,6 +1,7 @@
 .home {
 
   .hero {
+    padding-top: 0; //overide padding for video component
     min-height: 210px;
     @include md() {
       min-height: 455px;
@@ -11,23 +12,68 @@
     @include xl() {
       min-height: 675px
     }
+
+    div {
+      text-align: left;
+    }
+    p {
+      color: $color-white;
+    }
+
+    .fw-video-holder {
+      position: relative;
+      .video-overlay {
+        position: absolute;
+
+        color: $color-white;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        line-height: 1em;
+        white-space: nowrap;
+        @include md() {
+          font-size: 4em;
+          left: 38%;
+          top: 50%;
+        }
+
+        @include xl() {
+          width: 590px;
+        }
+
+        p {
+          white-space: normal;
+          font-family: "AvenirRegular", sans-serif;
+          margin-top: 1rem;
+          font-size: 1rem;
+          line-height: 1.938rem;
+          @include md() {
+            font-size: 1.3rem;
+            //line-height: 1.6rem;
+          }
+        }
+      }
+    }
+
   }
 
-  .fw-video-holder {
-    position: relative;
+
+
+  .lock-solutions {
+   @include md() {
+     .container {
+       width: var(--container-width-copy);
+     }
+   }
   }
 
-  .video-overlay {
-    position: absolute;
-    color: $color-white;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    line-height: 1em;
-    @include md() {
-      font-size: 4em;
+  .clients {
+    .grid {
+      .btn-industry {
+        //flex-grow: 2;
+      }
     }
   }
 
