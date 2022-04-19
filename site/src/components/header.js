@@ -8,8 +8,10 @@ import CustomLocalizedLink from '../components/locales/custom-localized-link'
 
 const Header = () => {
   const {t} = useTranslation();
-  let dropdowns = document.getElementsByClassName('dropdown');
-
+  const isBrowser = typeof window !== "undefined";
+  if(isBrowser) { // check if browser or node
+    let dropdowns = document.getElementsByClassName('dropdown');
+  }
   function clearDropDowns() {
     for(let i=0; i < dropdowns.length; i++) {
       dropdowns[i].classList.remove('show');
