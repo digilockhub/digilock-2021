@@ -5,6 +5,7 @@
 :root {
   --container-width: 1040px;
   --container-width-copy: 900px;
+  --section-gutter: 4rem;
   --nav-gap: 1.8rem;
   --sub-nav-gap: 1rem;
   --header-contact-height: 41px;
@@ -29,13 +30,13 @@ body {
 }
 
 section {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-bottom: var(--section-gutter);
   &:last-of-type {
   }
+
   &:first-of-type {
-    padding-bottom: 0;
     margin-top: 91px;
+    padding-top: 0;
     @include md() {
       margin-top: 161px;
     }
@@ -45,23 +46,15 @@ section {
 .section-delimeter {
   height: 1px;
   background: $color-browser-chrome;
+  margin-bottom: var(--section-gutter) !important;
 }
 
 footer {
-  padding-top: 4em;
+  padding-top: var(--section-gutter);
   &:last-of-type {
-    padding-bottom: 4em;
+    padding-bottom: var(--section-gutter);
   }
 }
-
-
-//@include outline(gold);
-//&:first-of-type {
-//  margin-top: var(--content-mobile-top);
-//  @include md() {
-//    margin-top: var(--content-mobile-desktop);
-//  }
-//}
 
 
 img {

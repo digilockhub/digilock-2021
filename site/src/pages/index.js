@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import {graphql} from 'gatsby';
 import BCResponsivePlayerDynId from '../components/video-player/BCResponsivePlayerDynId'
+import BCResponsivePlayer from '../components/video-player/BCResponsivePlayer'
 import Modal from '../components/modals/modal'
 
 import indWorkspace from '../images/home/industries/workspace.jpg'
@@ -125,6 +126,25 @@ const IndexPage = () => {
                 </Link>
 
               </div>
+            </div>
+          </section>
+          <section className="smart">
+            <div className="container">
+              <h1><Trans>The next Generation gets Smart</Trans></h1>
+              <p><Trans>
+                Combining our most technologically advanced locks with proprietary network software, Digilock Smart Locks   are changing the game through anytime, anywhere remote management.
+              </Trans></p>
+              <BCResponsivePlayer
+                  vid={'6216703423001'}
+                  dynId={'DigilinkVideo'}
+              />
+            </div>
+          </section>
+          <section className="see-locks">
+            <div className="container">
+              <a href="" className="btn btn--orange">
+                <Trans>see_locks</Trans>
+              </a>
             </div>
           </section>
 
