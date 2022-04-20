@@ -49,3 +49,54 @@
   }
 
 }
+
+.btn-industry {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 210px;
+  width: 320px;
+  &.workspace, &.education, &.health-fitness,
+  &.healthcare, &.retail, &.hospitality,
+  &.pro-sports, &.manufacturing, &.government {
+    background-repeat: no-repeat;
+  }
+  &.workspace {
+    background-image: url("../images/home/industries/workspace.jpg");
+  }
+  &.education {
+    background-image: url("../images/home/industries/education.jpg");
+  }
+  &.health-fitness {
+    background-image: url("../images/home/industries/health-fitness.jpg");
+  }
+  &.healthcare {
+    background-image: url("../images/home/industries/healthcare.jpg");
+  }
+  &.retail {
+    background-image: url("../images/home/industries/retail.jpg");
+  }
+  &.hospitality {
+    background-image: url("../images/home/industries/hospitality.jpg");
+  }
+  &.pro-sports {
+    background-image: url("../images/home/industries/sports.jpg");
+  }
+  &.manufacturing {
+    background-image: url("../images/home/industries/manufacturing.jpg");
+  }
+  &.government {
+    background-image: url("../images/home/industries/government.jpg");
+  }
+
+  span {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: "AvenirDemi", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+}
