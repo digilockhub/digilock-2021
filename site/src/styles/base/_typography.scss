@@ -1,5 +1,10 @@
 h1 {
   margin: 0 0 1.2em;
+  @include md() {
+    br {
+      display: none;
+    }
+  }
 }
 
 h2, h3, h4, h5, h6, p {
@@ -17,7 +22,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 2.188rem;
-  line-height: 2rem;
+  line-height: 2.4rem;
   color: $color-black;
 }
 

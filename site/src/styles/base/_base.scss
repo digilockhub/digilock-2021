@@ -31,10 +31,10 @@ body {
 section {
   padding-top: 4em;
   padding-bottom: 4em;
-
   &:last-of-type {
   }
   &:first-of-type {
+    padding-bottom: 0;
     margin-top: 91px;
     @include md() {
       margin-top: 161px;

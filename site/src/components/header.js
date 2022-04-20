@@ -9,8 +9,12 @@ import CustomLocalizedLink from '../components/locales/custom-localized-link'
 const Header = () => {
   const {t} = useTranslation();
   const isBrowser = typeof window !== "undefined";
-  if(isBrowser) { // check if browser or node
-    let dropdowns = document.getElementsByClassName('dropdown');
+  let dropdowns = null;
+  //TODO
+  if(isBrowser) { // ACKWARD!! check if browser or node
+    dropdowns = document.getElementsByClassName('dropdown');
+  } else {
+    dropdowns = document.getElementsByClassName('dropdown');
   }
   function clearDropDowns() {
     for(let i=0; i < dropdowns.length; i++) {
