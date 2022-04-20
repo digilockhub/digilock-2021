@@ -9,14 +9,10 @@ import CustomLocalizedLink from '../components/locales/custom-localized-link'
 const Header = () => {
   const {t} = useTranslation();
   const isBrowser = typeof window !== "undefined";
-  let dropdowns = null;
-  //TODO
-  if(isBrowser) { // ACKWARD!! check if browser or node
-    dropdowns = document.getElementsByClassName('dropdown');
-  } else {
-    dropdowns = document.getElementsByClassName('dropdown');
-  }
+
+
   function clearDropDowns() {
+    let dropdowns = document.getElementsByClassName('dropdown'); // need here because win/doc not available for build
     for(let i=0; i < dropdowns.length; i++) {
       dropdowns[i].classList.remove('show');
     }
