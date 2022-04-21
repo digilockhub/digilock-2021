@@ -54,7 +54,17 @@ footer {
 
   .locations, .customer-care {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    row-gap: 2rem;
+
+
+    @include rwd(819) {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      row-gap: 2rem;
+    }
+
+
     @include md() {
       grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     }
@@ -63,6 +73,8 @@ footer {
   .location, .customer-care >div {
     text-align: left;
     padding: 0;
+    //@include outline(red);
+    min-width: 197px;
   }
 
   .unstyled-list {
