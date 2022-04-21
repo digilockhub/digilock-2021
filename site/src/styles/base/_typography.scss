@@ -34,6 +34,24 @@ h2 {
   color: $color-letterhead;
 }
 
+h3 {
+  font-family: AvenirDemi, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: $color-white;
+}
+
+h4 {
+  font-family: AvenirMedium, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+}
+
 p {
   font-family: AvenirRegular, sans-serif;
   font-style: normal;

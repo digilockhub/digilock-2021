@@ -2,9 +2,89 @@ footer {
   background: $color-steadfast-blue;
   color: $color-white;
 
+  .questions, .location {
+    padding-bottom: var(--section-gutter);
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include md() {
+      flex-direction: row;
+      justify-content: space-evenly;
+      .btn {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
   p {
     color: $color-white;
   }
 
+
+  a {
+    text-decoration: none;
+    color: $color-numeris-blue;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  a[href^="mailto:"] {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .locations, .customer-care {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    @include md() {
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    }
+  }
+
+  .location, .customer-care >div {
+    text-align: left;
+    padding: 0;
+  }
+
+  .unstyled-list {
+    font-size: .9rem;
+    span {
+      color: $color-numeris-blue;
+      font-weight: bolder;
+    }
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    a {
+      display: inline-block;
+      &:first-of-type {
+        margin-right: 11px;
+      }
+    }
+  }
+
+  .section-delimeter {
+    margin-top: var(--section-gutter);
+  }
 
 }

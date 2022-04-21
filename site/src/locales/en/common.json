@@ -16,7 +16,6 @@
   "manufacturing": "Manufacturing",
   "health_fitness": "Health/Fitness",
   "hospitality": "Hospitality",
-  "have_questions": "Have questions?",
   "lets_chat": "Let's Chat",
   "contact_us": "Contact Us",
   "faq": "FAQ",
@@ -38,6 +37,10 @@
   "follow_us": "Follow U.S.",
   "follow_europe": "Follow Europe",
   "follow_asia": "Follow Asia",
-  "_buttons": "button copy",
-  "see_locks": "see locks"
+  "have_questions": "Have Questions?",
+  "_BUTTONS": "button copy",
+  "see_locks": "see locks",
+  "button_chat": "let's chat",
+  "button_faq": "faq",
+  "button_contact": "contact us"
 }

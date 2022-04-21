@@ -8,13 +8,15 @@
   font-family: 'AvenirDemi', sans-serif;
   font-weight: 600;
   letter-spacing: 0.1em;
+  min-width: 220px;
+  max-height: 54px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
 
   @include md() {
     display: inline-block;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: .6em;
   }
 
   &.btn--blue {
