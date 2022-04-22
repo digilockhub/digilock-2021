@@ -166,9 +166,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <p>
-            <sup>&copy;</sup> {new Date().getFullYear()} Footer
-          </p>
+
+          <div className={'copyright container'}>
+            &copy; {new Date().getFullYear()} Digilock. All rights reserved.
+          </div>
         </div>
       </footer>
 
