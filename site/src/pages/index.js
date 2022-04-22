@@ -1,14 +1,12 @@
 import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import {StaticImage} from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import {graphql} from 'gatsby';
 import BCResponsivePlayerDynId from '../components/video-player/BCResponsivePlayerDynId'
 import BCResponsivePlayer from '../components/video-player/BCResponsivePlayer'
+import SlickSlider from '../components/carousel/SlickSlider';
 import Modal from '../components/modals/modal'
-
-import indWorkspace from '../images/home/industries/workspace.jpg'
 
 
 import clientLogos from '../images/home/client-logos/logos_group.png'
@@ -64,16 +62,18 @@ const IndexPage = () => {
             </div>
           </section>
           <div className="section-delimeter container"/>
+
           <section className="clients">
             <div className="container">
               <h2>
                 Known and Trusted
               </h2>
-              <div className="grid">
-                <img className={'col'} src={clientLogos} alt=""/>
+              <div>
+                <SlickSlider />
               </div>
             </div>
           </section>
+
           <div className="section-delimeter container"/>
           <section className="industries">
             <div className="container">
