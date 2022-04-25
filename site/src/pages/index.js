@@ -126,13 +126,15 @@ const IndexPage = () => {
           </section>
           <section className="smart">
             <div className="container">
-              <h1><Trans>The next Generation gets Smart</Trans></h1>
+              <h1><Trans>generation_smart</Trans></h1>
               <p><Trans>
-                Combining our most technologically advanced locks with proprietary network software, Digilock Smart Locks   are changing the game through anytime, anywhere remote management.
+                generation_smart_copy
               </Trans></p>
               <BCResponsivePlayer
                   vid={'6216703423001'}
+                  cls={'digilink-video'}
                   dynId={'DigilinkVideo'}
+                  translation={t('intro_digilink')}
               />
             </div>
           </section>
