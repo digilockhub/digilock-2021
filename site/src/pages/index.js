@@ -24,7 +24,6 @@ const IndexPage = () => {
         <Seo title={t('Home')}/>
         <div className="home">
           <section className="hero">
-
             <BCResponsivePlayerDynId
                 vid={'6302604050001'}
                 dynId={'HeroVideo'}
@@ -34,8 +33,6 @@ const IndexPage = () => {
           </section>
           <section className={'lock-solutions'}>
             <div className="container">
-
-
               <h1>
                 <Trans>section_one_headline</Trans>
               </h1>
@@ -58,7 +55,6 @@ const IndexPage = () => {
                   </p>
                 </div>
               </div>
-
             </div>
           </section>
           <div className="section-delimeter container"/>

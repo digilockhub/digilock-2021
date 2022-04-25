@@ -24,23 +24,27 @@
       position: relative;
       .video-overlay {
         position: absolute;
-
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         color: $color-white;
         z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2em;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 3em;
         line-height: 1em;
         white-space: nowrap;
+        >div {
+          width: 50%;
+        }
         @include md() {
           font-size: 4em;
-          left: 38%;
-          top: 50%;
         }
 
         @include xl() {
-          width: 590px;
+          //width: 590px;
         }
 
         p {
