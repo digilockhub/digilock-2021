@@ -37,7 +37,7 @@ section {
   &:first-of-type {
     margin-top: 91px;
     padding-top: 0;
-    @include md() {
+    @include navBreak() {
       margin-top: 161px;
     }
   }
