@@ -58,14 +58,12 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     row-gap: 4rem;
 
-
-    @include rwd(819) {
+    @include md() {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
       row-gap: 2rem;
     }
-
-
-    @include md() {
+    
+    @include lg() {
       grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     }
   }

@@ -72,7 +72,7 @@ img {
 
 .lg-screen {
   display: none;
-  @media(min-width: $screen-md-min) {
+  @media(min-width: $screen-md-break-nav) {
     display: block;
   }
 }

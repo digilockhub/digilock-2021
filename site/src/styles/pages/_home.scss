@@ -33,29 +33,36 @@
         left: 0;
         right: 0;
         bottom: 0;
-        font-size: 3em;
         line-height: 1em;
         white-space: nowrap;
+        font-size: 2em;
+
         >div {
           width: 50%;
         }
+
         @include md() {
           font-size: 4em;
+          >div {
+            width: 80%;
+          }
         }
 
-        @include xl() {
-          //width: 590px;
+        @include lg() {
+          >div {
+            width: 70%;
+          }
         }
 
         p {
           white-space: normal;
           font-family: "AvenirRegular", sans-serif;
           margin-top: 1rem;
-          font-size: 1rem;
-          line-height: 1.938rem;
+          font-size: .8rem;
+          line-height: 1.2rem;
           @include md() {
             font-size: 1.3rem;
-            //line-height: 1.6rem;
+            line-height: 1.9rem;
           }
         }
       }
