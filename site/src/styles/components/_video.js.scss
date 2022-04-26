@@ -24,12 +24,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -210%);
+    transform: translate(-50%, -215%);
     @include md() {
       transform: translate(-50%, -315%);
     }
     @include lg() {
-      transform: translate(-50%, -435%);
+      transform: translate(-50%, -460%);
+    }
+    @include xl() {
+      transform: translate(-50%, -470%);
     }
     z-index: 1;
     h2 {

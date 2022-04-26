@@ -124,6 +124,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
+          <div className="section-delimeter container"/>
           <section className="smart">
             <div className="container">
               <h1><Trans>generation_smart</Trans></h1>

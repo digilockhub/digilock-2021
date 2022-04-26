@@ -18,13 +18,13 @@ const Footer = () => {
             <Trans>have_questions</Trans>
           </h3>
           <div className="questions">
-            <a href="#" className="btn btn--trans white">
+            <a href="#" className="btn btn--trans white lower-case">
               <Trans>button_chat</Trans>
             </a>
-            <a href="#" className="btn btn--trans white">
+            <a href="#" className="btn btn--trans white lower-case">
               <Trans>button_contact</Trans>
             </a>
-            <a href="#" className="btn btn--trans white">
+            <a href="#" className="btn btn--trans white lower-case">
               <Trans>button_faq</Trans>
             </a>
           </div>
