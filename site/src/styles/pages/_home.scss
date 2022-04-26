@@ -91,17 +91,33 @@
       flex-wrap: wrap;
       gap: 3rem;
       justify-content: center;
+
       @include rwd(1102) {
         gap: 1rem;
 
         justify-content: space-between;
       }
+
       a {
         color: $color-black;
         &:hover, &:focus {
           color: $color-numeris-blue;
         }
       }
+
+      //hide government from md to lg
+      @include md() {
+        a:last-of-type {
+          display: none;
+        }
+      }
+
+      @include rwd(1102) {
+        a:last-of-type {
+          display: block;
+        }
+      }
+
     }
   }
 
