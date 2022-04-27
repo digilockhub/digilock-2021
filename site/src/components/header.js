@@ -9,8 +9,7 @@ import CustomLocalizedLink from '../components/locales/custom-localized-link'
 const Header = () => {
   const {t} = useTranslation();
   const isBrowser = typeof window !== "undefined";
-
-
+  
   function clearDropDowns() {
     let dropdowns = document.getElementsByClassName('dropdown'); // need here because win/doc not available for build
     for(let i=0; i < dropdowns.length; i++) {
@@ -27,7 +26,6 @@ const Header = () => {
     } else {
       clearDropDowns();
     }
-
   }
 
   useEffect(() => {
