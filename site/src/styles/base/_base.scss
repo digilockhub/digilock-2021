@@ -47,6 +47,9 @@ section {
   height: 1px;
   background: $color-browser-chrome;
   margin-bottom: var(--section-gutter) !important;
+  &.bump-up {
+    margin-top: -1.5rem;
+  }
 }
 
 footer {

@@ -70,7 +70,7 @@ const IndexPage = () => {
             </div>
           </section>
 
-          <div className="section-delimeter container"/>
+          <div className="section-delimeter bump-up container"/>
           <section className="industries">
             <div className="container">
               <h1>Solutions tailored to your industry</h1>
