@@ -1,5 +1,4 @@
 .main-header {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -88,6 +87,7 @@
 
     .main-nav {
       position: fixed;
+      top: var(--header-nav-mobile-height) !important;
       z-index: 1000;
       inset: 0 0 0 30%;
       background-color: $color-steadfast-blue;

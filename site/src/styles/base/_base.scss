@@ -11,6 +11,8 @@
   --header-contact-height: 41px;
   //Nav
   --header-nav-font-size: 1rem;
+  --header-nav-mobile-height: 91px;
+  --header-nav-desktop-height: 161px;
 }
 
 /* Document
@@ -35,10 +37,10 @@ section {
   }
 
   &:first-of-type {
-    margin-top: 91px;
+    margin-top: var(--header-nav-mobile-height);
     padding-top: 0;
     @include navBreak() {
-      margin-top: 161px;
+      margin-top: var(--header-nav-desktop-height);
     }
   }
 }
