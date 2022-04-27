@@ -33,17 +33,21 @@ const Header = () => {
   useEffect(() => {
 
     const primaryNavigaton = document.getElementsByClassName('main-nav')[0];
-    primaryNavigaton.addEventListener('click', handleParentNavClick);
     const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
+    const navOverlay = document.getElementsByClassName('nav-overlay')[0];
+    primaryNavigaton.addEventListener('click', handleParentNavClick);
+
 
     navToggle.addEventListener('click', () => {
       const visibility = primaryNavigaton.getAttribute('data-visible');
       if (visibility === 'false') {
         primaryNavigaton.setAttribute('data-visible', 'true');
-        navToggle.setAttribute('aria-expanded', 'true')
+        navToggle.setAttribute('aria-expanded', 'true');
+        navOverlay.classList.add('show');
       } else {
         primaryNavigaton.setAttribute('data-visible', 'false');
-        navToggle.setAttribute('aria-expanded', 'false')
+        navToggle.setAttribute('aria-expanded', 'false');
+        navOverlay.classList.remove('show');
       }
 
     })
