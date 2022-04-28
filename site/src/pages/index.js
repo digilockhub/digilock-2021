@@ -74,48 +74,49 @@ const IndexPage = () => {
           <section className="industries">
             <div className="container">
               <h1>Solutions tailored to your industry</h1>
+
               <div className="industries-grid">
-                <Link to={'#'}>
+                <Link to={'/industries/workspace/'}>
                   <div className="col btn-industry workspace">
                     <span><Trans>workspace</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/education/'}>
                   <div className="col btn-industry education">
                     <span><Trans>education</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/health-fitness/'}>
                   <div className="col btn-industry health-fitness">
                     <span><Trans>health_fitness</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/healthcare/'}>
                   <div className="col btn-industry healthcare">
                     <span><Trans>healthcare</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/retail/'}>
                   <div className="col btn-industry retail">
                     <span><Trans>retail</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/hospitality/'}>
                   <div className="col btn-industry hospitality">
                     <span><Trans>hospitality</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/pro-sports/'}>
                   <div className="col btn-industry pro-sports">
                     <span><Trans>pro_sports</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/manufacturing/'}>
                   <div className="col btn-industry manufacturing">
                     <span><Trans>manufacturing</Trans></span>
                   </div>
                 </Link>
-                <Link to={'#'}>
+                <Link to={'/industries/government/'}>
                   <div className="col btn-industry government">
                     <span><Trans>government</Trans></span>
                   </div>

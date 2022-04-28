@@ -104,17 +104,17 @@ const Footer = () => {
               <h4><Trans>customer_care</Trans></h4>
               <ul className={'unstyled-list'}>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/find-dealers/'}>
                     <Trans>find_dealers</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/support/'}>
                     <Trans>support</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/contact/'}>
                     <Trans>contact</Trans>
                   </Link>
                 </li>
@@ -124,32 +124,32 @@ const Footer = () => {
               <h4>Digilock</h4>
               <ul className={'unstyled-list'}>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/careers/'}>
                     <Trans>careers</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/about/'}>
                     <Trans>about</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/mission/'}>
                     <Trans>mission</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/blog/'}>
                     <Trans>blog</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/privacy-policy/'}>
                     <Trans>privacy_policy</Trans>
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/privacy-request-form/'}>
                     <Trans>privacy_request_form</Trans>
                   </Link>
                 </li>
@@ -159,7 +159,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
+                  <Link to={'/patents/'}>
                     <Trans>patents</Trans>
                   </Link>
                 </li>

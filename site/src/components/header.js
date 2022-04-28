@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import CustomLocalizedLink from '../components/locales/custom-localized-link';
-import { globalHistory } from "@reach/router";
-
+import {globalHistory} from "@reach/router";
 
 
 import PropTypes from "prop-types";
@@ -21,7 +20,7 @@ const Header = () => {
 
   function clearDropDowns() {
     let dropdowns = document.getElementsByClassName('dropdown'); // need here because win/doc not available for build
-    for(let i=0; i < dropdowns.length; i++) {
+    for (let i = 0; i < dropdowns.length; i++) {
       dropdowns[i].classList.remove('show');
     }
   }
@@ -29,7 +28,7 @@ const Header = () => {
   function handleParentNavClick(e) {
     //IF MOBILE
     let intViewportWidth = window.innerWidth;
-    if(intViewportWidth <= 771 && e.target.matches('.has-dropdown')) {
+    if (intViewportWidth <= 771 && e.target.matches('.has-dropdown')) {
       clearDropDowns();
       e.target.nextElementSibling.classList.add('show');
     } else {
@@ -69,10 +68,10 @@ const Header = () => {
                 <LanguageSwitcher/>
               </li>
               <li>
-                <CustomLocalizedLink goto={'/page-2'} cls={'btn btn--contact'} label={'Contact'} />
-                {/*<Link to="/contact" className={'btn--contact'}>*/}
-                {/*  <Trans>contact</Trans>*/}
-                {/*</Link>*/}
+                <CustomLocalizedLink
+                    goto={'/contact/'}
+                    cls={checkSiteLocaton('/contact/') ? 'btn btn--contact selected' : 'btn btn--contact'}
+                    label={'Contact'}/>
               </li>
             </ul>
           </div>
@@ -93,64 +92,70 @@ const Header = () => {
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
                 <li>
-                    <CustomLocalizedLink
-                        goto={'/industries/'}
-                        cls={checkSiteLocaton('/industries/') ? 'selected has-dropdown' : 'has-dropdown'}
-                        label={t('industries')} />
-                    <ul className={'dropdown unstyled-list'}>
-                      <li>
-                        <CustomLocalizedLink
-                            goto="/industries/workspace/"
-                            cls={checkSiteLocaton('/industries/workspace/') ? 'selected' : ''}
-                            label={t('workspace')} />
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>healthcare</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>pro_sports</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>education</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>retail</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>manufacturing</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>health_fitness</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <Trans>hospitality</Trans>
-                        </Link>
-                      </li>
-                    </ul>
-
+                  <CustomLocalizedLink
+                      goto={'/industries/'}
+                      cls={checkSiteLocaton('/industries/') ? 'selected has-dropdown' : 'has-dropdown'}
+                      label={t('industries')}/>
+                  <ul className={'dropdown unstyled-list'}>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/workspace/"
+                          cls={checkSiteLocaton('/industries/workspace/') ? 'selected' : ''}
+                          label={t('workspace')}/>
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/healthcare/"
+                          cls={checkSiteLocaton('/industries/healthcare/') ? 'selected' : ''}
+                          label={t('healthcare')}/>
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/pro-sports/"
+                          cls={checkSiteLocaton('/industries/pro-sports/') ? 'selected' : ''}
+                          label={t('pro_sports')}/>
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/education/"
+                          cls={checkSiteLocaton('/industries/education/') ? 'selected' : ''}
+                          label={t('education')} />
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/retail/"
+                          cls={checkSiteLocaton('/industries/retail/') ? 'selected' : ''}
+                          label={t('retail')} />
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/manufacturing/"
+                          cls={checkSiteLocaton('/industries/manufacturing/') ? 'selected' : ''}
+                          label={t('manufacturing')} />
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/health-fitness/"
+                          cls={checkSiteLocaton('/industries/health-fitness/') ? 'selected' : ''}
+                          label={t('health_fitness')} />
+                    </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/industries/hospitality/"
+                          cls={checkSiteLocaton('/industries/hospitality/') ? 'selected' : ''}
+                          label={t('hospitality')} />
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <CustomLocalizedLink
                       goto={'/locks/'}
                       cls={checkSiteLocaton('/locks/') ? 'selected has-dropdown' : 'has-dropdown'}
-                      label={t('locks')} />
+                      label={t('locks')}/>
                   <ul className="dropdown unstyled-list">
                     <li>
                       <Link to={'#'}>
-                          Foo
+                        Foo
                       </Link>
                     </li>
                     <li>
@@ -169,31 +174,31 @@ const Header = () => {
                   <CustomLocalizedLink
                       goto="/specialty-lockers/"
                       cls={checkSiteLocaton('/specialty-lockers/') ? 'selected' : ''}
-                      label={t('specialty_lockers')} />
+                      label={t('specialty_lockers')}/>
                 </li>
                 <li>
                   <CustomLocalizedLink
                       goto="/about/"
                       cls={checkSiteLocaton('/about/') ? 'selected' : ''}
-                      label={t('about')} />
+                      label={t('about')}/>
                 </li>
                 <li>
                   <CustomLocalizedLink
                       goto="/how-to-buy/"
                       cls={checkSiteLocaton('/how-to-buy/') ? 'selected' : ''}
-                      label={t('how_to_buy')} />
+                      label={t('how_to_buy')}/>
                 </li>
                 <li>
                   <CustomLocalizedLink
                       goto="/blog/"
                       cls={checkSiteLocaton('/blog/') ? 'selected' : ''}
-                      label={t('blog')} />
+                      label={t('blog')}/>
                 </li>
                 <li>
                   <CustomLocalizedLink
                       goto="/support/"
                       cls={checkSiteLocaton('/support/') ? 'selected' : ''}
-                      label={t('support')} />
+                      label={t('support')}/>
                 </li>
                 <li>
                   <Link to="#">

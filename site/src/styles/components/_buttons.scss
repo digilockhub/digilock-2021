@@ -64,7 +64,7 @@
     letter-spacing: 0.05rem;
     font-family: AvenirMedium, sans-serif;
     font-weight: 500;
-    &:hover, &:focus {
+    &:hover, &:focus, &.selected {
       color: $color-white;
       background: $color-numeris-blue;
     }
