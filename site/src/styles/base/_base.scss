@@ -31,14 +31,20 @@ body {
   text-align: center;
 }
 
+a{
+  color: $color-numeris-blue;
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
 section {
   padding-bottom: var(--section-gutter);
-  &:last-of-type {
-  }
 
   &:first-of-type {
     margin-top: var(--header-nav-mobile-height);
-    padding-top: 0;
+    padding-top: var(--section-gutter);
     @include navBreak() {
       margin-top: var(--header-nav-desktop-height);
     }

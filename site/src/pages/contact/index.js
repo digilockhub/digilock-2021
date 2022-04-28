@@ -12,10 +12,25 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('About')}/>
-        <div className="about">
+        <Seo title={t('Contact Digilock')}/>
+        <div className="contact">
           <section className="hero">
-            <h1>Contact Placeholder</h1>
+            <div className="container">
+              <h1>
+                <Trans>contact_us</Trans>
+                <p>
+                  <Trans>looking_product_support</Trans>
+                  <Link to={'#'} dangerouslySetInnerHTML={{__html: t('click_here')}} />
+                </p>
+              </h1>
+            </div>
+          </section>
+          <section className="form">
+            <div className="container">
+              <form action="#" className={'sales-contact-form'}>
+                Form
+              </form>
+            </div>
           </section>
         </div>
       </Layout>

@@ -21,14 +21,17 @@ const IndexPage = () => {
   const {t} = useTranslation();
   return (
       <Layout>
-        <Seo title={t('Home')}/>
+        <Seo
+            title={t('Digilock Electronic Locks Secure Organizational Storage')}
+            description={'Keyless locks are electronic digital locks that are often more secure, more convenient, and more effective than traditional mechanical locks. Find out how they work and how to install them.'}
+        />
         <div className="home">
           <section className="hero">
-            {/*<BCResponsivePlayerDynId*/}
-            {/*    vid={'6302604050001'}*/}
-            {/*    dynId={'HeroVideo'}*/}
-            {/*    translation={t('hero_video_caption')}*/}
-            {/*/>*/}
+            <BCResponsivePlayerDynId
+                vid={'6302604050001'}
+                dynId={'HeroVideo'}
+                translation={t('hero_video_caption')}
+            />
 
           </section>
           <section className={'lock-solutions'}>
