@@ -1,15 +1,24 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import CustomLocalizedLink from '../components/locales/custom-localized-link';
+import { globalHistory } from "@reach/router";
+
+
+
 import PropTypes from "prop-types";
 import LanguageSwitcher from './locales/language-switcher';
 import digilockLogo from '../images/shared/digilock.svg'
 import {graphql} from "gatsby";
-import CustomLocalizedLink from '../components/locales/custom-localized-link'
+
 
 const Header = () => {
   const {t} = useTranslation();
-  const isBrowser = typeof window !== "undefined";
-  
+  const [siteLocation, setSiteLocation] = useState('/');
+
+  function checkSiteLocaton(loc) {
+    return siteLocation.indexOf(loc) > -1;
+  }
+
   function clearDropDowns() {
     let dropdowns = document.getElementsByClassName('dropdown'); // need here because win/doc not available for build
     for(let i=0; i < dropdowns.length; i++) {
@@ -29,13 +38,13 @@ const Header = () => {
   }
 
   useEffect(() => {
-
+    setSiteLocation(globalHistory.location.pathname);
     const primaryNavigaton = document.getElementsByClassName('main-nav')[0];
     const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
     const navOverlay = document.getElementsByClassName('nav-overlay')[0];
     primaryNavigaton.addEventListener('click', handleParentNavClick);
 
-
+    //DESKTOP MOBILE TOGGLE
     navToggle.addEventListener('click', () => {
       const visibility = primaryNavigaton.getAttribute('data-visible');
       if (visibility === 'false') {
@@ -72,7 +81,9 @@ const Header = () => {
 
         <div className="main flex">
           <div className="container flex">
-            <img src={digilockLogo} width={'135'} height={'32'} alt="Digilock"/>
+            <Link to={'/'}>
+              <img src={digilockLogo} width={'135'} height={'32'} alt="Digilock"/>
+            </Link>
             <button className={'mobile-nav-toggle'} aria-controls={'mainNav'} aria-expanded={'false'}>
               <span className={'sr-only'}>Menu</span>
             </button>
@@ -82,12 +93,16 @@ const Header = () => {
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
                 <li>
-                    <CustomLocalizedLink goto="#" cls={'has-dropdown'} label={t('industries')} />
+                    <CustomLocalizedLink
+                        goto={'/industries/'}
+                        cls={checkSiteLocaton('/industries/') ? 'selected has-dropdown' : 'has-dropdown'}
+                        label={t('industries')} />
                     <ul className={'dropdown unstyled-list'}>
                       <li>
-                        <Link to="#">
-                          <Trans>workspace</Trans>
-                        </Link>
+                        <CustomLocalizedLink
+                            goto="/industries/workspace/"
+                            cls={checkSiteLocaton('/industries/workspace/') ? 'selected' : ''}
+                            label={t('workspace')} />
                       </li>
                       <li>
                         <Link to="#">
@@ -128,9 +143,10 @@ const Header = () => {
 
                 </li>
                 <li>
-
-                  <CustomLocalizedLink goto={'#'} cls={'has-dropdown'} label={t('locks')} />
-
+                  <CustomLocalizedLink
+                      goto={'/locks/'}
+                      cls={checkSiteLocaton('/locks/') ? 'selected has-dropdown' : 'has-dropdown'}
+                      label={t('locks')} />
                   <ul className="dropdown unstyled-list">
                     <li>
                       <Link to={'#'}>
@@ -150,29 +166,34 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>specialty_lockers</Trans>
-                  </Link>
+                  <CustomLocalizedLink
+                      goto="/specialty-lockers/"
+                      cls={checkSiteLocaton('/specialty-lockers/') ? 'selected' : ''}
+                      label={t('specialty_lockers')} />
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>about</Trans>
-                  </Link>
+                  <CustomLocalizedLink
+                      goto="/about/"
+                      cls={checkSiteLocaton('/about/') ? 'selected' : ''}
+                      label={t('about')} />
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>how_to_buy</Trans>
-                  </Link>
+                  <CustomLocalizedLink
+                      goto="/how-to-buy/"
+                      cls={checkSiteLocaton('/how-to-buy/') ? 'selected' : ''}
+                      label={t('how_to_buy')} />
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>blog</Trans>
-                  </Link>
+                  <CustomLocalizedLink
+                      goto="/blog/"
+                      cls={checkSiteLocaton('/blog/') ? 'selected' : ''}
+                      label={t('blog')} />
                 </li>
                 <li>
-                  <Link to="#">
-                    <Trans>support</Trans>
-                  </Link>
+                  <CustomLocalizedLink
+                      goto="/support/"
+                      cls={checkSiteLocaton('/support/') ? 'selected' : ''}
+                      label={t('support')} />
                 </li>
                 <li>
                   <Link to="#">
