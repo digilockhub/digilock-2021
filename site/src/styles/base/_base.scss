@@ -45,6 +45,9 @@ section {
   &:first-of-type {
     margin-top: var(--header-nav-mobile-height);
     padding-top: var(--section-gutter);
+    &.no-pad {
+      padding-top: 0;
+    }
     @include navBreak() {
       margin-top: var(--header-nav-desktop-height);
     }
@@ -57,6 +60,15 @@ section {
   margin-bottom: var(--section-gutter) !important;
   &.bump-up {
     margin-top: -1.5rem;
+  }
+}
+
+.hero.--hero-image {
+  h1 {
+    position: absolute;
+    font-size: 3.8rem;
+    @include hero-centerer();
+    color: $color-white;
   }
 }
 

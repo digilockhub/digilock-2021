@@ -1,0 +1,74 @@
+.about {
+
+  .hero {
+    position: relative;
+  }
+
+  .reliability, .partnership {
+    @include md() {
+      text-align: left;
+    }
+  }
+
+  h2 {
+    @include md() {
+      text-align: left;
+    }
+  }
+  .core-values {
+
+  }
+
+  .figure-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    &.no-gap {
+
+      @include md() {
+        gap: unset;
+        figure {
+          margin-right: 5px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @include md() {
+      flex-direction: row;
+      align-items: unset;
+      justify-content: center;
+    }
+
+    .figure {
+      width: 70%;
+      @include md() {
+        text-align: left;
+      }
+
+      img {
+        margin-bottom: .5rem;
+      }
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+      //width: 258px;
+    }
+
+    figcaption {
+      display: block;
+      margin-top: 1rem;
+      font-family: "AvenirDemi", sans-serif;
+      font-size: 1.1rem;
+    }
+
+  }
+
+}

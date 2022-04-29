@@ -2,6 +2,10 @@ footer {
   background: $color-steadfast-blue;
   color: $color-white;
 
+  h3 {
+    color: $color-white;
+  }
+
   .questions, .location {
     padding-bottom: var(--section-gutter);
   }

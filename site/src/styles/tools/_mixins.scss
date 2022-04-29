@@ -46,11 +46,26 @@ $screen-xl-min: 1920px;
   }
 }
 
-
-
 //outline
 @mixin outline($color) {
   outline: 1px solid $color;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hero-centerer {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  @include md() {
+    top: 40%;
+  }
+  transform: translate(-50%, -50%);
 }
 
 
