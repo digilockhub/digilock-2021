@@ -64,7 +64,7 @@ section {
 }
 
 .hero.--hero-image {
-  h1 {
+  h1, h6 {
     position: absolute;
     font-size: 3.8rem;
     @include hero-centerer();

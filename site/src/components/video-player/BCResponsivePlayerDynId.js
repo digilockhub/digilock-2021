@@ -40,8 +40,8 @@ class BCResponsivePlayerDynId extends Component {
             });
             bcovePlayer.on('ended', function () {
               // bcovePlayer.removeClass('vjs-has-started');
-              // bcovePlayer.currentTime(0);
-              // bcovePlayer.play();
+              bcovePlayer.currentTime(0);
+              bcovePlayer.play();
             });
             bcovePlayer.on('play', function () {
               // code
