@@ -17,7 +17,7 @@ p:last-child {
   margin: 0;
 }
 
-h1, h6 {
+h1 {
   font-family: AvenirRegular, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -55,6 +55,15 @@ h4 {
   color: $color-white;
   text-transform: uppercase;
   letter-spacing: 0.11em;
+}
+
+h6 {
+  font-family: AvenirRegular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.7rem;
+  color: $color-black;
 }
 
 p {

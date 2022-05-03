@@ -29,10 +29,6 @@
   .what-to-expect {
     background-color: $color-faded-blue;
 
-    .container {
-      padding-top: var(--section-gutter);
-    }
-
     .expect-containers{
       display: flex;
       flex-wrap: nowrap;
@@ -48,4 +44,100 @@
     }
 
   }
+
+  .what-to-expect, .smart-locks {
+    .container {
+      padding-top: var(--section-gutter);
+    }
+  }
+
+  .smart-locks, .electronic-locks {
+
+    gap: var(--nav-gap);
+
+
+    h2.sub {
+      color: $color-numeris-blue;
+    }
+
+    h2.sub, p {
+      text-align: left;
+    }
+
+    .smart-locks-container, .smart-digilink-container {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--nav-gap);
+      padding: var(--section-gutter) 0;
+
+      @include rwd(966) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      img {
+        //@include outline(red);
+      }
+
+      .digilink-lock {
+        display: none;
+        @include rwd(966) {
+          display: flex;
+          margin-left: -50px;
+          max-height: 163px;
+        }
+      }
+
+      .mobile-smart-divider {
+        width: 80%;
+        margin-top: -2rem;
+        @include rwd(966) {
+          display: none;
+
+        }
+        @include lg() {
+          display: none;
+        }
+      }
+    }
+
+    .smart-digilink-container {
+      margin-top: -5rem;
+      @include rwd(966) {
+        display: none;
+      }
+    }
+
+    .smart-lock-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: var(--nav-gap);
+      @include rwd(738) {
+        flex-direction: row;
+
+      }
+      @include rwd(966) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: unset;
+      }
+    }
+
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: var(--nav-gap);
+  }
+
+  .thumbnail {
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+
 }

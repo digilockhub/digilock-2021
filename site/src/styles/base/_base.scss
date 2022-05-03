@@ -66,9 +66,18 @@ section {
 .hero.--hero-image {
   h1, h6 {
     position: absolute;
-    font-size: 3.8rem;
     @include hero-centerer();
     color: $color-white;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  h6 {
+    font-size: 3rem;
+    @include md() {
+      font-size: 3.8rem;
+    }
   }
 }
 
@@ -78,7 +87,6 @@ footer {
     padding-bottom: var(--section-gutter);
   }
 }
-
 
 img {
   max-width: 100%;
@@ -123,3 +131,20 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 0;
 }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.3em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+

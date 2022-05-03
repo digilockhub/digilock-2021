@@ -9,6 +9,19 @@ import iconTech from '../../images/locks/icon-tech.svg';
 import iconInstall from '../../images/locks/icon-install.svg';
 import iconEasy from '../../images/locks/icon-easy.svg';
 
+import smartAspire from '../../images/locks/smart-aspire.png';
+import smartVersa from '../../images/locks/smart-versa.png';
+import smartOrbit from '../../images/locks/smart-orbit.png';
+import smartDigilink from '../../images/locks/smart-digilink.png';
+import mobileSmartDivider from '../../images/locks/mobile-divider.svg';
+import desktopSmartDivider from '../../images/locks/desktop-divider.svg';
+
+import elecAxis from '../../images/locks/elec-axis.png';
+import elecCue from '../../images/locks/elec-cue.png';
+import elecSola from '../../images/locks/elec-sola.png';
+import elecRange from '../../images/locks/elec-range.png';
+
+
 
 
 const IndexPage = () => {
@@ -147,6 +160,106 @@ const IndexPage = () => {
                       </Trans>
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="smart-locks">
+            <div className="container">
+              <h2>
+                <Trans>
+                A Digilock for every purpose
+              </Trans>
+              </h2>
+              <h2 className="sub">
+                <Trans>
+                  Smart Locks
+                </Trans>
+              </h2>
+              <p>
+                <Trans>
+                  Our most technologically advanced electronic locks combine enhanced security with wireless connectivity to allow remote management from anywhere in the world.
+                </Trans>
+              </p>
+              <div className="smart-locks-container">
+
+                <div className="smart-lock-wrap">
+
+                  <div className="thumbnail">
+                    <img src={smartAspire} alt="Aspire smart lock" width={'199'} height={'163'} loading={'lazy'}/>
+                    <p>Aspire<sup>&trade;</sup></p>
+                  </div>
+                  <div className="thumbnail">
+                    <img src={smartVersa} alt="Versa smart lock" width={'199'} height={'163'} loading={'lazy'}/>
+                    <p>Versa<sup>&trade;</sup></p>
+                  </div>
+                  <div className="thumbnail">
+                    <img src={smartOrbit} alt="Orbit smart lock" width={'199'} height={'163'} loading={'lazy'}/>
+                    <p>Orbit<sup>&trade;</sup></p>
+                  </div>
+                </div>
+
+                <img src={mobileSmartDivider} className={'mobile-smart-divider'} alt=""/>
+
+                <div className="digilink-lock">
+                  <img src={desktopSmartDivider} alt=""/>
+                  <div className="thumbnail">
+                    <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
+                    <p>Digilink<sup>&trade;</sup></p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="smart-digilink-container">
+                <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
+              </div>
+            </div>
+
+          </section>
+          <section className="electronic-locks">
+            <div className="container">
+              <h2 className="sub">
+                <Trans>
+                  Electronic Locks
+                </Trans>
+              </h2>
+              <p>
+                <Trans>
+                  A range of keyless solutions that let you match your choice of appearance, interface, and functionality with the needs and budget of your facility.
+                </Trans>
+              </p>
+              <div className="row">
+                <div className="thumbnail">
+                  <img src={smartAspire} alt=""/>
+                  <p>Aspire<sup>&trade;</sup></p>
+                </div>
+                <div className="thumbnail">
+                  <img src={smartVersa} alt=""/>
+                  <p>Versa<sup>&trade;</sup></p>
+                </div>
+                <div className="thumbnail">
+                  <img src={smartOrbit} alt=""/>
+                  <p>Orbit<sup>&trade;</sup></p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="thumbnail">
+                  <img src={elecAxis} alt=""/>
+                  <p>Axis<sup>&trade;</sup></p>
+                </div>
+                <div className="thumbnail">
+                  <img src={elecCue} alt=""/>
+                  <p>Cue<sup>&trade;</sup></p>
+                </div>
+                <div className="thumbnail">
+                  <img src={elecSola} alt=""/>
+                  <p>Sola<sup>&trade;</sup></p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="thumbnail">
+                  <img src={elecRange} alt=""/>
+                  <p>Range<sup>&trade;</sup></p>
                 </div>
               </div>
 
