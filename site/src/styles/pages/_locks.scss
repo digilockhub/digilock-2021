@@ -1,18 +1,51 @@
 .locks {
-
   .hero {
     position: relative;
   }
-
   .solution {
+
     .buttons {
+      margin-top: var(--section-gutter);
       //TODO BUTTONS STRETCH IN MOBILE -- FIX FOR ALL
+
       a {
-        &:last-of-type {
-          margin-left: 2.6rem;
+        &:first-of-type {
+          margin-bottom: 1rem;
+        }
+      }
+      @include rwd(548) {
+        a {
+          &:first-of-type {
+            margin-bottom: 0;
+          }
+          &:last-of-type {
+            margin-left: 2.6rem;
+          }
         }
       }
     }
   }
 
+  .what-to-expect {
+    background-color: $color-faded-blue;
+
+    .container {
+      padding-top: var(--section-gutter);
+    }
+
+    .expect-containers{
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: var(--nav-gap);
+      gap: var(--nav-gap);
+      flex-direction: column;
+      align-items: center;
+
+      @include md() {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+
+  }
 }

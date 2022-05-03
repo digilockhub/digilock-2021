@@ -1,6 +1,6 @@
 .btn {
   color: $color-white;
-  display: block;
+  display: inline-block;
   padding: .75em 2.5em;
   text-transform: uppercase;
   text-decoration: none;
@@ -19,9 +19,6 @@
     text-transform: none;
   }
 
-  @include md() {
-    display: inline-block;
-  }
 
   &.btn--blue {
     background: $color-numeris-blue;

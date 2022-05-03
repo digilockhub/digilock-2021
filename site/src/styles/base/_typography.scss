@@ -26,12 +26,17 @@ h1, h6 {
   color: $color-black;
 }
 
-h2 {
+h2, h2.sub {
   font-family: AvenirDemi, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.75rem;
   color: $color-letterhead;
+}
+
+h2.sub{
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 h3 {
