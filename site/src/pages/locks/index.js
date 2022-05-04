@@ -21,6 +21,10 @@ import elecCue from '../../images/locks/elec-cue.png';
 import elecSola from '../../images/locks/elec-sola.png';
 import elecRange from '../../images/locks/elec-range.png';
 
+import legacyStandard from '../../images/locks/legacy-standard.png';
+import legacyVertical from '../../images/locks/legacy-vertical.png';
+import legacyClassic from '../../images/locks/legacy-classic.png';
+
 
 
 
@@ -230,39 +234,61 @@ const IndexPage = () => {
               </p>
               <div className="row">
                 <div className="thumbnail">
-                  <img src={smartAspire} alt=""/>
+                  <img src={smartAspire} alt="Aspire"/>
                   <p>Aspire<sup>&trade;</sup></p>
                 </div>
                 <div className="thumbnail">
-                  <img src={smartVersa} alt=""/>
+                  <img src={smartVersa} alt="Versa"/>
                   <p>Versa<sup>&trade;</sup></p>
                 </div>
                 <div className="thumbnail">
-                  <img src={smartOrbit} alt=""/>
+                  <img src={smartOrbit} alt="Orbit"/>
                   <p>Orbit<sup>&trade;</sup></p>
                 </div>
               </div>
               <div className="row">
                 <div className="thumbnail">
-                  <img src={elecAxis} alt=""/>
+                  <img src={elecAxis} alt="Axis"/>
                   <p>Axis<sup>&trade;</sup></p>
                 </div>
                 <div className="thumbnail">
-                  <img src={elecCue} alt=""/>
+                  <img src={elecCue} alt="Cue"/>
                   <p>Cue<sup>&trade;</sup></p>
                 </div>
                 <div className="thumbnail">
-                  <img src={elecSola} alt=""/>
+                  <img src={elecSola} alt="Sola"/>
                   <p>Sola<sup>&trade;</sup></p>
                 </div>
               </div>
               <div className="row">
                 <div className="thumbnail">
-                  <img src={elecRange} alt=""/>
+                  <img src={elecRange} alt="Range"/>
                   <p>Range<sup>&trade;</sup></p>
                 </div>
               </div>
-
+            </div>
+          </section>
+          <section className="legacy-locks">
+            <div className="container">
+              <h2 className="sub">
+                <Trans>
+                  Legacy Locks
+                </Trans>
+              </h2>
+              <div className="row">
+                <div className="thumbnail">
+                  <img src={legacyStandard} alt="Legacy Standard"/>
+                  <p>Standard</p>
+                </div>
+                <div className="thumbnail">
+                  <img src={legacyVertical} alt="Legacy Vertical"/>
+                  <p>Vertical</p>
+                </div>
+                <div className="thumbnail">
+                  <img src={legacyClassic} alt="Legacy Classic"/>
+                  <p>Classic</p>
+                </div>
+              </div>
             </div>
           </section>
         </div>

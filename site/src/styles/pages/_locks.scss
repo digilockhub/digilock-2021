@@ -51,7 +51,7 @@
     }
   }
 
-  .smart-locks, .electronic-locks {
+  .smart-locks, .electronic-locks, .legacy-locks {
 
     gap: var(--nav-gap);
 
@@ -130,7 +130,15 @@
 
   .row {
     display: flex;
-    margin-bottom: var(--nav-gap);
+    justify-content: center;
+    gap: var(--nav-gap);
+    padding: var(--section-gutter) 0;
+    @include rwd(966) {
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0;
+      padding: var(--section-gutter) 0;
+    }
   }
 
   .thumbnail {
