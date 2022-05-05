@@ -18,17 +18,13 @@ const IndexPage = () => {
     message: ''
   });
 
+  const isFormValid = formData.email != null && formData.email.trim().length > 0;
+
   const submit = (e) => {
     e.preventDefault();
     alert('submit');
     // props.handleSubmit(post)
   };
-
-  // const handleChange = event => {
-  //   const t = event.target.name;
-  //   const v = event.target.value;
-  //   console.log(t, v);
-  // };
 
   return (
       <Layout>
@@ -431,6 +427,7 @@ const IndexPage = () => {
                 </div>
                 <input
                     type="submit"
+                    disabled={!isFormValid}
                 />
               </form>
 
