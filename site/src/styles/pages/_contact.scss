@@ -15,4 +15,11 @@
     text-align: left;
   }
 
+  .state {
+    display: none;
+    &.show-state {
+      display: flex;
+    }
+  }
+
 }
