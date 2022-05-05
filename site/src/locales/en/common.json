@@ -39,5 +39,17 @@
   "button_chat": "Let's Chat",
   "button_faq": "Faq",
   "button_contact": "Contact Us",
-  "click_here": "click&nbsp;here"
+  "click_here": "click&nbsp;here",
+  "_FORM_FIELDS": "form copy",
+  "optional": "Optional",
+  "first_name": "First Name*",
+  "last_name": "Last Name*",
+  "company_name": "Company Name*",
+  "email": "Email",
+  "phone_number": "Phone Number",
+  "country": "Country",
+  "state": "State",
+  "message": "Message",
+  "please_select": "Please Select"
+
 }
