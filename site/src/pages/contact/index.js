@@ -18,6 +18,7 @@ const IndexPage = () => {
     message: ''
   });
 
+  //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
 
   const submit = (e) => {
