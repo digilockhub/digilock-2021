@@ -27,11 +27,11 @@ const IndexPage = () => {
         />
         <div className="home">
           <section className="hero">
-            <BCResponsivePlayerDynId
-                vid={'6302604050001'}
-                dynId={'HeroVideo'}
-                translation={t('hero_video_caption')}
-            />
+            {/*<BCResponsivePlayerDynId*/}
+            {/*    vid={'6302604050001'}*/}
+            {/*    dynId={'HeroVideo'}*/}
+            {/*    translation={t('hero_video_caption')}*/}
+            {/*/>*/}
 
           </section>
           <section className={'lock-solutions'}>

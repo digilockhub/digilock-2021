@@ -1,25 +1,48 @@
-.sales-form {
-  background-color: rgba(51, 51, 51, 0.1);
+.contact-info {
 
-  .input-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  @include outline(red);
 
-  .first-name, .last-name {
-    //width: 50%;
-  }
+  .container {
+    .info-current .container {
+      padding-top: var(--section-gutter);
+      @include md() {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
 
-  label {
-    text-align: left;
-  }
-
-  .state {
-    display: none;
-    &.show-state {
+    @include navBreak() {
       display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .info-current .container {
+        flex-direction: column;
+      }
+
+      .info-current, .sales-form {
+        .container {
+          width: 100%;
+        }
+      }
+
     }
   }
+
+}
+
+.info-secondary {
+  @include outline(green);
+}
+
+
+
+
+.info-card, .info-live {
+  text-align: left;
+}
+
+.info-card {
+  margin-bottom: var(--section-gutter);
 
 }

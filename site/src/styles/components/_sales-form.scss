@@ -1,0 +1,72 @@
+.sales-contact-form {
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 2rem;
+}
+
+.sales-form {
+  padding: var(--section-gutter) 0 var(--section-gutter-gap) 0;
+  .container {
+    @include md() {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      .row {
+        display: flex;
+        gap: var(--nav-gap);
+        .input-container {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    height: 2.25rem;
+  }
+
+  .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .input-container-submit {
+    display: flex;
+    margin: 1.377rem 0;
+    justify-content: center;
+
+    @include md() {
+      justify-content: flex-end;
+
+    }
+  }
+
+  .country-list {
+    //max-width: 337px;
+    @include rwd(425) {
+      //max-width: unset;
+    }
+  }
+
+  label {
+    text-align: left;
+    font-size: 0.75rem;
+  }
+
+  .input-container .state {
+    display: none;
+    pointer-events: none;
+
+    &.show-state {
+      display: flex;
+      pointer-events: unset;
+    }
+  }
+
+  input[type="submit"]:disabled {
+    background: #dddddd;
+  }
+
+}

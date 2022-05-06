@@ -24,3 +24,8 @@
   position: absolute;
   width: 1px;
 }
+
+.center {
+  display: grid;
+  place-items: center;
+}

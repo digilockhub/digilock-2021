@@ -1,4 +1,4 @@
-.btn {
+.btn, .form-submit {
   color: $color-white;
   display: inline-block;
   padding: .75em 2.5em;
@@ -61,6 +61,7 @@
     letter-spacing: 0.05rem;
     font-family: AvenirMedium, sans-serif;
     font-weight: 500;
+    border: 1px transparent;
     &:hover, &:focus, &.selected {
       color: $color-white;
       background: $color-numeris-blue;
@@ -118,4 +119,19 @@
     font-weight: 600;
   }
 
+}
+
+.form-submit {
+  cursor: pointer;
+  background: $color-numeris-blue;
+  border: none;
+  padding: .75em 1.5em;
+  min-width: 123px;
+  max-height: 54px;
+  font-family: AvenirRegular, sans-serif;
+  font-size: 0.75rem;
+
+  &:hover, &:focus {
+    background: $package-orange;
+  }
 }
