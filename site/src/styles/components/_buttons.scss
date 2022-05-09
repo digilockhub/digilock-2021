@@ -10,6 +10,9 @@
   letter-spacing: 0.1em;
   min-width: 220px;
   max-height: 54px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 0.75rem;
 
   &:hover, &:focus {
     text-decoration: none;

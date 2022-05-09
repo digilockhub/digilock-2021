@@ -1,10 +1,12 @@
+
+$form-font-size: 0.85rem;
+
 .sales-contact-form {
   background-color: rgba(51, 51, 51, 0.1);
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .sales-form {
-  padding: var(--section-gutter) 0 var(--section-gutter-gap) 0;
   .container {
     @include md() {
       display: flex;
@@ -24,12 +26,18 @@
   input[type="email"],
   select {
     height: 2.25rem;
+    color: $color-letterhead;
+  }
+
+  #countryList, #stateList {
+    font-size: $form-font-size;
   }
 
   .input-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: .7rem;
   }
 
   .input-container-submit {
@@ -43,16 +51,9 @@
     }
   }
 
-  .country-list {
-    //max-width: 337px;
-    @include rwd(425) {
-      //max-width: unset;
-    }
-  }
-
   label {
     text-align: left;
-    font-size: 0.75rem;
+    font-size: $form-font-size;
   }
 
   .input-container .state {

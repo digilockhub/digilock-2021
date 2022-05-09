@@ -1,13 +1,28 @@
 .contact-info {
 
-  @include outline(red);
-
   .container {
+
     .info-current .container {
       padding-top: var(--section-gutter);
-      @include md() {
-        display: flex;
-        justify-content: space-evenly;
+    }
+
+    .secondary {
+      display: flex;
+
+      &.desktop {
+        display: none;
+        @include navBreak() {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 2.875rem;
+        }
+      }
+      &.mobile {
+        flex-direction: column;
+        margin-top: 4rem;
+        @include navBreak() {
+          display: none;
+        }
       }
     }
 
@@ -17,6 +32,7 @@
       justify-content: space-between;
 
       .info-current .container {
+        padding-top: 0;
         flex-direction: column;
       }
 
@@ -26,23 +42,46 @@
         }
       }
 
+      .info-current {
+        width: 30%;
+      }
+
+      .sales-form {
+        width: 70%
+      }
+
     }
   }
-
 }
 
-.info-secondary {
-  @include outline(green);
-}
-
-
-
-
-.info-card, .info-live {
+.info-card {
   text-align: left;
+  font-size: 1.063rem;
+
+  .btn {
+    margin: 0 0 0.75em;
+  }
+
+  .live-chat-copy {
+    //@include outline(red);
+    margin-top: 0.95em;
+  }
+
+  &.secondary {
+    flex-direction: column;
+    p {
+      font-size: 0.813rem;
+      line-height: 0.938rem;
+      &.header {
+        font-family: "AvenirDemi", sans-serif;
+      }
+    }
+  }
 }
 
 .info-card {
   margin-bottom: var(--section-gutter);
-
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
