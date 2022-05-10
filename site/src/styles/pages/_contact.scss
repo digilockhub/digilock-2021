@@ -4,6 +4,13 @@
 
     .info-current .container {
       padding-top: var(--section-gutter);
+
+      display: flex;
+      justify-content: center;
+
+      @include md() {
+        display: flex;
+      }
     }
 
     .secondary {
@@ -17,14 +24,35 @@
           margin-top: 2.875rem;
         }
       }
+
+
+
       &.mobile {
         flex-direction: column;
         margin-top: 4rem;
+        .info-card {
+          margin-bottom: var(--nav-gap);
+          //width: fit-content;
+          align-self: center;
+        }
+        @include md() {
+          width: 90%;
+          max-width: var(--container-width);
+          margin: var(--section-gutter) auto 0 auto;
+          flex-direction: row;
+          justify-content: space-between;
+          .info-card {
+            margin-bottom: 0;
+            width: 31%;
+            align-self: unset;
+          }
+        }
         @include navBreak() {
           display: none;
         }
       }
     }
+
 
     @include navBreak() {
       display: flex;
@@ -44,6 +72,9 @@
 
       .info-current {
         width: 30%;
+        .info-card .info-buttons {
+          margin-top: 2rem;
+        }
       }
 
       .sales-form {
@@ -62,26 +93,39 @@
     margin: 0 0 0.75em;
   }
 
+  div:first-of-type {
+    margin-bottom: 0.75rem;
+    @include md() {
+      margin-bottom: 0;
+    }
+  }
+
   .live-chat-copy {
-    //@include outline(red);
-    margin-top: 0.95em;
+    margin-top: 0.50em;
   }
 
   &.secondary {
     flex-direction: column;
+    justify-content: flex-start;
+    min-width: 200px;
     p {
       font-size: 0.813rem;
       line-height: 0.938rem;
       &.header {
         font-family: "AvenirDemi", sans-serif;
+        text-transform: uppercase;
       }
     }
   }
 }
 
 .info-card {
-  margin-bottom: var(--section-gutter);
-  &:last-of-type {
-    margin-bottom: 0;
+  @include md() {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  @include navBreak() {
+    display: block;
   }
 }

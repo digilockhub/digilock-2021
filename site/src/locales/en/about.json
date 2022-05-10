@@ -17,9 +17,8 @@
   "dependability": "Dependability",
   "dependability_copy": "There’s a reason customers have relied on Digilock for decades. We promise the same ironclad protection from the first lock to the millionth.",
   "global_offices": "Global Offices",
-  "digilock_americas": "Digilock Americas<br />California, USA",
-  "digilock_showroom": "Digilock Showroom<br />Chicago, USA",
-  "digilock_europe": "Digilock Europe BV<br />The Netherlands",
-  "digilock_asia": "Digilock Asia<br />Hong Kong"
-
+  "about_digilock_americas": "Digilock Americas<br />California, USA",
+  "about_digilock_showroom": "Digilock Showroom<br />Chicago, USA",
+  "about_digilock_europe": "Digilock Europe BV<br />The Netherlands",
+  "about_digilock_asia": "Digilock Asia<br />Hong Kong"
 }

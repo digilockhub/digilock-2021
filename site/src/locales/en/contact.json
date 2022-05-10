@@ -1,4 +1,21 @@
 {
-  "looking_product_support": "If you’re looking for Product support, "
-
+  "looking_product_support": "If you’re looking for Product support, ",
+  "digilock_americas": "Digilock Americas",
+  "digilock_americas_address": "9 Willowbrook Court<br>Petaluma, CA 94954<br>United States",
+  "digilock_showroom": "Digilock Showroom",
+  "digilock_showroom_address": "TheMart <br>222 Merchandise Mart Plaza <br>Suite 1098 <br>Chicago, IL 60654",
+  "digilock_europe": "Digilock Europe BV",
+  "digilock_europe_address": "Schillingweg 22 <br>2153 PL Nieuw-Vennep <br>The Netherlands",
+  "digilock_asia": "Digilock Asia",
+  "digilock_asia_address": "Flat B, 27th Floor Grandion Plaza <br>No. 932 Cheung Sha Wan Road <br>Hong Kong",
+  "email_sales_us": "Email Sales/US",
+  "contact_sales": "Contact Sales/US",
+  "contact_sales_asia": "Contact Sales/Asia",
+  "telephone": "Telephone",
+  "toll_free": "Toll-Free",
+  "call_sales": "CALL SALES",
+  "live_chat_copy": "Live chat is available<br/>Monday–Friday, 7am–5pm PST",
+  "email_sales": "Email Sales/US",
+  "live_chat": "Live Chat",
+  "faq": "FAQ"
 }

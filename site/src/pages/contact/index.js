@@ -3,7 +3,9 @@ import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
+import Settings from '../../constants/company/settings';
 import SecondaryLocations from '../../components/contact/secondary-locations';
+import InfoCardCurrent from '../../components/contact/info-card-current';
 
 const IndexPage = () => {
 
@@ -454,27 +456,21 @@ const IndexPage = () => {
               </div>
               <div className="info-current">
                 <div className="container">
-                  <div className="info-card">
-                    <h2>Digilock Americas</h2>
-                    <p>
-                      9 Willowbrook Court<br/>
-                      Petaluma, CA 94954<br/>
-                      United States
-                    </p>
-                    <p>
-                      CALL SALES<br />
-                      707-766-6000<br />
-                      800-989-0201
-                    </p>
-                    <a href="#" className={'btn btn--orange'}>Email Sales</a> <br/>
-                    <a href="#" className={'btn btn--orange'}>Live Chat</a>
-                    <p className={'live-chat-copy'}>
-                      Live chat is available<br/>
-                      Monday–Friday, 7am–5pm PST
-                    </p>
-                    <a href="#" className={'btn btn--orange'}>FAQ</a>
-                    <SecondaryLocations cls={'mobile'} />
-                  </div>
+                  <InfoCardCurrent
+                      header={t('digilock_americas')}
+                      address={t('digilock_americas_address')}
+                      phone={t('telephone')}
+                      callSales={t('call_sales')}
+                      emailSales={t('email_sales')}
+                      liveChat={t('live_chat')}
+                      liveChatCopy={t('live_chat_copy')}
+                      tollFree={t('toll_free')}
+                      phoneNumber={Settings.PHONE_SALES_AMERICAS}
+                      tollFreeNumber={Settings.PHONE_SALES_TOLL_FREE_AMERICAS}
+                  />
+                </div>
+                <div>
+                  <SecondaryLocations cls={'mobile'} />
                 </div>
               </div>
             </div>
