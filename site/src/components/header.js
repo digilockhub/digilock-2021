@@ -2,11 +2,10 @@ import React, {useState, useEffect} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import CustomLocalizedLink from '../components/locales/custom-localized-link';
 import {globalHistory} from "@reach/router";
-
-
 import PropTypes from "prop-types";
 import LanguageSwitcher from './locales/language-switcher';
-import digilockLogo from '../images/shared/digilock.svg'
+import digilockLogo from '../images/shared/digilock.svg';
+import GeoLocation from './geo-location/geo-location';
 import {graphql} from "gatsby";
 
 
@@ -72,6 +71,9 @@ const Header = () => {
                     goto={'/contact/'}
                     cls={checkSiteLocaton('/contact/') ? 'btn btn--contact selected' : 'btn btn--contact'}
                     label={'Contact'}/>
+              </li>
+              <li className={'geo'}>
+                <GeoLocation />
               </li>
             </ul>
           </div>
