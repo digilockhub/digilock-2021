@@ -21,9 +21,7 @@ const GeoLocation = () => {
 
     let request = new XMLHttpRequest();
     request.open('GET', request_url, true);
-
     request.onload = function () {
-
       if (request.status === 200) {
         // Success!
         let data = JSON.parse(request.responseText);
@@ -40,14 +38,11 @@ const GeoLocation = () => {
         console.log("server error");
       }
     };
-
     request.onerror = function () {
       // There was a connection error of some sort
       console.log("unable to connect to server");
     };
-
     request.send();  // make the request
-
   };
 
   const contNumbers = {
@@ -72,13 +67,9 @@ const GeoLocation = () => {
   }, []);
 
   return (
-
       <p>
         {contNumbers[status]}
       </p>
-
   )
-
 };
-
 export default GeoLocation;

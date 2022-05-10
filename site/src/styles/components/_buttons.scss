@@ -65,6 +65,11 @@
     font-family: AvenirMedium, sans-serif;
     font-weight: 500;
     border: 1px transparent;
+    padding: .75em 1em;
+    @include md() {
+      padding: .75em 2.5em;
+    }
+    min-width: unset;
     &:hover, &:focus, &.selected {
       color: $color-white;
       background: $color-numeris-blue;

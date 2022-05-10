@@ -29,6 +29,23 @@
 
     .menu-contact {
       gap: 0 !important;
+      .geo {
+        display: flex;
+        align-items: center;
+        line-height: 1.7rem;
+        padding: 0 1rem;
+        background-color: $color-white;
+        p {
+          font-size: 12px;
+          white-space: nowrap;
+        }
+        @include md() {
+          padding: 0 var(--nav-gap) 0 var(--nav-gap);
+          p {
+            font-size: inherit;
+          }
+        }
+      }
     }
   }
 
