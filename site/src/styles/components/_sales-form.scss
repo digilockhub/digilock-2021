@@ -31,6 +31,10 @@ $form-font-size: 0.85rem;
 
   #countryList, #stateList {
     font-size: $form-font-size;
+    max-width: 99%;
+    @include md() {
+      max-width: unset;
+    }
   }
 
   .input-container {
