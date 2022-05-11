@@ -46,6 +46,7 @@
     &.selected {
       background: $color-numeris-blue;
       color: $color-white;
+      pointer-events: none;
     }
   }
 

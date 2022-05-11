@@ -21,12 +21,16 @@ const Footer = () => {
             <a href="#" className="btn btn--trans white lower-case">
               <Trans>button_chat</Trans>
             </a>
-            <a href="#" className={globalHistory.location.pathname.indexOf('/contact/') > -1 ?
+            <a href="/contact/"
+               className={globalHistory.location.pathname.indexOf('/contact/') > -1 ?
                 "btn btn--trans white lower-case selected" :
-                "btn btn--trans white lower-case"}>
+                "btn btn--trans white lower-case"}
+            >
               <Trans>button_contact</Trans>
             </a>
-            <a href="#" className="btn btn--trans white lower-case" style={{textTransform: 'uppercase'}}>
+            <a href="#"
+               className="btn btn--trans white lower-case"
+               style={{textTransform: 'uppercase'}}>
               <Trans>button_faq</Trans>
             </a>
           </div>
