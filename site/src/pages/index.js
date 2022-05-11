@@ -27,11 +27,11 @@ const IndexPage = () => {
         />
         <div className="home">
           <section className="hero">
-            {/*<BCResponsivePlayerDynId*/}
-            {/*    vid={'6302604050001'}*/}
-            {/*    dynId={'HeroVideo'}*/}
-            {/*    translation={t('hero_video_caption')}*/}
-            {/*/>*/}
+            <BCResponsivePlayerDynId
+                vid={'6302604050001'}
+                dynId={'HeroVideo'}
+                translation={t('hero_video_caption')}
+            />
 
           </section>
           <section className={'lock-solutions'}>
@@ -145,7 +145,7 @@ const IndexPage = () => {
           </section>
           <section className="see-locks">
             <div className="container">
-              <a href="" className="btn btn--orange">
+              <a href="/products/locks/" className="btn btn--orange">
                 <Trans>see_locks</Trans>
               </a>
             </div>
