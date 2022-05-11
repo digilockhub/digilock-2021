@@ -62,6 +62,9 @@ const GeoLocation = () => {
         });
       } else {
         setStatus('North America');
+        if(isBrowser) {
+          sessionStorage.setItem('geo', 'North America')
+        }
       }
     }
   }, []);
