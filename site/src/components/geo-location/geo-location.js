@@ -59,12 +59,11 @@ const GeoLocation = () => {
     if(isBrowser) {
       if(!sessionStorage.getItem('geo')) {
         navigator.geolocation.getCurrentPosition(openCageApi, () => {
+          setStatus('North America');
+          if(isBrowser) {
+            sessionStorage.setItem('geo', 'North America')
+          }
         });
-      } else {
-        setStatus('North America');
-        if(isBrowser) {
-          sessionStorage.setItem('geo', 'North America')
-        }
       }
     }
   }, []);
