@@ -9,8 +9,10 @@ import SecondaryLocations from '../../components/contact/secondary-locations';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 
 const IndexPage = () => {
+
   const isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,6 +23,15 @@ const IndexPage = () => {
     state: '',
     message: ''
   });
+
+  //TODO
+  const isFormValid = formData.email != null && formData.email.trim().length > 0;
+
+  const submit = (e) => {
+    e.preventDefault();
+    alert('submit');
+    // props.handleSubmit(post)
+  };
 
   const [infoCurrent, setInfoCurrent] = useState({
     header: t('digilock_americas'),
@@ -35,12 +46,9 @@ const IndexPage = () => {
     phoneNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS
   });
 
-  //TODO!!!
   const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem('geo') : 'North America');
 
-
   function handleInfoCurrentChange() {
-
     switch (continent) {
       case ContinentSettings.EUROPE:
         setInfoCurrent(prevState => ({
@@ -63,15 +71,9 @@ const IndexPage = () => {
         //code
     }
   }
-
-  //TODO
-  const isFormValid = formData.email != null && formData.email.trim().length > 0;
-
-  const submit = (e) => {
-    e.preventDefault();
-    alert('submit');
-    // props.handleSubmit(post)
-  };
+  function handleLiveChat() {
+    alert("FPO: This will spawn a live Sales chat session");
+  }
 
   useEffect(() => {
     if (isBrowser) {
@@ -518,6 +520,7 @@ const IndexPage = () => {
                       tollFreeNumber={infoCurrent.tollFreeNumber}
                       phoneNumber={infoCurrent.phoneNumber}
                       geo={continent}
+                      handleLiveChat={handleLiveChat}
                   />
                 </div>
                 <div>

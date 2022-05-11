@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {graphql} from 'gatsby';
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import companySettings from '../constants/company/settings'
+import {globalHistory} from "@reach/router";
 
 import linkedIn from '../images/shared/linkedin.svg';
 import youtube from '../images/shared/youtube.svg';
@@ -21,10 +21,12 @@ const Footer = () => {
             <a href="#" className="btn btn--trans white lower-case">
               <Trans>button_chat</Trans>
             </a>
-            <a href="#" className="btn btn--trans white lower-case">
+            <a href="#" className={globalHistory.location.pathname.indexOf('/contact/') > -1 ?
+                "btn btn--trans white lower-case selected" :
+                "btn btn--trans white lower-case"}>
               <Trans>button_contact</Trans>
             </a>
-            <a href="#" className="btn btn--trans white lower-case">
+            <a href="#" className="btn btn--trans white lower-case" style={{textTransform: 'uppercase'}}>
               <Trans>button_faq</Trans>
             </a>
           </div>

@@ -14,8 +14,8 @@ const InfoCardCurrent = (props) => {
           </p>
         </div>
         <div className={'info-buttons'}>
-          <a href="#" className={'btn btn--orange'}>{props.emailSales}</a> <br/>
-          <a href="#" className={'btn btn--orange'}>{props.liveChat}</a>
+          <a href="mailto:sales@digilock.com" className={'btn btn--orange'}>{props.emailSales}</a> <br/>
+          <a href="#" onClick={props.handleLiveChat} className={'btn btn--orange'}>{props.liveChat}</a>
           <p className={'live-chat-copy'} dangerouslySetInnerHTML={{__html: props.liveChatCopy}} />
           <a href="#" className={'btn btn--orange'}>FAQ</a>
         </div>
@@ -34,7 +34,8 @@ InfoCardCurrent.propTypes = {
   emailSales: PropTypes.string,
   liveChat: PropTypes.string,
   liveChatCopy: PropTypes.string,
-  geo: PropTypes.string
+  geo: PropTypes.string,
+  handleLiveChat: PropTypes.func
 };
 
 export default InfoCardCurrent;
