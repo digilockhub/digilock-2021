@@ -106,13 +106,17 @@
   }
 
   .live-chat-copy {
-    margin-top: 0.50em;
+    margin-bottom: 2rem;
   }
 
   &.secondary {
     flex-direction: column;
     justify-content: flex-start;
     min-width: 200px;
+    text-align: center;
+    @include navBreak() {
+      text-align: left;
+    }
     p {
       font-size: 0.813rem;
       line-height: 0.938rem;
