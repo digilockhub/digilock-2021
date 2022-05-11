@@ -93,6 +93,11 @@
     margin: 0 0 0.75em;
   }
 
+  span {
+    font-family: "AvenirMedium", sans-serif;
+    color: $color-numeris-blue;
+  }
+
   div:first-of-type {
     margin-bottom: 0.75rem;
     @include md() {

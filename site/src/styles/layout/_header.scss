@@ -54,6 +54,12 @@
     background-color: $color-steadfast-blue;
     height: 120px;
     align-items: center;
+    img {
+      margin-top: 10px;
+      @include navBreak() {
+        margin-top: unset;
+      }
+    }
     .container {
       justify-content: space-between;
     }

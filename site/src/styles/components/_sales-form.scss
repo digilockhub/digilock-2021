@@ -75,7 +75,7 @@ $form-font-size: 0.85rem;
   }
 
   [aria-disabled=true] {
-    background: #dddddd;
+    background: $color-numeris-blue;
     cursor: not-allowed;
   }
 

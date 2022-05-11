@@ -8,7 +8,7 @@ const InfoCardCurrent = (props) => {
           <h2>{props.header}</h2>
           <p dangerouslySetInnerHTML={{__html: props.address}}/>
           <p>
-            {props.callSales}<br/>
+            <span>{props.callSales}</span><br/>
             {props.phone}<br/>
             {props.tollFree} {props.tollFreeNumber}
           </p>

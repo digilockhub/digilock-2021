@@ -1,29 +1,29 @@
 import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Layout from "../../../components/layout";
+import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
 
-import iconTech from '../../images/locks/icon-tech.svg';
-import iconInstall from '../../images/locks/icon-install.svg';
-import iconEasy from '../../images/locks/icon-easy.svg';
+import iconTech from '../../../images/locks/icon-tech.svg';
+import iconInstall from '../../../images/locks/icon-install.svg';
+import iconEasy from '../../../images/locks/icon-easy.svg';
 
-import smartAspire from '../../images/locks/smart-aspire.png';
-import smartVersa from '../../images/locks/smart-versa.png';
-import smartOrbit from '../../images/locks/smart-orbit.png';
-import smartDigilink from '../../images/locks/smart-digilink.png';
-import mobileSmartDivider from '../../images/locks/mobile-divider.svg';
-import desktopSmartDivider from '../../images/locks/desktop-divider.svg';
+import smartAspire from '../../../images/locks/smart-aspire.png';
+import smartVersa from '../../../images/locks/smart-versa.png';
+import smartOrbit from '../../../images/locks/smart-orbit.png';
+import smartDigilink from '../../../images/locks/smart-digilink.png';
+import mobileSmartDivider from '../../../images/locks/mobile-divider.svg';
+import desktopSmartDivider from '../../../images/locks/desktop-divider.svg';
 
-import elecAxis from '../../images/locks/elec-axis.png';
-import elecCue from '../../images/locks/elec-cue.png';
-import elecSola from '../../images/locks/elec-sola.png';
-import elecRange from '../../images/locks/elec-range.png';
+import elecAxis from '../../../images/locks/elec-axis.png';
+import elecCue from '../../../images/locks/elec-cue.png';
+import elecSola from '../../../images/locks/elec-sola.png';
+import elecRange from '../../../images/locks/elec-range.png';
 
-import legacyStandard from '../../images/locks/legacy-standard.png';
-import legacyVertical from '../../images/locks/legacy-vertical.png';
-import legacyClassic from '../../images/locks/legacy-classic.png';
+import legacyStandard from '../../../images/locks/legacy-standard.png';
+import legacyVertical from '../../../images/locks/legacy-vertical.png';
+import legacyClassic from '../../../images/locks/legacy-classic.png';
 
 
 

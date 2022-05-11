@@ -7,7 +7,7 @@ const InfoCard = (props) => {
         <p className={'header'}>{props.header}</p>
         <p dangerouslySetInnerHTML={{__html: props.address}} />
         <p>
-          {props.emailSales}<br/>
+          <span>{props.emailSales}</span><br/>
           {props.phone} {props.phoneNumber}<br/>
           {props.tollFree} {props.tollFreeNumber}
         </p>
