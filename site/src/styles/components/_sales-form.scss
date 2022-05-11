@@ -29,6 +29,10 @@ $form-font-size: 0.85rem;
     color: $color-letterhead;
   }
 
+  textarea {
+    min-height: 86px;
+  }
+
   #countryList, #stateList {
     font-size: $form-font-size;
     max-width: 99%;
@@ -70,8 +74,9 @@ $form-font-size: 0.85rem;
     }
   }
 
-  input[type="submit"]:disabled {
+  [aria-disabled=true] {
     background: #dddddd;
+    cursor: not-allowed;
   }
 
 }

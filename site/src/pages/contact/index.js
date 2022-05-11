@@ -35,7 +35,8 @@ const IndexPage = () => {
   });
 
   //TODO!!!
-  const [continent, setContinent] = useState(sessionStorage.getItem('geo'));
+  const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem('geo') : 'North America');
+
 
   function handleInfoCurrentChange() {
 
@@ -494,7 +495,7 @@ const IndexPage = () => {
                       <input
                           className={'form-submit'}
                           type="submit"
-                          disabled={!isFormValid}
+                          aria-disabled={!isFormValid ? 'true' : 'false'}
                           value={'Send'}
                       />
                     </div>
