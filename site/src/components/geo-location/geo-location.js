@@ -25,9 +25,11 @@ const GeoLocation = () => {
       if (request.status === 200) {
         // Success!
         let data = JSON.parse(request.responseText);
-        setStatus(data.results[0].components.continent); // print the location
+        // setStatus(data.results[0].components.continent); // print the location
+        setStatus('Asia'); // print the location
         if(isBrowser) { //gatsby build workaround
-          sessionStorage.setItem('geo', data.results[0].components.continent);
+          // sessionStorage.setItem('geo', data.results[0].components.continent);
+          sessionStorage.setItem('geo', 'Asia');
         }
       } else if (request.status <= 500) {
         // We reached our target server, but it returned an error

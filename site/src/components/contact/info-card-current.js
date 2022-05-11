@@ -9,7 +9,7 @@ const InfoCardCurrent = (props) => {
           <p dangerouslySetInnerHTML={{__html: props.address}}/>
           <p>
             {props.callSales}<br/>
-            {props.phone} {props.phoneNumber}<br/>
+            {props.phone}<br/>
             {props.tollFree} {props.tollFreeNumber}
           </p>
         </div>
@@ -33,7 +33,8 @@ InfoCardCurrent.propTypes = {
   tollFreeNumber: PropTypes.string,
   emailSales: PropTypes.string,
   liveChat: PropTypes.string,
-  liveChatCopy: PropTypes.string
+  liveChatCopy: PropTypes.string,
+  geo: PropTypes.string
 };
 
 export default InfoCardCurrent;

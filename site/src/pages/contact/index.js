@@ -8,7 +8,7 @@ import SecondaryLocations from '../../components/contact/secondary-locations';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 
 const IndexPage = () => {
-
+  const isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
@@ -21,6 +21,47 @@ const IndexPage = () => {
     message: ''
   });
 
+  const [infoCurrent, setInfoCurrent] = useState({
+    header: t('digilock_americas'),
+    address: t('digilock_americas_address'),
+    phone: Settings.PHONE_SALES_AMERICAS,
+    callSales: t('call_sales'),
+    emailSales: t('email_sales'),
+    liveChat: t('live_chat'),
+    liveChatCopy: t('live_chat_copy'),
+    tollFree: t('toll_free'),
+    tollFreeNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS,
+    phoneNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS
+  });
+
+  //TODO!!!
+  const [continent, setContinent] = useState(sessionStorage.getItem('geo'));
+
+  function handleInfoCurrentChange() {
+
+    switch (continent) {
+      case 'Europe':
+        setInfoCurrent(prevState => ({
+          ...prevState,
+          ['header']: t('digilock_europe'),
+          ['address']: t('digilock_europe_address')
+        }));
+        break;
+      case 'Asia':
+        setInfoCurrent(prevState => ({
+          ...prevState,
+          ['header']: t('digilock_asia'),
+          ['address']: t('digilock_asia_address'),
+          ['phone']: Settings.PHONE_SALES_ASIA,
+          ['tollFree']: '',
+          ['tollFreeNumber']: ''
+        }));
+        break;
+      default:
+        //code
+    }
+  }
+
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
 
@@ -29,6 +70,13 @@ const IndexPage = () => {
     alert('submit');
     // props.handleSubmit(post)
   };
+
+  useEffect(() => {
+    if (isBrowser) {
+      // setContinent(sessionStorage.getItem('geo'));
+      handleInfoCurrentChange();
+    }
+  }, []);
 
   return (
       <Layout>
@@ -452,25 +500,26 @@ const IndexPage = () => {
                     </div>
                   </form>
                 </div>
-                <SecondaryLocations cls='desktop' />
+                <SecondaryLocations cls='desktop'/>
               </div>
               <div className="info-current">
                 <div className="container">
                   <InfoCardCurrent
-                      header={t('digilock_americas')}
-                      address={t('digilock_americas_address')}
-                      phone={t('telephone')}
-                      callSales={t('call_sales')}
-                      emailSales={t('email_sales')}
-                      liveChat={t('live_chat')}
-                      liveChatCopy={t('live_chat_copy')}
-                      tollFree={t('toll_free')}
-                      phoneNumber={Settings.PHONE_SALES_AMERICAS}
-                      tollFreeNumber={Settings.PHONE_SALES_TOLL_FREE_AMERICAS}
+                      header={infoCurrent.header}
+                      address={infoCurrent.address}
+                      phone={infoCurrent.phone}
+                      callSales={infoCurrent.callSales}
+                      emailSales={infoCurrent.emailSales}
+                      liveChat={infoCurrent.liveChat}
+                      liveChatCopy={infoCurrent.liveChatCopy}
+                      tollFree={infoCurrent.tollFree}
+                      tollFreeNumber={infoCurrent.tollFreeNumber}
+                      phoneNumber={infoCurrent.phoneNumber}
+                      geo={continent}
                   />
                 </div>
                 <div>
-                  <SecondaryLocations cls={'mobile'} />
+                  <SecondaryLocations cls={'mobile'}/>
                 </div>
               </div>
             </div>
