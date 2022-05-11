@@ -3,11 +3,21 @@ import PropTypes from "prop-types";
 
 const InfoCard = (props) => {
   return (
-      <div className={"info-card secondary "+props.cls}>
+      <div className={"info-card secondary " + props.cls}>
         <p className={'header'}>{props.header}</p>
-        <p dangerouslySetInnerHTML={{__html: props.address}} />
+        <p dangerouslySetInnerHTML={{__html: props.address}}/>
         <p>
-          <span>{props.emailSales}</span><br/>
+          {
+            props.emailSales.indexOf('Contact') > -1
+                ?
+                <span>
+                  {props.emailSales}
+                </span>
+                : <span>
+            <a href="mailto:sales@digilock.com">{props.emailSales}</a>
+          </span>
+          }
+          <br/>
           {props.phone} {props.phoneNumber}<br/>
           {props.tollFree} {props.tollFreeNumber}
         </p>
