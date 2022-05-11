@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const InfoCard = (props) => {
   return (
-      <div className="info-card secondary">
+      <div className={"info-card secondary "+props.cls}>
         <p className={'header'}>{props.header}</p>
         <p dangerouslySetInnerHTML={{__html: props.address}} />
         <p>
@@ -22,7 +22,8 @@ InfoCard.propTypes = {
   phoneNumber: PropTypes.string,
   tollFree: PropTypes.string,
   tollFreeNumber: PropTypes.string,
-  emailSales: PropTypes.string
+  emailSales: PropTypes.string,
+  cls: PropTypes.string
 };
 
 export default InfoCard;

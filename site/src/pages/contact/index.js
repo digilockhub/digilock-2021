@@ -500,7 +500,7 @@ const IndexPage = () => {
                     </div>
                   </form>
                 </div>
-                <SecondaryLocations cls='desktop'/>
+                <SecondaryLocations cls={'desktop'} geo={continent}/>
               </div>
               <div className="info-current">
                 <div className="container">
@@ -519,7 +519,7 @@ const IndexPage = () => {
                   />
                 </div>
                 <div>
-                  <SecondaryLocations cls={'mobile'}/>
+                  <SecondaryLocations cls={'mobile'} geo={continent}/>
                 </div>
               </div>
             </div>
