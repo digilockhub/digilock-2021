@@ -61,7 +61,7 @@ const GeoLocation = () => {
         navigator.geolocation.getCurrentPosition(openCageApi, () => {
         });
       } else {
-        setStatus(sessionStorage.getItem('geo'));
+        setStatus('North America');
       }
     }
   }, []);
