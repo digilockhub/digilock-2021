@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import CompanySettings from '../../constants/company/settings';
+import ContinentSettings from '../../constants/continents/geo-continents';
 
 
 const GeoLocation = () => {
 
-  const [status, setStatus] = useState('North America');
+  const [status, setStatus] = useState(ContinentSettings.NORTH_AMERICA);
   const isBrowser = typeof window !== "undefined";
   const openCageApi = (data) => {
 
@@ -46,22 +47,22 @@ const GeoLocation = () => {
   };
 
   const contNumbers = {
-    "Africa": CompanySettings.PHONE_SALES_AMERICAS,
-    "Antarctica": CompanySettings.PHONE_SALES_AMERICAS,
-    "Asia": CompanySettings.PHONE_SALES_ASIA,
-    "Europe": CompanySettings.PHONE_SALES_EUROPE,
-    "Oceania": CompanySettings.PHONE_SALES_AMERICAS,
-    "North America": CompanySettings.PHONE_SALES_AMERICAS,
-    "South America": CompanySettings.PHONE_SALES_AMERICAS
+    [ContinentSettings.AFRICA]: CompanySettings.PHONE_SALES_AMERICAS,
+    [ContinentSettings.ANTARCTICA]: CompanySettings.PHONE_SALES_AMERICAS,
+    [ContinentSettings.ASIA]: CompanySettings.PHONE_SALES_ASIA,
+    [ContinentSettings.EUROPE]: CompanySettings.PHONE_SALES_EUROPE,
+    [ContinentSettings.OCEANIA]: CompanySettings.PHONE_SALES_AMERICAS,
+    [ContinentSettings.NORTH_AMERICA]: CompanySettings.PHONE_SALES_AMERICAS,
+    [ContinentSettings.SOUTH_AMERICA]: CompanySettings.PHONE_SALES_AMERICAS
   };
 
   useEffect(() => {
     if(isBrowser) {
       if(!sessionStorage.getItem('geo')) {
         navigator.geolocation.getCurrentPosition(openCageApi, () => {
-          setStatus('North America');
+          setStatus(ContinentSettings.NORTH_AMERICA);
           if(isBrowser) {
-            sessionStorage.setItem('geo', 'North America')
+            sessionStorage.setItem('geo', ContinentSettings.NORTH_AMERICA)
           }
         });
       }

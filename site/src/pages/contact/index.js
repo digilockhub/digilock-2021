@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
 import Settings from '../../constants/company/settings';
+import ContinentSettings from '../../constants/continents/geo-continents';
 import SecondaryLocations from '../../components/contact/secondary-locations';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 
@@ -41,14 +42,14 @@ const IndexPage = () => {
   function handleInfoCurrentChange() {
 
     switch (continent) {
-      case 'Europe':
+      case ContinentSettings.EUROPE:
         setInfoCurrent(prevState => ({
           ...prevState,
           ['header']: t('digilock_europe'),
           ['address']: t('digilock_europe_address')
         }));
         break;
-      case 'Asia':
+      case ContinentSettings.ASIA:
         setInfoCurrent(prevState => ({
           ...prevState,
           ['header']: t('digilock_asia'),
