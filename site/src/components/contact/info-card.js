@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import CompanySettings from '../../constants/company/settings';
 
 const InfoCard = (props) => {
   return (

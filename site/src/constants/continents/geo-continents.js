@@ -1,6 +1,6 @@
 module.exports = {
   AFRICA: "Africa",
-  ANTARCTICA: "Antar",
+  ANTARCTICA: "Antarctica",
   ASIA: "Asia",
   EUROPE: "Europe",
   OCEANIA: "Oceania",
