@@ -109,7 +109,7 @@ const IndexPage = () => {
                   >
                     <div className="row">
                       <div className="input-container first-name">
-                        <label><Trans>first_name</Trans></label>
+                        <label><Trans>first_name</Trans>*</label>
                         <input type="text"
                                name="firstName"
                                value={formData.firstName}
@@ -119,7 +119,7 @@ const IndexPage = () => {
                         />
                       </div>
                       <div className="input-container last-name">
-                        <label><Trans>last_name</Trans></label>
+                        <label><Trans>last_name</Trans>*</label>
                         <input type="text"
                                name="lastName"
                                value={formData.lastName}
@@ -129,7 +129,7 @@ const IndexPage = () => {
                       </div>
                     </div>
                     <div className="input-container company-name">
-                      <label><Trans>company_name</Trans></label>
+                      <label><Trans>company_name</Trans>*</label>
                       <input type="text"
                              name="companyName"
                              value={formData.companyName}
@@ -140,7 +140,7 @@ const IndexPage = () => {
 
                     <div className="row">
                       <div className="input-container email">
-                        <label><Trans>email</Trans></label>
+                        <label><Trans>email</Trans>*</label>
                         <input type="text"
                                name="email"
                                value={formData.email}
@@ -160,7 +160,7 @@ const IndexPage = () => {
 
 
                     <div className="input-container country">
-                      <label><Trans>country</Trans></label>
+                      <label><Trans>country</Trans>*</label>
                       <select name="country"
                               className={'country-list'}
                               id={'countryList'}
@@ -419,7 +419,7 @@ const IndexPage = () => {
                     <div className="input-container state">
                       <div
                           className={formData.country === 'US' ? 'input-container show-state' : 'input-container state'}>
-                        <label><Trans>state</Trans></label>
+                        <label><Trans>state</Trans>*</label>
                         <select
                             className={'state-menu'}
                             id={'stateList'}
