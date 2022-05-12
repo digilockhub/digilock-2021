@@ -15,7 +15,7 @@ const InfoCard = (props) => {
                   {props.emailSales}
                 </span>
                 : <span>
-            <a href="mailto:sales@digilock.com">{props.emailSales}</a>
+            <a href={"mailto:"+CompanySettings.SALES_EMAIL}>{props.emailSales}</a>
           </span>
           }
           <br/>
