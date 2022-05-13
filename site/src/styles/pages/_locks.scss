@@ -56,11 +56,7 @@
     gap: var(--nav-gap);
 
 
-    h2.sub {
-      color: $color-numeris-blue;
-    }
-
-    h2.sub, p {
+    h2, p {
       text-align: left;
     }
 
@@ -141,11 +137,15 @@
     }
   }
 
+
+
   .thumbnail {
     p {
       text-align: center;
       margin: 0;
     }
+    sup {
+      text-decoration: none !important;
+    }
   }
-
 }

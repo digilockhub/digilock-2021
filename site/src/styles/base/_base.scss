@@ -32,14 +32,6 @@ body {
   text-align: center;
 }
 
-a{
-  color: $color-numeris-blue;
-  text-decoration: none;
-  &:hover, &:focus {
-    text-decoration: underline;
-  }
-}
-
 section {
   padding-bottom: var(--section-gutter);
 

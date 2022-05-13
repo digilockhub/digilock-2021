@@ -34,7 +34,7 @@ h2, h2.sub {
   color: $color-letterhead;
 }
 
-h2.sub{
+h2.sub {
   font-size: 1.5rem;
   margin: 0;
 }
@@ -73,4 +73,27 @@ p {
   font-size: 1.1rem;
   line-height: 1.7rem;
   color: $color-letterhead;
+}
+
+a {
+  color: $color-numeris-blue;
+  text-decoration: none;
+
+  span {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    span {
+      color: $color-numeris-blue;
+      text-decoration: underline;
+    }
+    sup {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+
 }

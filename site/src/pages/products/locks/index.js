@@ -26,8 +26,6 @@ import legacyVertical from '../../../images/locks/legacy-vertical.png';
 import legacyClassic from '../../../images/locks/legacy-classic.png';
 
 
-
-
 const IndexPage = () => {
 
   const {t} = useTranslation();
@@ -87,8 +85,8 @@ const IndexPage = () => {
               </h2>
               <p>
                 <Trans>
-                what_to_expect_copy
-              </Trans>
+                  what_to_expect_copy
+                </Trans>
               </p>
 
               <div className="expect-containers">
@@ -177,45 +175,64 @@ const IndexPage = () => {
             <div className="container">
               <h2>
                 <Trans>
-                A Digilock for every purpose
-              </Trans>
+                  A Digilock for every purpose
+                </Trans>
               </h2>
               <h2 className="sub">
-                <Trans>
-                  Smart Locks
-                </Trans>
+                <a href="#">
+                  <Trans>
+                    Smart Locks
+                  </Trans>
+                </a>
               </h2>
               <p>
                 <Trans>
-                  Our most technologically advanced electronic locks combine enhanced security with wireless connectivity to allow remote management from anywhere in the world.
+                  Our most technologically advanced electronic locks combine enhanced security with wireless
+                  connectivity to allow remote management from anywhere in the world.
                 </Trans>
               </p>
               <div className="smart-locks-container">
 
                 <div className="smart-lock-wrap">
 
+                  <a href="#">
                   <div className="thumbnail">
                     <img src={smartAspire} alt="Aspire smart lock" width={'199'} height={'163'} loading={'lazy'}/>
-                    <p>Aspire<sup>&trade;</sup></p>
+                    <p>
+                      <span>Aspire<sup>&trade;</sup></span>
+                    </p>
                   </div>
+                  </a>
+                  <a href="#">
                   <div className="thumbnail">
                     <img src={smartVersa} alt="Versa smart lock" width={'199'} height={'163'} loading={'lazy'}/>
-                    <p>Versa<sup>&trade;</sup></p>
+                    <p>
+                      <span>Versa<sup>&trade;</sup></span>
+                    </p>
                   </div>
+                  </a>
+                  <a href="#">
                   <div className="thumbnail">
                     <img src={smartOrbit} alt="Orbit smart lock" width={'199'} height={'163'} loading={'lazy'}/>
-                    <p>Orbit<sup>&trade;</sup></p>
+                    <p>
+                      <span>Orbit<sup>&trade;</sup></span>
+                      </p>
                   </div>
+                  </a>
                 </div>
 
                 <img src={mobileSmartDivider} className={'mobile-smart-divider'} alt=""/>
 
                 <div className="digilink-lock">
                   <img src={desktopSmartDivider} alt=""/>
+                  <a href="#">
                   <div className="thumbnail">
                     <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
-                    <p>Digilink<sup>&trade;</sup></p>
+                    <p>
+                      <span>Digilink<sup>&trade;</sup></span>
+                      </p>
                   </div>
+                  </a>
                 </div>
               </div>
 
@@ -228,48 +245,80 @@ const IndexPage = () => {
           <section className="electronic-locks">
             <div className="container">
               <h2 className="sub">
-                <Trans>
-                  Electronic Locks
-                </Trans>
+                <a href="#">
+                  <Trans>
+                    Electronic Locks
+                  </Trans>
+                </a>
               </h2>
               <p>
                 <Trans>
-                  A range of keyless solutions that let you match your choice of appearance, interface, and functionality with the needs and budget of your facility.
+                  A range of keyless solutions that let you match your choice of appearance, interface, and
+                  functionality with the needs and budget of your facility.
                 </Trans>
               </p>
               <div className="row">
+                <a href="#">
                 <div className="thumbnail">
                   <img src={smartAspire} alt="Aspire"/>
-                  <p>Aspire<sup>&trade;</sup></p>
+                  <p>
+                    <span>Aspire<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
+                <a href="#">
                 <div className="thumbnail">
                   <img src={smartVersa} alt="Versa"/>
-                  <p>Versa<sup>&trade;</sup></p>
+                  <p>
+                    <span>Versa<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
+                <a href="#">
                 <div className="thumbnail">
                   <img src={smartOrbit} alt="Orbit"/>
-                  <p>Orbit<sup>&trade;</sup></p>
+                  <p>
+                    <span>Orbit<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
               </div>
+
               <div className="row">
+
+                <a href="#">
                 <div className="thumbnail">
                   <img src={elecAxis} alt="Axis"/>
-                  <p>Axis<sup>&trade;</sup></p>
+                  <p>
+                    <span>Axis<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
+                <a href="#">
                 <div className="thumbnail">
                   <img src={elecCue} alt="Cue"/>
-                  <p>Cue<sup>&trade;</sup></p>
+                  <p>
+                    <span>Cue<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
+                <a href="#">
                 <div className="thumbnail">
                   <img src={elecSola} alt="Sola"/>
-                  <p>Sola<sup>&trade;</sup></p>
+                  <p>
+                    <span>Sola<sup>&trade;</sup></span>
+                  </p>
                 </div>
-              </div>
-              <div className="row">
+                </a>
+                <a href="#">
                 <div className="thumbnail">
                   <img src={elecRange} alt="Range"/>
-                  <p>Range<sup>&trade;</sup></p>
+                  <p>
+                    <span>Range<sup>&trade;</sup></span>
+                  </p>
                 </div>
+                </a>
+
               </div>
             </div>
           </section>
@@ -277,7 +326,7 @@ const IndexPage = () => {
             <div className="container">
               <h2 className="sub">
                 <Trans>
-                  Legacy Locks
+                  legacy_locks
                 </Trans>
               </h2>
               <div className="row">
