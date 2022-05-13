@@ -63,13 +63,18 @@ const IndexPage = () => {
                   locks_headline_copy
                 </Trans>
               </p>
+              <p>
+                <Trans>
+                  locks_headline_copy_2
+                </Trans>
+              </p>
               <div className="buttons">
                 <a href="" className="btn btn--orange">
                   <Trans>see_portfolio</Trans>
                 </a>
-                <a href="" className="btn btn--orange">
-                  <Trans>need_help</Trans>
-                </a>
+                {/*<a href="" className="btn btn--orange">*/}
+                {/*  <Trans>need_help</Trans>*/}
+                {/*</a>*/}
               </div>
             </div>
           </section>
