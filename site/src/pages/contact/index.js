@@ -86,7 +86,6 @@ const IndexPage = () => {
   return (
       <Layout>
         <Seo title={t('Contact Digilock')}/>
-
         <div className="contact">
           <section className="hero">
             <div className="container">

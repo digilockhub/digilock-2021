@@ -1,0 +1,31 @@
+.four-oh-four {
+  * {
+    //@include outline(red);
+  }
+  .unstyled-list {
+    font-family: "AvenirMedium", sans-serif;
+    justify-content: center;
+    font-size: 1.313rem;
+    margin: 3.375rem 0;
+    gap: 1rem;
+    .line {
+      display: none;
+    }
+
+    @include md() {
+      display: flex;
+      .line {
+        display: block;
+      }
+    }
+
+    span {
+      font-size: 0.813rem;
+      letter-spacing: 0.1rem;
+    }
+
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
