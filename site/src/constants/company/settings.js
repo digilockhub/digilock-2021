@@ -4,6 +4,8 @@ module.exports = {
   CONTACT_FORM_PRIVACY: 'https://api.hsforms.com/submissions/v3/integration/submit/6919241/84bb0e4e-122a-4373-930b-e82303ed58f1',
   MARKETING_EMAIL: 'marketing@digilock.com',
   SALES_EMAIL: 'sales@digilock.com',
+  SALES_EMAIL_EUROPE: 'sales@digilock.eu',
+  SALES_EMAIL_ASIA: 'sales@digilock.asia',
   SUPPORT_EMAIL: 'support@digilock.com',
   PRIVACY_EMAIL: 'julie.advocate@digilock.com',
   PHONE_SALES_AMERICAS: '+1 707-766-6000',
