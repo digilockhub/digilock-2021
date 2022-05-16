@@ -32,7 +32,10 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Locks')}/>
+        <Seo
+            title={t('Digilock Commercial Keyless Locks For Hospitals, Hospitality and Corporations')}
+            description={'Learn about the best industry commercial keyless locks that leverage proprietary technology and is supported by a dedicated customer service team.'}
+        />
         <div className="locks">
           <section className="hero --hero-image no-pad">
             <StaticImage
