@@ -1,7 +1,4 @@
 .four-oh-four {
-  * {
-    //@include outline(red);
-  }
   .unstyled-list {
     font-family: "AvenirMedium", sans-serif;
     justify-content: center;
@@ -22,6 +19,7 @@
     span {
       font-size: 0.813rem;
       letter-spacing: 0.1rem;
+      text-transform: uppercase;
     }
 
   }
