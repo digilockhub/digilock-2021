@@ -9,5 +9,9 @@ module.exports = {
   PHONE_SALES_AMERICAS: '+1 707-766-6000',
   PHONE_SALES_TOLL_FREE_AMERICAS: '800-989-0201',
   PHONE_SALES_ASIA: '+852 2776 0800',
-  PHONE_SALES_EUROPE: '+31 0 20 303 3060'
+  PHONE_SALES_EUROPE: '+31 0 20 303 3060',
+  LINKEDIN_ASIA: 'https://www.linkedin.com/company/digilock-asia-limited/',
+  LINKEDIN_USA: 'https://www.linkedin.com/company/digilock/',
+  LINKEDIN_EUROPE: 'https://www.linkedin.com/company/digilock-europe-bv/'
+
 };
