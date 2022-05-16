@@ -414,8 +414,6 @@ const IndexPage = () => {
 
                       </select>
                     </div>
-
-
                     <div className="input-container state">
                       <div
                           className={formData.country === 'US' ? 'input-container show-state' : 'input-container state'}>
