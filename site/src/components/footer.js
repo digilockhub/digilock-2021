@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {graphql} from 'gatsby';
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import {globalHistory} from "@reach/router";
-
+import CompanySettings from '../constants/company/settings';
 import linkedIn from '../images/shared/linkedin.svg';
 import youtube from '../images/shared/youtube.svg';
 
@@ -48,7 +48,7 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow U.S</h4>
-                <a href="#">
+                <a href={CompanySettings.LINKEDIN_USA}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
                 <a href="#">
@@ -78,7 +78,7 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow Europe</h4>
-                <a href="#">
+                <a href={CompanySettings.LINKEDIN_EUROPE}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
                 <a href="#">
@@ -95,7 +95,7 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow Asia</h4>
-                <a href="#">
+                <a href={CompanySettings.LINKEDIN_ASIA}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
                 <a href="#">
