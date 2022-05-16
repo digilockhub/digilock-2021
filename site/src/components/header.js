@@ -186,8 +186,8 @@ const Header = () => {
                 </li>
                 <li>
                   <CustomLocalizedLink
-                      goto="/how-to-buy/"
-                      cls={checkSiteLocaton('/how-to-buy/') ? 'selected' : ''}
+                      goto="/where-to-buy/"
+                      cls={checkSiteLocaton('/where-to-buy/') ? 'selected' : ''}
                       label={t('how_to_buy')}/>
                 </li>
                 <li>

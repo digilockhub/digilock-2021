@@ -2,29 +2,6 @@
   .hero {
     position: relative;
   }
-  .solution {
-
-    .buttons {
-      margin-top: var(--section-gutter);
-      //TODO BUTTONS STRETCH IN MOBILE -- FIX FOR ALL
-
-      a {
-        &:first-of-type {
-          margin-bottom: 1rem;
-        }
-      }
-      @include rwd(548) {
-        a {
-          &:first-of-type {
-            margin-bottom: 0;
-          }
-          &:last-of-type {
-            margin-left: 2.6rem;
-          }
-        }
-      }
-    }
-  }
 
   .what-to-expect {
     background-color: $color-faded-blue;

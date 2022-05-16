@@ -15,7 +15,29 @@ const IndexPage = () => {
         <Seo title={t('About')}/>
         <div className="about">
           <section className="hero">
-            <h1>How to Buy Placeholder</h1>
+            <div className="container">
+              <h1>
+                <Trans>
+                  where_buy
+                </Trans>
+              </h1>
+              <p>
+                <Trans>
+                  where_buy_copy
+                </Trans>
+              </p>
+              <div className="buttons">
+                <a href="" className="btn btn--orange">
+                  <Trans>email</Trans>
+                </a>
+                <a href="" className="btn btn--orange">
+                  <Trans>call</Trans>
+                </a>
+                <a href="" className="btn btn--orange">
+                  <Trans>chat</Trans>
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </Layout>
