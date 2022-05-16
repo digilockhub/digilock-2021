@@ -46,7 +46,7 @@ const IndexPage = () => {
     phoneNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS
   });
 
-  const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem('geo') : 'North America');
+  const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem(ContinentSettings.SESSION_CONTINENT) : 'North America');
 
   function handleInfoCurrentChange() {
     switch (continent) {
@@ -78,7 +78,6 @@ const IndexPage = () => {
 
   useEffect(() => {
     if (isBrowser) {
-      // setContinent(sessionStorage.getItem('geo'));
       handleInfoCurrentChange();
     }
   }, []);

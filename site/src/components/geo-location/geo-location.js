@@ -2,6 +2,25 @@ import React, {useState, useEffect} from 'react';
 import CompanySettings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 
+// components" : {
+// "ISO_3166-1_alpha-2" : "US",
+//     "ISO_3166-1_alpha-3" : "USA",
+//     "ISO_3166-2" : [
+//   "US-CA"
+// ],
+//     "_category" : "building",
+//     "_type" : "building",
+//     "city" : "Petaluma",
+//     "continent" : "North America",
+//     "country" : "United States",
+//     "country_code" : "us",
+//     "county" : "Sonoma County",
+//     "house_number" : "1489",
+//     "postcode" : "94954",
+//     "road" : "North McDowell Boulevard",
+//     "state" : "California",
+//     "state_code" : "CA"
+// }
 
 const GeoLocation = () => {
 
@@ -28,7 +47,11 @@ const GeoLocation = () => {
         let data = JSON.parse(request.responseText);
         setStatus(data.results[0].components.continent); // print the location
         if(isBrowser) { //gatsby build workaround
-          sessionStorage.setItem('geo', data.results[0].components.continent);
+          sessionStorage.setItem(ContinentSettings.SESSION_CONTINENT, data.results[0].components.continent);
+          sessionStorage.setItem(ContinentSettings.SESSION_COUNTRY, data.results[0].components.country);
+          sessionStorage.setItem(ContinentSettings.SESSION_COUNTRY_CODE, data.results[0].components.country_code);
+          sessionStorage.setItem(ContinentSettings.SESSION_STATE, data.results[0].components.state);
+          sessionStorage.setItem(ContinentSettings.SESSION_STATE_CODE, data.results[0].components.state_code);
         }
       } else if (request.status <= 500) {
         // We reached our target server, but it returned an error
@@ -58,11 +81,12 @@ const GeoLocation = () => {
 
   useEffect(() => {
     if(isBrowser) {
-      if(!sessionStorage.getItem('geo')) {
+      if(!sessionStorage.getItem(ContinentSettings.SESSION_CONTINENT)) {
         navigator.geolocation.getCurrentPosition(openCageApi, () => {
+          //if error default to NA
           setStatus(ContinentSettings.NORTH_AMERICA);
           if(isBrowser) {
-            sessionStorage.setItem('geo', ContinentSettings.NORTH_AMERICA)
+            sessionStorage.setItem(ContinentSettings.SESSION_CONTINENT, ContinentSettings.NORTH_AMERICA)
           }
         });
       }
