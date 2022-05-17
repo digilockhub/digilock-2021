@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {graphql} from 'gatsby';
 import PropTypes from "prop-types";
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {useTranslation} from 'gatsby-plugin-react-i18next';
 import companySettings from '../../constants/company/settings';
 import InfoCard from '../../components/contact/info-card';
 
@@ -17,6 +17,7 @@ const SecondaryLocations = (props) => {
                   header={t('digilock_americas')}
                   address={t('digilock_americas_address')}
                   emailSales={t('email_sales')}
+                  email={companySettings.SALES_EMAIL}
                   phone={t('telephone')}
                   phoneNumber={companySettings.PHONE_SALES_AMERICAS}
                   tollFree={t('toll_free')}
@@ -29,6 +30,7 @@ const SecondaryLocations = (props) => {
             header={t('digilock_showroom')}
             address={t('digilock_showroom_address')}
             emailSales={t('email_sales')}
+            email={companySettings.SALES_EMAIL}
             phone={t('telephone')}
             phoneNumber={companySettings.PHONE_SALES_AMERICAS}
             tollFree={t('toll_free')}
@@ -41,6 +43,7 @@ const SecondaryLocations = (props) => {
                   header={t('digilock_europe')}
                   address={t('digilock_europe_address')}
                   emailSales={t('email_sales')}
+                  email={companySettings.SALES_EMAIL_EUROPE}
                   phone={t('telephone')}
                   phoneNumber={companySettings.PHONE_SALES_EUROPE}
               />
@@ -52,7 +55,8 @@ const SecondaryLocations = (props) => {
             ? <InfoCard
                   header={t('digilock_asia')}
                   address={t('digilock_asia_address')}
-                  emailSales={t('contact_sales_asia')}
+                  emailSales={t('email_sales')}
+                  email={companySettings.SALES_EMAIL_ASIA}
                   phone={t('telephone')}
                   phoneNumber={companySettings.PHONE_SALES_ASIA}
               />

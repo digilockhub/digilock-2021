@@ -118,7 +118,6 @@ const IndexPage = () => {
                                value={formData.firstName}
                                onChange={e => setFormData({...formData, firstName: e.target.value})}
                                required={'required'}
-                            // onChange={handleChange}
                         />
                       </div>
                       <div className="input-container last-name">
@@ -144,7 +143,7 @@ const IndexPage = () => {
                     <div className="row">
                       <div className="input-container email">
                         <label><Trans>email</Trans>*</label>
-                        <input type="text"
+                        <input type="email"
                                name="email"
                                value={formData.email}
                                required={'required'}
@@ -165,6 +164,7 @@ const IndexPage = () => {
                       <label htmlFor="message"><Trans>message</Trans></label>
                       <textarea name="message"
                                 value={formData.message}
+                                maxLength={250}
                                 onChange={e => setFormData({...formData, message: e.target.value})}
                       />
                     </div>

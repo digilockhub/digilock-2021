@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import CompanySettings from '../../constants/company/settings';
 
 const InfoCard = (props) => {
   return (
@@ -15,7 +14,7 @@ const InfoCard = (props) => {
                   {props.emailSales}
                 </span>
                 : <span>
-            <a href={"mailto:"+CompanySettings.SALES_EMAIL}>{props.emailSales}</a>
+            <a href={"mailto:"+props.email}>{props.emailSales}</a>
           </span>
           }
           <br/>
@@ -34,6 +33,7 @@ InfoCard.propTypes = {
   tollFree: PropTypes.string,
   tollFreeNumber: PropTypes.string,
   emailSales: PropTypes.string,
+  email: PropTypes.string,
   cls: PropTypes.string
 };
 
