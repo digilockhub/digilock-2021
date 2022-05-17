@@ -100,29 +100,36 @@ const Dealers = (props) => {
   `);
 
   const [currentDealers, setCurrentDealers] = useState(Dealers.allDealersXlsxNorthAmerica.edges);
+  const [selectedDealer, setSelectedDealer] = useState(ContinentSettings.NORTH_AMERICA);
 
   function handleDealers(e) {
     switch (e.target.getAttribute('data-dealers')) {
       case ContinentSettings.EUROPE:
         setCurrentDealers(Dealers.allDealersXlsxEurope.edges);
+        setSelectedDealer(ContinentSettings.EUROPE);
         break;
       case ContinentSettings.AFRICA:
         setCurrentDealers(Dealers.allDealersXlsxMiddleEast.edges);
+        setSelectedDealer(ContinentSettings.AFRICA);
         break;
       case ContinentSettings.ASIA:
         setCurrentDealers(Dealers.allDealersXlsxAsia.edges);
+        setSelectedDealer(ContinentSettings.ASIA);
         break;
       case ContinentSettings.SOUTH_AMERICA:
         setCurrentDealers(Dealers.allDealersXlsxLatin.edges);
+        setSelectedDealer(ContinentSettings.SOUTH_AMERICA);
         break;
       default:
-          setCurrentDealers(Dealers.allDealersXlsxNorthAmerica.edges);
+        setCurrentDealers(Dealers.allDealersXlsxNorthAmerica.edges);
+        setSelectedDealer(ContinentSettings.NORTH_AMERICA);
+
     }
   }
 
   useEffect(() => {
     const isBrowser = typeof window !== "undefined";
-    if(isBrowser) {
+    if (isBrowser) {
       switch (sessionStorage.getItem('geo-continent')) {
         case ContinentSettings.EUROPE:
           document.getElementById('buttonEurope').click();
@@ -140,25 +147,73 @@ const Dealers = (props) => {
           //NA
       }
     }
-  },[]);
+  }, []);
 
   return (
       <div className={'dealers'}>
         <h1>Dealers</h1>
         <div className="buttons">
-          <button id={'buttonNorthAmerica'} onClick={handleDealers} data-dealers={ContinentSettings.NORTH_AMERICA}>North America</button>
-          <button id={'buttonEurope'} onClick={handleDealers} data-dealers={ContinentSettings.EUROPE}>Europe</button>
-          <button id={'buttonMiddleEast'} onClick={handleDealers} data-dealers={ContinentSettings.AFRICA}>Middle East</button>
-          <button id={'buttonAsia'} onClick={handleDealers} data-dealers={ContinentSettings.ASIA}>Asia</button>
-          <button id={'buttonSouthAmerica'} onClick={handleDealers} data-dealers={ContinentSettings.SOUTH_AMERICA}>Latin America</button>
+          <button
+              className={selectedDealer === ContinentSettings.NORTH_AMERICA ? 'selected' : ''}
+              id={'buttonNorthAmerica'}
+              onClick={handleDealers}
+              data-dealers={ContinentSettings.NORTH_AMERICA}>
+            North America
+          </button>
+          <button
+              className={selectedDealer === ContinentSettings.EUROPE ? 'selected' : ''}
+              id={'buttonEurope'}
+              onClick={handleDealers}
+              data-dealers={ContinentSettings.EUROPE}>
+            Europe
+          </button>
+          <button
+              className={selectedDealer === ContinentSettings.AFRICA ? 'selected' : ''}
+              id={'buttonMiddleEast'}
+              onClick={handleDealers}
+              data-dealers={ContinentSettings.AFRICA}>
+            Middle East
+          </button>
+          <button
+              className={selectedDealer === ContinentSettings.ASIA ? 'selected' : ''}
+              id={'buttonAsia'}
+              onClick={handleDealers}
+              data-dealers={ContinentSettings.ASIA}>
+            Asia
+          </button>
+          <button
+              className={selectedDealer === ContinentSettings.SOUTH_AMERICA ? 'selected' : ''}
+              id={'buttonSouthAmerica'}
+              onClick={handleDealers}
+              data-dealers={ContinentSettings.SOUTH_AMERICA}>
+            Latin America
+          </button>
         </div>
-        <div className="dealer-cards">
+
+        <div className="dealer-locations">
           {
             currentDealers.map(({node: dealer}, index) => (
-                <p key={index}>{dealer.company_name}</p>
+                <div className={'dealer'} key={index}>
+                  <h4>{dealer.company_name}</h4>
+                  <p>
+                    {dealer.street_po_box}<br/>
+                    {dealer.city} {dealer.state}<br/>
+                    {dealer.phone}<br/>
+                    {dealer.country}<br/>
+                    {dealer.email}<br/>
+                    <a href={'mailto:' + dealer.email}>
+                      {props.emailPartner}
+                    </a><br/>
+                    <a href={dealer.website}>
+                      {props.visitPartner}
+                    </a>
+
+                  </p>
+                </div>
             ))
           }
         </div>
+
       </div>
   )
 
@@ -166,14 +221,8 @@ const Dealers = (props) => {
 };
 
 Dealers.propTypes = {
-  // header: PropTypes.string,
-  // address: PropTypes.string,
-  // phone: PropTypes.string,
-  // phoneNumber: PropTypes.string,
-  // tollFree: PropTypes.string,
-  // tollFreeNumber: PropTypes.string,
-  // emailSales: PropTypes.string,
-  // cls: PropTypes.string
+  emailPartner: PropTypes.string,
+  visitPartner: PropTypes.string
 };
 
 export default Dealers;

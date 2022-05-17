@@ -1,12 +1,10 @@
 import React, {useState} from "react";
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
 import CompanySettings from "../../constants/company/settings";
 import Dealers from '../../components/dealers/dealers';
-
-
 
 const IndexPage = () => {
 
@@ -109,7 +107,7 @@ const IndexPage = () => {
                   find_partner
                 </Trans>
               </h1>
-              <Dealers />
+              <Dealers emailPartner={t('email_partner')} visitPartner={t('visit_partner')} />
             </div>
           </section>
         </div>
