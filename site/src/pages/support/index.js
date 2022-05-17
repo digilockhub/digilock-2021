@@ -37,8 +37,8 @@ const IndexPage = () => {
     address: t('digilock_americas_address'),
     phone: Settings.PHONE_SALES_AMERICAS,
     callSales: t('call_sales'),
-    emailSales: t('email_sales'),
-    email: Settings.SALES_EMAIL,
+    emailSales: t('email_support'),
+    email: Settings.SUPPORT_EMAIL,
     liveChat: t('live_chat'),
     liveChatCopy: t('live_chat_copy'),
     tollFree: t('toll_free'),
@@ -55,7 +55,7 @@ const IndexPage = () => {
           ...prevState,
           ['header']: t('digilock_europe'),
           ['address']: t('digilock_europe_address'),
-          ['email']: Settings.SALES_EMAIL_EUROPE
+          ['email']: Settings.SUPPORT_EMAIL
         }));
         break;
       case ContinentSettings.ASIA:
@@ -64,7 +64,7 @@ const IndexPage = () => {
           ['header']: t('digilock_asia'),
           ['address']: t('digilock_asia_address'),
           ['phone']: Settings.PHONE_SALES_ASIA,
-          ['email']: Settings.SALES_EMAIL_ASIA,
+          ['email']: Settings.SUPPORT_EMAIL,
           ['tollFree']: '',
           ['tollFreeNumber']: ''
         }));
