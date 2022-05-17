@@ -94,11 +94,11 @@ const IndexPage = () => {
             <div className="container">
               <h1>
                 <Trans>contact_us</Trans>
-                <p>
-                  <Trans>looking_product_support</Trans>
-                  <Link to={'#'} dangerouslySetInnerHTML={{__html: t('click_here')}}/>
-                </p>
               </h1>
+              <p>
+                <Trans>looking_product_support</Trans>
+                <Link to={'#'} dangerouslySetInnerHTML={{__html: t('click_here')}}/>
+              </p>
             </div>
           </section>
           <section className="contact-info">
@@ -197,6 +197,7 @@ const IndexPage = () => {
                       phoneNumber={infoCurrent.phoneNumber}
                       geo={continent}
                       handleLiveChat={handleLiveChat}
+                      showFaq={true}
                   />
                 </div>
                 <div>

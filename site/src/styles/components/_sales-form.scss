@@ -6,6 +6,12 @@ $form-font-size: 0.85rem;
   padding: 2rem 2rem 1rem 2rem;
 }
 
+.hero {
+  h1 {
+    margin: 0;
+  }
+}
+
 .sales-form {
   .container {
     @include md() {

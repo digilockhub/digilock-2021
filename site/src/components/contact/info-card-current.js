@@ -17,7 +17,11 @@ const InfoCardCurrent = (props) => {
           <a href={'mailto:'+props.email} className={'btn btn--orange email-sales'}>{props.emailSales}</a> <br/>
           <a href="#" onClick={props.handleLiveChat} className={'btn btn--orange live-chat'}>{props.liveChat}</a>
           <p className={'live-chat-copy'} dangerouslySetInnerHTML={{__html: props.liveChatCopy}} />
-          <a href="#" className={'btn btn--orange faq'}>FAQ</a>
+          {
+            props.showFaq ?
+                <a href="#" className={'btn btn--orange faq'}>FAQ</a>
+                : null
+          }
         </div>
       </div>
   )
@@ -36,7 +40,8 @@ InfoCardCurrent.propTypes = {
   liveChat: PropTypes.string,
   liveChatCopy: PropTypes.string,
   geo: PropTypes.string,
-  handleLiveChat: PropTypes.func
+  handleLiveChat: PropTypes.func,
+  showFaq: PropTypes.bool
 };
 
 export default InfoCardCurrent;
