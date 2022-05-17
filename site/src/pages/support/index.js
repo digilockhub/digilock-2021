@@ -6,6 +6,7 @@ import {graphql} from 'gatsby';
 import Settings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 import InfoCardCurrent from '../../components/contact/info-card-current';
+import GeneralFAQ from '../../components/support/GeneralFAQ';
 
 const IndexPage = () => {
   const isBrowser = typeof window !== "undefined";
@@ -205,6 +206,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="general-faq">
+            <GeneralFAQ title={t('general_faq')} />
           </section>
         </div>
       </Layout>
