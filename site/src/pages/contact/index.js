@@ -40,6 +40,7 @@ const IndexPage = () => {
     phone: Settings.PHONE_SALES_AMERICAS,
     callSales: t('call_sales'),
     emailSales: t('email_sales'),
+    email: Settings.SALES_EMAIL,
     liveChat: t('live_chat'),
     liveChatCopy: t('live_chat_copy'),
     tollFree: t('toll_free'),
@@ -55,7 +56,8 @@ const IndexPage = () => {
         setInfoCurrent(prevState => ({
           ...prevState,
           ['header']: t('digilock_europe'),
-          ['address']: t('digilock_europe_address')
+          ['address']: t('digilock_europe_address'),
+          ['email']: Settings.SALES_EMAIL_EUROPE
         }));
         break;
       case ContinentSettings.ASIA:
@@ -64,6 +66,7 @@ const IndexPage = () => {
           ['header']: t('digilock_asia'),
           ['address']: t('digilock_asia_address'),
           ['phone']: Settings.PHONE_SALES_ASIA,
+          ['email']: Settings.SALES_EMAIL_ASIA,
           ['tollFree']: '',
           ['tollFreeNumber']: ''
         }));
@@ -174,9 +177,6 @@ const IndexPage = () => {
                       />
                     </div>
 
-
-
-
                   </form>
                 </div>
                 <SecondaryLocations cls={'desktop'} geo={continent}/>
@@ -187,6 +187,7 @@ const IndexPage = () => {
                       header={infoCurrent.header}
                       address={infoCurrent.address}
                       phone={infoCurrent.phone}
+                      email={infoCurrent.email}
                       callSales={infoCurrent.callSales}
                       emailSales={infoCurrent.emailSales}
                       liveChat={infoCurrent.liveChat}

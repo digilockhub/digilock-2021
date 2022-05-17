@@ -42,9 +42,7 @@ const SecondaryLocations = (props) => {
                   address={t('digilock_europe_address')}
                   emailSales={t('email_sales')}
                   phone={t('telephone')}
-                  phoneNumber={companySettings.PHONE_SALES_AMERICAS}
-                  tollFree={t('toll_free')}
-                  tollFreeNumber={companySettings.PHONE_SALES_TOLL_FREE_AMERICAS}
+                  phoneNumber={companySettings.PHONE_SALES_EUROPE}
               />
               : null
         }
