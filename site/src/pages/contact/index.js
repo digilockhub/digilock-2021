@@ -95,7 +95,7 @@ const IndexPage = () => {
               <h1>
                 <Trans>contact_us</Trans>
               </h1>
-              <p>
+              <p className={'callout'}>
                 <Trans>looking_product_support</Trans>
                 <Link to={'#'} dangerouslySetInnerHTML={{__html: t('click_here')}}/>
               </p>

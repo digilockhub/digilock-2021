@@ -1,8 +1,14 @@
 .support {
 
-  .general-faq {
-
-      text-align: left;
-
+  .callout {
+    margin: .5rem 0 2rem 0;
   }
+  .general-faq {
+    text-align: left;
+  }
+
+  .btn {
+    min-width: 173px !important;
+  }
+
 }
