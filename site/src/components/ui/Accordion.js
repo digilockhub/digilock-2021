@@ -16,7 +16,7 @@ class Accordions extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         <div className="accordion-child">
           <div className={this.state.isActive ? 'accordion-section faq' : 'accordion-section'}>
             <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
@@ -30,7 +30,7 @@ class Accordions extends Component {
             }
           </div>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
