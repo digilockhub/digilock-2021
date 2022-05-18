@@ -25,6 +25,8 @@ import legacyStandard from '../../../images/locks/legacy-standard.png';
 import legacyVertical from '../../../images/locks/legacy-vertical.png';
 import legacyClassic from '../../../images/locks/legacy-classic.png';
 
+import mech from '../../../images/locks/mech-mech.png';
+
 
 const IndexPage = () => {
 
@@ -184,14 +186,13 @@ const IndexPage = () => {
               <h2 className="sub">
                 <a href="#">
                   <Trans>
-                    Smart Locks
+                    smart_locks
                   </Trans>
                 </a>
               </h2>
               <p>
                 <Trans>
-                  Our most technologically advanced electronic locks combine enhanced security with wireless
-                  connectivity to allow remote management from anywhere in the world.
+                  smart_locks_copy
                 </Trans>
               </p>
               <div className="smart-locks-container">
@@ -240,24 +241,28 @@ const IndexPage = () => {
               </div>
 
               <div className="smart-digilink-container">
-                <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
+                <div className="thumbnail">
+                  <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
+                  <p>
+                    <span>Digilink<sup>&trade;</sup></span>
+                  </p>
+                </div>
               </div>
             </div>
-
           </section>
+          <div className="section-delimeter container" />
           <section className="electronic-locks">
             <div className="container">
               <h2 className="sub">
                 <a href="#">
                   <Trans>
-                    Electronic Locks
+                    electronic_locks
                   </Trans>
                 </a>
               </h2>
               <p>
                 <Trans>
-                  A range of keyless solutions that let you match your choice of appearance, interface, and
-                  functionality with the needs and budget of your facility.
+                 electronic_locks_copy
                 </Trans>
               </p>
               <div className="row">
@@ -286,52 +291,50 @@ const IndexPage = () => {
                 </div>
                 </a>
               </div>
-
-              <div className="row">
-
-                <a href="#">
-                <div className="thumbnail">
-                  <img src={elecAxis} alt="Axis"/>
-                  <p>
-                    <span>Axis<sup>&trade;</sup></span>
-                  </p>
-                </div>
-                </a>
-                <a href="#">
-                <div className="thumbnail">
-                  <img src={elecCue} alt="Cue"/>
-                  <p>
-                    <span>Cue<sup>&trade;</sup></span>
-                  </p>
-                </div>
-                </a>
-                <a href="#">
-                <div className="thumbnail">
-                  <img src={elecSola} alt="Sola"/>
-                  <p>
-                    <span>Sola<sup>&trade;</sup></span>
-                  </p>
-                </div>
-                </a>
-                <a href="#">
-                <div className="thumbnail">
-                  <img src={elecRange} alt="Range"/>
-                  <p>
-                    <span>Range<sup>&trade;</sup></span>
-                  </p>
-                </div>
-                </a>
-
-              </div>
             </div>
           </section>
           <section className="legacy-locks">
-            <div className="container">
-              <h2 className="sub">
+            <div className="container legacy">
+              <h2 className="sub legacy">
                 <Trans>
                   legacy_locks
                 </Trans>
               </h2>
+              <div className="row">
+                <a href="#">
+                  <div className="thumbnail">
+                    <img src={elecAxis} alt="Axis"/>
+                    <p>
+                      <span>Axis<sup>&trade;</sup></span>
+                    </p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div className="thumbnail">
+                    <img src={elecCue} alt="Cue"/>
+                    <p>
+                      <span>Cue<sup>&trade;</sup></span>
+                    </p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div className="thumbnail">
+                    <img src={elecSola} alt="Sola"/>
+                    <p>
+                      <span>Sola<sup>&trade;</sup></span>
+                    </p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div className="thumbnail">
+                    <img src={elecRange} alt="Range"/>
+                    <p>
+                      <span>Range<sup>&trade;</sup></span>
+                    </p>
+                  </div>
+                </a>
+
+              </div>
               <div className="row">
                 <div className="thumbnail">
                   <img src={legacyStandard} alt="Legacy Standard"/>
@@ -345,6 +348,33 @@ const IndexPage = () => {
                   <img src={legacyClassic} alt="Legacy Classic"/>
                   <p>Classic</p>
                 </div>
+              </div>
+            </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="electronic-locks">
+            <div className="container">
+              <h2 className="sub">
+                <a href="#">
+                  <Trans>
+                    mechanical_lock
+                  </Trans>
+                </a>
+              </h2>
+              <p>
+                <Trans>
+                  mechanical_lock_copy
+                </Trans>
+              </p>
+              <div className="row">
+                <a href="#">
+                  <div className="thumbnail">
+                    <img src={mech} alt="Mech"/>
+                    <p>
+                      <span>Mech<sup>&trade;</sup></span>
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </section>
