@@ -88,7 +88,7 @@ const IndexPage = () => {
   return (
       <Layout>
         <Seo title={t('Contact Digilock')}/>
-        <div className="contact">
+        <div className="support">
           <section className="hero">
             <div className="container">
               <h1>
@@ -209,8 +209,12 @@ const IndexPage = () => {
           </section>
           <div className="section-delimeter container" />
           <section className="general-faq">
-            <GeneralFAQ title={t('general_faq')} />
+            <div className="container">
+              <GeneralFAQ title={t('general_faq')} />
+            </div>
           </section>
+          <div className="section-delimeter container" />
+
         </div>
       </Layout>
   )

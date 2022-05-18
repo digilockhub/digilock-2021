@@ -17,13 +17,17 @@ class Accordions extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="accordion">
+        <div className="accordion-child">
           <div className={this.state.isActive ? 'accordion-section faq' : 'accordion-section'}>
             <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
-              <h3 className={'label'} dangerouslySetInnerHTML={{__html: this.props.title}} />
+              <p className={'label'} dangerouslySetInnerHTML={{__html: this.props.title}} />
               <div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>
             </div>
-            {this.state.isActive && <div className="accordion-content" dangerouslySetInnerHTML={{__html: this.props.content}} />}
+            {
+              this.state.isActive ?
+                  <p className="accordion-content" dangerouslySetInnerHTML={{__html: this.props.content}} />
+                  : null
+            }
           </div>
         </div>
       </React.Fragment>

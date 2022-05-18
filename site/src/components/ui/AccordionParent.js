@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Accordion2 from './Accordion'
+import React, {Component} from 'react';
+import Accordion from './Accordion'
 
 class AccordionsParent extends Component {
 
@@ -16,26 +16,26 @@ class AccordionsParent extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <section className={'general-faq'}>
-          <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
-            <h3 className={'label'} dangerouslySetInnerHTML={{__html: this.props.title}} />
-            <div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>
-          </div>
-          {
-            this.state.isActive && <div className="content-grid grid-grey first-row">
-              <div className="content-row">
-                {/*<SupportGeneralComponent />*/}
-                {
-                  this.props.items.map(({node}) => (
-                    <Accordion2 title={node.title} content={node.content} />
-                  ))
-                }
-              </div>
+        <>
+          <div className={'accordion-parent'}>
+            <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
+              <p className={this.state.isActive ? 'label active' : 'label'}
+                 dangerouslySetInnerHTML={{__html: this.props.title}}/>
+              <div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>
             </div>
-          }
-        </section>
-      </React.Fragment>
+            {
+              this.state.isActive ?
+                  <div>
+                    {
+                      this.props.items.map(({node}) => (
+                          <Accordion title={node.title} content={node.content}/>
+                      ))
+                    }
+                  </div>
+                  : null
+            }
+          </div>
+        </>
     );
   }
 }
