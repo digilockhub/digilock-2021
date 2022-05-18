@@ -41,7 +41,7 @@ const IndexPage = () => {
         <div className="locks">
           <section className="hero --hero-image no-pad">
             <StaticImage
-                src="../../images/locks/hero-locks.jpg"
+                src="../../../images/locks/hero-locks.jpg"
                 width={'1440'}
                 quality={100}
                 layout={'fullWidth'}
@@ -50,7 +50,7 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                hero_headline
+                why_digilock
               </Trans>
             </h6>
           </section>
