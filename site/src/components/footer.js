@@ -43,8 +43,8 @@ const Footer = () => {
                 <li>
                   <a href="mailto:sales@digilock.com">sales@digilock.com</a>
                 </li>
-                <li>Telephone +1 707-766-6000</li>
-                <li>Toll-Free 800-989-0201</li>
+                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></li>
+                <li>Toll-Free <a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a></li>
               </ul>
               <div className="social-icons">
                 <h4>Follow U.S</h4>
@@ -64,8 +64,8 @@ const Footer = () => {
                 <li>
                   <a href="mailto:sales@digilock.com">sales@digilock.com</a>
                 </li>
-                <li>Telephone +1 707-766-6000</li>
-                <li>Toll-Free 800-989-0201</li>
+                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></li>
+                <li>Toll-Free <a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a></li>
               </ul>
             </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>The Netherlands</li>
                 <li><span>Contact Sales / Europe</span></li>
-                <li>Telephone +31 0 20 303 3060</li>
+                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_EUROPE}>{CompanySettings.PHONE_SALES_EUROPE}</a></li>
               </ul>
               <div className="social-icons">
                 <h4>Follow Europe</h4>
@@ -91,7 +91,7 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>Hong Kong</li>
                 <li><span>Contact Sales / Asia</span></li>
-                <li>Telephone +852 27776 0800</li>
+                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a></li>
               </ul>
               <div className="social-icons">
                 <h4>Follow Asia</h4>

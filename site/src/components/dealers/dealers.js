@@ -198,7 +198,7 @@ const Dealers = (props) => {
                   <p>
                     {dealer.street_po_box}<br/>
                     {dealer.city} {dealer.state}<br/>
-                    {dealer.phone}<br/>
+                    <a href={"tel:"+dealer.phone}>{dealer.phone}</a><br/>
                     {dealer.country}<br/>
                     {dealer.email}<br/>
                     <a href={'mailto:' + dealer.email}>

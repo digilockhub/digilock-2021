@@ -378,6 +378,15 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
+          <section className="compare-grid">
+            <div className="container">
+              <div className="buttons">
+                <a href="" className="btn btn--orange">
+                  <Trans>download_grid</Trans>
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </Layout>
   )
