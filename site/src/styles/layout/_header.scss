@@ -45,6 +45,12 @@
             font-size: inherit;
           }
         }
+        a {
+          color: $color-numeris-blue;
+          &:hover, &:focus {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

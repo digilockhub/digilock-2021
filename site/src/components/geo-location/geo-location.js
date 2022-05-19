@@ -95,7 +95,7 @@ const GeoLocation = () => {
 
   return (
       <p>
-        {contNumbers[status]}
+        <a href={"tel:"+contNumbers[status]}>{contNumbers[status]}</a>
       </p>
   )
 };
