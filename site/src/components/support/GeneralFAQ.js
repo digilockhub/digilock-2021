@@ -62,7 +62,7 @@ allSupportGeneralFaqXlsxOrdersSupport {
         <h2>
           {props.title}
         </h2>
-        <AccordionParent title={t('lock_functionality')} items={accordionFunctionality}/>
+        <AccordionParent title={t('lock_functionality')} items={accordionFunctionality} />
         <AccordionParent title={t('initial_setup')} items={accordionProgramming}/>
         <AccordionParent title={t('troubleshooting')} items={accordionTroubleshooting}/>
         <AccordionParent title={t('orders_support')} items={accordionOrders}/>

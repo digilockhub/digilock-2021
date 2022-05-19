@@ -21,7 +21,8 @@ class Accordions extends Component {
           <div className={this.state.isActive ? 'accordion-section faq' : 'accordion-section'}>
             <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
               <p className={'label'} dangerouslySetInnerHTML={{__html: this.props.title}} />
-              <div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>
+              {/*<div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>*/}
+              <div className={this.state.isActive ? 'expander active' : 'expander'} />
             </div>
             {
               this.state.isActive ?

@@ -11,7 +11,7 @@ class AccordionsParent extends Component {
   }
 
   handleAccordionClick = () => {
-    this.setState({isActive: !this.state.isActive})
+    this.setState({isActive: !this.state.isActive});
   };
 
   render() {
@@ -21,14 +21,17 @@ class AccordionsParent extends Component {
             <div className="accordion-title" onClick={() => this.handleAccordionClick()}>
               <p className={this.state.isActive ? 'label active' : 'label'}
                  dangerouslySetInnerHTML={{__html: this.props.title}}/>
-              <div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>
+              {/*<div className={'expander'}>{this.state.isActive ? '-' : '+'}</div>*/}
+              <div className={this.state.isActive ? 'expander active' : 'expander'}/>
             </div>
             {
               this.state.isActive ?
                   <div>
                     {
-                      this.props.items.map(({node}) => (
-                          <Accordion title={node.title} content={node.content}/>
+                      this.props.items.map(({node, index}) => (
+                          <span key={index}>
+                           <Accordion key={index} title={node.title} content={node.content}/>
+                          </span>
                       ))
                     }
                   </div>
