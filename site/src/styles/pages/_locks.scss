@@ -6,7 +6,7 @@
   .what-to-expect {
     background-color: $color-faded-blue;
 
-    .expect-containers{
+    .expect-containers {
       display: flex;
       flex-wrap: nowrap;
       margin-top: var(--nav-gap);
@@ -28,115 +28,6 @@
     }
   }
 
-  .smart-locks, .electronic-locks, .legacy-locks {
-
-    gap: var(--nav-gap);
-
-    h2, p {
-      text-align: left;
-    }
-
-    h2 {
-      &.legacy {
-        color: $color-text-grey;
-        text-align: center;
-        @include md() {
-          text-align: left;
-          padding-left: 3rem;
-        }
-      }
-    }
-
-    .smart-locks-container, .smart-digilink-container {
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: var(--nav-gap);
-      padding: var(--section-gutter) 0;
-
-      @include rwd(966) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      img {
-        //@include outline(red);
-      }
-
-      .digilink-lock {
-        display: none;
-        @include rwd(966) {
-          display: flex;
-          margin-left: -50px;
-          max-height: 163px;
-        }
-      }
-
-      .mobile-smart-divider {
-        width: 80%;
-        margin-top: -2rem;
-        @include rwd(966) {
-          display: none;
-
-        }
-        @include lg() {
-          display: none;
-        }
-      }
-    }
-
-    .smart-digilink-container {
-      margin-top: -5rem;
-      @include rwd(966) {
-        display: none;
-      }
-    }
-
-    .smart-lock-wrap, .row {
-      display: flex;
-      flex-direction: column;
-      gap: var(--nav-gap);
-      @include rwd(738) {
-        flex-direction: row;
-
-      }
-      @include rwd(966) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: unset;
-      }
-    }
-
-  }
-
-  .row {
-    //display: flex;
-    //justify-content: center;
-    //gap: var(--nav-gap);
-    //padding: var(--section-gutter) 0;
-    //@include rwd(966) {
-    //  align-items: center;
-    //  justify-content: flex-start;
-    //  gap: 0;
-      padding: var(--section-gutter) 0;
-    //}
-    img {
-      max-width: unset;
-      height: unset;
-    }
-  }
 
 
-
-  .thumbnail {
-    p {
-      text-align: center;
-      margin: 0;
-    }
-    sup {
-      text-decoration: none !important;
-    }
-  }
 }

@@ -7,6 +7,7 @@ import Settings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 import GeneralFAQ from '../../components/support/GeneralFAQ';
+import Locks from "../../components/ui/locks";
 
 const IndexPage = () => {
   const isBrowser = typeof window !== "undefined";
@@ -214,7 +215,7 @@ const IndexPage = () => {
             </div>
           </section>
           <div className="section-delimeter container" />
-
+          <Locks />
         </div>
       </Layout>
   )

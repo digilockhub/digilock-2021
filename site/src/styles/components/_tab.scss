@@ -1,0 +1,31 @@
+
+.tab-container {
+  @include outline($color-numeris-blue);
+  .tab-content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    &.active {
+      display: flex;
+    }
+  }
+
+  .tab-list {
+    display: flex;
+    li {
+      color: $color-white;
+      width: 33.3%;
+      background: $color-numeris-blue;
+      padding: 1rem 0;
+      cursor: pointer;
+      &.active {
+        color: $color-numeris-blue;
+        background: $color-white;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
