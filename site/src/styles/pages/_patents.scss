@@ -1,5 +1,5 @@
 .patents {
-  
+
   h1 {
     padding-bottom: var(--section-gutter);
   }
@@ -39,11 +39,16 @@
   }
 
   td.grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
       grid-column-gap: 0;
       grid-row-gap: 0;
+    @include rwd(414) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+      @include md() {
+        grid-template-columns: repeat(3, 1fr);
+      }
   }
 
 }
