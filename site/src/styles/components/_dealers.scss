@@ -1,9 +1,80 @@
-.dealers {
-  .dealer-locations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 4rem;
+.find-partner {
+  background-color: $color-numeris-blue;
+
+  //padding-bottom: 0;
+
+  h1 {
+    color: $color-white;
+    padding-top: 2rem;
   }
+
+  @include md() {
+    //padding-top: var(--section-gutter);
+    background-color: $color-white;
+    h1 {
+      color: revert;
+      padding-top: revert;
+
+    }
+  }
+}
+
+.partner-locations {
+  padding: 0;
+  background-color: $color-numeris-blue;
+  display: flex;
+  justify-content: center;
+  gap: var(--nav-gap);
+
+  .container {
+    button {
+      position: relative;
+      z-index: 1;
+      background-color: $color-numeris-blue;
+      border: none;
+      display: inline-block;
+      width: 20%;
+      color: $color-white;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      &.selected {
+        &:before {
+          display: block;
+        }
+        text-decoration: underline;
+        @include md() {
+          background-color: $package-orange;
+          text-decoration: none;
+        }
+      }
+      @include md() {
+        height: 5.75rem;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: -19px;
+          left:50%;
+          transform: translateX(-50%);
+          z-index: 1;
+          border-top: 20px solid $package-orange !important;
+          border-top-color: inherit;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.dealer-locations {
+  padding-top: var(--section-gutter);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 4rem;
 
   .dealer {
     text-align: left;
@@ -11,13 +82,6 @@
       font-size: 1rem;
     }
   }
-
-  button.selected {
-    border: 2px solid $color-numeris-blue;
-  }
-
-  .dealer-locations {
-    background-color: $color-white;
-  }
-
 }
+
+

@@ -151,52 +151,57 @@ const Dealers = (props) => {
   }, []);
 
   return (
-      <section className="find-partner">
-        <div className="container">
-          <h1>
-            <Trans>
-              find_partner
-            </Trans>
-          </h1>
-          <div className={'dealers'}>
-            <div className="buttons">
-              <button
-                  className={selectedDealer === ContinentSettings.NORTH_AMERICA ? 'selected' : ''}
-                  id={'buttonNorthAmerica'}
-                  onClick={handleDealers}
-                  data-dealers={ContinentSettings.NORTH_AMERICA}>
-                North America
-              </button>
-              <button
-                  className={selectedDealer === ContinentSettings.EUROPE ? 'selected' : ''}
-                  id={'buttonEurope'}
-                  onClick={handleDealers}
-                  data-dealers={ContinentSettings.EUROPE}>
-                Europe
-              </button>
-              <button
-                  className={selectedDealer === ContinentSettings.AFRICA ? 'selected' : ''}
-                  id={'buttonMiddleEast'}
-                  onClick={handleDealers}
-                  data-dealers={ContinentSettings.AFRICA}>
-                Middle East
-              </button>
-              <button
-                  className={selectedDealer === ContinentSettings.ASIA ? 'selected' : ''}
-                  id={'buttonAsia'}
-                  onClick={handleDealers}
-                  data-dealers={ContinentSettings.ASIA}>
-                Asia
-              </button>
-              <button
-                  className={selectedDealer === ContinentSettings.SOUTH_AMERICA ? 'selected' : ''}
-                  id={'buttonSouthAmerica'}
-                  onClick={handleDealers}
-                  data-dealers={ContinentSettings.SOUTH_AMERICA}>
-                Latin America
-              </button>
-            </div>
-
+      <>
+        <section className="find-partner">
+          <div className="container">
+            <h1>
+              <Trans>
+                find_partner
+              </Trans>
+            </h1>
+          </div>
+        </section>
+        <section className="partner-locations">
+          <div className="container">
+            <button
+                className={selectedDealer === ContinentSettings.NORTH_AMERICA ? 'button selected' : ''}
+                id={'buttonNorthAmerica'}
+                onClick={handleDealers}
+                data-dealers={ContinentSettings.NORTH_AMERICA}>
+              North America
+            </button>
+            <button
+                className={selectedDealer === ContinentSettings.EUROPE ? 'selected' : ''}
+                id={'buttonEurope'}
+                onClick={handleDealers}
+                data-dealers={ContinentSettings.EUROPE}>
+              Europe
+            </button>
+            <button
+                className={selectedDealer === ContinentSettings.AFRICA ? 'selected' : ''}
+                id={'buttonMiddleEast'}
+                onClick={handleDealers}
+                data-dealers={ContinentSettings.AFRICA}>
+              Middle East
+            </button>
+            <button
+                className={selectedDealer === ContinentSettings.ASIA ? 'selected' : ''}
+                id={'buttonAsia'}
+                onClick={handleDealers}
+                data-dealers={ContinentSettings.ASIA}>
+              Asia
+            </button>
+            <button
+                className={selectedDealer === ContinentSettings.SOUTH_AMERICA ? 'selected' : ''}
+                id={'buttonSouthAmerica'}
+                onClick={handleDealers}
+                data-dealers={ContinentSettings.SOUTH_AMERICA}>
+              Latin America
+            </button>
+          </div>
+        </section>
+        <section>
+          <div className="container">
             <div className="dealer-locations">
               {
                 currentDealers.map(({node: dealer}, index) => (
@@ -220,10 +225,10 @@ const Dealers = (props) => {
                 ))
               }
             </div>
-
           </div>
-        </div>
-      </section>
+        </section>
+      </>
+
   )
 
 
