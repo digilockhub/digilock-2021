@@ -53,22 +53,19 @@ const IndexPage = () => {
                 <tr>
                   <td rowSpan={'3'}>Electronic Locks</td>
                   <td>Orbit</td>
-                  <td>
-                    10,697,203 <br/>
-                    10,711,489 <br/>
-                    2020/0378157
+                  <td className={'grid'}>
+                    <p>10,697,203</p>
+                    <p>10,711,489</p>
+                    <p>2020/0378157</p>
                   </td>
                 </tr>
                 <tr>
-                  {/*<td>&nbsp;</td>*/}
                   <td>
                     Versa <br/>
                     Sola <br/>
                     Classic
                   </td>
-                  <td>
-                    <div>
-                      <div>
+                  <td className={'grid'}>
                         <p>8,490,443</p>
                         <p>8,495,898</p>
                         <p>9,208,628</p>
@@ -82,8 +79,6 @@ const IndexPage = () => {
                         <p>D720,201</p>
                         <p>D720,202</p>
                         <p>D730,712</p>
-                      </div>
-                      <div>
                         <p>D731,286</p>
                         <p>D731,287</p>
                         <p>D737,114</p>
@@ -97,8 +92,6 @@ const IndexPage = () => {
                         <p>D764,255</p>
                         <p>D764,892</p>
                         <p>D764,893</p>
-                      </div>
-                      <div>
                         <p>D804,278</p>
                         <p>D804,279</p>
                         <p>D832,074</p>
@@ -112,22 +105,17 @@ const IndexPage = () => {
                         <p>D832,676</p>
                         <p>D832,677</p>
                         <p>2021/0225105</p>
-                      </div>
-                    </div>
                   </td>
                 </tr>
                 <tr>
-                  {/*<td>Locker Locks</td>*/}
                   <td>
                     Aspire <br/>
                     Axis <br/>
                     Cue <br/>
                     Range <br/>
-                    4th Gen.
+                    4th Generation.
                   </td>
-                  <td>
-                    <div>
-                      <div>
+                  <td className={'grid'}>
                         <p>9,672,673</p>
                         <p>9,422,746</p>
                         <p>8,161,781</p>
@@ -138,8 +126,6 @@ const IndexPage = () => {
                         <p>D902,003</p>
                         <p>D897,187</p>
                         <p>D896,613</p>
-                      </div>
-                      <div>
                         <p>D896,612</p>
                         <p>D863,035</p>
                         <p>D863,034</p>
@@ -151,8 +137,6 @@ const IndexPage = () => {
                         <p>D863,028</p>
                         <p>D863,027</p>
                         <p>D863,026</p>
-                      </div>
-                      <div>
                         <p>D863,025</p>
                         <p>D863,024</p>
                         <p>D836,418</p>
@@ -164,61 +148,42 @@ const IndexPage = () => {
                         <p>D733,519</p>
                         <p>D730,715</p>
                         <p>D730,714</p>
-                      </div>
-                    </div>
+
                   </td>
                 </tr>
                 <tr>
-                  <td>Lockers</td>
+                  <td rowSpan={'3'}>Lockers</td>
                   <td>PackageHold</td>
-                  <td>
-                    9,536,359 <br/>
-                    6,791,450 <br/>
-                    D918,525 <br/>
-                    D926,419 <br/>
-                    D927,820 <br/>
-                    D927,119 <br/>
-                    2020/0349796 <br/>
-                    2021/0225104
+                  <td className={'grid'}>
+                    <p>9,536,359</p>
+                    <p>6,791,450</p>
+                    <p>D918,525</p>
+                    <p>D926,419</p>
+                    <p>D927,820</p>
+                    <p>D927,119</p>
+                    <p>2020/0349796</p>
+                    <p>2021/0225104</p>
                   </td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
                   <td>Juice Bar</td>
-                  <td>10,135,268</td>
+                  <td className={'grid'}>10,135,268</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
                   <td>
                     NextLocker <br/>
                     Core <br/>
                     Celare
                   </td>
                   <td>
-                    D790,266 <br/>
-                    D790,265 <br/>
-                    D789,716 <br/>
-                    D789,715 <br/>
-                    D758,114 <br/>
-                    D737,084 <br/>
-                    D737,083 <br/>
-                    D672,585
-                  </td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                  <td>
-                    PackageHold
-                  </td>
-                  <td>
-                    9,536,359 <br/>
-                    6,791,450 <br/>
-                    D918,525 <br/>
-                    D926,419 <br/>
-                    D927,820 <br/>
-                    D927,119 <br/>
-                    2020/0349796 <br/>
-                    2021/0225104
+                    <p>D790,266</p>
+                    <p>D790,265</p>
+                    <p>D789,716</p>
+                    <p>D789,715</p>
+                    <p>D758,114</p>
+                    <p>D737,084</p>
+                    <p>D737,083</p>
+                    <p>D672,585</p>
                   </td>
                 </tr>
               </table>

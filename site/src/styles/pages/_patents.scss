@@ -1,9 +1,8 @@
 .patents {
 
-
-
-
-
+  h1 {
+    padding-bottom: var(--section-gutter);
+  }
   table {
     width: 100%;
     margin-bottom: 40px;
@@ -53,7 +52,12 @@
     }
   }
 
-
-
+  td.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+  }
 
 }
