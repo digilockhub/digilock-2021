@@ -18,25 +18,17 @@ const IndexPage = () => {
         <div className="patents">
           <section className="hero">
             <div className="container">
-              <h1>Virtual Patent Marking</h1>
-              <p>Security People, Inc. DBA Digilock has been the leader in electronic locking solutions for personal
-                storage for over 40 years, and continues to
-                develop innovative new products and technologies that improve the daily lives of our customers.
+              <h1>
+                <Trans>patent_headline</Trans>
+              </h1>
+              <p>
+                <Trans>hero_copy</Trans>
               </p>
               <p>
-                As permitted under the United States Patent Laws (see 35 USC &sect; 287), this site provides patent
-                information for select Digilock products. Not all
-                Digilock products are included. Categories of products are identified for convenience only, and no
-                restriction of patent coverage shall be read
-                into such categorization. Other Digilock products that are not listed here may be protected by one or
-                more
-                patents. The patents listed below are
-                only applicable in the U.S., and there may be patents in other countries. By necessity, this list is an
-                evolving list, as new patents are granted and
-                issued, while other patents may expire over time.
+                <Trans>hero_copy_2</Trans>
               </p>
               <p>
-                The following list of products may be covered by one or more of the associated U.S. Patents.
+                <Trans>hero_copy_3</Trans>
               </p>
             </div>
           </section>
@@ -45,13 +37,19 @@ const IndexPage = () => {
               <table>
                 <thead>
                 <tr>
-                  <th>Category</th>
-                  <th>Product Name</th>
-                  <th>Patents and Published Applications</th>
+                  <th>
+                    <Trans>category</Trans>
+                  </th>
+                  <th>
+                    <Trans>product_name</Trans>
+                  </th>
+                  <th>
+                    <Trans>patents_applications</Trans>
+                  </th>
                 </tr>
                 </thead>
                 <tr>
-                  <td rowSpan={'3'}>Electronic Locks</td>
+                  <td rowSpan={'3'}><Trans>electronic_locks</Trans></td>
                   <td>Orbit</td>
                   <td className={'grid'}>
                     <p>10,697,203</p>
