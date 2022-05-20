@@ -7,7 +7,7 @@ import {graphql} from "gatsby";
 
 const NotFoundPage = () => (
     <Layout>
-      <Seo title="404: Not found"/>
+      <Seo title="Sorry, that page doesn’t exist. Let Digilock help unlock where you were going."/>
       <div className="four-oh-four">
         <section className="hero">
           <div className="container">

@@ -1,0 +1,59 @@
+.patents {
+
+
+
+
+
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    background: #ccc;
+    border-spacing: 1px;
+  }
+
+  th {
+    background: $color-numeris-blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: top;
+    padding: 1rem;
+  }
+
+  td {
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    padding: 1rem;
+
+  }
+
+
+  td {
+    background: #fff;
+  }
+
+  p, td {
+    color: $color-text-grey;
+    font-size: 18px !important;
+  }
+
+  td >div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div {
+      @include rwd(800) {
+        width: 33.3%;
+      }
+    }
+    p {
+      margin: 0 0 3px 0;
+    }
+  }
+
+
+
+
+}

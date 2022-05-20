@@ -12,7 +12,10 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('About')}/>
+        <Seo
+            title={t('Digilock Electronic Lock Solutions Can Be Found Globally')}
+            description={t('Digilock electronic and digital lock solutions can be purchased directly through us, or from one of our trusted partners. Find the right electronic lock solution for your needs.')}
+        />
         <div className="where-to-buy">
           <section className="hero">
             <div className="container">

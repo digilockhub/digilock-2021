@@ -88,7 +88,10 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Contact Digilock')}/>
+        <Seo
+            title={t('Digilock Customer Support for your Innovative Keyless Locks')}
+            description={t('Contact Digilock Customer Support for any of your smart locks, electronic locks, mechanical or legacy Digilock Locks.')}
+        />
         <div className="support">
           <section className="hero">
             <div className="container">

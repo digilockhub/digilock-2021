@@ -26,7 +26,7 @@ const ThankYou = () => {
 
   return (
       <Layout>
-        <Seo title={'Thank You'}/>
+        <Seo title={'Thank you for your inquiry. Digilock Team'}/>
         <div className="contact">
           <section className="thank-you">
             <div className="container">
