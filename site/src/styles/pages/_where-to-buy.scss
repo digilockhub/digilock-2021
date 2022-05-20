@@ -7,21 +7,8 @@
     font-size: 1.2rem;
   }
 
-  .dealer-locations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 4rem;
-  }
-
-  .dealer {
-    text-align: left;
-    h4 {
-      font-size: 1rem;
-    }
-  }
-
-  button.selected {
-    border: 2px solid $color-numeris-blue;
+  .find-partner {
+    background-color: $color-numeris-blue;
   }
 
 }

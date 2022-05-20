@@ -1,0 +1,23 @@
+.dealers {
+  .dealer-locations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .dealer {
+    text-align: left;
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  button.selected {
+    border: 2px solid $color-numeris-blue;
+  }
+
+  .dealer-locations {
+    background-color: $color-white;
+  }
+
+}

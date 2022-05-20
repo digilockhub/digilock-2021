@@ -100,16 +100,7 @@ const IndexPage = () => {
             </div>
           </section>
           <div className="section-delimeter container" />
-          <section className="find-partner">
-            <div className="container">
-              <h1>
-                <Trans>
-                  find_partner
-                </Trans>
-              </h1>
-              <Dealers emailPartner={t('email_partner')} visitPartner={t('visit_partner')} />
-            </div>
-          </section>
+          <Dealers />
         </div>
       </Layout>
   )

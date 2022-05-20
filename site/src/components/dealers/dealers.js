@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PropTypes from "prop-types";
 import ContinentSettings from '../../constants/continents/geo-continents';
 import {useStaticQuery, graphql} from "gatsby";
+import {Trans} from "react-i18next";
 
 const Dealers = (props) => {
   const Dealers = useStaticQuery(graphql`
@@ -150,71 +151,79 @@ const Dealers = (props) => {
   }, []);
 
   return (
-      <div className={'dealers'}>
-        <h1>Dealers</h1>
-        <div className="buttons">
-          <button
-              className={selectedDealer === ContinentSettings.NORTH_AMERICA ? 'selected' : ''}
-              id={'buttonNorthAmerica'}
-              onClick={handleDealers}
-              data-dealers={ContinentSettings.NORTH_AMERICA}>
-            North America
-          </button>
-          <button
-              className={selectedDealer === ContinentSettings.EUROPE ? 'selected' : ''}
-              id={'buttonEurope'}
-              onClick={handleDealers}
-              data-dealers={ContinentSettings.EUROPE}>
-            Europe
-          </button>
-          <button
-              className={selectedDealer === ContinentSettings.AFRICA ? 'selected' : ''}
-              id={'buttonMiddleEast'}
-              onClick={handleDealers}
-              data-dealers={ContinentSettings.AFRICA}>
-            Middle East
-          </button>
-          <button
-              className={selectedDealer === ContinentSettings.ASIA ? 'selected' : ''}
-              id={'buttonAsia'}
-              onClick={handleDealers}
-              data-dealers={ContinentSettings.ASIA}>
-            Asia
-          </button>
-          <button
-              className={selectedDealer === ContinentSettings.SOUTH_AMERICA ? 'selected' : ''}
-              id={'buttonSouthAmerica'}
-              onClick={handleDealers}
-              data-dealers={ContinentSettings.SOUTH_AMERICA}>
-            Latin America
-          </button>
+      <section className="find-partner">
+        <div className="container">
+          <h1>
+            <Trans>
+              find_partner
+            </Trans>
+          </h1>
+          <div className={'dealers'}>
+            <div className="buttons">
+              <button
+                  className={selectedDealer === ContinentSettings.NORTH_AMERICA ? 'selected' : ''}
+                  id={'buttonNorthAmerica'}
+                  onClick={handleDealers}
+                  data-dealers={ContinentSettings.NORTH_AMERICA}>
+                North America
+              </button>
+              <button
+                  className={selectedDealer === ContinentSettings.EUROPE ? 'selected' : ''}
+                  id={'buttonEurope'}
+                  onClick={handleDealers}
+                  data-dealers={ContinentSettings.EUROPE}>
+                Europe
+              </button>
+              <button
+                  className={selectedDealer === ContinentSettings.AFRICA ? 'selected' : ''}
+                  id={'buttonMiddleEast'}
+                  onClick={handleDealers}
+                  data-dealers={ContinentSettings.AFRICA}>
+                Middle East
+              </button>
+              <button
+                  className={selectedDealer === ContinentSettings.ASIA ? 'selected' : ''}
+                  id={'buttonAsia'}
+                  onClick={handleDealers}
+                  data-dealers={ContinentSettings.ASIA}>
+                Asia
+              </button>
+              <button
+                  className={selectedDealer === ContinentSettings.SOUTH_AMERICA ? 'selected' : ''}
+                  id={'buttonSouthAmerica'}
+                  onClick={handleDealers}
+                  data-dealers={ContinentSettings.SOUTH_AMERICA}>
+                Latin America
+              </button>
+            </div>
+
+            <div className="dealer-locations">
+              {
+                currentDealers.map(({node: dealer}, index) => (
+                    <div className={'dealer'} key={index}>
+                      <h4>{dealer.company_name}</h4>
+                      <p>
+                        {dealer.street_po_box}<br/>
+                        {dealer.city} {dealer.state}<br/>
+                        <a href={"tel:" + dealer.phone}>{dealer.phone}</a><br/>
+                        {dealer.country}<br/>
+                        {dealer.email}<br/>
+                        <a href={'mailto:' + dealer.email}>
+                          {props.emailPartner}
+                        </a><br/>
+                        <a href={dealer.website}>
+                          {props.visitPartner}
+                        </a>
+
+                      </p>
+                    </div>
+                ))
+              }
+            </div>
+
+          </div>
         </div>
-
-        <div className="dealer-locations">
-          {
-            currentDealers.map(({node: dealer}, index) => (
-                <div className={'dealer'} key={index}>
-                  <h4>{dealer.company_name}</h4>
-                  <p>
-                    {dealer.street_po_box}<br/>
-                    {dealer.city} {dealer.state}<br/>
-                    <a href={"tel:"+dealer.phone}>{dealer.phone}</a><br/>
-                    {dealer.country}<br/>
-                    {dealer.email}<br/>
-                    <a href={'mailto:' + dealer.email}>
-                      {props.emailPartner}
-                    </a><br/>
-                    <a href={dealer.website}>
-                      {props.visitPartner}
-                    </a>
-
-                  </p>
-                </div>
-            ))
-          }
-        </div>
-
-      </div>
+      </section>
   )
 
 
