@@ -113,7 +113,7 @@ const IndexPage = () => {
                     Axis <br/>
                     Cue <br/>
                     Range <br/>
-                    4th Generation.
+                    4th Generation
                   </td>
                   <td className={'grid'}>
                         <p>9,672,673</p>
