@@ -1,8 +1,6 @@
 .find-partner {
   background-color: $color-numeris-blue;
 
-  //padding-bottom: 0;
-
   h1 {
     color: $color-white;
     padding-top: 2rem;
@@ -14,17 +12,20 @@
     h1 {
       color: revert;
       padding-top: revert;
-
     }
   }
 }
 
 .partner-locations {
-  padding: 0;
+  padding: 0 0 var(--section-gutter) 0;
   background-color: $color-numeris-blue;
   display: flex;
   justify-content: center;
   gap: var(--nav-gap);
+
+  @include md() {
+    padding: 0;
+  }
 
   .container {
     button {
