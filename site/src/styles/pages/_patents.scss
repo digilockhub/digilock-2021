@@ -1,5 +1,5 @@
 .patents {
-
+  
   h1 {
     padding-bottom: var(--section-gutter);
   }
@@ -29,31 +29,13 @@
     text-align: left;
     vertical-align: top;
     padding: 1rem;
-
-  }
-
-
-  td {
     background: #fff;
   }
+
 
   p, td {
     color: $color-text-grey;
     font-size: 18px !important;
-  }
-
-  td >div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    div {
-      @include rwd(800) {
-        width: 33.3%;
-      }
-    }
-    p {
-      margin: 0 0 3px 0;
-    }
   }
 
   td.grid {
