@@ -304,7 +304,7 @@ const Locks = () => {
               <a href="#">
                 <div className="thumbnail">
                   <StaticImage
-                      src={'../../images/locks/temp/DL22-newtworked-aspire-600x497.png'}
+                      src={'../../images/locks/DL22-mech-600x497.png'}
                       loading={'lazy'}
                       width={'200'}
                       height={'148'}
