@@ -89,9 +89,6 @@
   }
 
   .thumbnail {
-    * {
-      @include outline(red);
-    }
     p {
       text-align: center;
       margin: 0;
