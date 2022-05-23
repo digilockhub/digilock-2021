@@ -1,5 +1,9 @@
 .patents {
 
+  $mobileTextSize: 12px;
+  $desktopTextSize: 18px;
+
+
   h1 {
     padding-bottom: var(--section-gutter);
   }
@@ -13,6 +17,19 @@
     margin-bottom: 40px;
     background: #ccc;
     border-spacing: 1px;
+
+    font-size: $mobileTextSize;
+    td p {
+      font-size: $mobileTextSize;
+    }
+
+    @include rwd(414) {
+      font-size: $desktopTextSize;
+      td p {
+        font-size: $desktopTextSize;
+      }
+    }
+
   }
 
   th {
@@ -35,10 +52,9 @@
 
   p, td {
     color: $color-text-grey;
-    font-size: 18px !important;
   }
 
-  td.grid {
+  td.css-grid {
       grid-template-rows: 1fr;
       grid-column-gap: 0;
       grid-row-gap: 0;

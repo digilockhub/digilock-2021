@@ -51,7 +51,7 @@ const IndexPage = () => {
                 <tr>
                   <td rowSpan={'3'}><Trans>electronic_locks</Trans></td>
                   <td>Orbit</td>
-                  <td className={'grid'}>
+                  <td className={'css-grid'}>
                     <p>10,697,203</p>
                     <p>10,711,489</p>
                     <p>2020/0378157</p>
@@ -63,7 +63,7 @@ const IndexPage = () => {
                     Sola <br/>
                     Classic
                   </td>
-                  <td className={'grid'}>
+                  <td className={'css-grid'}>
                         <p>8,490,443</p>
                         <p>8,495,898</p>
                         <p>9,208,628</p>
@@ -113,7 +113,7 @@ const IndexPage = () => {
                     Range <br/>
                     4th Generation
                   </td>
-                  <td className={'grid'}>
+                  <td className={'css-grid'}>
                         <p>9,672,673</p>
                         <p>9,422,746</p>
                         <p>8,161,781</p>
@@ -152,7 +152,7 @@ const IndexPage = () => {
                 <tr>
                   <td rowSpan={'3'}>Lockers</td>
                   <td>PackageHold</td>
-                  <td className={'grid'}>
+                  <td className={'css-grid'}>
                     <p>9,536,359</p>
                     <p>6,791,450</p>
                     <p>D918,525</p>
@@ -165,7 +165,7 @@ const IndexPage = () => {
                 </tr>
                 <tr>
                   <td>Juice Bar</td>
-                  <td className={'grid'}>10,135,268</td>
+                  <td className={'css-grid'}>10,135,268</td>
                 </tr>
                 <tr>
                   <td>
