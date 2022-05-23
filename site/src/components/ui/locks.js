@@ -1,20 +1,13 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "react-i18next";
-import smartAspire from "../../images/locks/smart-aspire.png";
-import smartVersa from "../../images/locks/smart-versa.png";
-import smartOrbit from "../../images/locks/smart-orbit.png";
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
 import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
-import smartDigilink from "../../images/locks/smart-digilink.png";
-import elecAxis from "../../images/locks/elec-axis.png";
-import elecCue from "../../images/locks/elec-cue.png";
-import elecSola from "../../images/locks/elec-sola.png";
-import elecRange from "../../images/locks/elec-range.png";
+
+
 import legacyStandard from "../../images/locks/legacy-standard.png";
 import legacyVertical from "../../images/locks/legacy-vertical.png";
 import legacyClassic from "../../images/locks/legacy-classic.png";
-// import mech from "../../images/locks/temp/DL22_newweb_thumbnails_298x194.png";
 
 
 const Locks = () => {
@@ -47,7 +40,7 @@ const Locks = () => {
                 <a href="#">
                   <div className="thumbnail">
                     <StaticImage
-                        src={'../../images/locks/temp/DL22-newtworked-aspire-600x497.png'}
+                        src={'../../images/locks/DL22-net-aspire-600x497.png'}
                         loading={'lazy'}
                         width={'200'}
                         height={'148'}
@@ -63,7 +56,7 @@ const Locks = () => {
                 <a href="#">
                   <div className="thumbnail">
                     <StaticImage
-                        src={'../../images/locks/temp/DL22-newtworked-versa-600x497.png'}
+                        src={'../../images/locks/DL22-net-versa-600x497.png'}
                         loading={'lazy'}
                         width={'200'}
                         height={'148'}
@@ -79,7 +72,7 @@ const Locks = () => {
                 <a href="#">
                   <div className="thumbnail">
                     <StaticImage
-                        src={'../../images/locks/temp/DL22-newtworked-orbit-600x497.png'}
+                        src={'../../images/locks/DL22-net-orbit-600x497.png'}
                         loading={'lazy'}
                         width={'200'}
                         height={'148'}
@@ -101,7 +94,7 @@ const Locks = () => {
                 <a href="#">
                   <div className="thumbnail">
                     <StaticImage
-                        src={'../../images/locks/temp/DL22-newtworked-digilink-600x497.png'}
+                        src={'../../images/locks/DL22-digilink-600x497.png'}
                         loading={'lazy'}
                         width={'200'}
                         height={'148'}
@@ -119,7 +112,15 @@ const Locks = () => {
 
             <div className="smart-digilink-container">
               <div className="thumbnail">
-                <img src={smartDigilink} alt="Digilink" width={'199'} height={'163'} loading={'lazy'}/>
+                <StaticImage
+                    src={'../../images/locks/DL22-digilink-600x497.png'}
+                    loading={'lazy'}
+                    width={'200'}
+                    height={'148'}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="NEED ALT TAG"
+                />
                 <p>
                   <span>Digilink<sup>&trade;</sup></span>
                 </p>
@@ -145,7 +146,15 @@ const Locks = () => {
             <div className="row">
               <a href="#">
                 <div className="thumbnail">
-                  <img src={smartAspire} alt="Aspire"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-aspire-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Aspire<sup>&trade;</sup></span>
                   </p>
@@ -153,7 +162,15 @@ const Locks = () => {
               </a>
               <a href="#">
                 <div className="thumbnail">
-                  <img src={smartVersa} alt="Versa"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-versa-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Versa<sup>&trade;</sup></span>
                   </p>
@@ -161,7 +178,15 @@ const Locks = () => {
               </a>
               <a href="#">
                 <div className="thumbnail">
-                  <img src={smartOrbit} alt="Orbit"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-orbit-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Orbit<sup>&trade;</sup></span>
                   </p>
@@ -180,7 +205,15 @@ const Locks = () => {
             <div className="row">
               <a href="#">
                 <div className="thumbnail">
-                  <img src={elecAxis} alt="Axis"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-axis-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Axis<sup>&trade;</sup></span>
                   </p>
@@ -188,7 +221,15 @@ const Locks = () => {
               </a>
               <a href="#">
                 <div className="thumbnail">
-                  <img src={elecCue} alt="Cue"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-cue-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Cue<sup>&trade;</sup></span>
                   </p>
@@ -196,7 +237,15 @@ const Locks = () => {
               </a>
               <a href="#">
                 <div className="thumbnail">
-                  <img src={elecSola} alt="Sola"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-sola-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Sola<sup>&trade;</sup></span>
                   </p>
@@ -204,7 +253,15 @@ const Locks = () => {
               </a>
               <a href="#">
                 <div className="thumbnail">
-                  <img src={elecRange} alt="Range"/>
+                  <StaticImage
+                      src={'../../images/locks/DL22-range-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
                   <p>
                     <span>Range<sup>&trade;</sup></span>
                   </p>
