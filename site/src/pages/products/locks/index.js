@@ -35,6 +35,101 @@ const IndexPage = () => {
               </Trans>
             </h6>
           </section>
+          <section className="what-to-expect">
+            <div className="container">
+              <h2>
+                <Trans>
+                  what_to_expect
+                </Trans>
+              </h2>
+              <p>
+                <Trans>
+                  what_to_expect_copy
+                </Trans>
+              </p>
+
+              <div className="expect-containers">
+                <div className="expect-container">
+                  <img src={iconTech} alt="" width={'55'} height={'59'}/>
+                  <h2 className={'sub'}>
+                    <Trans>
+                      tech_advanced
+                    </Trans>
+                  </h2>
+                  <hr/>
+                  <ul>
+                    <li>
+                      <Trans>
+                        tech_advanced_copy1
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        tech_advanced_copy2
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        tech_advanced_copy3
+                      </Trans>
+                    </li>
+                  </ul>
+                </div>
+                <div className="expect-container">
+                  <img src={iconInstall} alt="" width={'157'} height={'29'}/>
+                  <h2 className={'sub'}>
+                    <Trans>
+                      simple_install
+                    </Trans>
+                  </h2>
+                  <hr/>
+                  <ul>
+                    <li>
+                      <Trans>
+                        simple_install_copy1
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        simple_install_copy2
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        simple_install_copy3
+                      </Trans>
+                    </li>
+                  </ul>
+                </div>
+                <div className="expect-container">
+                  <img src={iconEasy} alt="" width={'149'} height={'47'}/>
+                  <h2 className={'sub'}>
+                    <Trans>
+                      easy_use
+                    </Trans>
+                  </h2>
+                  <hr/>
+                  <ul>
+                    <li>
+                      <Trans>
+                        easy_use_copy1
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        easy_use_copy2
+                      </Trans>
+                    </li>
+                    <li>
+                      <Trans>
+                        easy_use_copy3
+                      </Trans>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
           <Locks />
           <section className="compare-grid">
             <div className="container">
