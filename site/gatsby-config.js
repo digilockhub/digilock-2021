@@ -94,8 +94,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-hubspot',
       options: {
-        key: '6829fabf-fd7f-46ec-9a74-aa30ec2ad578'
-      }
+        key: '6829fabf-fd7f-46ec-9a74-aa30ec2ad578',
+        filters: {
+          state: 'PUBLISHED',
+          limit: 100,
+          order_by: '-publish_date',
+        },
+      },
     }
   ],
 };
