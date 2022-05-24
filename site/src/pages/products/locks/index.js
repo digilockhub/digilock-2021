@@ -5,8 +5,9 @@ import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
 import Locks from '../../../components/ui/locks';
-
-
+import iconTech from '../../../images/locks/icon-tech.svg';
+import iconInstall from '../../../images/locks/icon-install.svg';
+import iconEasy from '../../../images/locks/icon-easy.svg';
 
 
 const IndexPage = () => {
