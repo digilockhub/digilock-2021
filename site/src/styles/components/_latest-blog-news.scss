@@ -174,11 +174,9 @@
         display: inline-block;
         text-transform: uppercase;
         font-weight: 700;
-        color: $color-numeris-blue;
         font-size: 16px;
         line-height: 24px;
         margin-top: 10px;
-        //margin-bottom: .8rem;
         padding-bottom: .8rem;
       }
       &.hero-title {
@@ -187,6 +185,17 @@
         }
       }
     }
+  }
+
+  p.category-label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    padding-bottom: .8rem;
+    font-family: "AvenirMedium", sans-serif;
   }
 
   p {

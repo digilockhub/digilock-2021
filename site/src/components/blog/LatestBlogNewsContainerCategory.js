@@ -4,6 +4,7 @@ class LatestBlogNewsContainerCategory extends Component {
 
   componentDidMount() {
      document.getElementById('catName').innerText = document.getElementsByClassName('category-label')[0].innerText.toLowerCase();
+     console.log('blogData'+this.props.blogData);
   }
 
   render() {

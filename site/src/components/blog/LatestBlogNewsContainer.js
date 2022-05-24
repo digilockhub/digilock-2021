@@ -41,12 +41,9 @@ class LatestBlogNewsContainer extends Component {
                             <img className={'img-responsive'} src={post.feature_image.url} alt="blog post"
                                  loading="lazy"/>
                           </a>
-                          <a href={'/blog/?cat='+topics[0].id}
-                             aria-describedby={'tip'+index}
-                             className={'category-label'}
-                             title={'See all '+topicName+' posts'}>
+                          <p className={'category-label'}>
                              {topicName}
-                          </a>
+                          </p>
                           <a className={'hero-title'} href={index === 1 ? '/about/digilock-showroom/' : bUrl}>
                             <h2>{post.title}</h2>
                           </a>
@@ -62,7 +59,7 @@ class LatestBlogNewsContainer extends Component {
                             <img className={'img-responsive'} src={post.feature_image.url} alt="blog post"
                                  loading="lazy"/>
                           </a>
-                          <a href={'/blog/?cat='+topics[0].id} className={'category-label'} title={'See all '+topicName+' posts'}>{topicName}</a>
+                          <p className={'category-label'}>{topicName}</p>
                             <p>{post.title}</p>
                         </div>
                       </div>
@@ -88,7 +85,7 @@ class LatestBlogNewsContainer extends Component {
                                loading="lazy"/>
                         </a>
                         {/*<span className={'category'}>{this.props.getTopicNameById(topics[0].id)}</span>*/}
-                        <a className={'category-label'} href={'/blog/?cat='+topics[0].id} title={'See all '+topicName+' posts'}>{topicName}</a>
+                        <p className={'category-label'}>{topicName}</p>
                           <p>{post.title}</p>
                       </div>
                     </div>

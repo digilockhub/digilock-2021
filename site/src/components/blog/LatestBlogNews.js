@@ -83,7 +83,7 @@ class LatestBlogNews extends Component {
   }
 
   getTopicNameById = (id) => {
-    let bt = this.props.blogTopics.data.objects
+    let bt = this.props.blogTopics.data.objects;
     for (let i = 0; i < bt.length; i++) {
       if (bt[i].id === id) {
         return bt[i].name;
@@ -95,7 +95,7 @@ class LatestBlogNews extends Component {
         return 'Company';
       }
     }
-  }
+  };
 
   //MATCH POSTS TO FILTERS
   getMatch = (a, b) => {
@@ -106,7 +106,7 @@ class LatestBlogNews extends Component {
       }
     }
     return matches;
-  }
+  };
 
   //FILTER BLOG POSTS BY TOPIC WHEN CB IS CHECKED
 
@@ -125,7 +125,7 @@ class LatestBlogNews extends Component {
       chosenCategory: true
     });
 
-  }
+  };
 
   //CHECK FOR CHECKED TOPICS
   areFiltersClear = () => {
@@ -136,7 +136,7 @@ class LatestBlogNews extends Component {
       }
     }
     return false
-  }
+  };
 
   //SHOW ALL BLOG POSTS
   showAllPosts = () => {
@@ -145,7 +145,7 @@ class LatestBlogNews extends Component {
       blogPosts[i].classList.remove('hide')
     }
     this.setState({ filteredPosts: [] })
-  }
+  };
 
   //CLEAR FILTERS HANDLER
   handleClearFilters = () => {
@@ -155,7 +155,7 @@ class LatestBlogNews extends Component {
     }
     this.setState({ filteredPosts: [] });
     this.showAllPosts()
-  }
+  };
 
 
   render() {
