@@ -16,6 +16,8 @@ class LatestBlogNews extends Component {
     }
   }
 
+  isBrowser = typeof window !== "undefined";
+
 
   componentWillMount() {
 
@@ -61,7 +63,7 @@ class LatestBlogNews extends Component {
     //   }
     // );
 
-    if(window.location.search.length > 0) {
+    if(this.isBrowser && window.location.search.length > 0) {
       this.setFilter(window.location.search.split('=')[1]);
     } else {
       this.setState({
