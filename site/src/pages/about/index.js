@@ -25,7 +25,6 @@ const IndexPage = () => {
           <section className="hero --hero-image no-pad">
             <StaticImage
                 src="../../images/about/hero-about.jpg"
-                width={'1440'}
                 layout={'fullWidth'}
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"

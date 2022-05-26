@@ -46,8 +46,8 @@ exports.createPages = async ({graphql, actions, reporter}) => {
       path: `/blog/post/${post.node.slug}`,
       component: BlogPostTemplate,
       context: {
-        id: post.node.id
-      },
+        post: post.node
+      }
     });
   });
 };

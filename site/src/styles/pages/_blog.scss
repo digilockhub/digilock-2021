@@ -4,20 +4,13 @@
   max-width: 1000px;
   margin: 0 auto;
 
-  a {
-    color: $color-numeris-blue;
-    span {
-      color: $color-numeris-blue;
-    }
-  }
+  //a {
+  //  color: $color-numeris-blue;
+  //  span {
+  //    color: $color-numeris-blue;
+  //  }
+  //}
 
-  h1 {
-    font-size: 1.7rem;
-    color: $color-numeris-blue;
-    font-family: "AvenirRegular", sans-serif;
-    font-weight: bold;
-    margin-top: 1em;
-  }
 
   p, span {
     //@include outline(red);
@@ -51,8 +44,11 @@
     display:block;
   }
 
-  .blog-body img {
-    display: none;
+  .blog-body {
+    text-align: left;
+    img {
+      display: none;
+    }
   }
 
   ol {
@@ -73,4 +69,11 @@
     display: none;
   }
 
+}
+
+section.back-to-blog {
+  text-align: left;
+  a {
+    font-family: "AvenirDemi", sans-serif;
+  }
 }
