@@ -73,7 +73,7 @@ const Header = () => {
                     label={'Contact'}/>
               </li>
               <li className={'geo'}>
-                <GeoLocation />
+                <GeoLocation/>
               </li>
             </ul>
           </div>
@@ -121,31 +121,31 @@ const Header = () => {
                       <CustomLocalizedLink
                           goto="/solutions/education/"
                           cls={checkSiteLocaton('/solutions/education/') ? 'selected' : ''}
-                          label={t('education')} />
+                          label={t('education')}/>
                     </li>
                     <li>
                       <CustomLocalizedLink
                           goto="/solutions/retail/"
                           cls={checkSiteLocaton('/solutions/retail/') ? 'selected' : ''}
-                          label={t('retail')} />
+                          label={t('retail')}/>
                     </li>
                     <li>
                       <CustomLocalizedLink
                           goto="/solutions/manufacturing/"
                           cls={checkSiteLocaton('/solutions/manufacturing/') ? 'selected' : ''}
-                          label={t('manufacturing')} />
+                          label={t('manufacturing')}/>
                     </li>
                     <li>
                       <CustomLocalizedLink
                           goto="/solutions/health-fitness/"
                           cls={checkSiteLocaton('/solutions/health-fitness/') ? 'selected' : ''}
-                          label={t('health_fitness')} />
+                          label={t('health_fitness')}/>
                     </li>
                     <li>
                       <CustomLocalizedLink
                           goto="/solutions/hospitality/"
                           cls={checkSiteLocaton('/solutions/hospitality/') ? 'selected' : ''}
-                          label={t('hospitality')} />
+                          label={t('hospitality')}/>
                     </li>
                   </ul>
                 </li>
@@ -156,19 +156,104 @@ const Header = () => {
                       label={t('locks')}/>
                   <ul className="dropdown unstyled-list">
                     <li>
-                      <Link to={'#'}>
-                        Foo
-                      </Link>
+                      Smart&nbsp;Locks
+                      <ul className="subdrop unstyled-list">
+                        <li>
+                          <Link to={'#'}>
+                            Network Aspire
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Network Versa
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Network Orbit
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Digilink
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <Link to={'#'}>
-                        Foo
-                      </Link>
+                      Electronic&nbsp;Locks
+                      <ul className="subdrop unstyled-list">
+                        <li>
+                          <Link to={'#'}>
+                            Aspire
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Versa
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Orbit
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Digilink
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <Link to={'#'}>
-                        Foo
-                      </Link>
+                      Legacy Designs
+                      <ul className="subdrop unstyled-list">
+                        <li>
+                          <Link to={'/products/electronic-locks/axis/'}>
+                            Axis
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Cue
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Sola
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Range
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Standard
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Vertical
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'#'}>
+                            Classic
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Mechanical Lock
+                      <ul className="subdrop unstyled-list">
+                        <li>
+                          <Link to={'#'}>
+                            Mech
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>

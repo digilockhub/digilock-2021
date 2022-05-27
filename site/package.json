@@ -24,6 +24,7 @@
     "moment-timezone": "^0.5.34",
     "prop-types": "^15.8.0",
     "react": "^17.0.1",
+    "react-compare-image": "^3.1.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.15.3",

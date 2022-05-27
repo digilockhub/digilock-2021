@@ -1,0 +1,16 @@
+.revealer-container {
+
+    .labels {
+        display: flex;
+        justify-content: space-between;
+        .label-left, .label-right {
+            opacity: 1;
+            transition: all .3s ease;
+        }
+    }
+
+    .hide-but-keep {
+        opacity: 0 !important;
+    }
+
+}

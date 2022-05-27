@@ -8,7 +8,6 @@
   overflow: hidden;
   transition: all ease-in-out 250ms;
 
-
   @include md() {
     position: relative;
     flex: auto;
@@ -18,18 +17,15 @@
     left: 0;
   }
 
-
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
-
     @include md() {
       flex-direction: row;
       height: auto;
     }
-
   }
 
   li {

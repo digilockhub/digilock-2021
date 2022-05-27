@@ -82,7 +82,14 @@
     text-align: left;
     @include md() {
       position: absolute;
+    }
+    white-space: nowrap;
+  }
 
+  .subdrop {
+    margin-left: .5rem;
+    li:last-of-type {
+      margin-bottom: 5px;
     }
   }
 
