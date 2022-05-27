@@ -20,9 +20,10 @@
   height: 0;
 }
 
+
 .grid-two-col {
   display: grid;
-  gap: var(--nav-gap);
+  gap: 1rem;
 
   @include md() {
     grid-template-columns: repeat(2, 1fr);
@@ -31,10 +32,17 @@
   .interface, .body-style {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    >div {
+      &.revealer {
+        //@include outline(tomato);
+      }
+      &.video-360 {
+        //@include outline(tomato);
+        //* {
+        //  @include outline(green);
+        //}
+      }
+    }
   }
 
-
-  >div {
-    @include outline(dodgerblue);
-  }
 }

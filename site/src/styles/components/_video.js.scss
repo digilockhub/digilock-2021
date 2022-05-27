@@ -82,7 +82,7 @@
 
 #bcoveContainer {
   .video-js {
-    height: 443px;
+    height: 337px;
     width: 227px;
 
     video {
@@ -167,8 +167,8 @@
   .three60 {
     position: absolute;
     bottom: -20px;
-    height: 0px;
-    width: 100%;
+    left: 10px;
+    width: 88%;
     height: 21px;
     background-image: url('../components/video-player/images/icons/icon-rotate-circle.svg');
     background-repeat: no-repeat;

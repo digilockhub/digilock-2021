@@ -37,7 +37,7 @@ const Axis = (props) => {
               <div className={'grid-two-col'}>
 
                 <div className="interface">
-                  <div className="revealer">
+                  <div className="revealer center-top">
                     <RevealerWrapper
                         compareLeft={compareRight}
                         compareRight={compareLeft}
@@ -47,13 +47,13 @@ const Axis = (props) => {
                         clsName={'nextlock'}
                     />
                   </div>
-                  <div className="revealer-copy">
+                  <div className="product-copy">
                     <h2 className={'callout locker'}>
                       {t('interface')}
                     </h2>
-                    <h2 className={'front-unit'}>
+                    <p className={'front-unit'}>
                       {t('front_unit')}
-                    </h2>
+                    </p>
                     <h2>
                       {t('standard')} {t('keypad')} : {t('rfid')}
                     </h2>
@@ -77,7 +77,7 @@ const Axis = (props) => {
                   <div className="video-360">
                     <BCPlayer360 vid={bcVideoId} loc={'nextlock'}  />
                   </div>
-                  <div className="revealer-copy">
+                  <div className="product-copy">
                     <h2 className={'callout locker'}>
                       {t('body_style')}
                     </h2>
