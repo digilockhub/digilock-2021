@@ -1,17 +1,14 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "react-i18next";
+import {getLocation} from '../../utils/utils';
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
 import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
 
-
-import legacyStandard from "../../images/locks/legacy-standard.png";
-import legacyVertical from "../../images/locks/legacy-vertical.png";
-import legacyClassic from "../../images/locks/legacy-classic.png";
-
-
 const Locks = () => {
 
+  const isSupport = getLocation().indexOf('support') > -1;
+  const urlDirectory = isSupport ? '/support/' : '/products/';
   return (
       <>
         <section className="smart-locks">
@@ -271,18 +268,108 @@ const Locks = () => {
             </div>
             <div className="row">
               <div className="thumbnail">
-                <img src={legacyStandard} alt="Legacy Standard"/>
+                <StaticImage
+                    src={'../../images/locks/DL22-4Gstand-600x497.png'}
+                    loading={'lazy'}
+                    width={'200'}
+                    height={'148'}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Standard"
+                />
                 <p>Standard</p>
               </div>
               <div className="thumbnail">
-                <img src={legacyVertical} alt="Legacy Vertical"/>
-                <p>Vertical</p>
+                <StaticImage
+                    src={'../../images/locks/DL22-4Gvertical-600x497.png'}
+                    loading={'lazy'}
+                    width={'200'}
+                    height={'150'}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Vertical"
+                />
+                <p>4th Generation Vertical</p>
               </div>
               <div className="thumbnail">
-                <img src={legacyClassic} alt="Legacy Classic"/>
-                <p>Classic</p>
+                <StaticImage
+                    src={'../../images/locks/DL22-classiccam-600x497.png'}
+                    loading={'lazy'}
+                    width={'200'}
+                    height={'150'}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Vertical"
+                />
+                <p>4th Generation Classic</p>
               </div>
             </div>
+            {
+              isSupport ?
+                  <div className="row">
+                    <div className="thumbnail">
+                      <StaticImage
+                          src={'../../images/locks/DL22-3g-600x497.png'}
+                          loading={'lazy'}
+                          width={'200'}
+                          height={'148'}
+                          quality={100}
+                          formats={["auto", "webp", "avif"]}
+                          alt="3rd Generation"
+                      />
+                      <p>3rd Generation</p>
+                    </div>
+                    <div className="thumbnail">
+                      <StaticImage
+                          src={'../../images/locks/DL22-tseries-600x497.png'}
+                          loading={'lazy'}
+                          width={'200'}
+                          height={'150'}
+                          quality={100}
+                          formats={["auto", "webp", "avif"]}
+                          alt="T-series"
+                      />
+                      <p>T-series</p>
+                    </div>
+                    <div className="thumbnail">
+                      <StaticImage
+                          src={'../../images/locks/DL22-ktekpe-600x497.png'}
+                          loading={'lazy'}
+                          width={'200'}
+                          height={'150'}
+                          quality={100}
+                          formats={["auto", "webp", "avif"]}
+                          alt="KTE/KPE"
+                      />
+                      <p>KTE/KPE</p>
+                    </div>
+                    <div className="thumbnail">
+                      <StaticImage
+                          src={'../../images/locks/DL22-2G-600x497.png'}
+                          loading={'lazy'}
+                          width={'200'}
+                          height={'150'}
+                          quality={100}
+                          formats={["auto", "webp", "avif"]}
+                          alt="2nd Generation"
+                      />
+                      <p>2nd Generation</p>
+                    </div>
+                    <div className="thumbnail">
+                      <StaticImage
+                          src={'../../images/locks/DL22-1G-600x497.png'}
+                          loading={'lazy'}
+                          width={'200'}
+                          height={'150'}
+                          quality={100}
+                          formats={["auto", "webp", "avif"]}
+                          alt="1st Generation"
+                      />
+                      <p>1st Generation</p>
+                    </div>
+                  </div>
+                  : null
+            }
           </div>
         </section>
         <div className="section-delimeter container"/>
