@@ -35,9 +35,9 @@ const Axis = (props) => {
                     />
                   </div>
                   <div className="revealer-copy">
-                    <h1 className={'callout locker'}>
+                    <h2 className={'callout locker'}>
                       {t('interface')}
-                    </h1>
+                    </h2>
                     <h2 className={'front-unit'}>
                       {t('front_unit')}
                     </h2>
@@ -61,7 +61,41 @@ const Axis = (props) => {
                   </div>
                 </div>
                 <div className="body-style">
-                  <h2>Body Style</h2>
+                  <div className="revealer">
+                    <RevealerWrapper
+                        compareLeft={compareRight}
+                        compareRight={compareLeft}
+                        width={180}
+                        labelLeft={createMarkup(t('touch'))}
+                        labelRight={createMarkup(t('standard'))}
+                        clsName={'nextlock'}
+                    />
+                  </div>
+                  <div className="revealer-copy">
+                    <h2 className={'callout locker'}>
+                      {t('body_style')}
+                    </h2>
+                    <h2 className={'front-unit'}>
+                      {t('front_unit')}
+                    </h2>
+                    <h2>
+                      {t('standard')} {t('keypad')} : {t('rfid')}
+                    </h2>
+                    <p className={'pad-top'}>
+                      Axis {t('interface_copy')}
+                    </p>
+                    <h2>
+                      {t('power')} | 4 AA {t('batteries')}
+                    </h2>
+                    <p className={'pad-top'}>
+                      {t('interface_power_copy')}*
+                    </p>
+                    <p className={'footnote'}>
+                      <em>
+                        *{t('based_on_average_usage')}
+                      </em>
+                    </p>
+                  </div>
                 </div>
 
               </div>
