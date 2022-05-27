@@ -1,16 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../../components/layout";
 import Seo from "../../../../components/seo";
 import {graphql} from 'gatsby';
 import RevealerWrapper from '../../../../components/Revealer/RevealerWrapper';
+import VideoIcons from '../../../../components/video-player/VideoIcons';
+import BCPlayer360 from '../../../../components/video-player/BCPlayer360';
 import {createMarkup} from '../../../../utils/utils';
 import compareLeft from './images/NKAXSTWPKPBN_360ROT_FF.jpg';
 import compareRight from './images/NKAXSTWPRFBN_360ROT_FF.jpg';
 
 
 const Axis = (props) => {
+
   const {t} = useTranslation();
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [bcVideoId, setBcVideoId] = useState('6151114758001');
+
+  function videoIconClickHandler(index, vid) {
+    setCurrentVideoIndex(index);
+    setBcVideoId(vid);
+  }
+
+
+
   return (
       <Layout>
         <Seo
@@ -61,15 +74,8 @@ const Axis = (props) => {
                   </div>
                 </div>
                 <div className="body-style">
-                  <div className="revealer">
-                    <RevealerWrapper
-                        compareLeft={compareRight}
-                        compareRight={compareLeft}
-                        width={180}
-                        labelLeft={createMarkup(t('touch'))}
-                        labelRight={createMarkup(t('standard'))}
-                        clsName={'nextlock'}
-                    />
+                  <div className="video-360">
+                    <BCPlayer360 vid={bcVideoId} loc={'nextlock'}  />
                   </div>
                   <div className="revealer-copy">
                     <h2 className={'callout locker'}>
@@ -79,22 +85,37 @@ const Axis = (props) => {
                       {t('front_unit')}
                     </h2>
                     <h2>
-                      {t('standard')} {t('keypad')} : {t('rfid')}
+                      {t('finish')} | {t('brushed_nickel')} : {t('black')}
                     </h2>
-                    <p className={'pad-top'}>
-                      Axis {t('interface_copy')}
+                    <p>
+                      {t('body_finish_copy')}
                     </p>
                     <h2>
-                      {t('power')} | 4 AA {t('batteries')}
+                      {t('body')} | {t('standard')} : {t('vertical')} : {t('horizontal')}
                     </h2>
-                    <p className={'pad-top'}>
-                      {t('interface_power_copy')}*
+                    <p>
+                      {t('body_copy')}
                     </p>
-                    <p className={'footnote'}>
-                      <em>
-                        *{t('based_on_average_usage')}
-                      </em>
-                    </p>
+                    <VideoIcons
+                        currentVideoIndex={currentVideoIndex}
+                        videoIconClickHandler={videoIconClickHandler}
+                        toggleClassNames={
+                          [
+                            'icon-standard-keypad',
+                            'icon-standard-touch',
+                            'icon-vertical-keypad',
+                            'icon-vertical-touch'
+                          ]
+                        }
+                        bcVideoIds={
+                          [
+                            '6151114758001',
+                            '6151118468001',
+                            '6151118771001',
+                            '6151118772001'
+                          ]
+                        }
+                    >&nbsp;</VideoIcons>
                   </div>
                 </div>
 

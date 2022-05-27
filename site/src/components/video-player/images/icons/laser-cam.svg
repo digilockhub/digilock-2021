@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>laser-cam</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 16.5241376 16.5241376 16.5241376 16.5241376 -2.96118686e-15 0 -2.96118686e-15"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Numeris-colors-second-page-Copy" transform="translate(-205.000000, -258.000000)">
+            <g id="laser-cam" transform="translate(205.000000, 258.000000)">
+                <path d="M8.26206879,14.7071076 C11.8211138,14.7071076 14.7071076,11.8211138 14.7071076,8.26206879 C14.7071076,4.70302377 11.8211138,1.81703001 8.26206879,1.81703001 C4.70302377,1.81703001 1.81703001,4.70302377 1.81703001,8.26206879 C1.81703001,11.8211138 4.70302377,14.7071076 8.26206879,14.7071076 Z M8.26206879,0 C12.8254813,0 16.5241376,3.69865627 16.5241376,8.26206879 C16.5241376,12.8254813 12.8254813,16.5241376 8.26206879,16.5241376 C3.69865627,16.5241376 0,12.8254813 0,8.26206879 C0,3.69865627 3.69865627,0 8.26206879,0 Z" id="Fill-1" fill="#424852"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-4"></g>
+                <polygon id="Fill-3" fill="#424852" mask="url(#mask-2)" points="7.50191678 11.5752313 9.02305429 11.5752313 9.02305429 4.94890627 7.50191678 4.94890627"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

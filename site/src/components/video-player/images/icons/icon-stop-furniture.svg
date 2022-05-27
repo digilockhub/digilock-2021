@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#0096CE" fill-rule="nonzero">
+            <g id="icon-play-furniture">
+                <path d="M15.026,0.002 C6.726,0.002 0,6.728 0,15.028 C0,23.325 6.726,30.049 15.026,30.049 C23.324,30.049 30.051,23.324 30.051,15.028 C30.052,6.728 23.324,0.002 15.026,0.002 Z M15.026,27.542 C8.114,27.542 2.51,21.941 2.51,15.028 C2.51,8.118 8.114,2.51 15.026,2.51 C21.937,2.51 27.54,8.117 27.54,15.028 C27.541,21.941 21.937,27.542 15.026,27.542 Z" id="Shape"></path>
+            </g>
+            <rect id="Rectangle" x="10" y="11" width="10" height="8"></rect>
+        </g>
+    </g>
+</svg>

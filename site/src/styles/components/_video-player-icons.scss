@@ -1,0 +1,79 @@
+nav.toggles {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  button {
+    padding: 0;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none; // this one
+    cursor: pointer;
+
+    &.selected {
+      opacity: .5;
+      cursor: auto;
+    }
+
+    &.icon-standard-touch {
+      background-image: url('../components/video-player/images/icons/icon-standard-touch.svg');
+    }
+    &.icon-standard-keypad {
+      background-image: url('../components/video-player/images/icons/icon-standard-keypad.svg');
+    }
+    &.icon-vertical-touch {
+      background-image: url('../components/video-player/images/icons/icon-vertical-touch.svg');
+    }
+    &.icon-vertical-keypad {
+      background-image: url('../components/video-player/images/icons/icon-vertical-keypad.svg');
+    }
+    &.icon-classic-key {
+      background-image: url('../components/video-player/images/icons/classic-key.svg');
+      height: 90px;
+    }
+    &.icon-classic-rfid {
+      background-image: url('../components/video-player/images/icons/classic-rfid.svg');
+      height: 90px;
+    }
+    &.icon-mech-dial {
+      background-image: url('../components/video-player/images/icons/dial.svg');
+    }
+    &.icon-mech-cam {
+      background-image: url('../components/video-player/images/icons/laser-cam.svg');
+    }
+    &.icon-mech-hasp {
+      background-image: url('../components/video-player/images/icons/hasp.svg');
+    }
+    &.icon-vs-kpd {
+      background-image: url('../components/video-player/images/icons/vs-std-kpd-rece.svg');
+      height: 90px;
+    }
+    &.icon-vs-rfid {
+      background-image: url('../components/video-player/images/icons/vs-std-rfid-surf.svg');
+      height: 90px;
+    }
+    &.range_ovl_key {
+      background-image: url('../components/video-player/images/icons/range_ovl_key.svg');
+    }
+    &.range_ovl_rfid {
+      background-image: url('../components/video-player/images/icons/range_ovl_rfid.svg');
+    }
+    &.range_std_key {
+      background-image: url('../components/video-player/images/icons/range_std_key.svg');
+    }
+    &.range_std_rfid {
+      background-image: url('../components/video-player/images/icons/range_std_rfid.svg');
+    }
+    &.range_vrt_key {
+      background-image: url('../components/video-player/images/icons/range_vrt_key.svg');
+    }
+    &.range_vrt_rfid {
+      background-image: url('../components/video-player/images/icons/range_vrt_rfid.svg');
+    }
+  }
+}
