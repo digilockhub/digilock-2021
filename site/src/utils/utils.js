@@ -1,5 +1,7 @@
 // import LOCALES from '../constants/locales'
 
+const isBrowser = typeof window !== "undefined";
+
 export function generateNumber(min, max) {
   return Math.floor(Math.random()*(max-min+1)+min);
 }
@@ -98,18 +100,20 @@ export function returnLockerOrFurnitureBasedOnProduct() {
 
 //accepts two date string formatted like "MMMM DD, YYYY"
 export function returnStartAndEndDate(start, end) {
-  let dateArr = start.split(' ')
-  let dateName = dateArr[0]
-  let dateYear = dateArr[2]
-  let dateStart = dateArr[1]
-  dateStart = dateStart.replace(',', ' -')
-  let dateEnd = end.split(' ')[1].replace(',', ' ')
+  let dateArr = start.split(' ');
+  let dateName = dateArr[0];
+  let dateYear = dateArr[2];
+  let dateStart = dateArr[1];
+  dateStart = dateStart.replace(',', ' -');
+  let dateEnd = end.split(' ')[1].replace(',', ' ');
   return dateName + ' ' + dateStart + dateEnd + dateYear
 }
 
 //GET LOCATION
 export function getLocation() {
-  return window.location.pathname;
+  if(isBrowser) {
+    return window.location.pathname;
+  }
 }
 
 //WORKAROUND FOR BUILD ERROR FOR LOCALES

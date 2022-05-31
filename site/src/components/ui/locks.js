@@ -7,8 +7,10 @@ import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
 
 const Locks = () => {
 
+  console.log('getLocation: '+getLocation());
   const isSupport = getLocation().indexOf('support') > -1;
-  const urlDirectory = isSupport ? '/support/' : '/products/';
+  const urlDirectory = '/products/';
+  // const urlDirectory = isSupport ? '/support/' : '/products/';
   return (
       <>
         <section className="smart-locks">
