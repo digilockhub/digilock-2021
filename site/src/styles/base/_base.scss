@@ -57,19 +57,15 @@ section {
 }
 
 .hero.--hero-image {
+
   h1, h6 {
     position: absolute;
     @include hero-centerer();
     color: $color-white;
-  }
-  h1 {
-    font-size: 3.8rem;
-  }
-
-  h6 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1.9rem;
     @include md() {
-      font-size: 3.8rem;
+      font-size: 4rem;
     }
   }
 }
