@@ -1,16 +1,16 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "react-i18next";
-import {getLocation} from '../../utils/utils';
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
 import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
+import {globalHistory} from "@reach/router";
 
 const Locks = () => {
+  const isBrowser = typeof window !== "undefined";
+  const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
+  const urlDirectory = isSupport ? '/support/' : '/products/';
 
-  console.log('getLocation: '+getLocation());
-  const isSupport = getLocation().indexOf('support') > -1;
-  const urlDirectory = '/products/';
-  // const urlDirectory = isSupport ? '/support/' : '/products/';
+
   return (
       <>
         <section className="smart-locks">

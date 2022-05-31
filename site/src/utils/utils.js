@@ -1,7 +1,5 @@
 // import LOCALES from '../constants/locales'
 
-const isBrowser = typeof window !== "undefined";
-
 export function generateNumber(min, max) {
   return Math.floor(Math.random()*(max-min+1)+min);
 }
@@ -111,9 +109,7 @@ export function returnStartAndEndDate(start, end) {
 
 //GET LOCATION
 export function getLocation() {
-  if(isBrowser) {
-    return window.location.pathname;
-  }
+  return window.location.pathname;
 }
 
 //WORKAROUND FOR BUILD ERROR FOR LOCALES

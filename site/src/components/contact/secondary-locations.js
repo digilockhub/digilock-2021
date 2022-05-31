@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {graphql} from 'gatsby';
 import PropTypes from "prop-types";
 import {useTranslation} from 'gatsby-plugin-react-i18next';
 import companySettings from '../../constants/company/settings';
@@ -72,16 +71,3 @@ SecondaryLocations.propTypes = {
 };
 
 export default SecondaryLocations;
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;

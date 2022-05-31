@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import LanguageSwitcher from './locales/language-switcher';
 import digilockLogo from '../images/shared/digilock.svg';
 import GeoLocation from './geo-location/geo-location';
-import {graphql} from "gatsby";
 
 
 const Header = () => {
@@ -311,16 +310,3 @@ Header.defaultProps = {
 };
 
 export default Header;
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;

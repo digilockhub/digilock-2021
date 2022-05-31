@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {graphql} from 'gatsby';
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import {globalHistory} from "@reach/router";
 import CompanySettings from '../constants/company/settings';
@@ -184,16 +183,3 @@ const Footer = () => {
 };
 
 export default Footer;
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;
