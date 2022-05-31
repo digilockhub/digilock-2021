@@ -3,7 +3,7 @@ import {graphql, Link} from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import {replaceCharWithChar} from '../Utils/utils';
+import {replaceCharWithChar} from '../utils/utils';
 import {StaticImage} from "gatsby-plugin-image";
 
 const BlogPostTemplate = (props) => {
