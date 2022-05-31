@@ -6,7 +6,6 @@ import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
 import {globalHistory} from "@reach/router";
 
 const Locks = () => {
-  const isBrowser = typeof window !== "undefined";
   const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
   const urlDirectory = isSupport ? '/support/' : '/products/';
 

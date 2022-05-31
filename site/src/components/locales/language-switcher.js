@@ -1,58 +1,51 @@
-
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
 import locales from '../../constants/locales/locales'
 
 const LanguageSwitcher = () => {
   const {changeLanguage} = useI18next();
   const context = React.useContext(I18nextContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(0);
+  const [selectedLang] = useState(locales[context.language].locale);
 
-
-  useEffect(() => {
-    updateLangMenu();
-  });
-
-  let localesArr = Object.keys(locales).map(function(key) {
+  let localesArr = Object.keys(locales).map(function (key) {
     return locales[key];
   });
 
   function createOptionLabel(ind) {
-    if(localesArr[ind].locale === 'English') {
-      return localesArr[ind].locale;
-    } else {
-      return localesArr[ind].locale;
-    }
+    return localesArr[ind].locale;
+  }
+
+  function handleSelectTrigger() {
+    setIsMenuOpen(!isMenuOpen);
   }
 
   function handleLangChange(e) {
-    changeLanguage(e.target.value);
-  }
-
-  function updateLangMenu() {
-    let selectMen = document.getElementById('selectLanguages');
-    for (let i = 0; i < selectMen.options.length; ++i) {
-      if (selectMen.options[i].value === context.language) {
-        selectMen.options[i].selected = true;
-      }
-    }
+    changeLanguage(e.target.getAttribute('data-value'));
   }
 
   return (
-
-      <div className={'custom-select'}>
-        <select name="" id="selectLanguages" onChange={handleLangChange}>
+      <div className={isMenuOpen ? 'custom-select open' : 'custom-select'} onClick={handleSelectTrigger}>
+        <div className="custom-select-trigger">
+          {locales[context.language].locale}
+          <div className="arrow" />
+        </div>
+        <div className="custom-select-options">
           {
-            localesArr.map(function(locale, index) {
+            localesArr.map(function (locale, index) {
               let lg = localesArr[index].path;
-              return <option key={index} value={lg}>{createOptionLabel(index)}</option>
-            })};
+              return <span
+                  className={createOptionLabel(index) === selectedLang ? 'custom-select-option selected' : 'custom-select-option'}
+                  key={index}
+                  onClick={handleLangChange}
+                  data-value={lg}>
+                  {createOptionLabel(index)}
+                </span>
+            })
           }
-        </select>
-        <span className="custom-arrow" />
+        </div>
       </div>
-
   )
-
 };
 
 export default LanguageSwitcher;
