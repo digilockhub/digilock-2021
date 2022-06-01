@@ -29,8 +29,8 @@ const LanguageSwitcher = () => {
       <div className={isMenuOpen ? 'custom-select open' : 'custom-select'} onClick={handleSelectTrigger}>
         <div className="custom-select-trigger">
           {locales[context.language].locale}
-          <img src={globe} className="globe" />
         </div>
+        <img src={globe} className={"globe "+context.language} />
         <div className="custom-select-options">
           {
             localesArr.map(function (locale, index) {
@@ -48,5 +48,4 @@ const LanguageSwitcher = () => {
       </div>
   )
 };
-
 export default LanguageSwitcher;

@@ -25,16 +25,20 @@
       max-width: none;
       justify-content: flex-end;
       background-color: $color-white;
+      @include md() {
+        background-color: revert;
+      }
     }
 
     .menu-contact {
       gap: 0 !important;
-      background-color: $color-white;
+      //background-color: $color-white;
       li {
         width: 33.3%;
         @include md() {
           width: unset;
           &:first-of-type {
+            background-color: $color-white;
             padding-right: 1rem;
             padding-left: 1rem;
           }
