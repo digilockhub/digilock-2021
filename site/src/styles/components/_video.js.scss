@@ -82,8 +82,10 @@
 
 #bcoveContainer {
   .video-js {
-    height: 337px;
-    width: 227px;
+    min-height: 337px;
+    @include navBreak() {
+      width: 227px;
+    }
 
     video {
       background-color: $color-white;

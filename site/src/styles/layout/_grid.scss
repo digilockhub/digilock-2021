@@ -20,18 +20,28 @@
   height: 0;
 }
 
-
+//USED FOR PRODUCT DETAILS PAGES SO FAR
 .grid-two-col {
   display: grid;
   gap: 1rem;
-
-  @include md() {
+  @include navBreak() {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  h3 {
+    font-size: 1.063rem;
+    text-align: left;
+  }
   .interface, .body-style {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include outline(red);
+    grid-template-columns: 1fr;
+    align-items: center;
+    @include md() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
     >div {
       &.revealer {
         //@include outline(tomato);
@@ -44,5 +54,4 @@
       }
     }
   }
-
 }
