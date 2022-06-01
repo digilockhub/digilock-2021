@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
-import locales from '../../constants/locales/locales'
+import locales from '../../constants/locales/locales';
+import globe from '../../images/shared/globe.svg';
 
 const LanguageSwitcher = () => {
   const {changeLanguage} = useI18next();
@@ -28,7 +29,7 @@ const LanguageSwitcher = () => {
       <div className={isMenuOpen ? 'custom-select open' : 'custom-select'} onClick={handleSelectTrigger}>
         <div className="custom-select-trigger">
           {locales[context.language].locale}
-          {/*<div className="arrow" />*/}
+          <img src={globe} className="globe" />
         </div>
         <div className="custom-select-options">
           {

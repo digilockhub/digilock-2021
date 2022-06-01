@@ -24,6 +24,7 @@
       width: 100%;
       max-width: none;
       justify-content: flex-end;
+      background-color: $color-white;
     }
 
     .menu-contact {
@@ -35,6 +36,7 @@
           width: unset;
           &:first-of-type {
             padding-right: 1rem;
+            padding-left: 1rem;
           }
         }
       }

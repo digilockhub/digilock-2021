@@ -40,12 +40,21 @@
   cursor: pointer;
   background-color: $color-white;
   padding: 0 1em;
-  @include md() {
-    padding: 0 2em;
-  }
   background-image: url("../images/shared/caret-down.svg");
   background-repeat: no-repeat;
   background-position: 95% center;
+  @include md() {
+    padding: 0 2em;
+    background-position: 99% center;
+  }
+  .globe {
+    position: absolute;
+    left: 0;
+    display: none;
+    @include md() {
+      display: block;
+    }
+  }
 }
 
 .custom-select-trigger {
