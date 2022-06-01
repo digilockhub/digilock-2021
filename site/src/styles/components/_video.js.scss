@@ -81,6 +81,8 @@
 }
 
 #bcoveContainer {
+
+  margin-bottom: var(--section-gutter);
   .video-js {
     min-height: 337px;
     @include navBreak() {

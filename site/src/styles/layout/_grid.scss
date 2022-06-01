@@ -23,28 +23,28 @@
 //USED FOR PRODUCT DETAILS PAGES SO FAR
 .grid-two-col {
   display: grid;
-  gap: 1rem;
+  gap: var(--section-gutter);
   @include navBreak() {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   h3 {
     font-size: 1.063rem;
     text-align: left;
   }
-  .interface, .body-style {
+  .grid-two-col-item {
     display: grid;
-    @include outline(red);
     grid-template-columns: 1fr;
-    align-items: center;
+
     @include md() {
       grid-template-columns: repeat(2, 1fr);
     }
 
-
     >div {
       &.revealer {
         //@include outline(tomato);
+        margin-bottom: var(--nav-gap);
       }
       &.video-360 {
         //@include outline(tomato);
