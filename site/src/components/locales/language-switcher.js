@@ -28,7 +28,7 @@ const LanguageSwitcher = () => {
       <div className={isMenuOpen ? 'custom-select open' : 'custom-select'} onClick={handleSelectTrigger}>
         <div className="custom-select-trigger">
           {locales[context.language].locale}
-          <div className="arrow" />
+          {/*<div className="arrow" />*/}
         </div>
         <div className="custom-select-options">
           {

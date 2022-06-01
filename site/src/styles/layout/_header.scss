@@ -15,7 +15,6 @@
     }
   }
 
-
   .contact {
     height: var(--header-contact-height);
     background-color: $color-browser-chrome;
@@ -29,6 +28,16 @@
 
     .menu-contact {
       gap: 0 !important;
+      background-color: $color-white;
+      li {
+        width: 33.3%;
+        @include md() {
+          width: unset;
+          &:first-of-type {
+            padding-right: 1rem;
+          }
+        }
+      }
       .geo {
         display: flex;
         align-items: center;
@@ -36,8 +45,8 @@
         padding: 0 1rem;
         background-color: $color-white;
         p {
-          font-size: 12px;
-          white-space: nowrap;
+          //white-space: nowrap;
+          line-height: .9rem;
         }
         @include md() {
           padding: 0 var(--nav-gap) 0 var(--nav-gap);
@@ -47,6 +56,10 @@
         }
         a {
           color: $color-numeris-blue;
+          font-size: 1rem;
+          @include md() {
+            font-size: 1rem;
+          }
           &:hover, &:focus {
             text-decoration: underline;
           }
