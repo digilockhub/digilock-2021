@@ -222,28 +222,13 @@ const Header = () => {
                             Range
                           </Link>
                         </li>
-                        <li>
-                          <Link to={'#'}>
-                            Standard
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Vertical
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Classic
-                          </Link>
-                        </li>
                       </ul>
                     </li>
                     <li>
                       Mechanical Lock
                       <ul className="subdrop unstyled-list">
                         <li>
-                          <Link to={'#'}>
+                          <Link to={'/products/electronic-locks/mech/'}>
                             Mech
                           </Link>
                         </li>
