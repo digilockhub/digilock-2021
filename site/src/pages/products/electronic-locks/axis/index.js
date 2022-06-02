@@ -31,7 +31,7 @@ const Axis = (props) => {
             title={t('Digilock Commercial Keyless Locks For Hospitals, Hospitality and Corporations')}
             description={'Learn about the best industry commercial keyless locks that leverage proprietary technology and is supported by a dedicated customer service team.'}
         />
-        <div className={'electronic-locks axis'}>
+        <div className={'products electronic-locks axis'}>
           <section className="details">
             <div className="container">
               <h1>Axis {t('product_details')}</h1>

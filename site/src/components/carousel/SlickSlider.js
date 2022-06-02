@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from "react-dom";
 import Slider from "react-slick";
 
 import logoVw from '../../images/home/client-logos/logo-vw.jpg';
@@ -15,7 +14,7 @@ import logoNiners from '../../images/home/client-logos/logo-niners.png';
 
 class ReactSlick extends React.Component {
   render() {
-    var settings = {
+    let settings = {
       dots: false,
       arrows: false,
       infinite: true,

@@ -213,7 +213,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to={'#'}>
+                          <Link to={'/products/electronic-locks/sola/'}>
                             Sola
                           </Link>
                         </li>

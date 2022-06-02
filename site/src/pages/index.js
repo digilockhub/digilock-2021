@@ -67,7 +67,7 @@ const IndexPage = () => {
               <h2>
                 Known and Trusted
               </h2>
-              <div>
+              <div style={{width:'300px'}}>
                 <SlickSlider />
               </div>
             </div>

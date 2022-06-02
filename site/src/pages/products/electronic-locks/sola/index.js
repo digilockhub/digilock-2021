@@ -7,16 +7,18 @@ import RevealerWrapper from '../../../../components/Revealer/RevealerWrapper';
 import VideoIcons from '../../../../components/video-player/VideoIcons';
 import BCPlayer360 from '../../../../components/video-player/BCPlayer360';
 import {createMarkup} from '../../../../utils/utils';
-import compareLeft from './images/NKCUE5GKPBN_360ROT_FF.jpg';
-import compareRight from './images/NKCUE5GRFBN_360ROT_FF.jpg';
+import compareLeft from './images/NKSOLA3KPBN_360ROT_FF.jpg';
+import compareRight from './images/NKSOLA3RFBN_360ROT_FF.jpg';
 import {StaticImage} from "gatsby-plugin-image";
+import BCPlayerPlugs from '../../../../components/video-player/BCPlayerPlugs';
+import ReactSlickPlugs from '../../../../components/carousel/SlickSliderPlugs';
 
 
 const Axis = (props) => {
 
   const {t} = useTranslation();
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [bcVideoId, setBcVideoId] = useState('6151935992001');
+  const [bcVideoId, setBcVideoId] = useState('6151937549001');
 
   function videoIconClickHandler(index, vid) {
     setCurrentVideoIndex(index);
@@ -31,10 +33,10 @@ const Axis = (props) => {
             title={t('Digilock Commercial Keyless Locks For Hospitals, Hospitality and Corporations')}
             description={'Learn about the best industry commercial keyless locks that leverage proprietary technology and is supported by a dedicated customer service team.'}
         />
-        <div className={'products electronic-locks cue'}>
+        <div className={'products electronic-locks sola'}>
           <section className="details">
             <div className="container">
-              <h1>Cue {t('product_details')}</h1>
+              <h1>Sola {t('product_details')}</h1>
               <div className={'grid-two-col'}>
 
                 <div className="grid-two-col-item">
@@ -42,9 +44,10 @@ const Axis = (props) => {
                     <RevealerWrapper
                         compareLeft={compareRight}
                         compareRight={compareLeft}
-                        width={200}
-                        labelLeft={createMarkup(t('rfid'))}
-                        labelRight={createMarkup(t('standard')+'<br />'+t('keypad'))}
+                        width={140}
+                        sliderPosition={0.7}
+                        labelLeft={createMarkup(t('standard')+'<br />'+t('keypad'))}
+                        labelRight={createMarkup(t('rfid'))}
                         clsName={'nextlock'}
                     />
                   </div>
@@ -59,13 +62,13 @@ const Axis = (props) => {
                       {t('standard')} {t('keypad')} : {t('rfid')}
                     </h3>
                     <p className={'pad-top'}>
-                      {t('cue_interface_copy')}
+                      {t('sola_interface_copy')}
                     </p>
                     <h3>
-                      {t('power')} | 4 AA {t('batteries')}
+                      {t('power')} | 2 CR2450 or 4 AA {t('batteries')}
                     </h3>
                     <p className={'pad-top'}>
-                      {t('interface_power_copy_2')}*
+                      {t('interface_power_copy_3')}*
                     </p>
                     <p className={'footnote'}>
                       <em>
@@ -86,30 +89,30 @@ const Axis = (props) => {
                       {t('front_unit')}
                     </h3>
                     <h3>
-                      {t('finish')} | {t('brushed_nickel')}
+                      {t('finish')} | {t('brushed_nickel')} : {t('black')}
                     </h3>
                     <p>
-                      {t('cue_body_finish_copy')}
+                      {t('body_finish_copy')}
                     </p>
                     <h3>
-                      {t('body')} | {t('standard')}
+                      {t('body')} | {t('vertical')} : {t('horizontal')}
                     </h3>
                     <p>
-                      {t('cue_body_copy')}
+                      {t('sola_body_copy')}
                     </p>
                     <VideoIcons
                         currentVideoIndex={currentVideoIndex}
                         videoIconClickHandler={videoIconClickHandler}
                         toggleClassNames={
                           [
-                            'icon-standard-keypad',
-                            'icon-standard-touch'
+                            'icon-vs-kpd',
+                            'icon-vs-rfid'
                           ]
                         }
                         bcVideoIds={
                           [
-                            '6151935992001',
-                            '6151930395001'
+                            '6151937549001',
+                            '6151938004001'
                           ]
                         }
                     >&nbsp;</VideoIcons>
@@ -126,10 +129,10 @@ const Axis = (props) => {
                 <div className="grid-two-col-item">
                   <div>
                     <StaticImage
-                        src={'../../../../images/locks/rear-units/5g-latch.png'}
+                        src={'./images/01_CAM_OPTIONS_ILF.png'}
                         loading={'lazy'}
-                        width={364}
-                        height={247}
+                        width={579}
+                        height={656}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -137,49 +140,44 @@ const Axis = (props) => {
                   </div>
                   <div>
                     <h2>
-                      {t('deadlatch')}
+                      {t('locking_options')}
                     </h2>
                     <h3>
-                      {t('rear_unit')}
+                      {t('manual_locking')}
                     </h3>
                     <p>
-                      {t('deadlatch_rear_unit_copy')}
+                      {t('manual_locking_copy')}
                     </p>
                     <h3>
-                      {t('assigned_use')}
+                      {t('auto_relocking')}
                     </h3>
                     <p>
-                      {t('deadlatch_assigned_use_copy')}
+                      {t('auto_relocking_copy')}
                     </p>
                   </div>
                 </div>
                 <div className="grid-two-col-item">
                   <div>
-                    <StaticImage
-                        src={'../../../../images/locks/rear-units/5g-bolt.png'}
-                        loading={'lazy'}
-                        width={364}
-                        height={247}
-                        quality={100}
-                        formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
-                    />
+                    <BCPlayerPlugs vid={'6152986872001'} />
+                    <div style={{width:'351px'}}>
+                      <ReactSlickPlugs />
+                    </div>
                   </div>
                   <div>
                     <h2>
-                      {t('deadbolt')}
+                      {t('custom_plug')}
                     </h2>
                     <h3>
-                      {t('rear_unit')}
+                      {t('retrofit')}
                     </h3>
                     <p>
-                      {t('deadbolt_rear_unit_copy')}
+                      {t('retrofit_copy')}
                     </p>
                     <h3>
-                      {t('shared_use')}
+                      {t('three_step_mounting')}
                     </h3>
                     <p>
-                      {t('deadbolt_shared_use_copy')}
+                      {t('three_step_mounting_copy')}
                     </p>
                   </div>
                 </div>
