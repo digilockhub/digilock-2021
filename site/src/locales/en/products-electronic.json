@@ -7,6 +7,7 @@
   "mech_laser_cam_copy": "Laser cam locks operate with a laser key.",
   "mech_body_style_copy": "Available in vertical body style.",
   "mech_body_style_copy_with_cam": "Features a flat cam that rotates with the knob or ADA compliant lever.",
+  "mech_lock_management": "Lock Management",
   "mech_lock_management_copy": "Select mechanical solutions can be managed with laser cut keys and a reset tool.",
   "mech_finish_copy": "Standard finish is brushed nickel",
   "mech_ada": "ADA Compliant Options",

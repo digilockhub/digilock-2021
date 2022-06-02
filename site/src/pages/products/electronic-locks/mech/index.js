@@ -149,10 +149,10 @@ const Axis = (props) => {
                 <div className="grid-two-col-item">
                   <div>
                     <StaticImage
-                        src={'../../../../images/locks/rear-units/5g-latch.png'}
+                        src={'./images/mech-keys.png'}
                         loading={'lazy'}
-                        width={364}
-                        height={247}
+                        width={190}
+                        height={207}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -160,29 +160,20 @@ const Axis = (props) => {
                   </div>
                   <div>
                     <h2>
-                      {t('deadlatch')}
+                      {t('mech_lock_management')}
                     </h2>
-                    <h3>
-                      {t('rear_unit')}
-                    </h3>
                     <p>
-                      {t('deadlatch_rear_unit_copy')}
-                    </p>
-                    <h3>
-                      {t('assigned_use')}
-                    </h3>
-                    <p>
-                      {t('deadlatch_assigned_use_copy')}
+                      {t('mech_lock_management_copy')}<br /><Link to='/contact/'>{t('contact_digilock_sales')}</Link>
                     </p>
                   </div>
                 </div>
                 <div className="grid-two-col-item">
                   <div>
                     <StaticImage
-                        src={'../../../../images/locks/rear-units/5g-bolt.png'}
+                        src={'./images/nk_mech_br_isometric_0TS2x.png'}
                         loading={'lazy'}
-                        width={364}
-                        height={247}
+                        width={267}
+                        height={281}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -190,68 +181,10 @@ const Axis = (props) => {
                   </div>
                   <div>
                     <h2>
-                      {t('deadbolt')}
-                    </h2>
-                    <h3>
-                      {t('rear_unit')}
-                    </h3>
-                    <p>
-                      {t('deadbolt_rear_unit_copy')}
-                    </p>
-                    <h3>
-                      {t('shared_use')}
-                    </h3>
-                    <p>
-                      {t('deadbolt_shared_use_copy')}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div className="section-delimeter container" />
-          <section className="management">
-            <div className="container">
-              <div className="grid-two-col">
-                <div className="grid-two-col-item">
-                  <div>
-                    <StaticImage
-                        src={'../../../../images/locks/management/app-manage-next.png'}
-                        loading={'lazy'}
-                        width={214}
-                        height={216}
-                        quality={100}
-                        formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
-                    />
-                  </div>
-                  <div>
-                    <h2>
-                      {t('lock_management')}
+                      {t('finish')}
                     </h2>
                     <p>
-                      {'Axis '+t('lock_management_copy')}<br /><Link to='/contact/'>{t('contact_digilock_sales')}</Link>
-                    </p>
-                  </div>
-                </div>
-                <div className="grid-two-col-item">
-                  <div>
-                    <StaticImage
-                        src={'../../../../images/locks/management/app-manage-keys-all.png'}
-                        loading={'lazy'}
-                        width={169}
-                        height={192}
-                        quality={100}
-                        formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
-                    />
-                  </div>
-                  <div>
-                    <h2>
-                      {t('key_management')}
-                    </h2>
-                    <p>
-                      {t('key_management_copy')}
+                      {t('mech_finish_copy')}
                     </p>
                   </div>
                 </div>
