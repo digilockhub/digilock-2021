@@ -218,7 +218,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to={'#'}>
+                          <Link to={'/products/electronic-locks/range/'}>
                             Range
                           </Link>
                         </li>
