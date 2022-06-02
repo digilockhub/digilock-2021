@@ -7,8 +7,8 @@ import RevealerWrapper from '../../../../components/Revealer/RevealerWrapper';
 import VideoIcons from '../../../../components/video-player/VideoIcons';
 import BCPlayer360 from '../../../../components/video-player/BCPlayer360';
 import {createMarkup} from '../../../../utils/utils';
-import compareLeft from './images/NKAXSTWPKPBN_360ROT_FF.jpg';
-import compareRight from './images/NKAXSTWPRFBN_360ROT_FF.jpg';
+import compareLeft from './images/NKCUE5GKPBN_360ROT_FF.jpg';
+import compareRight from './images/NKCUE5GRFBN_360ROT_FF.jpg';
 import {StaticImage} from "gatsby-plugin-image";
 
 
@@ -16,7 +16,7 @@ const Axis = (props) => {
 
   const {t} = useTranslation();
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [bcVideoId, setBcVideoId] = useState('6151114758001');
+  const [bcVideoId, setBcVideoId] = useState('6151935992001');
 
   function videoIconClickHandler(index, vid) {
     setCurrentVideoIndex(index);
@@ -31,10 +31,10 @@ const Axis = (props) => {
             title={t('Digilock Commercial Keyless Locks For Hospitals, Hospitality and Corporations')}
             description={'Learn about the best industry commercial keyless locks that leverage proprietary technology and is supported by a dedicated customer service team.'}
         />
-        <div className={'electronic-locks axis'}>
+        <div className={'electronic-locks cue'}>
           <section className="details">
             <div className="container">
-              <h1>Axis {t('product_details')}</h1>
+              <h1>Cue {t('product_details')}</h1>
               <div className={'grid-two-col'}>
 
                 <div className="grid-two-col-item">
@@ -42,9 +42,9 @@ const Axis = (props) => {
                     <RevealerWrapper
                         compareLeft={compareRight}
                         compareRight={compareLeft}
-                        width={180}
-                        labelLeft={createMarkup(t('touch'))}
-                        labelRight={createMarkup(t('standard'))}
+                        width={200}
+                        labelLeft={createMarkup(t('rfid'))}
+                        labelRight={createMarkup(t('standard')+'<br />'+t('keypad'))}
                         clsName={'nextlock'}
                     />
                   </div>
@@ -59,13 +59,13 @@ const Axis = (props) => {
                       {t('standard')} {t('keypad')} : {t('rfid')}
                     </h3>
                     <p className={'pad-top'}>
-                      Axis {t('interface_copy')}
+                      {t('cue_interface_copy')}
                     </p>
                     <h3>
                       {t('power')} | 4 AA {t('batteries')}
                     </h3>
                     <p className={'pad-top'}>
-                      {t('interface_power_copy')}*
+                      {t('interface_power_copy_2')}*
                     </p>
                     <p className={'footnote'}>
                       <em>
@@ -86,16 +86,16 @@ const Axis = (props) => {
                       {t('front_unit')}
                     </h3>
                     <h3>
-                      {t('finish')} | {t('brushed_nickel')} : {t('black')}
+                      {t('finish')} | {t('brushed_nickel')}
                     </h3>
                     <p>
-                      {t('body_finish_copy')}
+                      {t('cue_body_finish_copy')}
                     </p>
                     <h3>
-                      {t('body')} | {t('standard')} : {t('vertical')} : {t('horizontal')}
+                      {t('body')} | {t('standard')}
                     </h3>
                     <p>
-                      {t('body_copy')}
+                      {t('cue_body_copy')}
                     </p>
                     <VideoIcons
                         currentVideoIndex={currentVideoIndex}
@@ -103,17 +103,13 @@ const Axis = (props) => {
                         toggleClassNames={
                           [
                             'icon-standard-keypad',
-                            'icon-standard-touch',
-                            'icon-vertical-keypad',
-                            'icon-vertical-touch'
+                            'icon-standard-touch'
                           ]
                         }
                         bcVideoIds={
                           [
-                            '6151114758001',
-                            '6151118468001',
-                            '6151118771001',
-                            '6151118772001'
+                            '6151935992001',
+                            '6151930395001'
                           ]
                         }
                     >&nbsp;</VideoIcons>
@@ -194,27 +190,6 @@ const Axis = (props) => {
           <section className="management">
             <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item">
-                  <div>
-                    <StaticImage
-                        src={'../../../../images/locks/management/app-manage-next.png'}
-                        loading={'lazy'}
-                        width={214}
-                        height={216}
-                        quality={100}
-                        formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
-                    />
-                  </div>
-                  <div>
-                    <h2>
-                      {t('lock_management')}
-                    </h2>
-                    <p>
-                      {'Axis '+t('lock_management_copy')}<br /><Link to='/contact/'>{t('contact_digilock_sales')}</Link>
-                    </p>
-                  </div>
-                </div>
                 <div className="grid-two-col-item">
                   <div>
                     <StaticImage

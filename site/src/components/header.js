@@ -197,11 +197,6 @@ const Header = () => {
                             Orbit
                           </Link>
                         </li>
-                        <li>
-                          <Link to={'#'}>
-                            Digilink
-                          </Link>
-                        </li>
                       </ul>
                     </li>
                     <li>
@@ -213,7 +208,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to={'#'}>
+                          <Link to={'/products/electronic-locks/cue/'}>
                             Cue
                           </Link>
                         </li>
