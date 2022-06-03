@@ -149,9 +149,11 @@
       padding: min(30vh, 5rem) 2rem;
       transform: translateX(100%);
       transition: transform 350ms ease-out;
+      overflow-x: hidden;
+      overflow-y: auto;
       @include navBreak() {
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow-x: unset;
+        overflow-y: unset;
       }
 
       ul {
