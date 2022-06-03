@@ -99,7 +99,7 @@
     padding: 1rem 3rem 1rem 1rem;
     left: 0;
     text-align: left;
-    @include md() {
+    @include navBreak() {
       position: absolute;
     }
     white-space: nowrap;
@@ -149,6 +149,10 @@
       padding: min(30vh, 5rem) 2rem;
       transform: translateX(100%);
       transition: transform 350ms ease-out;
+      @include navBreak() {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
 
       ul {
         flex-direction: column;
