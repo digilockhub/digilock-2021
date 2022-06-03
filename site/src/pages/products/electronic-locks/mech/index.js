@@ -77,16 +77,19 @@ const Axis = (props) => {
                     </h3>
                     <h3>
                       <span
+                          className={whichInterface === 'dial' ? 'interface-link selected' : 'interface-link'}
                           data-value={'dial'}
                           onClick={setInterfaceHandler}>
                         {t('dial')}
                       </span> :&nbsp;
                       <span
+                          className={whichInterface === 'hasp' ? 'interface-link selected' : 'interface-link'}
                           data-value={'hasp'}
                           onClick={setInterfaceHandler}>
                         {t('hasp')}
                       </span> :&nbsp;
                       <span
+                          className={whichInterface === 'laser-cam' ? 'interface-link selected' : 'interface-link'}
                           data-value={'laser-cam'}
                           onClick={setInterfaceHandler}>
                         {t('laser_cam')}

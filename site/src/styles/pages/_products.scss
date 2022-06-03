@@ -4,4 +4,20 @@
     //  for later
     }
   }
+
+  &.mech {
+    .details {
+      .interface-link {
+        cursor: pointer;
+        color: $color-numeris-blue;
+        &:hover {
+          text-decoration: underline;
+        }
+        &.selected {
+          color: revert;
+        }
+      }
+    }
+  }
+
 }
