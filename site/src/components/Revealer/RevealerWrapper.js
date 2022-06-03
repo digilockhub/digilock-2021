@@ -49,7 +49,7 @@ class RevealerWrapper extends Component {
         <ReactCompareImage
           leftImage={this.props.compareLeft}
           rightImage={this.props.compareRight}
-          // sliderPositionPercentage={this.props.sliderPosition}
+          sliderPositionPercentage={this.props.sliderPosition}
           onSliderPositionChange={(position) => this.handleSliderUpdate(position)}
           sliderLineColor={this.props.clsName === 'nextlock' ? '#009abf' : '#0096ce'}
           />

@@ -161,49 +161,49 @@ const Header = () => {
                       label={t('locks')}/>
                   <ul className="dropdown unstyled-list">
                     <li>
-                      Smart&nbsp;Locks
-                      <ul className="subdrop unstyled-list">
-                        <li>
-                          <Link to={'#'}>
-                            Network Aspire
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Network Versa
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Network Orbit
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Digilink
-                          </Link>
-                        </li>
-                      </ul>
+                      <Link to={'/products/smart-locks/'}>Smart&nbsp;Locks</Link>
+                      {/*<ul className="subdrop unstyled-list">*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Network Aspire*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Network Versa*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Network Orbit*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Digilink*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*</ul>*/}
                     </li>
                     <li>
                       Electronic&nbsp;Locks
-                      <ul className="subdrop unstyled-list">
-                        <li>
-                          <Link to={'#'}>
-                            Aspire
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Versa
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to={'#'}>
-                            Orbit
-                          </Link>
-                        </li>
-                      </ul>
+                      {/*<ul className="subdrop unstyled-list">*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Aspire*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Versa*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*  <li>*/}
+                      {/*    <Link to={'#'}>*/}
+                      {/*      Orbit*/}
+                      {/*    </Link>*/}
+                      {/*  </li>*/}
+                      {/*</ul>*/}
                     </li>
                     <li>
                       Legacy Designs

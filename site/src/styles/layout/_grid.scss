@@ -23,7 +23,7 @@
 //USED FOR PRODUCT DETAILS PAGES SO FAR
 .grid-two-col {
   display: grid;
-  gap: var(--section-gutter);
+  //gap: var(--section-gutter);
   @include navBreak() {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -33,25 +33,22 @@
     font-size: 1.063rem;
     text-align: left;
   }
+
   .grid-two-col-item {
     display: grid;
     grid-template-columns: 1fr;
-
     @include md() {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    >div {
-      &.revealer {
-        //@include outline(tomato);
-        margin-bottom: var(--nav-gap);
-      }
-      &.video-360 {
-        //@include outline(tomato);
-        //* {
-        //  @include outline(green);
-        //}
-      }
+  .grid-two-col-item-single {
+    //@include outline(purple);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    @include navBreak() {
+      place-items: start;
     }
   }
 }

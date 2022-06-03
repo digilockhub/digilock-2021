@@ -1,8 +1,30 @@
 .products {
-  &.electronic-locks {
-    &.cue {
-    //  for later
+
+  &.smart-locks-page {
+    ul {
+      text-align: left;
     }
+
+    .smart-locks-overview {
+      ul {
+        text-align: left;
+      }
+    }
+
+    @include navBreak() {
+      h2 {
+        text-align: left;
+        padding-left: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.electronic-locks {
+      .revealer {
+        //@include outline(tomato);
+        margin-bottom: var(--nav-gap);
+      }
   }
 
   &.mech {
