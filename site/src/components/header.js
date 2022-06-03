@@ -39,6 +39,11 @@ const Header = () => {
     const primaryNavigaton = document.getElementsByClassName('main-nav')[0];
     const navToggle = document.getElementsByClassName('mobile-nav-toggle')[0];
     const navOverlay = document.getElementsByClassName('nav-overlay')[0];
+    const bodyElm = document.body;
+    if(bodyElm.classList.contains('stop-body-scroll')) {
+      bodyElm.classList.remove('stop-body-scroll');
+    }
+
     primaryNavigaton.addEventListener('click', handleParentNavClick);
 
     //DESKTOP MOBILE TOGGLE
@@ -48,12 +53,13 @@ const Header = () => {
         primaryNavigaton.setAttribute('data-visible', 'true');
         navToggle.setAttribute('aria-expanded', 'true');
         navOverlay.classList.add('show');
+        bodyElm.classList.add('stop-body-scroll');
       } else {
         primaryNavigaton.setAttribute('data-visible', 'false');
         navToggle.setAttribute('aria-expanded', 'false');
         navOverlay.classList.remove('show');
+        bodyElm.classList.remove('stop-body-scroll');
       }
-
     })
   }, []);
 
