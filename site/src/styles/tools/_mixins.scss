@@ -60,10 +60,11 @@ $screen-xl-min: 1920px;
 
 @mixin hero-centerer {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
+
   @include md() {
-    top: 40%;
+    top: 45%;
   }
   transform: translate(-50%, -50%);
 }

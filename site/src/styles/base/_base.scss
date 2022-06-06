@@ -57,7 +57,7 @@ section {
 }
 
 .hero.--hero-image {
-
+  position: relative;
   h1, h6 {
     position: absolute;
     @include hero-centerer();

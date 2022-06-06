@@ -11,6 +11,38 @@
       }
     }
 
+    .smart-digilink {
+      p {
+        text-align: left;
+        padding-left: 1rem;
+      }
+      .item-single-logo {
+        padding-left: 1rem;
+      }
+    }
+
+    .video-holder {
+      width: 100%;
+      position: relative;
+      h2 {
+        color: $color-white;
+        text-align: center;
+        z-index: 1;
+        padding: 0;
+        width: 90%;
+        top: 5px;
+        position: absolute;
+        font-size: 1rem;
+        @include md() {
+          top: 50px;
+          font-size: 1.2rem;
+        }
+        @include navBreak() {
+          top: 30px;
+        }
+      }
+    }
+
     @include navBreak() {
       h2 {
         text-align: left;

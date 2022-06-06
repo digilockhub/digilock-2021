@@ -7,6 +7,8 @@ import {StaticImage} from "gatsby-plugin-image";
 import aspireLogo from '../../../images/logos/logo-aspire.svg';
 import versaLogo from '../../../images/logos/logo-versa.svg';
 import orbitLogo from '../../../images/logos/logo-orbit.svg';
+import digilinkLogo from '../../../images/logos/logo-digilink.svg';
+import BCResponsivePlayer from "../../../components/video-player/BCResponsivePlayer";
 
 
 const IndexPage = () => {
@@ -92,7 +94,7 @@ const IndexPage = () => {
           <section className="smart-versa">
             <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single">
+                <div className="grid-two-col-item-single is-reversable">
                   <img src={versaLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
                     Smart Lock management in slim, versatile profile
@@ -152,7 +154,46 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-
+          <div className="section-delimeter container" />
+          <section className="smart-digilink">
+            <div className="container">
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <img className={'item-single-logo'} src={digilinkLogo} width={'255'} height={'81'} alt=""/>
+                  <h2>
+                    Here’s where our electronic lock solutions get Smart.
+                  </h2>
+                  <p>
+                    DigiLink&reg; proprietary cloud-based software works with every Digilock Smart Lock to provide global management, anytime access, and 24/7 peace of mind.
+                  </p>
+                  <ul>
+                    <li>Remotely manage access, locks, and users</li>
+                    <li>Assign or remove credentials instantly</li>
+                    <li>Custom dashboard for ultimate visibility, responsiveness, and reporting</li>
+                    <li>View audit trail and usage data analytics reports</li>
+                    <li>Soc2 Type II certified</li>
+                  </ul>
+                </div>
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/smart-locks/smart-digilink.png"
+                      loading={'lazy'}
+                      width={624}
+                      height={461}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <BCResponsivePlayer
+                      vid={'6216703423001'}
+                      cls={'digilink-video'}
+                      dynId={'DigilinkVideo'}
+                      translation={t('intro_digilink')}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </Layout>
   )

@@ -43,12 +43,18 @@
   }
 
   .grid-two-col-item-single {
-    //@include outline(purple);
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     @include navBreak() {
       place-items: start;
+    }
+
+    &.is-reversable {
+      order: 1;
+      @include navBreak() {
+        order: revert;
+      }
     }
   }
 }
