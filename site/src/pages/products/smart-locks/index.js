@@ -97,6 +97,14 @@ const IndexPage = () => {
                     <li><Trans>sl_aspire_list4</Trans></li>
                     <li><Trans>sl_aspire_list5</Trans></li>
                   </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,6 +126,14 @@ const IndexPage = () => {
                     <li><Trans>sl_versa_list5</Trans></li>
                     <li><Trans>sl_versa_list6</Trans></li>
                   </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
                 </div>
                 <div className="grid-two-col-item-single">
                   <StaticImage
@@ -161,6 +177,14 @@ const IndexPage = () => {
                     <li><Trans>sl_orbit_list5</Trans></li>
                     <li><Trans>sl_orbit_list6</Trans></li>
                   </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,6 +206,11 @@ const IndexPage = () => {
                     <li><Trans>sl_digilink_list4</Trans></li>
                     <li><Trans>sl_digilink_list5</Trans></li>
                   </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
                 </div>
                 <div className="grid-two-col-item-single">
                   <StaticImage
