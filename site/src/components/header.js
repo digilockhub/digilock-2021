@@ -186,7 +186,10 @@ const Header = () => {
                       {/*</ul>*/}
                     </li>
                     <li>
-                      Electronic&nbsp;Locks
+                      <CustomLocalizedLink
+                          goto={'/products/electronic-locks/'}
+                          cls={checkSiteLocaton('/locks/') ? 'selected has-dropdown' : 'has-dropdown'}
+                          label={t('electronic_locks')}/>
                       {/*<ul className="subdrop unstyled-list">*/}
                       {/*  <li>*/}
                       {/*    <Link to={'#'}>*/}
