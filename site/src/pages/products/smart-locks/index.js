@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
@@ -9,11 +9,19 @@ import versaLogo from '../../../images/logos/logo-versa.svg';
 import orbitLogo from '../../../images/logos/logo-orbit.svg';
 import digilinkLogo from '../../../images/logos/logo-digilink.svg';
 import BCResponsivePlayer from "../../../components/video-player/BCResponsivePlayer";
+import Modal from '../../../components/modals/modal';
 
 
 const IndexPage = () => {
 
   const {t} = useTranslation();
+  const [showModal, setShowModal] = useState(false);
+
+  function handleShowModal() {
+    const bodyElm = document.body;
+    setShowModal(prevShowModal => !prevShowModal);
+    bodyElm.classList.toggle('stop-body-scroll');
+  }
 
   return (
       <Layout>
@@ -54,11 +62,10 @@ const IndexPage = () => {
                   <li><Trans>sl_headline_list_2</Trans></li>
                   <li><Trans>sl_headline_list_3</Trans></li>
                   <li><Trans>sl_headline_list_4</Trans></li>
-                  <li><Trans>sl_headline_list_5</Trans></li>
+                  <li><span onClick={handleShowModal}><Trans>sl_headline_list_5</Trans></span> <Trans>functionality</Trans></li>
                   <li><Trans>sl_headline_list_6</Trans></li>
                   <li><Trans>sl_headline_list_7</Trans></li>
                   <li><Trans>sl_headline_list_8</Trans></li>
-                  <li><Trans>sl_headline_list_9</Trans></li>
                 </ul>
               </div>
             </div>
@@ -196,6 +203,12 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
+          <Modal show={showModal} handleClose={handleShowModal}>
+            <div className="modal-content">
+              <p dangerouslySetInnerHTML={{__html:t('sl_modal_shared')}} />
+              <p dangerouslySetInnerHTML={{__html:t('sl_modal_assigned')}} />
+            </div>
+          </Modal>
         </div>
       </Layout>
   )

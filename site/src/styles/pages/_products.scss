@@ -1,16 +1,20 @@
 .products {
-
   &.smart-locks-page {
     ul {
       text-align: left;
     }
-
     .smart-locks-overview {
       ul {
         text-align: left;
       }
+      span {
+        color: $color-numeris-blue;
+        cursor: pointer;
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+      }
     }
-
     .smart-digilink {
       p {
         text-align: left;
@@ -20,7 +24,6 @@
         padding-left: 1rem;
       }
     }
-
     .video-holder {
       width: 100%;
       position: relative;
@@ -42,7 +45,6 @@
         }
       }
     }
-
     @include navBreak() {
       h2 {
         text-align: left;
