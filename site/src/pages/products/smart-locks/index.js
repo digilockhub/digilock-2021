@@ -32,29 +32,33 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                Smart Locks
+                smart_locks
               </Trans>
             </h6>
           </section>
           <section className={'smart-locks-overview'}>
             <div className="container">
               <h1>
-                Cloud-based management for anytime, anywhere control
+                <Trans>
+                  sl_headline
+                </Trans>
               </h1>
               <p>
-                Smart Locks add a remote management advantage
+                <Trans>
+                  sl_headline_copy
+                </Trans>
               </p>
               <div className="center">
                 <ul>
-                  <li>Smart Locks add a remote management advantage</li>
-                  <li>24/7 networked lock management through proprietary DigiLink® software</li>
-                  <li>Wireless connectivity through Bluetooth Low Energy (BLE)</li>
-                  <li>Keypad, RFID, or Mobile ID access</li>
-                  <li>Integrates with existing access control systems and third party applications</li>
-                  <li>Shared or Assigned Use functionality</li>
-                  <li>Easy wire-free installation and seamless retrofit</li>
-                  <li>ADA compliant options</li>
-                  <li>Lifetime Digilock customer support</li>
+                  <li><Trans>sl_headline_list_1</Trans></li>
+                  <li><Trans>sl_headline_list_2</Trans></li>
+                  <li><Trans>sl_headline_list_3</Trans></li>
+                  <li><Trans>sl_headline_list_4</Trans></li>
+                  <li><Trans>sl_headline_list_5</Trans></li>
+                  <li><Trans>sl_headline_list_6</Trans></li>
+                  <li><Trans>sl_headline_list_7</Trans></li>
+                  <li><Trans>sl_headline_list_8</Trans></li>
+                  <li><Trans>sl_headline_list_9</Trans></li>
                 </ul>
               </div>
             </div>
@@ -75,16 +79,16 @@ const IndexPage = () => {
                   />
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={aspireLogo} width={'253'} height={'100'} alt=""/>
+                  <img src={aspireLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
-                    Automatic-opening Smart Locks with stylish functionality
+                    <Trans>sl_aspire_headline</Trans>
                   </h2>
                   <ul>
-                    <li>Networked onsite/offsite management</li>
-                    <li>Motorized opening with deadbolt or latch</li>
-                    <li>Available in ultra slim surface mount</li>
-                    <li>Horizontal or vertical orientation</li>
-                    <li>Brushed Nickel or Matte Black finish</li>
+                    <li><Trans>sl_aspire_list1</Trans></li>
+                    <li><Trans>sl_aspire_list2</Trans></li>
+                    <li><Trans>sl_aspire_list3</Trans></li>
+                    <li><Trans>sl_aspire_list4</Trans></li>
+                    <li><Trans>sl_aspire_list5</Trans></li>
                   </ul>
                 </div>
               </div>
@@ -97,15 +101,15 @@ const IndexPage = () => {
                 <div className="grid-two-col-item-single is-reversable">
                   <img src={versaLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
-                    Smart Lock management in slim, versatile profile
+                    <Trans>sl_versa_headline</Trans>
                   </h2>
                   <ul>
-                    <li>Networked onsite/offsite management</li>
-                    <li>Hand-turned cam operation</li>
-                    <li>Options for knob style and orientation</li>
-                    <li>Slim enough to retrofit over existing pedestal locks</li>
-                    <li>Available in recessed or surface mounts</li>
-                    <li>Brushed Nickel or Matte Black finish</li>
+                    <li><Trans>sl_versa_list1</Trans></li>
+                    <li><Trans>sl_versa_list2</Trans></li>
+                    <li><Trans>sl_versa_list3</Trans></li>
+                    <li><Trans>sl_versa_list4</Trans></li>
+                    <li><Trans>sl_versa_list5</Trans></li>
+                    <li><Trans>sl_versa_list6</Trans></li>
                   </ul>
                 </div>
                 <div className="grid-two-col-item-single">
@@ -138,17 +142,17 @@ const IndexPage = () => {
                   />
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={orbitLogo} width={'253'} height={'100'} alt=""/>
+                  <img src={orbitLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
-                    Super-discrete touch-free Smart Lock
+                    <Trans>sl_orbit_headline</Trans>
                   </h2>
                   <ul>
-                    <li>Networked onsite/offsite management</li>
-                    <li>Coin-sized low-profile design</li>
-                    <li>Touch-free and auto-opening</li>
-                    <li>Black or White</li>
-                    <li>RFID and Mobile ID</li>
-                    <li>Multi-directional locking orientation</li>
+                    <li><Trans>sl_orbit_list1</Trans></li>
+                    <li><Trans>sl_orbit_list2</Trans></li>
+                    <li><Trans>sl_orbit_list3</Trans></li>
+                    <li><Trans>sl_orbit_list4</Trans></li>
+                    <li><Trans>sl_orbit_list5</Trans></li>
+                    <li><Trans>sl_orbit_list6</Trans></li>
                   </ul>
                 </div>
               </div>
@@ -159,19 +163,17 @@ const IndexPage = () => {
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single">
-                  <img className={'item-single-logo'} src={digilinkLogo} width={'255'} height={'81'} alt=""/>
+                  <img className={'item-single-logo'} src={digilinkLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
-                    Here’s where our electronic lock solutions get Smart.
+                    <Trans>sl_digilink_headline</Trans>
                   </h2>
-                  <p>
-                    DigiLink&reg; proprietary cloud-based software works with every Digilock Smart Lock to provide global management, anytime access, and 24/7 peace of mind.
-                  </p>
+                  <p><Trans>sl_digilink_headline_copy</Trans></p>
                   <ul>
-                    <li>Remotely manage access, locks, and users</li>
-                    <li>Assign or remove credentials instantly</li>
-                    <li>Custom dashboard for ultimate visibility, responsiveness, and reporting</li>
-                    <li>View audit trail and usage data analytics reports</li>
-                    <li>Soc2 Type II certified</li>
+                    <li><Trans>sl_digilink_list1</Trans></li>
+                    <li><Trans>sl_digilink_list2</Trans></li>
+                    <li><Trans>sl_digilink_list3</Trans></li>
+                    <li><Trans>sl_digilink_list4</Trans></li>
+                    <li><Trans>sl_digilink_list5</Trans></li>
                   </ul>
                 </div>
                 <div className="grid-two-col-item-single">
