@@ -225,7 +225,7 @@ const IndexPage = () => {
           <section className="legacy-axis">
             <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single">
+                <div className="grid-two-col-item-single is-reversable">
                   <img src={axisLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
                     <Trans>el_axis_headline</Trans>
@@ -301,7 +301,7 @@ const IndexPage = () => {
           <section className="legacy-sola">
             <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single">
+                <div className="grid-two-col-item-single is-reversable">
                   <img src={solaLogo} width={'225'} height={'88'} alt=""/>
                   <h2>
                     <Trans>el_sola_headline</Trans>
