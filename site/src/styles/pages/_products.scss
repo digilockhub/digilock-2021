@@ -67,14 +67,12 @@
       }
     }
   }
-
   &.electronic-locks {
       .revealer {
         //@include outline(tomato);
         margin-bottom: var(--nav-gap);
       }
   }
-
   &.mech {
     .details {
       .interface-link {
@@ -89,5 +87,7 @@
       }
     }
   }
-
+  .mech-logo {
+    margin-bottom: var(--nav-gap);
+  }
 }
