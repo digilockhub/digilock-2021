@@ -41,7 +41,7 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                smart_locks
+                electronic_locks
               </Trans>
             </h6>
           </section>
