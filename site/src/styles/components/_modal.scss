@@ -25,6 +25,10 @@
     font-family: "AvenirDemi", sans-serif;
     color: $color-letterhead;
   }
+
+  a {
+    margin-top: var(--nav-gap);
+  }
 }
 
 .display-block {
