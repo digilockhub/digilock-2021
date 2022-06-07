@@ -237,9 +237,11 @@ const Header = () => {
                       Mechanical Lock
                       <ul className="subdrop unstyled-list">
                         <li>
-                          <Link to={'/products/electronic-locks/mech/'}>
-                            Mech
-                          </Link>
+                          <CustomLocalizedLink
+                              goto={'/products/mechanical-locks/mech/'}
+                              cls={checkSiteLocaton('/mech/') ? 'selected' : ''}
+                              label={'Mech'}
+                          />
                         </li>
                       </ul>
                     </li>
