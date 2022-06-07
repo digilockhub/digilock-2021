@@ -7,10 +7,11 @@ import {StaticImage} from "gatsby-plugin-image";
 import aspireLogo from '../../../images/logos/logo-aspire.svg';
 import versaLogo from '../../../images/logos/logo-versa.svg';
 import orbitLogo from '../../../images/logos/logo-orbit.svg';
-import digilinkLogo from '../../../images/logos/logo-digilink.svg';
-import BCResponsivePlayer from "../../../components/video-player/BCResponsivePlayer";
+import axisLogo from '../../../images/logos/logo-axis.svg';
+import cueLogo from '../../../images/logos/logo-cue.svg';
+import solaLogo from '../../../images/logos/logo-sola.svg';
+import rangeLogo from '../../../images/logos/logo-range.svg';
 import Modal from '../../../components/modals/modal';
-
 
 const IndexPage = () => {
 
@@ -97,13 +98,17 @@ const IndexPage = () => {
                     <li><Trans>el_aspire_list3</Trans></li>
                     <li><Trans>el_aspire_list4</Trans></li>
                     <li><Trans>el_aspire_list5</Trans></li>
+                    <li><Trans>el_aspire_list6</Trans></li>
                   </ul>
                   <div className="sl-buttons">
                     <a href="/products/locks/" className="btn btn--orange">
                       <Trans>see_specs</Trans>
                     </a>
                     <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_brochure</Trans>
+                      <Trans>download_keypad_brochure</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_rfid_brochure</Trans>
                     </a>
                   </div>
                 </div>
@@ -126,6 +131,7 @@ const IndexPage = () => {
                     <li><Trans>el_versa_list4</Trans></li>
                     <li><Trans>el_versa_list5</Trans></li>
                     <li><Trans>el_versa_list6</Trans></li>
+                    <li><Trans>el_versa_list7</Trans></li>
                   </ul>
                   <div className="sl-buttons">
                     <a href="/products/locks/" className="btn btn--orange">
@@ -177,6 +183,7 @@ const IndexPage = () => {
                     <li><Trans>el_orbit_list4</Trans></li>
                     <li><Trans>el_orbit_list5</Trans></li>
                     <li><Trans>el_orbit_list6</Trans></li>
+                    <li><Trans>el_orbit_list7</Trans></li>
                   </ul>
                   <div className="sl-buttons">
                     <a href="/products/locks/" className="btn btn--orange">
@@ -191,6 +198,181 @@ const IndexPage = () => {
             </div>
           </section>
           <div className="section-delimeter container" />
+          <section className="legacy-locks-overview">
+            <div className="container">
+              <h2>
+                <Trans>
+                  legacy_headline
+                </Trans>
+              </h2>
+              <p>
+                <Trans>
+                  legacy_headline_copy
+                </Trans>
+              </p>
+              <div className="center">
+                <ul>
+                  <li><span onClick={handleShowModal}><Trans>legacy_headline_list_1</Trans></span></li>
+                  <li><Trans>legacy_headline_list_2</Trans></li>
+                  <li><Trans>legacy_headline_list_3</Trans></li>
+                  <li><Trans>legacy_headline_list_4</Trans></li>
+                  <li><Trans>legacy_headline_list_5</Trans></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="legacy-axis">
+            <div className="container">
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <img src={axisLogo} width={'225'} height={'88'} alt=""/>
+                  <h2>
+                    <Trans>el_axis_headline</Trans>
+                  </h2>
+                  <ul>
+                    <li><Trans>el_axis_list1</Trans></li>
+                    <li><Trans>el_axis_list2</Trans></li>
+                    <li><Trans>el_axis_list3</Trans></li>
+                    <li><Trans>el_axis_list4</Trans></li>
+                  </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
+                </div>
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/electronic-locks/elec-axis-four.png"
+                      loading={'lazy'}
+                      width={624}
+                      height={461}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="legacy-cue">
+            <div className="container">
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/electronic-locks/elec-cue-four.png"
+                      loading={'lazy'}
+                      width={624}
+                      height={461}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                </div>
+                <div className="grid-two-col-item-single">
+                  <img src={cueLogo} width={'225'} height={'88'} alt=""/>
+                  <h2>
+                    <Trans>el_cue_headline</Trans>
+                  </h2>
+                  <ul>
+                    <li><Trans>el_cue_list1</Trans></li>
+                    <li><Trans>el_cue_list2</Trans></li>
+                    <li><Trans>el_cue_list3</Trans></li>
+                    <li><Trans>el_cue_list4</Trans></li>
+                  </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="legacy-sola">
+            <div className="container">
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <img src={solaLogo} width={'225'} height={'88'} alt=""/>
+                  <h2>
+                    <Trans>el_sola_headline</Trans>
+                  </h2>
+                  <ul>
+                    <li><Trans>el_sola_list1</Trans></li>
+                    <li><Trans>el_sola_list2</Trans></li>
+                    <li><Trans>el_sola_list3</Trans></li>
+                  </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
+                </div>
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/electronic-locks/elec-sola-four.png"
+                      loading={'lazy'}
+                      width={624}
+                      height={461}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <div className="section-delimeter container" />
+          <section className="legacy-range">
+            <div className="container">
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/electronic-locks/elec-range-four.png"
+                      loading={'lazy'}
+                      width={624}
+                      height={461}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                </div>
+                <div className="grid-two-col-item-single">
+                  <img src={rangeLogo} width={'225'} height={'88'} alt=""/>
+                  <h2>
+                    <Trans>el_range_headline</Trans>
+                  </h2>
+                  <ul>
+                    <li><Trans>el_range_list1</Trans></li>
+                    <li><Trans>el_range_list2</Trans></li>
+                    <li><Trans>el_range_list3</Trans></li>
+                    <li><Trans>el_range_list4</Trans></li>
+                    <li><Trans>el_range_list5</Trans></li>
+                  </ul>
+                  <div className="sl-buttons">
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>see_specs</Trans>
+                    </a>
+                    <a href="/products/locks/" className="btn btn--orange">
+                      <Trans>download_brochure</Trans>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <Modal show={showModal} handleClose={handleShowModal}>
             <div className="modal-content">
               <p dangerouslySetInnerHTML={{__html:t('sl_modal_shared')}} />

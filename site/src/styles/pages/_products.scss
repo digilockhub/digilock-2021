@@ -3,9 +3,13 @@
     ul {
       text-align: left;
     }
-    .smart-locks-overview {
+    .smart-locks-overview, .legacy-locks-overview {
       ul {
         text-align: left;
+      }
+      h2 {
+        margin-bottom: 1.2em;
+        text-align: center;
       }
       span {
         color: $color-numeris-blue;
@@ -28,6 +32,7 @@
     .sl-buttons {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       gap: var(--sub-nav-gap);
       @include md() {
         flex-direction: row;

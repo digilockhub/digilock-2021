@@ -51,6 +51,8 @@
   "see_locks": "see locks",
   "see_specs": "see specs",
   "download_brochure": "download brochure",
+  "download_keypad_brochure": "download keypad brochure",
+  "download_rfid_brochure": "download rfid brochure",
   "button_chat": "Let's Chat",
   "button_faq": "FAQ",
   "button_contact": "Contact Us",
