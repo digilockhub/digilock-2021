@@ -20,25 +20,18 @@ const Tab = (props) => {
               className={getActiveClass(1, 'active')}
               onClick={() => toggleTab(1)}
           >
-            Tab 1
+            Aspire Keypad
           </li>
           <li
               className={getActiveClass(2, 'active')}
               onClick={() => toggleTab(2)}
           >
-            Tab 2
-          </li>
-          <li
-              className={getActiveClass(3, 'active')}
-              onClick={() => toggleTab(3)}
-          >
-            Tab 3
+            Aspire RFID
           </li>
         </ul>
         <div className="tab-content-container">
           <div className={"tab-content "+getActiveClass(1, 'active')}>Content 1</div>
           <div className={"tab-content "+getActiveClass(2, 'active')}>Content 2</div>
-          <div className={"tab-content "+getActiveClass(3, 'active')}>Content 3</div>
         </div>
 
       </div>
