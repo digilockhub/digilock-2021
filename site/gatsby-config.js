@@ -101,6 +101,14 @@ module.exports = {
           order_by: '-publish_date',
         },
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `q5vaqi9g69zw`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `8bc98ee82ee52c1d6e38a911fa004f34ba262e932083b9b2f1da83b3cb8514c9`,
+      },
     }
   ],
 };

@@ -1,36 +1,36 @@
-// import LOCALES from '../constants/locales'
+import LOCALES from '../constants/locales/locales'
 
 export function generateNumber(min, max) {
   return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-// export function returnRouteName(route) {
-//   let routeName = route.split('/')
-//
-//   routeName.shift()
-//   routeName.pop()
-//   // console.log(routeName);
-//   let locales = Object.keys(LOCALES);
-//   for(const key of locales) {
-//     if(key === routeName[0]) {
-//       routeName.shift();
-//     }
-//   }
-//
-//   if(routeName.length === 0) {
-//     return 'home';
-//   }
-//   //CRAPPY WORKAROUND
-//   if(routeName[1] === 'packagehold') {
-//     return 'products-packagehold'
-//   }
-//
-//   if(routeName[1] === 'juicebar') {
-//     return 'products-juicebar'
-//   }
-//
-//   return routeName.join('-');
-// }
+export function returnRouteName(route) {
+  let routeName = route.split('/')
+
+  routeName.shift()
+  routeName.pop()
+  // console.log(routeName);
+  let locales = Object.keys(LOCALES);
+  for(const key of locales) {
+    if(key === routeName[0]) {
+      routeName.shift();
+    }
+  }
+
+  if(routeName.length === 0) {
+    return 'home';
+  }
+  //CRAPPY WORKAROUND
+  if(routeName[1] === 'packagehold') {
+    return 'products-packagehold'
+  }
+
+  if(routeName[1] === 'juicebar') {
+    return 'products-juicebar'
+  }
+
+  return routeName.join('-');
+}
 
 export function doesRouteHaveDirectory(dirName) {
   if(typeof window !== 'undefined') {

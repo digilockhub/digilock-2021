@@ -23,8 +23,6 @@ div.accordion-parent {
   padding-left: 1rem;
 }
 
-
-
 .accordion-section {
   @include lg() {
     padding-left: 5px;
@@ -164,4 +162,11 @@ div.accordion-parent {
     }
   }
 
+}
+
+.digi-symbol {
+  display: inline;
+  padding-top: 5px;
+  width: 16px;
+  height: 16px;
 }

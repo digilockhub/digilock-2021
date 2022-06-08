@@ -57,6 +57,7 @@ allSupportGeneralFaqXlsxOrdersSupport {
   const accordionTroubleshooting = Faqs.allSupportGeneralFaqXlsxTroubleShooting.edges;
   const accordionOrders = Faqs.allSupportGeneralFaqXlsxOrdersSupport.edges;
 
+  console.log(accordionFunctionality);
   return (
       <>
         <h2>

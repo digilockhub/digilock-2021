@@ -1,27 +1,46 @@
 
 .tab-container {
-  @include outline($color-numeris-blue);
+  //@include outline($color-numeris-blue);
   .tab-content {
     display: none;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    //justify-content: center;
     padding: 5rem;
     &.active {
       display: flex;
+      flex-direction: column;
+    }
+
+    .front-back {
+      display: flex;
+    }
+
+    .accordions {
+      text-align: left;
+      p {
+        padding-left: 1.6rem;
+      }
+      .expander {
+        font-size: 20px;
+        margin-top: -7px;
+        &:before, &:after {
+          display: none;
+        }
+      }
     }
   }
 
   .tab-list {
     display: flex;
+    justify-content: center;
     li {
       color: $color-white;
-      width: 33.3%;
+      width: 50%;
       background: $color-numeris-blue;
       padding: 1rem 0;
       cursor: pointer;
       &.active {
-        color: $color-numeris-blue;
-        background: $color-white;
+        background: $package-orange;
       }
       &:not(:last-child) {
         border-right: 1px solid rgba(0, 0, 0, 0.3);

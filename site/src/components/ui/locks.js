@@ -1,6 +1,6 @@
 import React from 'react';
 import {StaticImage} from "gatsby-plugin-image";
-import {Trans} from "react-i18next";
+import {Link, Trans} from 'gatsby-plugin-react-i18next';
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
 import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
 import {globalHistory} from "@reach/router";
@@ -40,8 +40,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-aspire-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -56,8 +56,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-versa-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -72,8 +72,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-orbit-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -94,8 +94,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-digilink-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="NEED ALT TAG"
@@ -113,8 +113,8 @@ const Locks = () => {
                 <StaticImage
                     src={'../../images/locks/DL22-digilink-600x497.png'}
                     loading={'lazy'}
-                    width={'200'}
-                    height={'148'}
+                    width={200}
+                    height={148}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="NEED ALT TAG"
@@ -142,13 +142,13 @@ const Locks = () => {
               </Trans>
             </p>
             <div className="row">
-              <a href="#">
+              <Link to="/support/electronic-locks/aspire/">
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-aspire-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -157,14 +157,14 @@ const Locks = () => {
                     <span>Aspire<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
               <a href="#">
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-versa-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -179,8 +179,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-orbit-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -206,8 +206,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-axis-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -222,8 +222,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-cue-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -238,8 +238,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-sola-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -254,8 +254,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-range-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
@@ -272,8 +272,8 @@ const Locks = () => {
                 <StaticImage
                     src={'../../images/locks/DL22-4Gstand-600x497.png'}
                     loading={'lazy'}
-                    width={'200'}
-                    height={'148'}
+                    width={200}
+                    height={148}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Standard"
@@ -284,7 +284,7 @@ const Locks = () => {
                 <StaticImage
                     src={'../../images/locks/DL22-4Gvertical-600x497.png'}
                     loading={'lazy'}
-                    width={'200'}
+                    width={200}
                     height={'150'}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
@@ -296,7 +296,7 @@ const Locks = () => {
                 <StaticImage
                     src={'../../images/locks/DL22-classiccam-600x497.png'}
                     loading={'lazy'}
-                    width={'200'}
+                    width={200}
                     height={'150'}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
@@ -312,8 +312,8 @@ const Locks = () => {
                       <StaticImage
                           src={'../../images/locks/DL22-3g-600x497.png'}
                           loading={'lazy'}
-                          width={'200'}
-                          height={'148'}
+                          width={200}
+                          height={148}
                           quality={100}
                           formats={["auto", "webp", "avif"]}
                           alt="3rd Generation"
@@ -324,7 +324,7 @@ const Locks = () => {
                       <StaticImage
                           src={'../../images/locks/DL22-tseries-600x497.png'}
                           loading={'lazy'}
-                          width={'200'}
+                          width={200}
                           height={'150'}
                           quality={100}
                           formats={["auto", "webp", "avif"]}
@@ -336,7 +336,7 @@ const Locks = () => {
                       <StaticImage
                           src={'../../images/locks/DL22-ktekpe-600x497.png'}
                           loading={'lazy'}
-                          width={'200'}
+                          width={200}
                           height={'150'}
                           quality={100}
                           formats={["auto", "webp", "avif"]}
@@ -348,7 +348,7 @@ const Locks = () => {
                       <StaticImage
                           src={'../../images/locks/DL22-2G-600x497.png'}
                           loading={'lazy'}
-                          width={'200'}
+                          width={200}
                           height={'150'}
                           quality={100}
                           formats={["auto", "webp", "avif"]}
@@ -360,7 +360,7 @@ const Locks = () => {
                       <StaticImage
                           src={'../../images/locks/DL22-1G-600x497.png'}
                           loading={'lazy'}
-                          width={'200'}
+                          width={200}
                           height={'150'}
                           quality={100}
                           formats={["auto", "webp", "avif"]}
@@ -394,8 +394,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-mech-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"

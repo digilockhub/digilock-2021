@@ -1,9 +1,9 @@
 import React from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import Layout from "../../../components/layout";
-import Seo from "../../../components/seo";
+import Layout from "../../../../components/layout";
+import Seo from "../../../../components/seo";
 import {graphql} from 'gatsby';
-import Tab from '../../../components/ui/Tab';
+import Tab from './Tab';
 
 
 const IndexPage = () => {
@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Contact Digilock')}/>
+        <Seo title={t('Aspire Smart Lock Support')}/>
         <div className="support">
           <section className="hero">
             <div className="container">
