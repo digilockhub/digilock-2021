@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
 import locales from '../../constants/locales/locales';
 import globe from '../../images/shared/globe.svg';
+import globeDelim from '../../images/shared/locale-line.png';
 
 const LanguageSwitcher = () => {
   const {changeLanguage} = useI18next();
@@ -31,6 +32,7 @@ const LanguageSwitcher = () => {
           {locales[context.language].locale}
         </div>
         <img src={globe} className={"globe "+context.language} />
+        <img src={globeDelim} className={"globe-delim "+context.language} />
         <div className="custom-select-options">
           {
             localesArr.map(function (locale, index) {
