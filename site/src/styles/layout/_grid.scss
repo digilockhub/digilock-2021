@@ -46,8 +46,16 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    &.center {
+      align-content: space-between;
+      @include md() {
+        min-height: 500px;
+      }
+    }
     @include navBreak() {
-      place-items: start;
+      &:not(.center) {
+        place-items: start;
+      }
     }
 
     &.is-reversable {
