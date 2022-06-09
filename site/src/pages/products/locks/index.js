@@ -134,7 +134,7 @@ const IndexPage = () => {
           <section className="compare-grid">
             <div className="container">
               <div className="buttons">
-                <a href="" className="btn btn--orange">
+                <a href="javascript:alert('Do we have this document ready?')" className="btn btn--orange">
                   <Trans>download_grid</Trans>
                 </a>
               </div>
