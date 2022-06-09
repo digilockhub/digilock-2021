@@ -1,12 +1,18 @@
 footer {
+
+
   background: $color-steadfast-blue;
   color: $color-white;
+
+  .btn {
+    min-width: 136px;
+  }
 
   h3 {
     color: $color-white;
   }
 
-  .questions, .location {
+  .questions {
     padding-bottom: var(--section-gutter);
   }
 
@@ -32,11 +38,9 @@ footer {
     }
   }
 
-
   p {
     color: $color-white;
   }
-
 
   a {
     text-decoration: none;
@@ -83,5 +87,4 @@ footer {
     text-align: left;
     font-size: 0.688rem;
   }
-
 }
