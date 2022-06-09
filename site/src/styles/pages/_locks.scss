@@ -14,13 +14,11 @@
       gap: var(--nav-gap);
       flex-direction: column;
       align-items: center;
-
       @include md() {
         flex-direction: row;
         align-items: flex-start;
       }
     }
-
   }
 
   .what-to-expect, .smart-locks {
