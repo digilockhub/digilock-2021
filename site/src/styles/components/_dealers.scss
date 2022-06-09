@@ -46,6 +46,7 @@
           display: block;
         }
         text-decoration: underline;
+        text-decoration-color: $package-orange;
         @include md() {
           background-color: $package-orange;
           text-decoration: none;
