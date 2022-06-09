@@ -73,20 +73,6 @@
 
   }
 
-  .lock-solutions {
-   @include md() {
-     .container {
-       width: var(--container-width-copy);
-     }
-   }
-  }
-
-  .clients {
-
-
-
-  }
-
   .industries {
     .industries-grid {
       display: flex;
@@ -126,6 +112,25 @@
   .smart {
     p {
       padding-bottom: var(--section-gutter);
+    }
+    .video-overlay {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 1rem;
+      h2 {
+        color: $color-white;
+        font-size: 1.2rem;
+      }
+      @include md() {
+        top: 3rem;
+        h2 {
+          font-size: revert;
+        }
+      }
+      @include navBreak() {
+        top: 8rem;
+      }
     }
   }
 
