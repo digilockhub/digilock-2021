@@ -71,6 +71,14 @@
   "country": "Country",
   "state": "State",
   "message": "Message",
-  "please_select": "Please Select"
+  "please_select": "Please Select",
+  "buy": "Buy",
+  "ship": "Ship",
+  "notify": "Notify",
+  "pick_up": "Pick Up",
+  "workplace": "Workplace",
+  "residential": "Residential",
+  "retail": "Retail",
+  "university": "University"
 
 }

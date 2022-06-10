@@ -54,6 +54,12 @@ section {
   &.bump-up {
     margin-top: -1.5rem;
   }
+  &.spacer {
+    background: $color-white;
+    @include md() {
+      display: none;
+    }
+  }
 }
 
 .hero.--hero-image {

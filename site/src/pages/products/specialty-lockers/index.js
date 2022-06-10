@@ -4,13 +4,8 @@ import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
-import aspireLogo from '../../../images/logos/logo-aspire.svg';
-import versaLogo from '../../../images/logos/logo-versa.svg';
-import orbitLogo from '../../../images/logos/logo-orbit.svg';
-import digilinkLogo from '../../../images/logos/logo-digilink.svg';
 import phLogo from '../../../images/logos/logo-packagehold.svg';
-import BCResponsivePlayer from "../../../components/video-player/BCResponsivePlayer";
-import Modal from '../../../components/modals/modal';
+import jbLogo from '../../../images/logos/logo-juicebar.svg';
 
 
 const IndexPage = () => {
@@ -18,10 +13,13 @@ const IndexPage = () => {
   const {t} = useTranslation();
   const [showModal, setShowModal] = useState(false);
 
-  function handleShowModal() {
-    const bodyElm = document.body;
-    setShowModal(prevShowModal => !prevShowModal);
-    bodyElm.classList.toggle('stop-body-scroll');
+  function handleScrollTo(elmID) {
+    console.log();
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: document.getElementById(elmID).offsetTop-150
+    });
   }
 
   return (
@@ -33,7 +31,7 @@ const IndexPage = () => {
         <div className="products specialty-lockers">
           <section className="hero --hero-image no-pad">
             <StaticImage
-                src="../../../images/smart-locks/hero-smart.jpg"
+                src="../../../images/lockers/hero-specialty.png"
                 quality={100}
                 layout={'fullWidth'}
                 formats={["auto", "webp", "avif"]}
@@ -52,7 +50,7 @@ const IndexPage = () => {
                 <div className="grid-two-col-item-single center">
                   <h2><Trans>packagehold</Trans></h2>
                   <p><Trans>package_solutions_copy</Trans></p>
-                  <a><Trans>learn_more_about</Trans><Trans>packagehold</Trans></a>
+                  <a onClick={(e) => {handleScrollTo('packageHold')}}><Trans>learn_more_about</Trans><Trans>packagehold</Trans></a>
                   <StaticImage
                       src="../../../images/lockers/locker-solutions-ph.png"
                       loading={'lazy'}
@@ -63,10 +61,11 @@ const IndexPage = () => {
                       alt="NEED ALT TAG"
                   />
                 </div>
+                <div className="section-delimeter spacer"></div>
                 <div className="grid-two-col-item-single center">
                   <h2><Trans>juicebar</Trans></h2>
                   <p><Trans>juice_solutions_copy</Trans></p>
-                  <a><Trans>learn_more_about</Trans><Trans>juicebar</Trans></a>
+                  <a onClick={(e) => {handleScrollTo('juiceBar')}}><Trans>learn_more_about</Trans><Trans>juicebar</Trans></a>
                   <StaticImage
                       src="../../../images/lockers/locker-solutions-jb.png"
                       loading={'lazy'}
@@ -80,140 +79,152 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div id={'packageHold'} className="section-delimeter container" />
           <section className="packagehold">
             <div className="container">
-              <img src={phLogo} alt="PackageHold"/>
+              <img src={phLogo} alt="PackageHold" width={'306'} height={'56'}/>
               <div className="ph-overview">
                 <h1><Trans>package_headline</Trans></h1>
                 <p><Trans>package_headline_copy</Trans></p>
               </div>
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single is-reversable">
-                  <img src={versaLogo} width={'225'} height={'88'} alt=""/>
-                  <h2>
-                    <Trans>sl_versa_headline</Trans>
-                  </h2>
-                  <ul>
-                    <li><Trans>sl_versa_list1</Trans></li>
-                    <li><Trans>sl_versa_list2</Trans></li>
-                    <li><Trans>sl_versa_list3</Trans></li>
-                    <li><Trans>sl_versa_list4</Trans></li>
-                    <li><Trans>sl_versa_list5</Trans></li>
-                    <li><Trans>sl_versa_list6</Trans></li>
-                  </ul>
-                  <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_brochure</Trans>
-                    </a>
+                <div className="grid-two-col-item-single gtc-description is-reversable">
+                  <div>
+                    <h2><Trans>how_it_works</Trans></h2>
+                    <ol>
+                      <li><span><Trans>buy</Trans></span>. <Trans>ph_works_list1</Trans></li>
+                      <li><span><Trans>ship</Trans></span>. <Trans>ph_works_list2</Trans></li>
+                      <li><span><Trans>notify</Trans></span>. <Trans>ph_works_list3</Trans></li>
+                      <li><span><Trans>pick_up</Trans></span>. <Trans>ph_works_list4</Trans></li>
+                    </ol>
                   </div>
                 </div>
                 <div className="grid-two-col-item-single">
                   <StaticImage
-                      src="../../../images/smart-locks/smart-versa-four.png"
+                      src="../../../images/lockers/ph-how-it-works.jpg"
                       loading={'lazy'}
-                      width={624}
-                      height={461}
+                      width={490}
+                      height={340}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />
                 </div>
               </div>
-            </div>
-          </section>
-          <div className="section-delimeter container" />
-          <section className="smart-orbit">
-            <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single">
                   <StaticImage
-                      src="../../../images/smart-locks/smart-orbit-four.png"
+                      src="../../../images/lockers/ph-why-it-works.jpg"
                       loading={'lazy'}
-                      width={624}
-                      height={461}
+                      width={490}
+                      height={340}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />
                 </div>
-                <div className="grid-two-col-item-single">
-                  <img src={orbitLogo} width={'225'} height={'88'} alt=""/>
-                  <h2>
-                    <Trans>sl_orbit_headline</Trans>
-                  </h2>
-                  <ul>
-                    <li><Trans>sl_orbit_list1</Trans></li>
-                    <li><Trans>sl_orbit_list2</Trans></li>
-                    <li><Trans>sl_orbit_list3</Trans></li>
-                    <li><Trans>sl_orbit_list4</Trans></li>
-                    <li><Trans>sl_orbit_list5</Trans></li>
-                    <li><Trans>sl_orbit_list6</Trans></li>
-                  </ul>
-                  <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_brochure</Trans>
-                    </a>
+                <div className="grid-two-col-item-single gtc-description is-reversable">
+                  <div>
+                    <h2><Trans>why_it_works</Trans></h2>
+                    <ul>
+                      <li><Trans>ph_why_list1</Trans></li>
+                      <li><Trans>ph_why_list2</Trans></li>
+                      <li><Trans>ph_why_list3</Trans></li>
+                      <li><Trans>ph_why_list4</Trans></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <div className="section-delimeter container" />
-          <section className="smart-digilink">
-            <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single">
-                  <img className={'item-single-logo'} src={digilinkLogo} width={'225'} height={'88'} alt=""/>
-                  <h2>
-                    <Trans>sl_digilink_headline</Trans>
-                  </h2>
-                  <p><Trans>sl_digilink_headline_copy</Trans></p>
-                  <ul>
-                    <li><Trans>sl_digilink_list1</Trans></li>
-                    <li><Trans>sl_digilink_list2</Trans></li>
-                    <li><Trans>sl_digilink_list3</Trans></li>
-                    <li><Trans>sl_digilink_list4</Trans></li>
-                    <li><Trans>sl_digilink_list5</Trans></li>
-                  </ul>
-                  <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_brochure</Trans>
-                    </a>
+                <div className="grid-two-col-item-single gtc-description is-reversable">
+                  <div>
+                    <h2><Trans>where_it_works</Trans></h2>
+                    <ol>
+                      <li><span><Trans>workplace</Trans></span>. <Trans>ph_where_list1</Trans></li>
+                      <li><span><Trans>residential</Trans></span>. <Trans>ph_where_list2</Trans></li>
+                      <li><span><Trans>retail</Trans></span>. <Trans>ph_where_list3</Trans></li>
+                      <li><span><Trans>university</Trans></span>. <Trans>ph_where_list4</Trans></li>
+                    </ol>
                   </div>
                 </div>
                 <div className="grid-two-col-item-single">
                   <StaticImage
-                      src="../../../images/smart-locks/smart-digilink.png"
+                      src="../../../images/lockers/ph-how-it-works.jpg"
                       loading={'lazy'}
-                      width={624}
-                      height={461}
+                      width={490}
+                      height={340}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
-                  />
-                  <BCResponsivePlayer
-                      vid={'6216703423001'}
-                      cls={'digilink-video'}
-                      dynId={'DigilinkVideo'}
-                      translation={t('intro_digilink')}
                   />
                 </div>
               </div>
             </div>
           </section>
-          <Modal show={showModal} handleClose={handleShowModal}>
-            <div className="modal-content">
-              <p dangerouslySetInnerHTML={{__html:t('sl_modal_shared')}} />
-              <p dangerouslySetInnerHTML={{__html:t('sl_modal_assigned')}} />
+          <div id={'juiceBar'} className="section-delimeter container" />
+          <section className="juicebar">
+            <div className="container">
+              <img className={'logo-jb'} src={jbLogo} alt="PackageHold" width={'272'} height={'64'}/>
+              <div className="grid-two-col">
+                <div className="grid-two-col-item-single">
+                  <StaticImage
+                      src="../../../images/lockers/jb-cafe.jpg"
+                      loading={'lazy'}
+                      width={490}
+                      height={340}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                </div>
+                <div className="grid-two-col-item-single gtc-description is-reversable">
+                  <div>
+                    <h2><Trans>jb_headline</Trans></h2>
+                    <p><Trans>jb_headline_copy</Trans></p>
+                    <ul>
+                      <li><Trans>jb_list1</Trans></li>
+                      <li><Trans>jb_list2</Trans></li>
+                      <li><Trans>jb_list3</Trans></li>
+                      <li><Trans>jb_list4</Trans></li>
+                      <li><Trans>jb_list5</Trans></li>
+                      <li><Trans>jb_list6</Trans></li>
+                      <li><Trans>jb_list7</Trans></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="jb-gallery">
+                <StaticImage
+                    src="../../../images/lockers/jb-aquarium.jpg"
+                    loading={'lazy'}
+                    layout={'fixed'}
+                    width={347}
+                    height={266}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="NEED ALT TAG"
+                />
+                <StaticImage
+                    src="../../../images/lockers/jb-apartment.jpg"
+                    loading={'lazy'}
+                    width={347}
+                    height={266}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="NEED ALT TAG"
+                />
+                <StaticImage
+                    src="../../../images/lockers/jb-gym.jpg"
+                    loading={'lazy'}
+                    width={347}
+                    height={266}
+                    quality={100}
+                    formats={["auto", "webp", "avif"]}
+                    alt="NEED ALT TAG"
+                />
+              </div>
             </div>
-          </Modal>
+          </section>
         </div>
       </Layout>
   )

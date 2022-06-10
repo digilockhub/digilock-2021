@@ -93,13 +93,59 @@
   }
 
   &.specialty-lockers {
-    .packagehold {
+    .locker-solutions {
+      a {
+        font-family: "AvenirDemi", sans-serif;
+      }
+    }
+    .packagehold, .juicebar {
+      ol, ul {
+        text-align: left;
+        padding: 0 1.2rem 0 1.1rem;
+      }
       .ph-overview {
         h1 {
-          margin: var(--nav-gap) 0 .5rem 0;
+          margin: var(--nav-gap) 0 1rem 0;
         }
         @include md() {
           text-align: left;
+        }
+        margin-bottom: var(--section-gutter);
+      }
+      .grid-two-col {
+        margin-bottom: var(--section-gutter);
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      .grid-two-col-item-single {
+        &.gtc-description {
+          margin-top: var(--section-gutter);
+          @include navBreak() {
+            margin-top: revert;
+            place-items: center;
+            div {
+              text-align: left;
+            }
+          }
+          span {
+            font-family: "AvenirDemi", sans-serif;
+          }
+        }
+      }
+      .logo-jb {
+        margin-bottom: var(--section-gutter);
+      }
+      .jb-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        img {
+          min-width: 347px;
+        }
+        @include md() {
+          flex-direction: row;
         }
       }
     }

@@ -23,7 +23,6 @@
 //USED FOR PRODUCT DETAILS PAGES SO FAR
 .grid-two-col {
   display: grid;
-  //gap: var(--section-gutter);
   @include navBreak() {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
