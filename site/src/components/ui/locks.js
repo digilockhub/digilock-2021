@@ -278,7 +278,7 @@ const Locks = () => {
                     formats={["auto", "webp", "avif"]}
                     alt="Standard"
                 />
-                <p>Standard</p>
+                <p>A Series Standard</p>
               </div>
               <div className="thumbnail">
                 <StaticImage
@@ -290,7 +290,7 @@ const Locks = () => {
                     formats={["auto", "webp", "avif"]}
                     alt="Vertical"
                 />
-                <p>4th Generation Vertical</p>
+                <p>A Series Vertical</p>
               </div>
               <div className="thumbnail">
                 <StaticImage
@@ -302,24 +302,12 @@ const Locks = () => {
                     formats={["auto", "webp", "avif"]}
                     alt="Vertical"
                 />
-                <p>4th Generation Classic</p>
+                <p>Classic Cam</p>
               </div>
             </div>
             {
               isSupport ?
                   <div className="row">
-                    <div className="thumbnail">
-                      <StaticImage
-                          src={'../../images/locks/DL22-3g-600x497.png'}
-                          loading={'lazy'}
-                          width={'200'}
-                          height={'148'}
-                          quality={100}
-                          formats={["auto", "webp", "avif"]}
-                          alt="3rd Generation"
-                      />
-                      <p>3rd Generation</p>
-                    </div>
                     <div className="thumbnail">
                       <StaticImage
                           src={'../../images/locks/DL22-tseries-600x497.png'}
