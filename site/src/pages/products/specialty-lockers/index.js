@@ -6,6 +6,7 @@ import {graphql} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
 import phLogo from '../../../images/logos/logo-packagehold.svg';
 import jbLogo from '../../../images/logos/logo-juicebar.svg';
+import CustomLocalizedLink from "../../../components/locales/custom-localized-link";
 
 
 const IndexPage = () => {
@@ -223,6 +224,15 @@ const IndexPage = () => {
                     alt="NEED ALT TAG"
                 />
               </div>
+            </div>
+          </section>
+          <section className="questions">
+            <div className="container">
+              <CustomLocalizedLink
+                  goto="/contact/"
+                  cls="btn btn--orange"
+                  label={t('get_questions_answered')}
+              />
             </div>
           </section>
         </div>
