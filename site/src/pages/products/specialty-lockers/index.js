@@ -150,7 +150,7 @@ const IndexPage = () => {
                 </div>
                 <div className="grid-two-col-item-single">
                   <StaticImage
-                      src="../../../images/lockers/ph-how-it-works.jpg"
+                      src="../../../images/lockers/ph-where-it-works.jpg"
                       loading={'lazy'}
                       width={490}
                       height={340}
