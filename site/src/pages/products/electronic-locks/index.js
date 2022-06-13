@@ -12,6 +12,7 @@ import cueLogo from '../../../images/logos/logo-cue.svg';
 import solaLogo from '../../../images/logos/logo-sola.svg';
 import rangeLogo from '../../../images/logos/logo-range.svg';
 import Modal from '../../../components/modals/modal';
+import CustomLocalizedLink from "../../../components/locales/custom-localized-link";
 
 const IndexPage = () => {
 
@@ -237,24 +238,32 @@ const IndexPage = () => {
                     <li><Trans>el_axis_list4</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
+                    <CustomLocalizedLink
+                        goto="/products/electronic-locks/axis/"
+                        cls="btn btn--orange"
+                        label={t('see_specs')}
+                    />
+
                     <a href="/products/locks/" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
                 </div>
                 <div className="grid-two-col-item-single">
-                  <StaticImage
-                      src="../../../images/electronic-locks/elec-axis-four.png"
-                      loading={'lazy'}
-                      width={624}
-                      height={461}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <Link
+                      to={'/products/electronic-locks/axis/'}
+                      title={t('see_specs')}
+                  >
+                    <StaticImage
+                        src="../../../images/electronic-locks/elec-axis-four.png"
+                        loading={'lazy'}
+                        width={624}
+                        height={461}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -264,15 +273,20 @@ const IndexPage = () => {
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single">
-                  <StaticImage
-                      src="../../../images/electronic-locks/elec-cue-four.png"
-                      loading={'lazy'}
-                      width={624}
-                      height={461}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <Link
+                      to={'/products/electronic-locks/cue/'}
+                      title={t('see_specs')}
+                  >
+                    <StaticImage
+                        src="../../../images/electronic-locks/elec-cue-four.png"
+                        loading={'lazy'}
+                        width={624}
+                        height={461}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </Link>
                 </div>
                 <div className="grid-two-col-item-single">
                   <img src={cueLogo} width={'225'} height={'88'} alt=""/>
@@ -286,9 +300,11 @@ const IndexPage = () => {
                     <li><Trans>el_cue_list4</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
+                    <CustomLocalizedLink
+                        goto="/products/electronic-locks/cue/"
+                        cls="btn btn--orange"
+                        label={t('see_specs')}
+                    />
                     <a href="/products/locks/" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
@@ -312,24 +328,31 @@ const IndexPage = () => {
                     <li><Trans>el_sola_list3</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
+                    <CustomLocalizedLink
+                        goto="/products/electronic-locks/sola/"
+                        cls="btn btn--orange"
+                        label={t('see_specs')}
+                    />
                     <a href="/products/locks/" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
                 </div>
                 <div className="grid-two-col-item-single">
-                  <StaticImage
-                      src="../../../images/electronic-locks/elec-sola-four.png"
-                      loading={'lazy'}
-                      width={624}
-                      height={461}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <Link
+                      to={'/products/electronic-locks/sola/'}
+                      title={t('see_specs')}
+                  >
+                    <StaticImage
+                        src="../../../images/electronic-locks/elec-sola-four.png"
+                        loading={'lazy'}
+                        width={624}
+                        height={461}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -339,15 +362,19 @@ const IndexPage = () => {
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single">
-                  <StaticImage
-                      src="../../../images/electronic-locks/elec-range-four.png"
-                      loading={'lazy'}
-                      width={624}
-                      height={461}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <Link to={'/products/electronic-locks/range/'}
+                        title={t('see_specs')}
+                  >
+                    <StaticImage
+                        src="../../../images/electronic-locks/elec-range-four.png"
+                        loading={'lazy'}
+                        width={624}
+                        height={461}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </Link>
                 </div>
                 <div className="grid-two-col-item-single">
                   <img src={rangeLogo} width={'225'} height={'88'} alt=""/>
@@ -362,9 +389,10 @@ const IndexPage = () => {
                     <li><Trans>el_range_list5</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
+                    <CustomLocalizedLink goto="/products/electronic-locks/range/"
+                                         cls="btn btn--orange"
+                                         label={t('see_specs')}
+                    />
                     <a href="/products/locks/" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
