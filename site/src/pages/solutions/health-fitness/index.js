@@ -1,21 +1,173 @@
-import React, {useState} from "react";
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import React from "react";
+import {Trans, useTranslation, I18nextContext} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
+import {StaticImage} from "gatsby-plugin-image";
+import {returnLocaleURL} from "../../../utils/utils";
+import {createMarkup} from "../../../utils/utils";
 
-
+import CarouselWrapper from '../../../components/carousel/CarouselWrapper';
+import Project01 from './images/project/02-2-project-01a.jpg'
+import Project02 from './images/project/02-2-project-02a.jpg'
+import Project03 from './images/project/02-2-project-03a.jpg'
+import Project05 from './images/project/02-2-project-05a.jpg'
+import Project06 from './images/project/02-2-project-06a.jpg'
+import Project07 from './images/project/02-2-project-07a.jpg'
+import Project08 from './images/project/02-2-project-08a.jpg'
+import Project09 from './images/project/02-2-project-09a.jpg'
+import Project10 from './images/project/02-2-project-10a.jpg'
 
 const IndexPage = () => {
 
   const {t} = useTranslation();
+  const context = React.useContext(I18nextContext);
+  let sl = context.language;
+
+  const projectImages = [
+    {
+      original: Project01,
+      originalAlt: 'Locker Room Secured with Axis Locks at Let\'s Ride',
+      thumbnail: Project01,
+      thumbnailLabel: 'Let\'s Ride',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+    {
+      original: Project02,
+      originalAlt: 'Soul Cycle Locker Room Installed with Cue Electronic Locks.',
+      thumbnail: Project02,
+      thumbnailLabel: 'Soul Cycle',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+    {
+      original: Project03,
+      originalAlt: 'Digilock 4G Electronic Locks at Croatia Fitness',
+      thumbnail: Project03,
+      thumbnailLabel: 'Croatia Fitness',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+
+    },
+    {
+      original: Project05,
+      originalAlt: 'Axis Electronic Locks at Athlete Factory',
+      thumbnail: Project05,
+      thumbnailLabel: 'Athlete Factory',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+    },
+    {
+      original: Project06,
+      originalAlt: 'Mech Locks Installed on Trango Towers Cabinets',
+      thumbnail: Project06,
+      thumbnailLabel: 'Trango Towers',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/mech/')
+    },
+    {
+      original: Project07,
+      originalAlt: 'Electronic Lockers Secured with Cue at The Ride House',
+      thumbnail: Project07,
+      thumbnailLabel: 'The Ride House',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+    {
+      original: Project08,
+      originalAlt: 'UFC Locker Room Secured with Axis by Digilock',
+      thumbnail: Project08,
+      thumbnailLabel: 'UFC',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+    {
+      original: Project09,
+      originalAlt: 'Celare Electronic Lockers Secured with Custom Cue Locks at Earth Treks Climbing Gym',
+      thumbnail: Project09,
+      thumbnailLabel: 'Earth Treks',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+    {
+      original: Project10,
+      originalAlt: 'Digilock 4G Electronic Locks Installed at Roam Fitness',
+      thumbnail: Project10,
+      thumbnailLabel: 'Roam Fitness',
+      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+    },
+  ]
+  const projectAsides = [
+    '<h2>Let\'s Ride</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'/">Keypad</a></p>',
+
+    '<h2>Soul Cycle</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+
+    '<h2>Croatia Fitness</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Cue</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>',
+
+    '<h2>Athlete Factory</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+
+    '<h2>Trango Towers</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/mech/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/mech/')+'">Dial Combo</a></p>',
+
+    '<h2>The Ride House</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+
+    '<h2>UFC</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+
+    '<h2>Earth Treks Climbing Gym</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+
+    '<h2>Roam Fitness</h2><br>' +
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>'
+  ]
+  const ProjectAside = _ => <aside className={'dynamic-aside'}
+                                   dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
 
   return (
       <Layout>
-        <Seo title={t('About')}/>
-        <div className="about">
-          <section className="hero">
-            <h1>Industries Health and Fitness Placeholder</h1>
+        <Seo title={t('Digilock Health/Fitness Solutions')}/>
+        <div className="solutions">
+          <section className="hero --hero-image no-pad">
+            <StaticImage
+                src="../../../images/industries/hero-health-fitness.jpg"
+                quality={100}
+                layout={'fullWidth'}
+                formats={["auto", "webp", "avif"]}
+                alt="NEED ALT TAG"
+            />
+            <h6>
+              <Trans>
+                health_fitness
+              </Trans>
+            </h6>
+          </section>
+          <section className="">
+            <div className="container">
+              <CarouselWrapper
+                  items={projectImages}
+                  asides={projectAsides}
+                  projectAside={<ProjectAside />}
+                  showThumbnails={true}
+                  showBullets={true}
+                  dynamicAside={true}
+                  allowImageClick={true}
+              />
+            </div>
           </section>
         </div>
       </Layout>

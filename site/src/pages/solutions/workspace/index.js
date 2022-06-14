@@ -179,8 +179,8 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('About')}/>
-        <div className="about">
+        <Seo title={t('Digilock Workspace Solutions')}/>
+        <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
                 src="../../../images/industries/hero-workspace.jpg"

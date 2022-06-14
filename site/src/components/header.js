@@ -152,6 +152,12 @@ const Header = () => {
                           cls={checkSiteLocation('/solutions/hospitality/') ? 'selected' : ''}
                           label={t('hospitality')}/>
                     </li>
+                    <li>
+                      <CustomLocalizedLink
+                          goto="/solutions/government/"
+                          cls={checkSiteLocation('/solutions/government/') ? 'selected' : ''}
+                          label={t('government')}/>
+                    </li>
                   </ul>
                 </li>
                 <li>
