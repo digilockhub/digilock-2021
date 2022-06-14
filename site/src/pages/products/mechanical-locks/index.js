@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import Layout from "../../../../components/layout";
-import Seo from "../../../../components/seo";
+import Layout from "../../../components/layout";
+import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
 import {StaticImage} from "gatsby-plugin-image";
-import mechLogo from '../../../../images/logos/logo-mech.svg';
+import mechLogo from '../../../images/logos/logo-mech.svg';
 
 const IndexPage = () => {
   const {t} = useTranslation();
@@ -71,10 +71,10 @@ const IndexPage = () => {
                     <li><Trans>mechanical_mech_list5</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/mechanical-locks/" className="btn btn--orange">
+                    <a href="/products/mechanical-locks/mech/" className="btn btn--orange">
                       <Trans>see_specs</Trans>
                     </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    <a href="/products/locks" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
