@@ -230,7 +230,7 @@ const Header = () => {
                     {/*</li>*/}
                     <li>
                       <CustomLocalizedLink
-                          goto={'/products/mechanical-locks/mech/'}
+                          goto={'/products/mechanical-locks/'}
                           cls={checkSiteLocation('/mech/') ? 'selected' : ''}
                           label={'Mechanical Lock'}
                       />

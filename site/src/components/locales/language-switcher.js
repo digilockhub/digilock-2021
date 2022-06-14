@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
 import locales from '../../constants/locales/locales';
 import globe from '../../images/shared/globe.svg';

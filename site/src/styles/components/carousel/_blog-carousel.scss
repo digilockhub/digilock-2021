@@ -1,0 +1,193 @@
+.blog-carousel {
+
+
+  @include lg() {
+    margin-bottom: 60px;
+  }
+
+  @include lg() {
+    br {
+      display: none;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+    background-image: url("../images/about/blog-spotted.png");
+    background-size: cover;
+    img {
+      width: 261px;
+      height: 44px;
+    }
+  }
+
+  .hr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      color: $color-text-gray;
+      font-size: 20px;
+      @include lg() {
+        font-size: 24px;
+      }
+      margin: 20px 0 0px 0;
+      @include lg() {
+        margin: 20px 0 60px 0;
+        padding-top: 30px;
+      }
+
+    }
+
+    .line {
+      display: none;
+      @include lg() {
+        display: block;
+      }
+      width: 30%;
+      height: 2px;
+      background-image: url("../images/about/hr-ling.png");
+      @include xl() {
+        width: 65%
+      }
+    }
+  }
+
+  >p {
+    padding: 0 60px;
+    br {
+      display: none;
+    }
+    @include lg() {
+      br {
+        display: block;
+      }
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+
+  .carousel-container {
+
+    background: $color-white;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .image-gallery {
+      display: none;
+      @include lg() {
+        display: block;
+      }
+      width: 40%;
+      height: 363px;
+      overflow: hidden;
+    }
+
+    .blog-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+
+      @include lg() {
+        width: 40%;
+      }
+
+      p {
+        padding: 0;
+        color: $color-text-gray;
+        &.blog-title {
+          font-size: 24px;
+        }
+      }
+
+      .blog-carousel-header {
+        display: flex;
+        flex-direction: column;
+
+
+        .meta-data {
+          display: flex;
+          align-items: center;
+          span {
+            color: $color-numeris-blue;
+            margin: 0 10px;
+          }
+          div {
+            padding-top: 5px;
+          }
+          img {
+            width: 101px;
+            height: 15px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+
+        }
+      }
+      .blog-carousel-footer {
+        font-size: 12px;
+        .bar {
+          display: block;
+          margin-top: 10px;
+          width: 80px;
+          height: 6px;
+          background: $package-orange;
+        }
+      }
+    }
+
+    .carousel-hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      cursor: pointer;
+
+      nav {
+        display: flex;
+        align-items: center;
+        img {
+          transform: scale(.4);
+          cursor: pointer;
+          @include lg() {
+            transform: scale(.6);
+          }
+          width: 45px;
+          height: 63px;
+        }
+
+        &.previous {
+          @include lg() {
+            margin-right: 40px;
+          }
+        }
+        &.next {
+          @include lg() {
+            margin-left: 40px;
+            transform: scale(.6);
+
+          }
+          img {
+            transform: rotate(180deg) scale(.4);
+            @include lg() {
+              transform: rotate(180deg) scale(1);
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
