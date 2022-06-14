@@ -3,13 +3,27 @@ import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../../components/layout";
 import Seo from "../../../../components/seo";
 import {graphql} from 'gatsby';
+import VideoIcons from '../../../../components/video-player/VideoIcons';
+import BCPlayer360 from '../../../../components/video-player/BCPlayer360';
+import {createMarkup} from '../../../../utils/utils';
 import {StaticImage} from "gatsby-plugin-image";
-import mechLogo from '../../../../images/logos/logo-mech.svg';
 
-const IndexPage = () => {
+
+const Axis = (props) => {
 
   const {t} = useTranslation();
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [bcVideoId, setBcVideoId] = useState('6151952804001');
+  const [whichInterface, setWhichInterface] = useState('dial');
 
+  function videoIconClickHandler(index, vid) {
+    setCurrentVideoIndex(index);
+    setBcVideoId(vid);
+  }
+
+  function setInterfaceHandler(e) {
+    setWhichInterface(e.target.getAttribute('data-value'));
+  }
 
   return (
       <Layout>
@@ -17,69 +31,164 @@ const IndexPage = () => {
             title={t('Digilock Commercial Keyless Locks For Hospitals, Hospitality and Corporations')}
             description={'Learn about the best industry commercial keyless locks that leverage proprietary technology and is supported by a dedicated customer service team.'}
         />
-        <div className="products electronic-locks-page">
-          <section className="hero --hero-image no-pad">
-            <StaticImage
-                src="../../../../images/locks/hero-mech.jpg"
-                quality={100}
-                layout={'fullWidth'}
-                formats={["auto", "webp", "avif"]}
-                alt="NEED ALT TAG"
-            />
-            <h6>
-              <Trans>
-                mechanical_lock
-              </Trans>
-            </h6>
-          </section>
-          <section className={'smart-locks-overview'}>
+        <div className={'products electronic-locks mech'}>
+          <section className="details">
             <div className="container">
-              <h1>
-                <Trans>
-                  mech_headline
-                </Trans>
-              </h1>
-              <p>
-                <Trans>
-                  mech_headline_copy
-                </Trans>
-              </p>
+              <h1>Mech {t('product_details')}</h1>
+              <div className={'grid-two-col'}>
+
+                <div className="grid-two-col-item">
+                  <div className="revealer">
+
+                    {whichInterface === 'dial' ? <StaticImage
+                        src={'./images/NKDC_360ROT_FF.jpg'}
+                        loading={'lazy'}
+                        width={173}
+                        height={319}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    /> : null}
+                    {whichInterface === 'hasp' ? <StaticImage
+                        src={'./images/hasp.png'}
+                        loading={'lazy'}
+                        width={213}
+                        height={359}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    /> : null}
+                    {whichInterface === 'laser-cam' ? <StaticImage
+                        src={'./images/laser-cam.png'}
+                        loading={'lazy'}
+                        width={213}
+                        height={359}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    /> : null}
+                  </div>
+                  <div>
+                    <h2>
+                      {t('interface')}
+                    </h2>
+                    <h3>
+                      {t('front_unit')}
+                    </h3>
+                    <h3>
+                      <span
+                          className={whichInterface === 'dial' ? 'interface-link selected' : 'interface-link'}
+                          data-value={'dial'}
+                          onClick={setInterfaceHandler}>
+                        {t('dial')}
+                      </span> :&nbsp;
+                      <span
+                          className={whichInterface === 'hasp' ? 'interface-link selected' : 'interface-link'}
+                          data-value={'hasp'}
+                          onClick={setInterfaceHandler}>
+                        {t('hasp')}
+                      </span> :&nbsp;
+                      <span
+                          className={whichInterface === 'laser-cam' ? 'interface-link selected' : 'interface-link'}
+                          data-value={'laser-cam'}
+                          onClick={setInterfaceHandler}>
+                        {t('laser_cam')}
+                      </span>
+                    </h3>
+                    <p className={'pad-top'}>
+                      {whichInterface === 'dial' ? t('mech_dial_copy') : null}
+                      {whichInterface === 'hasp' ? t('mech_hasp_copy') : null}
+                      {whichInterface === 'laser-cam' ? t('mech_laser_cam_copy') : null}
+                    </p>
+
+                  </div>
+                </div>
+                <div className="grid-two-col-item">
+                  <div className="video-360">
+                    <BCPlayer360 vid={bcVideoId} loc={'nextlock'}  />
+                  </div>
+                  <div className="product-copy">
+                    <h2>
+                      {t('body_style')}
+                    </h2>
+                    <h3>
+                      {t('front_unit')}
+                    </h3>
+                    <h3>
+                      {t('body')} | {t('dial')} : {t('hasp')} : {t('laser_cam')}
+                    </h3>
+                    <p>
+                      {currentVideoIndex === 0 ? t('mech_body_style_copy') + ' '+ t('mech_body_style_copy_with_cam') : null}
+                      {currentVideoIndex > 0 ? t('mech_body_style_copy') : null}
+                    </p>
+                    <VideoIcons
+                        currentVideoIndex={currentVideoIndex}
+                        videoIconClickHandler={videoIconClickHandler}
+                        toggleClassNames={
+                          [
+                            'icon-mech-dial',
+                            'icon-mech-hasp',
+                            'icon-mech-cam '
+                          ]
+                        }
+                        bcVideoIds={
+                          [
+                            '6151952804001',
+                            '6151953273001',
+                            '6151952911001'
+                          ]
+                        }
+                    >&nbsp;</VideoIcons>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </section>
           <div className="section-delimeter container" />
-          <section className="elec-mech">
+          <section className="rear-units">
             <div className="container">
               <div className="grid-two-col">
-                <div className="grid-two-col-item-single">
-                  <StaticImage
-                      src="../../../../images/electronic-locks/elec-mech-four.png"
-                      loading={'lazy'}
-                      width={624}
-                      height={461}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                <div className="grid-two-col-item">
+                  <div>
+                    <StaticImage
+                        src={'./images/mech-keys.png'}
+                        loading={'lazy'}
+                        width={190}
+                        height={207}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </div>
+                  <div>
+                    <h2>
+                      {t('mech_lock_management')}
+                    </h2>
+                    <p>
+                      {t('mech_lock_management_copy')}<br /><Link to='/contact/'>{t('contact_digilock_sales')}</Link>
+                    </p>
+                  </div>
                 </div>
-                <div className="grid-two-col-item-single">
-                  <img className={'mech-logo'} src={mechLogo} width={'193'} height={'35'} alt=""/>
-                  <h2>
-                    <Trans>mechanical_mech_headline</Trans>
-                  </h2>
-                  <ul>
-                    <li><Trans>mechanical_mech_list1</Trans></li>
-                    <li><Trans>mechanical_mech_list2</Trans></li>
-                    <li><Trans>mechanical_mech_list3</Trans></li>
-                    <li><Trans>mechanical_mech_list4</Trans></li>
-                    <li><Trans>mechanical_mech_list5</Trans></li>
-                  </ul>
-                  <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_brochure</Trans>
-                    </a>
+                <div className="grid-two-col-item">
+                  <div>
+                    <StaticImage
+                        src={'./images/nk_mech_br_isometric_0TS2x.png'}
+                        loading={'lazy'}
+                        width={267}
+                        height={281}
+                        quality={100}
+                        formats={["auto", "webp", "avif"]}
+                        alt="NEED ALT TAG"
+                    />
+                  </div>
+                  <div>
+                    <h2>
+                      {t('finish')}
+                    </h2>
+                    <p>
+                      {t('mech_finish_copy')}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -87,11 +196,10 @@ const IndexPage = () => {
           </section>
         </div>
       </Layout>
-  )
+  );
 };
 
-export default IndexPage;
-
+export default Axis;
 export const query = graphql`
   query ($language: String!) {
     locales: allLocale(filter: {language: {eq: $language}}) {
