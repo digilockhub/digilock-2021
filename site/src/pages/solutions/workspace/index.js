@@ -3,6 +3,7 @@ import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
+import {StaticImage} from "gatsby-plugin-image";
 
 
 
@@ -14,8 +15,19 @@ const IndexPage = () => {
       <Layout>
         <Seo title={t('About')}/>
         <div className="about">
-          <section className="hero">
-            <h1>Industries Workspace Placeholder</h1>
+          <section className="hero --hero-image no-pad">
+            <StaticImage
+                src="../../../images/industries/hero-workspace.jpg"
+                quality={100}
+                layout={'fullWidth'}
+                formats={["auto", "webp", "avif"]}
+                alt="NEED ALT TAG"
+            />
+            <h6>
+              <Trans>
+                workspace
+              </Trans>
+            </h6>
           </section>
         </div>
       </Layout>
