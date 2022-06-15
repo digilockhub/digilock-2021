@@ -142,7 +142,7 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                workspace
+                retail
               </Trans>
             </h6>
           </section>

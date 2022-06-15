@@ -154,7 +154,7 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                workspace
+                healthcare
               </Trans>
             </h6>
           </section>
