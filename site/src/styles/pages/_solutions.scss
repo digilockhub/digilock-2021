@@ -1,0 +1,69 @@
+.solutions {
+  .industry-uses {
+    .uses-items {
+      display: flex;
+      flex-direction: column;
+      gap: var(--nav-gap);
+    }
+    .uses-item {
+      p {
+        margin-top: 1rem;
+      }
+    }
+
+    @include md() {
+      .uses-items {
+        flex-direction: row;
+        gap: .7rem;
+      }
+      .uses-item p {
+        text-align: left;
+      }
+    }
+  }
+
+  .industry-copy {
+    &.health-fitness .container, &.healthcare .container {
+      display: flex;
+      flex-direction: column;
+      @include md() {
+        flex-direction: row;
+        gap: var(--nav-gap);
+        .video-holder {
+          width: 50%;
+        }
+        p {
+          display: grid;
+          place-items: center;
+          width: 50%;
+          line-height: 2.5rem;
+          text-align: left;
+        }
+      }
+    }
+
+    &.health-fitness {
+      .video-js {
+        @include outline($color-browser-chrome);
+        .vjs-big-play-button {
+          top: 82%;
+          left: 63%;
+          width: 1em;
+          height: 1em;
+        }
+        .vjs-big-play-button .vjs-icon-placeholder:before {
+          top: -23px;
+        }
+      }
+    }
+    &.healthcare {
+      .video-js {
+        @include outline($color-browser-chrome);
+        .vjs-big-play-button {
+          top: 80%;
+          left: 50%;
+        }
+      }
+    }
+  }
+}

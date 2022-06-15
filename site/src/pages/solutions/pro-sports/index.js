@@ -87,11 +87,11 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                workspace
+                pro_sports
               </Trans>
             </h6>
           </section>
-          <section className="">
+          <section className="industry-carousel">
             <div className="container">
               <CarouselWrapper
                   items={projectImages}
@@ -102,6 +102,62 @@ const IndexPage = () => {
                   dynamicAside={true}
                   allowImageClick={true}
               />
+            </div>
+          </section>
+          <section className="industry-copy">
+            <div className="container">
+              <p>
+                <Trans>pro_sports_copy</Trans>
+              </p>
+            </div>
+          </section>
+          <section className="industry-uses">
+            <div className="container">
+              <h2><Trans>popular_keyless</Trans></h2>
+              <div className="uses-items">
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/11-1-application-01a.jpg"
+                      loading={'lazy'}
+                      width={349}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>team_lockers</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/11-1-application-03a.jpg"
+                      loading={'lazy'}
+                      width={349}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>equipment_storage</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/11-1-application-02a.jpg"
+                      loading={'lazy'}
+                      width={349}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>staff_office_furniture</Trans>
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </div>

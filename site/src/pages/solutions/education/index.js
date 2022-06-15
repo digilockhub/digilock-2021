@@ -147,7 +147,7 @@ const IndexPage = () => {
               </Trans>
             </h6>
           </section>
-          <section className="">
+          <section className="industry-carousel">
             <div className="container">
               <CarouselWrapper
                   items={projectImages}
@@ -158,6 +158,62 @@ const IndexPage = () => {
                   dynamicAside={true}
                   allowImageClick={true}
               />
+            </div>
+          </section>
+          <section className="industry-copy">
+            <div className="container">
+              <p>
+                <Trans>education_copy</Trans>
+              </p>
+            </div>
+          </section>
+          <section className="industry-uses">
+            <div className="container">
+              <h2><Trans>popular_keyless</Trans></h2>
+              <div className="uses-items">
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/05-1-application-01a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>athletic_facilities</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/05-1-application-02a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>library_storage</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/05-1-application-03a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>juicebar_charging_lockers</Trans>
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </div>

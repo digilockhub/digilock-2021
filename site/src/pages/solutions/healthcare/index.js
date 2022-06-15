@@ -17,6 +17,7 @@ import Project06 from './images/project/04-2-project-06a.jpg';
 import Project07 from './images/project/04-2-project-07a.jpg';
 import Project08 from './images/project/04-2-project-08a.jpg';
 import Project09 from './images/project/04-2-project-09a.jpg';
+import BCResponsivePlayer from "../../../components/video-player/BCResponsivePlayer";
 
 const IndexPage = () => {
 
@@ -157,7 +158,7 @@ const IndexPage = () => {
               </Trans>
             </h6>
           </section>
-          <section className="">
+          <section className="industry-carousel">
             <div className="container">
               <CarouselWrapper
                   items={projectImages}
@@ -168,6 +169,81 @@ const IndexPage = () => {
                   dynamicAside={true}
                   allowImageClick={true}
               />
+            </div>
+          </section>
+          <section className="industry-copy healthcare">
+            <div className="container">
+              <p>
+                <Trans>education_copy</Trans>
+              </p>
+              <BCResponsivePlayer
+                  vid={'6157021087001'}
+                  cls={'digilink-video'}
+                  dynId={'DigilinkVideo'}
+              />
+            </div>
+          </section>
+          <section className="industry-uses">
+            <div className="container">
+              <h2><Trans>popular_keyless</Trans></h2>
+              <div className="uses-items">
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/04-1-application-04a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>patient_applications</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/04-1-application-02a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>staff_locker_rooms</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/04-1-application-03a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>medical_carts</Trans>
+                  </p>
+                </div>
+                <div className="uses-item">
+                  <StaticImage
+                      src="./images/applications/04-1-application-01a.jpg"
+                      loading={'lazy'}
+                      width={353}
+                      height={225}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="NEED ALT TAG"
+                  />
+                  <p>
+                    <Trans>exam_rooms</Trans>
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </div>

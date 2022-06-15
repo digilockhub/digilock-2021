@@ -405,7 +405,6 @@
   }
 }
 
-
 .dynamic-aside {
   a {
     text-decoration: none;
@@ -414,5 +413,15 @@
   p {
     color: $color-white;
     margin: 0;
+  }
+
+  h2 {
+    span {
+      font-family: "AvenirRegular", sans-serif;
+      color: $color-white;
+      display: block;
+      font-size: .8rem;
+      margin-top: -5px;
+    }
   }
 }
