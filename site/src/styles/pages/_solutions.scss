@@ -66,4 +66,11 @@
       }
     }
   }
+  .industry-uses {
+    h2 {
+      @include md() {
+        text-align: left;
+      }
+    }
+  }
 }

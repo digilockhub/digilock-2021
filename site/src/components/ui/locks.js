@@ -44,7 +44,7 @@ const Locks = () => {
                         height={'148'}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Aspire Smart Lock"
                     />
                     <p>
                       <span>Aspire<sup>&trade;</sup></span>
@@ -60,7 +60,7 @@ const Locks = () => {
                         height={'148'}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Versa Smart Lock"
                     />
                     <p>
                       <span>Versa<sup>&trade;</sup></span>
@@ -76,7 +76,7 @@ const Locks = () => {
                         height={'148'}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Orbit Smart Lock"
                     />
                     <p>
                       <span>Orbit<sup>&trade;</sup></span>
@@ -98,7 +98,7 @@ const Locks = () => {
                         height={'148'}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Digilink Smart Lock"
                     />
                     <p>
                       <span>Digilink<sup>&trade;</sup></span>
@@ -117,7 +117,7 @@ const Locks = () => {
                     height={'148'}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
-                    alt="NEED ALT TAG"
+                    alt="Digilink Smart Lock"
                 />
                 <p>
                   <span>Digilink<sup>&trade;</sup></span>
@@ -151,7 +151,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Aspire Electronic Lock"
                   />
                   <p>
                     <span>Aspire<sup>&trade;</sup></span>
@@ -167,7 +167,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Versa Electronic Lock"
                   />
                   <p>
                     <span>Versa<sup>&trade;</sup></span>
@@ -183,7 +183,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Orbit Electronic Lock"
                   />
                   <p>
                     <span>Orbit<sup>&trade;</sup></span>
@@ -210,7 +210,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Axis Electronic Lock"
                   />
                   <p>
                     <span>Axis<sup>&trade;</sup></span>
@@ -226,7 +226,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Cue Electronic Lock"
                   />
                   <p>
                     <span>Cue<sup>&trade;</sup></span>
@@ -242,7 +242,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Sola Electronic Lock"
                   />
                   <p>
                     <span>Sola<sup>&trade;</sup></span>
@@ -258,7 +258,7 @@ const Locks = () => {
                       height={'148'}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Range Electronic Lock"
                   />
                   <p>
                     <span>Range<sup>&trade;</sup></span>

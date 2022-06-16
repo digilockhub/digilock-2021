@@ -1,5 +1,5 @@
 import React from "react";
-import {Trans, useTranslation, I18nextContext} from 'gatsby-plugin-react-i18next';
+import {Trans, useTranslation, I18nextContext, Link} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
@@ -180,7 +180,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <div className="uses-item">
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/03-1-application-03a.jpg"
                       loading={'lazy'}
@@ -193,8 +193,8 @@ const IndexPage = () => {
                   <p>
                     <Trans>staff_locker_rooms</Trans>
                   </p>
-                </div>
-                <div className="uses-item">
+                </Link>
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/03-1-application-01a.jpg"
                       loading={'lazy'}
@@ -207,8 +207,8 @@ const IndexPage = () => {
                   <p>
                     <Trans>in_room_storage</Trans>
                   </p>
-                </div>
-                <div className="uses-item">
+                </Link>
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/03-1-application-02a.jpg"
                       loading={'lazy'}
@@ -221,7 +221,7 @@ const IndexPage = () => {
                   <p>
                     <Trans>spa_fitness_center</Trans>
                   </p>
-                </div>
+                </Link>
               </div>
             </div>
           </section>

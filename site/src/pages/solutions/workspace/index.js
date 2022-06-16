@@ -1,5 +1,5 @@
 import React from "react";
-import {Trans, useTranslation, I18nextContext} from 'gatsby-plugin-react-i18next';
+import {Link, Trans, useTranslation, I18nextContext} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
 import {graphql} from 'gatsby';
@@ -179,7 +179,10 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Workspace Solutions')}/>
+        <Seo
+            title={t('Keyless Electronic Locks Secure Personal Storage Needs | Digilock')}
+            description={'Digilock offers a variety of keyless electronic locks designed to be furniture-forward that meet the need to secure personal storage.'}
+        />
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -210,6 +213,7 @@ const IndexPage = () => {
           </section>
           <section className="industry-copy">
             <div className="container">
+              <h1>Storage security</h1>
               <p>
                 <Trans>workspace_copy</Trans>
               </p>
@@ -219,7 +223,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <div className="uses-item">
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-01a.jpg"
                       loading={'lazy'}
@@ -232,8 +236,8 @@ const IndexPage = () => {
                   <p>
                     <Trans>personal_storage</Trans>
                   </p>
-                </div>
-                <div className="uses-item">
+                </Link>
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-02a.jpg"
                       loading={'lazy'}
@@ -246,8 +250,8 @@ const IndexPage = () => {
                   <p>
                     <Trans>pedestals</Trans>
                   </p>
-                </div>
-                <div className="uses-item">
+                </Link>
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-03a.jpg"
                       loading={'lazy'}
@@ -260,8 +264,8 @@ const IndexPage = () => {
                   <p>
                     <Trans>credenzas</Trans>
                   </p>
-                </div>
-                <div className="uses-item">
+                </Link>
+                <Link to={'/products/smart-locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-04a.jpg"
                       loading={'lazy'}
@@ -274,7 +278,7 @@ const IndexPage = () => {
                   <p>
                     <Trans>towers</Trans>
                   </p>
-                </div>
+                </Link>
               </div>
             </div>
           </section>
