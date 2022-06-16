@@ -31,21 +31,21 @@ const IndexPage = () => {
       originalAlt: 'Locker Room Secured with Axis Locks at Let\'s Ride',
       thumbnail: Project01,
       thumbnailLabel: 'Let\'s Ride',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
       originalAlt: 'Soul Cycle Locker Room Installed with Cue Electronic Locks.',
       thumbnail: Project02,
       thumbnailLabel: 'Soul Cycle',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project03,
       originalAlt: 'Digilock 4G Electronic Locks at Croatia Fitness',
       thumbnail: Project03,
       thumbnailLabel: 'Croatia Fitness',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
 
     },
     {
@@ -53,88 +53,88 @@ const IndexPage = () => {
       originalAlt: 'Axis Electronic Locks at Athlete Factory',
       thumbnail: Project05,
       thumbnailLabel: 'Athlete Factory',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project06,
       originalAlt: 'Mech Locks Installed on Trango Towers Cabinets',
       thumbnail: Project06,
       thumbnailLabel: 'Trango Towers',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/mech/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project07,
       originalAlt: 'Electronic Lockers Secured with Cue at The Ride House',
       thumbnail: Project07,
       thumbnailLabel: 'The Ride House',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project08,
       originalAlt: 'UFC Locker Room Secured with Axis by Digilock',
       thumbnail: Project08,
       thumbnailLabel: 'UFC',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project09,
       originalAlt: 'Celare Electronic Lockers Secured with Custom Cue Locks at Earth Treks Climbing Gym',
       thumbnail: Project09,
       thumbnailLabel: 'Earth Treks',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project10,
       originalAlt: 'Digilock 4G Electronic Locks Installed at Roam Fitness',
       thumbnail: Project10,
       thumbnailLabel: 'Roam Fitness',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
   ]
   const projectAsides = [
     '<h2>Let\'s Ride</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'/">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'/">Keypad</a></p>',
 
     '<h2>Soul Cycle</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Croatia Fitness</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Cue</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Cue</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Athlete Factory</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Trango Towers</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/mech/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/mech/')+'">Dial Combo</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Dial Combo</a></p>',
 
     '<h2>The Ride House</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>UFC</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Earth Treks Climbing Gym</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Roam Fitness</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
   ]
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
@@ -186,7 +186,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/02-1-application-01a.jpg"
                       loading={'lazy'}
@@ -200,7 +200,7 @@ const IndexPage = () => {
                     <Trans>day_use_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/02-1-application-02a.jpg"
                       loading={'lazy'}

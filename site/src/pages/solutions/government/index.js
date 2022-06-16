@@ -29,7 +29,7 @@ const IndexPage = () => {
       originalAlt: 'Digilock 4G Electronic Locks Securing Lockers at Le Louvre',
       thumbnail: Project01,
       thumbnailLabel: 'Le Louvre',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
@@ -43,35 +43,35 @@ const IndexPage = () => {
       originalAlt: 'Police Station Officer Lockers Secured with Versa Electronic Locks',
       thumbnail: Project03,
       thumbnailLabel: 'Police Station',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/versa/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project04,
       originalAlt: 'Fire Station Employee Lockers with Digilock 4G Electronic Locks Installed',
       thumbnail: Project04,
       thumbnailLabel: 'Fire Station',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project05,
       originalAlt: 'Versa RFID on Cabinets in City Hall Amsterdam',
       thumbnail: Project05,
       thumbnailLabel: 'City Hall Amsterdam',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/versa/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project06,
       originalAlt: 'Digilock 4G Electronic Locks on Cabinets at Bouwend',
       thumbnail: Project06,
       thumbnailLabel: 'Bouwend',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project07,
       originalAlt: 'Lockers Installed with Versa RFID Electronic Locks at Police Station',
       thumbnail: Project07,
       thumbnailLabel: 'Police Station',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/versa/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
 
     },
     {
@@ -79,49 +79,49 @@ const IndexPage = () => {
       originalAlt: 'Aspire RFID on Cabinets in City Hall Amsterdam',
       thumbnail: Project08,
       thumbnailLabel: 'Municipal Offices De Rotterdam',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     }
   ];
   const projectAsides = [
     '<h2>Le Louvre </h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>US General Services Administration</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">Sola</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Sola</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Police Station</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Versa Standard</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Standard</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Fire Station</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>City Hall Amsterdam</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Versa Mini</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Mini</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Bouwend</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Police Station</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/versa/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/versa/')+'">Versa Mini</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/versa/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Mini</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Municipal Offices De Rotterdam</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">RFID</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>'
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
@@ -168,7 +168,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/06-1-application-01a.jpg"
                       loading={'lazy'}
@@ -182,7 +182,7 @@ const IndexPage = () => {
                     <Trans>staff_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/06-1-application-02a.jpg"
                       loading={'lazy'}
@@ -196,7 +196,7 @@ const IndexPage = () => {
                     <Trans>evidence_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/06-1-application-03a.jpg"
                       loading={'lazy'}
@@ -210,7 +210,7 @@ const IndexPage = () => {
                     <Trans>personal_storage</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/06-1-application-04a.jpg"
                       loading={'lazy'}

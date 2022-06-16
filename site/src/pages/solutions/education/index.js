@@ -30,100 +30,100 @@ const IndexPage = () => {
       originalAlt: 'Day Use Lockers Secured with Cue by Digilock at Mount Royal State University',
       thumbnail: Project01,
       thumbnailLabel: 'Mount Royal University',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
       originalAlt: 'Iowa State University Athletic Lockers Secured by Cue Electronic Locks',
       thumbnail: Project02,
       thumbnailLabel: 'Iowa State University',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project03,
       originalAlt: 'The John & Jeanne McCoy Locker Room at Ohio State University',
       thumbnail: Project03,
       thumbnailLabel: 'Ohio State University',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project04,
       originalAlt: 'Longhorn\'s Locker Room at the University of Texas',
       thumbnail: Project04,
       thumbnailLabel: 'University of Texas',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project05,
       originalAlt: 'Student Lockers secured with Axis at Alfa College',
       thumbnail: Project05,
       thumbnailLabel: 'Alfa College',
-      productLink: returnLocaleURL(sl, '/products/numeris/versa-mini/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project06,
       originalAlt: 'Colorado College Student Lockers with Cue Electronic Locks',
       thumbnail: Project06,
       thumbnailLabel: 'Colorado College',
-      productLink: returnLocaleURL(sl, '.products-electronic-locks-cue')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project07,
       originalAlt: 'Loyola University Locker Room Installed with Cue Electronic Locks',
       thumbnail: Project07,
       thumbnailLabel: 'Loyola University',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project08,
       originalAlt: 'Cue by Digilock in Princeton University Student Locker Room',
       thumbnail: Project08,
       thumbnailLabel: 'Princeton University',
-      productLink: returnLocaleURL(sl, '.products-electronic-locks-cue')
+      productLink: returnLocaleURL(sl, '/products/locks/')
 
     }
   ];
   const projectAsides = [
 
     '<h2>Mount Royal University</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Iowa State University</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Ohio State University</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>University of Texas</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Alfa College</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Versa Mini</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Mini</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Colorado College</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Cue</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Cue</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Loyola University</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Princeton University</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Cue</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Cue</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
 
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
@@ -171,7 +171,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/05-1-application-01a.jpg"
                       loading={'lazy'}
@@ -185,7 +185,7 @@ const IndexPage = () => {
                     <Trans>athletic_facilities</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/05-1-application-02a.jpg"
                       loading={'lazy'}

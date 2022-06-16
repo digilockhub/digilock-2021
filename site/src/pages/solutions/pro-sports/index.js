@@ -25,50 +25,50 @@ const IndexPage = () => {
       originalAlt: 'San Francisco 49ers Athlete Locker Room Secured with Digilock 4G Locks',
       thumbnail: Project01,
       thumbnailLabel: 'San Francisco 49er\'s',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
       originalAlt: 'Horizontal Body Axis Locks Installed at the New Orleans Saints Home Locker Room',
       thumbnail: Project02,
       thumbnailLabel: 'New Orleans Saints',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project03,
       originalAlt: 'Digilock 4G Electronic Locks Securing the Jacksonville Jaguars Athletic Lockers',
       thumbnail: Project03,
       thumbnailLabel: 'Jacksonville Jaguars',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project04,
       originalAlt: 'Atlanta Falcons Athlete Locker Room Installed with Axis Standard Keypad Locks',
       thumbnail: Project04,
       thumbnailLabel: 'Atlanta Falcons',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     }
   ];
   const projectAsides = [
     '<h2>San Francisco 49er\'s</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>New Orleans Saints</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Jacksonville Jaguars</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Atlanta Falcons</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
@@ -115,7 +115,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/11-1-application-01a.jpg"
                       loading={'lazy'}
@@ -129,7 +129,7 @@ const IndexPage = () => {
                     <Trans>team_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/11-1-application-03a.jpg"
                       loading={'lazy'}
@@ -143,7 +143,7 @@ const IndexPage = () => {
                     <Trans>equipment_storage</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/11-1-application-02a.jpg"
                       loading={'lazy'}

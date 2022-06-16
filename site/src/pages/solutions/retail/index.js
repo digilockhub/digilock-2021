@@ -30,7 +30,7 @@ const IndexPage = () => {
       originalAlt: 'Tommy Hilfiger',
       thumbnail: Project09,
       thumbnailLabel: 'Tommy Hilfiger',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
 
     },
     {
@@ -38,21 +38,21 @@ const IndexPage = () => {
       originalAlt: 'Digilock 4G Electronic Locks Installed at La Maison Simons',
       thumbnail: Project01,
       thumbnailLabel: 'La Maison Simons',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
       originalAlt: 'Joann Fabrics and Crafts Employee Lockers Secured with Digilock Cue',
       thumbnail: Project02,
       thumbnailLabel: 'Joann Fabrics',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project03,
       originalAlt: 'Aspire Vertical Body Electronic Locks in the Estonian Mall',
       thumbnail: Project03,
       thumbnailLabel: 'Estonian Mall',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project04,
@@ -66,64 +66,64 @@ const IndexPage = () => {
       originalAlt: 'Digilock 4G Electronic Locks Installed at Unilever Office',
       thumbnail: Project05,
       thumbnailLabel: 'Unilever',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project07,
       originalAlt: 'Riga Mall Charging Station Secured with Horizontal Body Versa Lock',
       thumbnail: Project07,
       thumbnailLabel: 'Riga Mall',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/axis/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project08,
       originalAlt: 'Walgreens Employee Lockers with Cue Electronic Locks',
       thumbnail: Project08,
       thumbnailLabel: 'Walgreens',
-      productLink: returnLocaleURL(sl, '/products/electronic-locks/cue/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
 
     }
   ];
   const projectAsides = [
     '<h2>Tommy Hilfiger</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Sola</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Sola</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>La Maison Simons</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'/">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'/">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Joann Fabrics</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Lockup Lockers</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Lockup</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Lockup Lockers</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Lockup</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Estonian Mall</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Bubble Stitch</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">Classic</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/sola/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Classic</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Unilever</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Riga Mall</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/axis/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Walgreens</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Lockup Lockers</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Lockup</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/cue/')+'">Keypad</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Lockup Lockers</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Lockup</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
@@ -171,7 +171,7 @@ const IndexPage = () => {
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
 
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/08-1-application-01a.jpg"
                       loading={'lazy'}
@@ -185,7 +185,7 @@ const IndexPage = () => {
                     <Trans>staff_locker_rooms</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/08-1-application-02a.jpg"
                       loading={'lazy'}
@@ -213,7 +213,7 @@ const IndexPage = () => {
                     <Trans>juicebar_charging_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/08-1-application-04a.jpg"
                       loading={'lazy'}

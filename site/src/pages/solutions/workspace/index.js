@@ -33,146 +33,146 @@ const IndexPage = () => {
       originalAlt: 'Versa Electronic Locks at Amazon Headquarters',
       thumbnail: Project01,
       thumbnailLabel: 'Amazon',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project02,
       originalAlt: 'Pedestals Secured with Versa Mini at Genentech Workspace',
       thumbnail: Project02,
       thumbnailLabel: 'Genentech',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project04,
       originalAlt: 'Workplace Lockers Installed with Aspire at Accenture',
       thumbnail: Project04,
       thumbnailLabel: 'Accenture',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project05,
       originalAlt: 'Jones Langsalle Custom Cabinets Secured with Aspire by Digilock',
       thumbnail: Project05,
       thumbnailLabel: 'Jones Lang LaSalle',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project06,
       originalAlt: 'Employee Lockers with Custom Aspire Locks at the Salesforce Headquarters',
       thumbnail: Project06,
       thumbnailLabel: 'SalesForce',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project07,
       originalAlt: 'Electronic Lockers Installed with Custom Cue by Digilock Locks at Accenture',
       thumbnail: Project07,
       thumbnailLabel: 'Accenture',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project09,
       originalAlt: 'Filing Cabinets Locked with Versa at Nike office',
       thumbnail: Project09,
       thumbnailLabel: 'Nike',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project10,
       originalAlt: 'Cue Electronic Locks Installed for IBM Employees',
       thumbnail: Project10,
       thumbnailLabel: 'IBM',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project11,
       originalAlt: 'Fannie Mae Workspace Secured with Custom Aspire Locks',
       thumbnail: Project11,
       thumbnailLabel: 'Fannie Mae',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project12,
       originalAlt: 'Mastercard employee Lockers Installed with Aspire RFID',
       thumbnail: Project12,
       thumbnailLabel: 'Mastercard',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project13,
       originalAlt: 'Amgen Office with Lockers Secured by Versa',
       thumbnail: Project13,
       thumbnailLabel: 'Amgen',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     },
     {
       original: Project14,
       originalAlt: 'Astellas Pharma Employee Lockers Installed with Digilock Cue with Pull Handle',
       thumbnail: Project14,
       thumbnailLabel: 'Astellas Pharma',
-      productLink: returnLocaleURL(sl, '/products/smart-locks/')
+      productLink: returnLocaleURL(sl, '/products/locks/')
     }
   ];
   const projectAsides = [
     '<h2>Amazon</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Versa</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Genentech</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Versa Small Profile</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Small Profile</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Accenture</h2><br />' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Jones Lang Lasalle</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Salesforce</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Aspire</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Aspire</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Accenture</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Nike</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Sola</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Sola</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>IBM</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Fannie Mae</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Versa</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Mastercard</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Aspire</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">RFID</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Aspire</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Amgen</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Versa</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/smart-locks/')+'">Keypad</a></p>',
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Astellas Pharma</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/electronic-locks/')+'">RFID</a></p>'
+    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>'
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;
@@ -213,7 +213,6 @@ const IndexPage = () => {
           </section>
           <section className="industry-copy">
             <div className="container">
-              <h1>Storage security</h1>
               <p>
                 <Trans>workspace_copy</Trans>
               </p>
@@ -223,7 +222,7 @@ const IndexPage = () => {
             <div className="container">
               <h2><Trans>popular_keyless</Trans></h2>
               <div className="uses-items">
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-01a.jpg"
                       loading={'lazy'}
@@ -237,7 +236,7 @@ const IndexPage = () => {
                     <Trans>personal_storage</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-02a.jpg"
                       loading={'lazy'}
@@ -251,7 +250,7 @@ const IndexPage = () => {
                     <Trans>pedestals</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-03a.jpg"
                       loading={'lazy'}
@@ -265,7 +264,7 @@ const IndexPage = () => {
                     <Trans>credenzas</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/smart-locks/'} className="uses-item">
+                <Link to={'/products/locks/'} className="uses-item">
                   <StaticImage
                       src="./images/applications/01-1-application-04a.jpg"
                       loading={'lazy'}
