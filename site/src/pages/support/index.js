@@ -7,6 +7,7 @@ import Settings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 import GeneralFAQ from '../../components/support/GeneralFAQ';
+import Accordion from '../../components/ui/Accordions/Accordion';
 import Locks from "../../components/ui/locks";
 
 const IndexPage = () => {
@@ -215,6 +216,12 @@ const IndexPage = () => {
           <section className="general-faq">
             <div className="container">
               <GeneralFAQ title={t('general_faq')} />
+            </div>
+          </section>
+          <section className="general-faq">
+            <div className="container">
+              <h2>General FAQ</h2>
+              <Accordion />
             </div>
           </section>
           <div className="section-delimeter container" />

@@ -56,7 +56,6 @@ allSupportGeneralFaqXlsxOrdersSupport {
   const accordionProgramming = Faqs.allSupportGeneralFaqXlsxSetupProgramming.edges;
   const accordionTroubleshooting = Faqs.allSupportGeneralFaqXlsxTroubleShooting.edges;
   const accordionOrders = Faqs.allSupportGeneralFaqXlsxOrdersSupport.edges;
-
   return (
       <>
         <h2>
