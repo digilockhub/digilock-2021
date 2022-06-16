@@ -117,6 +117,10 @@
 
   .menu-main li {
     position: relative;
+    cursor: pointer;
+    &.selected {
+      color: $color-numeris-blue;
+    }
   }
 
   .menu-main li:hover >ul,

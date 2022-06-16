@@ -98,11 +98,8 @@ const Header = () => {
                  data-visible={'false'}
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
-                <li>
-                  <CustomLocalizedLink
-                      goto={'/solutions/'}
-                      cls={checkSiteLocation('/solutions/') ? 'selected has-dropdown' : 'has-dropdown'}
-                      label={t('industries')}/>
+                <li className={checkSiteLocation('/solutions/') ? 'selected has-dropdown' : 'has-dropdown'}>
+                  <Trans>industries</Trans>
                   <ul className={'dropdown unstyled-list'}>
                     <li>
                       <CustomLocalizedLink
