@@ -49,7 +49,7 @@ const IndexPage = () => {
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single">
                   <StaticImage
-                      src="../../images/electronic-locks/elec-mech-four.png"
+                      src="../../../images/electronic-locks/elec-mech-four.png"
                       loading={'lazy'}
                       width={624}
                       height={461}

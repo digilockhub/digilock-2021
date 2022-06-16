@@ -38,7 +38,7 @@ const IndexPage = () => {
                 quality={100}
                 layout={'fullWidth'}
                 formats={["auto", "webp", "avif"]}
-                alt="NEED ALT TAG"
+                alt="Digilock Electronic Locks"
             />
             <h6>
               <Trans>
@@ -73,7 +73,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="smart-aspire">
             <div className="container">
               <div className="grid-two-col">
@@ -85,11 +85,11 @@ const IndexPage = () => {
                       height={461}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Aspire Electronic Lock"
                   />
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={aspireLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={aspireLogo} width={'225'} height={'88'} alt="Aspire Logo"/>
                   <h2>
                     <Trans>el_aspire_headline</Trans>
                   </h2>
@@ -102,26 +102,27 @@ const IndexPage = () => {
                     <li><Trans>el_aspire_list6</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_keypad_brochure</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>download_rfid_brochure</Trans>
+                    {/*<a href="/products/locks/" className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a
+                        href="https://landing.digilock.com/aspire/basic-advanced/"
+                        className="btn btn--orange"
+                        target={'_blank'}
+                    >
+                      <Trans>download_brochure</Trans>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="smart-versa">
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single is-reversable">
-                  <img src={versaLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={versaLogo} width={'225'} height={'88'} alt="Versa Logo"/>
                   <h2>
                     <Trans>el_versa_headline</Trans>
                   </h2>
@@ -135,10 +136,14 @@ const IndexPage = () => {
                     <li><Trans>el_versa_list7</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    {/*<a href="/products/locks/" className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a
+                        href="https://landing.digilock.com/versa/basic-advanced/"
+                        target={'_blank'}
+                        className="btn btn--orange"
+                    >
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
@@ -151,13 +156,13 @@ const IndexPage = () => {
                       height={461}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Versa Electronic Lock"
                   />
                 </div>
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="smart-orbit">
             <div className="container">
               <div className="grid-two-col">
@@ -169,11 +174,11 @@ const IndexPage = () => {
                       height={461}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
+                      alt="Orbit Electronic Lock"
                   />
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={orbitLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={orbitLogo} width={'225'} height={'88'} alt="Orbit Logo"/>
                   <h2>
                     <Trans>el_orbit_headline</Trans>
                   </h2>
@@ -187,10 +192,13 @@ const IndexPage = () => {
                     <li><Trans>el_orbit_list7</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    {/*<a href="/products/locks/" className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a href="https://landing.digilock.com/orbit/basic-advanced/"
+                       className="btn btn--orange"
+                       target={'_blank'}
+                    >
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
@@ -198,7 +206,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="legacy-locks-overview">
             <div className="container">
               <h2>
@@ -222,12 +230,12 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="legacy-axis">
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single is-reversable">
-                  <img src={axisLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={axisLogo} width={'225'} height={'88'} alt="Axis Logo"/>
                   <h2>
                     <Trans>el_axis_headline</Trans>
                   </h2>
@@ -261,14 +269,14 @@ const IndexPage = () => {
                         height={461}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Axis Electronic Lock"
                     />
                   </Link>
                 </div>
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="legacy-cue">
             <div className="container">
               <div className="grid-two-col">
@@ -284,12 +292,12 @@ const IndexPage = () => {
                         height={461}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Cue Electronic Lock"
                     />
                   </Link>
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={cueLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={cueLogo} width={'225'} height={'88'} alt="Cue Logo"/>
                   <h2>
                     <Trans>el_cue_headline</Trans>
                   </h2>
@@ -313,12 +321,12 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="legacy-sola">
             <div className="container">
               <div className="grid-two-col">
                 <div className="grid-two-col-item-single is-reversable">
-                  <img src={solaLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={solaLogo} width={'225'} height={'88'} alt="Sola Logo"/>
                   <h2>
                     <Trans>el_sola_headline</Trans>
                   </h2>
@@ -350,14 +358,14 @@ const IndexPage = () => {
                         height={461}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Sola Electronic Lock"
                     />
                   </Link>
                 </div>
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div className="section-delimeter container"/>
           <section className="legacy-range">
             <div className="container">
               <div className="grid-two-col">
@@ -372,12 +380,12 @@ const IndexPage = () => {
                         height={461}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="NEED ALT TAG"
+                        alt="Range Electronic Lock"
                     />
                   </Link>
                 </div>
                 <div className="grid-two-col-item-single">
-                  <img src={rangeLogo} width={'225'} height={'88'} alt=""/>
+                  <img src={rangeLogo} width={'225'} height={'88'} alt="Range Logo"/>
                   <h2>
                     <Trans>el_range_headline</Trans>
                   </h2>
@@ -403,8 +411,8 @@ const IndexPage = () => {
           </section>
           <Modal show={showModal} handleClose={handleShowModal}>
             <div className="modal-content">
-              <p dangerouslySetInnerHTML={{__html:t('sl_modal_shared')}} />
-              <p dangerouslySetInnerHTML={{__html:t('sl_modal_assigned')}} />
+              <p dangerouslySetInnerHTML={{__html: t('sl_modal_shared')}}/>
+              <p dangerouslySetInnerHTML={{__html: t('sl_modal_assigned')}}/>
             </div>
           </Modal>
         </div>

@@ -5,9 +5,7 @@ import Seo from "../../../../components/seo";
 import {graphql} from 'gatsby';
 import VideoIcons from '../../../../components/video-player/VideoIcons';
 import BCPlayer360 from '../../../../components/video-player/BCPlayer360';
-import {createMarkup} from '../../../../utils/utils';
 import {StaticImage} from "gatsby-plugin-image";
-
 
 const Axis = (props) => {
 
