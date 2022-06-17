@@ -1,0 +1,168 @@
+
+.accordion-container {
+  position: relative;
+}
+.accordion-section {
+
+  h1 {
+    display: none;
+  }
+
+  h2.label {
+    padding-left: 1.2em !important;
+    text-align: left;
+  }
+
+  @include lg() {
+    padding-left: 5px;
+  }
+  margin-bottom: 40px;
+  border-bottom: 1px solid $color-numeris-blue;
+  span {
+    color: $color-numeris-blue;
+    cursor: pointer;
+  }
+
+  &.faq {
+    border-bottom: none;
+  }
+
+  &.next-support {
+    border-bottom: 1px solid $color-numeris-blue;
+    span {
+      color: $color-numeris-blue;
+    }
+    a {
+      color: $color-numeris-blue;
+    }
+  }
+
+  &.legacy-support {
+    border-bottom: 1px solid $color-numeris-blue;
+    span {
+      color: $color-numeris-blue;
+    }
+    a {
+      display: block !important;
+      margin-bottom: 10px;
+      color: $color-numeris-blue;
+    }
+  }
+
+  &.open {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    margin-top: 40px;
+    @include lg() {
+      margin-top: 0px;
+    }
+  }
+}
+
+.accordion, .accordion-title {
+  cursor: pointer;
+  position: relative;
+
+  .expander {
+    font-size: larger;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    font-weight: bold;
+    color: $color-numeris-blue;
+  }
+
+  &.next-support, &.numeris-support, &.legacy-support {
+    h2 {
+      padding-right: 2em;
+      padding-left: 1.5em;
+    }
+  }
+
+  &.next-support {
+    .expander {
+      color: $color-numeris-blue;
+    }
+  }
+
+  &.legacy-support {
+    .expander {
+      color: $color-numeris-blue;
+    }
+  }
+
+  ul {
+    list-style: disc !important;
+  }
+}
+
+.accordion-content {
+  padding: 1em 2em 0 2em;
+  text-align: left;
+
+  a {
+    display: inline !important;
+  }
+
+  ul {
+    font-size: 16px;
+    list-style: none;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  ol {
+    li {
+      color: #121212;
+    }
+  }
+
+  div.step-images {
+    padding: 0;
+    figure {
+      padding: 0;
+      margin: 0 0 20px 0;
+      text-align: left;
+      width: 100%;
+
+      @include lg() {
+        width: 50%;
+      }
+
+      figcaption {
+        font-size: small;
+        padding: 0 10px;
+        line-height: 1.4em;
+      }
+
+      @include lg() {
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+
+    }
+
+    @include lg() {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+  div.simple-images {
+    position: relative;
+    .img-responsive {
+      display: none;
+      @include lg() {
+        position: absolute;
+        display: block;
+        top: -60px;
+        right: 20px;
+      }
+    }
+  }
+
+}

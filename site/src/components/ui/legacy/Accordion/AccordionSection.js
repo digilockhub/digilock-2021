@@ -38,7 +38,7 @@ class AccordionSection extends Component {
     return (
       <div className={accordionSectionClass + ' '+this.props.clsName}>
         <div className={'accordion '+this.props.clsName} onClick={onClick}>
-          <h3 className={labelSelectionClass} id={replaceCharWithChar(label, ' ', '-')}>{label}</h3>
+          <h2 className={labelSelectionClass} id={replaceCharWithChar(label, ' ', '-')}>{label}</h2>
           <div className={'expander'}>
             {!isOpen && <span>&#43;</span>}
             {isOpen && <span>&#8722;</span>}
