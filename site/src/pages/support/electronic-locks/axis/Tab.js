@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
+import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
+import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
+import {jumpAccordion, filterSupportObject} from '../../../../utils/utils';
 
 const Tab = (props) => {
 
@@ -34,24 +36,24 @@ const Tab = (props) => {
         <div className="tab-content-container">
           <div className={"tab-content "+getActiveClass(1, 'active')}>
 
-            <StaticImage
-                src={'./images/keypad-features-front.png'}
-                loading={'lazy'}
-                width={'995'}
-                height={'824'}
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                alt="Aspire Smart Lock"
-            />
-            <StaticImage
-                src={'./images/features-rear-unit.png'}
-                loading={'lazy'}
-                width={'995'}
-                height={'824'}
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                alt="Aspire Smart Lock"
-            />
+              <StaticImage
+                  src={'./images/keypad-features-front.png'}
+                  loading={'lazy'}
+                  width={'995'}
+                  height={'824'}
+                  quality={100}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Aspire Smart Lock"
+              />
+              <StaticImage
+                  src={'./images/features-rear-unit.png'}
+                  loading={'lazy'}
+                  width={'995'}
+                  height={'824'}
+                  quality={100}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Aspire Smart Lock"
+              />
 
           </div>
           <div className={"tab-content "+getActiveClass(2, 'active')}>
@@ -78,10 +80,6 @@ const Tab = (props) => {
 
       </div>
   );
-};
-
-Tab.propTypes = {
-  // myProp: PropTypes.string.isRequired
 };
 
 export default Tab;
