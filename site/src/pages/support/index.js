@@ -6,14 +6,13 @@ import {graphql} from 'gatsby';
 import Settings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 import InfoCardCurrent from '../../components/contact/info-card-current';
-import GeneralFAQ from '../../components/support/GeneralFAQ';
-import Accordion from '../../components/ui/Accordions/Accordion';
 import Locks from "../../components/ui/locks";
+import AccordionWrapper from '../../components/ui/Accordions/AccordionWrapper';
 
-const IndexPage = () => {
+
+const IndexPage = (props) => {
   const isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
-
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,20 +20,17 @@ const IndexPage = () => {
     email: '',
     phoneNumber: '',
     country: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY)) ?
-             sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
+        sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
     state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
         sessionStorage.getItem(ContinentSettings.SESSION_STATE) : '',
     message: ''
   });
-
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
-
   const submit = (e) => {
     e.preventDefault();
-    alert('submit: '+JSON.stringify(formData));
+    alert('submit: ' + JSON.stringify(formData));
   };
-
   const [infoCurrent, setInfoCurrent] = useState({
     header: t('digilock_americas'),
     address: t('digilock_americas_address'),
@@ -48,7 +44,6 @@ const IndexPage = () => {
     tollFreeNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS,
     phoneNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS
   });
-
   const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem(ContinentSettings.SESSION_CONTINENT) : 'North America');
 
   function handleInfoCurrentChange() {
@@ -80,6 +75,11 @@ const IndexPage = () => {
   function handleLiveChat() {
     alert("FPO: This will spawn a live Sales chat session");
   }
+
+  const accordionFunctionality = props.data.allSupportGeneralFaqXlsxLockFunctionality.edges;
+  const accordionProgramming = props.data.allSupportGeneralFaqXlsxSetupProgramming.edges;
+  const accordionTroubleshooting = props.data.allSupportGeneralFaqXlsxTroubleShooting.edges;
+  const accordionOrders = props.data.allSupportGeneralFaqXlsxOrdersSupport.edges;
 
   useEffect(() => {
     if (isBrowser) {
@@ -212,20 +212,18 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
-          <section className="general-faq">
-            <div className="container">
-              <GeneralFAQ title={t('general_faq')} />
-            </div>
-          </section>
+          <div className="section-delimeter container"/>
           <section className="general-faq">
             <div className="container">
               <h2>General FAQ</h2>
-              <Accordion />
+              <AccordionWrapper label={t('lock_functionality')} data={accordionFunctionality}/>
+              <AccordionWrapper label={t('initial_setup')} data={accordionProgramming}/>
+              <AccordionWrapper label={t('troubleshooting')} data={accordionTroubleshooting}/>
+              <AccordionWrapper label={t('orders_support')} data={accordionOrders}/>
             </div>
           </section>
-          <div className="section-delimeter container" />
-          <Locks />
+          <div className="section-delimeter container"/>
+          <Locks/>
         </div>
       </Layout>
   )
@@ -244,5 +242,43 @@ export const query = graphql`
         }
       }
     }
+    allSupportGeneralFaqXlsxLockFunctionality {
+      edges {
+        node {
+          id
+            title
+            content
+        }
+      }
+    }
+    allSupportGeneralFaqXlsxSetupProgramming {
+    edges {
+      node {
+        id
+          title
+          content
+      }
+    }
+  }
+  
+  allSupportGeneralFaqXlsxTroubleShooting {
+    edges {
+      node {
+        id
+          title
+          content
+      }
+    }
+  }
+  
+  allSupportGeneralFaqXlsxOrdersSupport {
+    edges {
+      node {
+        id
+          title
+          content
+      }
+    }
+  }
   }
 `;
