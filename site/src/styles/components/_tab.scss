@@ -1,6 +1,5 @@
 
 .tab-container {
-  @include outline($color-numeris-blue);
   .tab-content {
     display: none;
     align-items: center;
@@ -13,15 +12,32 @@
 
   .tab-list {
     display: flex;
+    justify-content: center;
     li {
+      position: relative;
       color: $color-white;
-      width: 33.3%;
+      width: 50%;
       background: $color-numeris-blue;
       padding: 1rem 0;
       cursor: pointer;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -19px;
+        left:50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        border-top: 20px solid $package-orange !important;
+        border-top-color: inherit;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        display: none;
+      }
       &.active {
-        color: $color-numeris-blue;
-        background: $color-white;
+        background: $package-orange;
+        &:before {
+          display: block;
+        }
       }
       &:not(:last-child) {
         border-right: 1px solid rgba(0, 0, 0, 0.3);

@@ -30,8 +30,8 @@ const Tab = (props) => {
           </li>
         </ul>
         <div className="tab-content-container">
-          <div className={"tab-content "+getActiveClass(1, 'active')}>Content 1</div>
-          <div className={"tab-content "+getActiveClass(2, 'active')}>Content 2</div>
+          <div className={"tab-content "+getActiveClass(1, 'active')}>Keypad</div>
+          <div className={"tab-content "+getActiveClass(2, 'active')}>RFID</div>
         </div>
 
       </div>
