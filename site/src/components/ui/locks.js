@@ -9,7 +9,6 @@ const Locks = () => {
   const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
   const urlDirectory = isSupport ? '/support/' : '/products/';
 
-
   return (
       <>
         <section className="smart-locks">
@@ -201,7 +200,7 @@ const Locks = () => {
               </Trans>
             </h2>
             <div className="row">
-              <a href="#">
+              <a href={urlDirectory+'electronic-locks/axis/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-axis-600x497.png'}
