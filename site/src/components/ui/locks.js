@@ -292,18 +292,20 @@ const Locks = () => {
                 />
                 <p>A Series Vertical</p>
               </div>
-              <div className="thumbnail">
-                <StaticImage
-                    src={'../../images/locks/DL22-classiccam-600x497.png'}
-                    loading={'lazy'}
-                    width={'200'}
-                    height={'150'}
-                    quality={100}
-                    formats={["auto", "webp", "avif"]}
-                    alt="Vertical"
-                />
-                <p>Classic Cam</p>
-              </div>
+              <Link to={urlDirectory+'electronic-locks/classic-cam/'}>
+                <div className="thumbnail">
+                  <StaticImage
+                      src={'../../images/locks/DL22-classiccam-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'150'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="Vertical"
+                  />
+                  <p>Classic Cam</p>
+                </div>
+              </Link>
             </div>
             {
               isSupport ?
