@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from '../../../components/ui/legacy/Accordion/Accordion';
-import { jumpAccordion } from '../../../Utils/utils';
+import { jumpAccordion } from '../../../utils/utils';
 import DigiSymbol from '../../../components/ui/legacy/DigiSymbols/DigiSymbol';
 
 const AspireRfidFaq = (props) => (
