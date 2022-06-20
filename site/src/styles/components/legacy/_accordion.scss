@@ -8,9 +8,12 @@
     display: none;
   }
 
-  h2.label {
+  p.label {
     padding-left: 1.2em !important;
     text-align: left;
+    &.open {
+      font-family: "AvenirDemi", sans-serif;
+    }
   }
 
   @include lg() {

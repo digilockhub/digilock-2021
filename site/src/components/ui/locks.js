@@ -4,6 +4,7 @@ import {Trans} from "react-i18next";
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
 import desktopSmartDivider from "../../images/locks/desktop-divider.svg";
 import {globalHistory} from "@reach/router";
+import {Link} from "gatsby-plugin-react-i18next";
 
 const Locks = () => {
   const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
@@ -200,7 +201,7 @@ const Locks = () => {
               </Trans>
             </h2>
             <div className="row">
-              <a href={urlDirectory+'electronic-locks/axis/'}>
+              <Link to={urlDirectory+'electronic-locks/axis/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-axis-600x497.png'}
@@ -215,8 +216,8 @@ const Locks = () => {
                     <span>Axis<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
-              <a href="#">
+              </Link>
+              <Link t0={urlDirectory+'electronic-locks/cue/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-cue-600x497.png'}
@@ -231,7 +232,7 @@ const Locks = () => {
                     <span>Cue<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
               <a href="#">
                 <div className="thumbnail">
                   <StaticImage

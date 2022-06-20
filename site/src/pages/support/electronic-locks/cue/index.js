@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Axis Electronic Lock Support')}/>
+        <Seo title={t('Cue Electronic Lock Support')}/>
         <div className="support">
           <section className="hero">
             <div className="container">

@@ -56,6 +56,8 @@
   "download_brochure": "download brochure",
   "download_keypad_brochure": "download keypad brochure",
   "download_rfid_brochure": "download rfid brochure",
+  "key_managed": "Key Managed",
+  "code_managed": "Code Managed",
   "button_chat": "Let's Chat",
   "button_faq": "FAQ",
   "button_contact": "Contact Us",

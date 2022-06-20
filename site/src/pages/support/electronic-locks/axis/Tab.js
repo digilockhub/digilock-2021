@@ -3,7 +3,6 @@ import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
 import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
 import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion, filterSupportObject} from '../../../../utils/utils';
 import KeypadKeyManagedRfid from "../../faq/KeypadKeyManagedRfid";
 //ACCORDION IMAGES
 import setupOne from './images/keypad/setup-step-one.png'
@@ -63,9 +62,6 @@ import operatingInstructionsOneRfid from './images/rfid/operating-instruction-on
 import operatingInstructionsTwoRfid from './images/rfid/operating-instruction-two.png'
 import operatingInstructionsThreeRfid from './images/rfid/operating-instruction-three.png'
 import operatingInstructionsFourRfid from './images/rfid/operating-instruction-four.png'
-
-
-
 
 const Tab = (props) => {
 
