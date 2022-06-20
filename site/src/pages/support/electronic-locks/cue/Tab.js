@@ -72,7 +72,6 @@ let youTubeVideos = {
   "es": "https://www.youtube.com/embed/videoseries?list=PLXWP8g8Rnc_Y6pQ_ZSmfMPXbY3J_kHZPH",
   "fr": "https://www.youtube.com/embed/videoseries?list=PLXWP8g8Rnc_ZPwxap7QizFNXTcz_--wiY"
 };
-// import SupportJumpAxis from '../SupportJumpNextLock'
 
 const Tab = (props) => {
   const {changeLanguage} = useI18next();

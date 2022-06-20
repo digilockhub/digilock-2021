@@ -217,7 +217,7 @@ const Locks = () => {
                   </p>
                 </div>
               </Link>
-              <Link t0={urlDirectory+'electronic-locks/cue/'}>
+              <Link to={urlDirectory+'electronic-locks/cue/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-cue-600x497.png'}
@@ -233,7 +233,7 @@ const Locks = () => {
                   </p>
                 </div>
               </Link>
-              <a href="#">
+              <Link to={urlDirectory+'electronic-locks/sola/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-sola-600x497.png'}
@@ -248,7 +248,7 @@ const Locks = () => {
                     <span>Sola<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
               <a href="#">
                 <div className="thumbnail">
                   <StaticImage
