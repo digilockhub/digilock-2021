@@ -249,7 +249,7 @@ const Locks = () => {
                   </p>
                 </div>
               </Link>
-              <a href="#">
+              <Link to={urlDirectory+'electronic-locks/range/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-range-600x497.png'}
@@ -264,7 +264,7 @@ const Locks = () => {
                     <span>Range<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
 
             </div>
             <div className="row">
