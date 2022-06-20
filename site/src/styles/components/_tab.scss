@@ -10,6 +10,7 @@
       background: $color-numeris-blue;
       padding: 1rem 0;
       cursor: pointer;
+      filter: brightness(0.7);
       &:before {
         content: "";
         position: absolute;
@@ -23,8 +24,13 @@
         border-right: 20px solid transparent;
         display: none;
       }
+      &:hover {
+        background: $package-orange;
+        filter: revert;
+      }
       &.active {
         background: $package-orange;
+        filter: revert;
         &:before {
           display: block;
         }
