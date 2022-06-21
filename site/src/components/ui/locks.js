@@ -391,7 +391,7 @@ const Locks = () => {
               </Trans>
             </p>
             <div className="row">
-              <a href="#">
+              <Link to={urlDirectory+'mechanical-locks/mech/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-mech-600x497.png'}
@@ -406,7 +406,7 @@ const Locks = () => {
                     <span>Mech<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
