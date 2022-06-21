@@ -268,18 +268,20 @@ const Locks = () => {
 
             </div>
             <div className="row">
-              <div className="thumbnail">
-                <StaticImage
-                    src={'../../images/locks/DL22-4Gstand-600x497.png'}
-                    loading={'lazy'}
-                    width={'200'}
-                    height={'148'}
-                    quality={100}
-                    formats={["auto", "webp", "avif"]}
-                    alt="Standard"
-                />
-                <p>A Series Standard</p>
-              </div>
+              <Link to={urlDirectory+'electronic-locks/a-series-standard/'}>
+                <div className="thumbnail">
+                  <StaticImage
+                      src={'../../images/locks/DL22-4Gstand-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'148'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="Standard"
+                  />
+                  <p>A Series Standard</p>
+                </div>
+              </Link>
               <div className="thumbnail">
                 <StaticImage
                     src={'../../images/locks/DL22-4Gvertical-600x497.png'}
