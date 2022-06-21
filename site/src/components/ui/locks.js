@@ -282,18 +282,20 @@ const Locks = () => {
                   <p>A Series Standard</p>
                 </div>
               </Link>
-              <div className="thumbnail">
-                <StaticImage
-                    src={'../../images/locks/DL22-4Gvertical-600x497.png'}
-                    loading={'lazy'}
-                    width={'200'}
-                    height={'150'}
-                    quality={100}
-                    formats={["auto", "webp", "avif"]}
-                    alt="Vertical"
-                />
-                <p>A Series Vertical</p>
-              </div>
+              <Link to={urlDirectory+'electronic-locks/a-series-vertical/'}>
+                <div className="thumbnail">
+                  <StaticImage
+                      src={'../../images/locks/DL22-4Gvertical-600x497.png'}
+                      loading={'lazy'}
+                      width={'200'}
+                      height={'150'}
+                      quality={100}
+                      formats={["auto", "webp", "avif"]}
+                      alt="Vertical"
+                  />
+                  <p>A Series Vertical</p>
+                </div>
+              </Link>
               <Link to={urlDirectory+'electronic-locks/classic-cam/'}>
                 <div className="thumbnail">
                   <StaticImage
@@ -312,18 +314,20 @@ const Locks = () => {
             {
               isSupport ?
                   <div className="row">
-                    <div className="thumbnail">
-                      <StaticImage
-                          src={'../../images/locks/DL22-tseries-600x497.png'}
-                          loading={'lazy'}
-                          width={'200'}
-                          height={'150'}
-                          quality={100}
-                          formats={["auto", "webp", "avif"]}
-                          alt="T-series"
-                      />
-                      <p>T-series</p>
-                    </div>
+                    <Link to={urlDirectory+'electronic-locks/t-series/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-tseries-600x497.png'}
+                            loading={'lazy'}
+                            width={'200'}
+                            height={'150'}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="T-series"
+                        />
+                        <p>T-series</p>
+                      </div>
+                    </Link>
                     <div className="thumbnail">
                       <StaticImage
                           src={'../../images/locks/DL22-ktekpe-600x497.png'}
