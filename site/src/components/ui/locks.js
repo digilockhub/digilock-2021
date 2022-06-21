@@ -342,18 +342,20 @@ const Locks = () => {
                         <p>KTE/KPE</p>
                       </div>
                     </Link>
-                    <div className="thumbnail">
-                      <StaticImage
-                          src={'../../images/locks/DL22-2G-600x497.png'}
-                          loading={'lazy'}
-                          width={'200'}
-                          height={'150'}
-                          quality={100}
-                          formats={["auto", "webp", "avif"]}
-                          alt="2nd Generation"
-                      />
-                      <p>2nd Generation</p>
-                    </div>
+                    <Link to={urlDirectory+'electronic-locks/2nd-generation/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-2G-600x497.png'}
+                            loading={'lazy'}
+                            width={'200'}
+                            height={'150'}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="2nd Generation"
+                        />
+                        <p>2nd Generation</p>
+                      </div>
+                    </Link>
                     <div className="thumbnail">
                       <StaticImage
                           src={'../../images/locks/DL22-1G-600x497.png'}
