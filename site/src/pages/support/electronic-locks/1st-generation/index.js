@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('2nd Generation Lock Support')}/>
+        <Seo title={t('1st Generation Lock Support')}/>
         <div className="support">
           <section className="hero">
             <div className="container">

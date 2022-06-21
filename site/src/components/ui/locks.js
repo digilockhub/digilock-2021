@@ -356,18 +356,20 @@ const Locks = () => {
                         <p>2nd Generation</p>
                       </div>
                     </Link>
-                    <div className="thumbnail">
-                      <StaticImage
-                          src={'../../images/locks/DL22-1G-600x497.png'}
-                          loading={'lazy'}
-                          width={'200'}
-                          height={'150'}
-                          quality={100}
-                          formats={["auto", "webp", "avif"]}
-                          alt="1st Generation"
-                      />
-                      <p>1st Generation</p>
-                    </div>
+                    <Link to={urlDirectory+'electronic-locks/1st-generation/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-1G-600x497.png'}
+                            loading={'lazy'}
+                            width={'200'}
+                            height={'150'}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="1st Generation"
+                        />
+                        <p>1st Generation</p>
+                      </div>
+                    </Link>
                   </div>
                   : null
             }
