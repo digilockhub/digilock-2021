@@ -331,7 +331,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsKeypad.map( (doc, index) => (
+                              datasheetsKeypad.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -346,7 +346,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesKeypad.map( (doc, index) => (
+                              installGuidesKeypad.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -360,7 +360,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesKeypad.map( (doc, index) => (
+                              productGuidesKeypad.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -669,7 +669,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsRFID.map( (doc, index) => (
+                              datasheetsRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -684,7 +684,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesRFID.map( (doc, index) => (
+                              installGuidesRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -698,7 +698,7 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesRFID.map( (doc, index) => (
+                              productGuidesRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>

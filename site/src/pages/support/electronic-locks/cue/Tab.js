@@ -880,7 +880,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsKeyManaged.map( (doc, index) => (
+                              datasheetsKeyManaged.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -895,7 +895,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesKeyManaged.map( (doc, index) => (
+                              installGuidesKeyManaged.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -909,7 +909,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesKeyManaged.map( (doc, index) => (
+                              productGuidesKeyManaged.map( (doc, index) => (
                                       <li key={index}>
                                         {
                                             doc.title.indexOf('Key Managed') > -1 && <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
@@ -1074,7 +1074,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsCodeManaged.map( (doc, index) => (
+                              datasheetsCodeManaged.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -1089,7 +1089,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesCodeManaged.map( (doc, index) => (
+                              installGuidesCodeManaged.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -1103,7 +1103,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesCodeManaged.map( (doc, index) => (
+                              productGuidesCodeManaged.map( (doc, index) => (
                                       <li key={index}>
                                         {
                                             doc.title.indexOf('Code Managed') > -1 && <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
@@ -1675,7 +1675,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsRFID.map( (doc, index) => (
+                              datasheetsRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -1690,7 +1690,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesRFID.map( (doc, index) => (
+                              installGuidesRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -1704,7 +1704,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesRFID.map( (doc, index) => (
+                              productGuidesRFID.map( (doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>

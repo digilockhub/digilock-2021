@@ -476,7 +476,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsDialCombo.map((doc, index) => (
+                              datasheetsDialCombo.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -491,7 +491,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && installGuidesDialCombo.map((doc, index) => (
+                              installGuidesDialCombo.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -505,7 +505,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && productGuidesDialCombo.map((doc, index) => (
+                              productGuidesDialCombo.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -542,9 +542,9 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && documentsHasp.catalog.map((doc, index) => (
+                              documentsHasp.catalog.map((doc, index) => (
                                       <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                        <a href={doc.file.url} target={'_blank'}>{documentsHasp.catalog[index].title}</a>
                                       </li>
                                   )
                               )
@@ -557,7 +557,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsHasp.map((doc, index) => (
+                              datasheetsHasp.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -576,9 +576,9 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && documentsHasp.catalog.map((doc, index) => (
+                              documentsHasp.catalog.map((doc, index) => (
                                       <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                        <a href={doc.file.url} target={'_blank'}>{documentsHasp.catalog[index].title}</a>
                                       </li>
                                   )
                               )
@@ -591,7 +591,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsHasp.map((doc, index) => (
+                              datasheetsHasp.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -629,9 +629,9 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && documentsLaser.catalog.map((doc, index) => (
+                              documentsLaser.catalog.map((doc, index) => (
                                       <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                        <a href={doc.file.url} target={'_blank'}>{documentsLaser.catalog[index].title}</a>
                                       </li>
                                   )
                               )
@@ -644,7 +644,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsLaser.map((doc, index) => (
+                              datasheetsLaser.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
@@ -663,9 +663,9 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && documentsLaser.catalog.map((doc, index) => (
+                              documentsLaser.catalog.map((doc, index) => (
                                       <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                        <a href={doc.file.url} target={'_blank'}>{documentsLaser.catalog[index].title}</a>
                                       </li>
                                   )
                               )
@@ -678,7 +678,7 @@ const Tab = (props) => {
                       <div className="step-images">
                         <ul>
                           {
-                              canUseDOM && datasheetsLaser.map((doc, index) => (
+                              datasheetsLaser.map((doc, index) => (
                                       <li key={index}>
                                         <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                       </li>
