@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import {Trans, useTranslation, I18nextContext, Link} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
@@ -130,7 +130,8 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Retail Solutions')}/>
+        <Seo title={t('Keyless Locks for Retail Facilities  | Digilock ')}
+        description={'Digilock Helps Businesses Create a More Secure and Inviting Environment for Customers, Employees and Merchandise, See Our Selection of Keyless Electronic Lock Solutions.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -140,11 +141,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 retail
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">

@@ -142,7 +142,8 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Healthcare Solutions')}/>
+        <Seo title={t('Electronic and Smart Lock Solutions for Healthcare Facilities  | Digilock ')}
+        description={'Digilock Locks Can Include Smart Lock Features and options for cloud or on-premise management, and keypad, RFID or Mobile ID access  Healthcare Demands A Higher Level of Security and Accountability.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -152,11 +153,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 healthcare
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">
@@ -174,7 +175,7 @@ const IndexPage = () => {
           <section className="industry-copy healthcare">
             <div className="container">
               <p>
-                <Trans>education_copy</Trans>
+                <Trans>healthcare_copy</Trans>
               </p>
               <BCResponsivePlayer
                   vid={'6157021087001'}

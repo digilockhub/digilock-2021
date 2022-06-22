@@ -128,7 +128,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Government Solutions')}/>
+        <Seo title={t('Keyless Digital Lock for Government Facilities | Digilock ')} description={'Digilock Keyless Digital Locks Help Modernize and Streamline Storage Security For A Variety of Government Facilities, with Flexible Options and Features Like Audit Tracking.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage

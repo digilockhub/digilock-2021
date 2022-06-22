@@ -131,7 +131,8 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Education Solutions')}/>
+        <Seo title={t('Keyless Lock Solutions for Educational Facilities  | Digilock ')}
+        description={'Digilock Keyless Lock Solutions For Today’s Mobile Student and Faculty/. With A Choice of Keypad, RFID or Mobile ID Lock Access Learn How To Take Advantage of Going Smart with Remote Cloud-Based Management.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -141,11 +142,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 education
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">

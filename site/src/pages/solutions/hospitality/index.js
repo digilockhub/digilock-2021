@@ -140,7 +140,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Hospitality Solutions')}/>
+        <Seo title={t('Electronic Locks for Hospitality Facilities  | Digilock ')} description={'Digilock Electronic Locks Integrate Beautifully With Existing Room Furniture. Additional Features Let You Provide Seamless Security Through a Phone App or Room Card.  '}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -150,11 +150,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 hospitality
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">

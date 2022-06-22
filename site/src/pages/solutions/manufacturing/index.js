@@ -115,7 +115,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Manufacturing Solutions')}/>
+        <Seo title={t('Electronic Locks for Manufacturing Facilities | Digilock ')} description={'Digilock Electronic Locks Are Designed To Meet The Needs of Demanding Workspace Environments and Large Global Enterprises. View The Full Selection And Choose The Best Fit.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -125,11 +125,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 manufacturing
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">

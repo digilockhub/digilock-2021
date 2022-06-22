@@ -75,7 +75,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Pro Sports Solutions')}/>
+        <Seo title={t('Locker Locks for Pro Sports Facilities | Digilock')} description={'Digilock Locker Locks Are Durable, Adaptive and Easy to Manage.'}/>
         <div className="solutions">
           <section className="hero --hero-image no-pad">
             <StaticImage
@@ -85,11 +85,11 @@ const IndexPage = () => {
                 formats={["auto", "webp", "avif"]}
                 alt="NEED ALT TAG"
             />
-            <h6>
+            <h1>
               <Trans>
                 pro_sports
               </Trans>
-            </h6>
+            </h1>
           </section>
           <section className="industry-carousel">
             <div className="container">
