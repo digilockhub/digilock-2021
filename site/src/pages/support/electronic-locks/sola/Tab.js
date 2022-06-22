@@ -85,6 +85,125 @@ import operateSharedSix from './images/rfid/operating-shared-manager-two.png'
 
 import batteryReplace from './images/rfid/battery-replace-one.png'
 
+let datasheetsKeyManaged = [
+  {
+    "title": "Sola Data Sheet Keypad",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/3mOz5DfLnYyonn9m3NDikG/0ee04a10da2a01dbe56acc3ff26e4034/Keypad.pdf",
+      "fileName": "Keypad.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesKeyManaged = [
+  {
+    "title": "Sola Install Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5Trl2r35qYo6f4KG69yEbp/289d10dc811daf5b12dd79e5eede0d9d/Keypad-RFID.pdf",
+      "fileName": "Keypad-RFID.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesKeyManaged = [
+  {
+    "title": "Sola Product Guide Keypad Key Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1oHUr4XqISQC3JidNMcRDb/138364e8118392b6c1b7635329723b4e/Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Sola Product Guide Keypad Code Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7tfWtORupYnsvwW8pFvhTC/a2bff7f0f0d5f70403aeffbc8071ef8e/Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let datasheetsCodeManaged = [
+  {
+    "title": "Sola Data Sheet Keypad",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/3mOz5DfLnYyonn9m3NDikG/0ee04a10da2a01dbe56acc3ff26e4034/Keypad.pdf",
+      "fileName": "Keypad.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesCodeManaged = [
+  {
+    "title": "Sola Install Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5Trl2r35qYo6f4KG69yEbp/289d10dc811daf5b12dd79e5eede0d9d/Keypad-RFID.pdf",
+      "fileName": "Keypad-RFID.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesCodeManaged = [
+  {
+    "title": "Sola Product Guide Keypad Code Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7tfWtORupYnsvwW8pFvhTC/a2bff7f0f0d5f70403aeffbc8071ef8e/Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Sola 2 Code Managed Product Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/77mM7vgkZOrcp5LdeFUqr1/27651bab18132c608c739f68213f2d54/PG-NXT-SKC-DEN.pdf",
+      "fileName": "PG-NXT-SKC-DEN.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let datasheetsRFID = [
+  {
+    "title": "Sola Data Sheet Touch RFID",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/17wkYSVxFXFzdIDTDwekyR/49e3daadf4bbcaf1eda0dd9dbdb078a5/Touch-RFID.pdf",
+      "fileName": "Touch-RFID.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesRFID = [
+  {
+    "title": "Sola Install Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5Trl2r35qYo6f4KG69yEbp/289d10dc811daf5b12dd79e5eede0d9d/Keypad-RFID.pdf",
+      "fileName": "Keypad-RFID.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+]; 
+let productGuidesRFID = [
+  {
+    "title": "Sola Product Guide Touch RFID Key Managed With Shared Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5ciDCB0b1AnEyIlPkmzm09/a9723ba5056398054a48311167125121/Touch-RFID-Key-Managed-With-Shared-Use-Functionality.pdf",
+      "fileName": "Touch-RFID-Key-Managed-With-Shared-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Sola Product Guide Touch RFID Key Managed With Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/3RfDrOOXFDNbv5CzsAVT5O/ef5906efd3d88875bed0b9da5de422e5/Touch-RFID-Key-Managed-With-Assigned-Use-Functionality.pdf",
+      "fileName": "Touch-RFID-Key-Managed-With-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+
+
 const Tab = (props) => {
   const {changeLanguage} = useI18next();
   const context = React.useContext(I18nextContext);
@@ -892,6 +1011,55 @@ const Tab = (props) => {
                     </div>
                   </Accordion>
                 </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              datasheetsKeyManaged.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  ),
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              installGuidesKeyManaged.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  ),
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              productGuidesKeyManaged.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  ),
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
                 {/*FAQ*/}
                 <div label="FAQ">
                   <KeypadKeyManagedRfid product={'Sola Keypad Key Managed'} clsName={'next-support'} />
@@ -1237,6 +1405,54 @@ const Tab = (props) => {
                   </Accordion>
                 </div>
                 {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              datasheetsCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              installGuidesCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              productGuidesCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
                 {/*FAQ*/}
                 <div label="FAQ">
                   <Accordion clsName={'next-support'}>
@@ -1772,6 +1988,55 @@ const Tab = (props) => {
                       <p className={'smaller-text'}>
                         * If a valid Manager Key is used to relock, the previous user credential will continue to operate the lock.
                       </p>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              datasheetsRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              installGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              productGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>

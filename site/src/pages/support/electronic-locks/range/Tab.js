@@ -54,7 +54,6 @@ import requestFuncChangeThree from './images/rfid/request-func-change-three.png'
 const Tab = (props) => {
 
   const [toggleState, setToggleState] = useState(1);
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -62,6 +61,100 @@ const Tab = (props) => {
   const getActiveClass = (index, className) => {
     return toggleState === index ? className : '';
   };
+
+  let datasheetsKeypad = [
+    {
+      "title": "Range Data Sheet Keypad Bolt",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/7Jn5hiMOOrh2KOgv6xQs3B/e6b9e37c4af2c14ca066f075e562c8bd/Data_Sheet_Range_5G_Keypad_Bolt_022018.pdf",
+        "fileName": "Data_Sheet_Range_5G_Keypad_Bolt_022018.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Range Data Sheet Keypad Latch",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/6hyJ6nxXWJQ7QNhM2ese0w/a632dbf4fa5eb3512e41d766fe40bd82/Data_Sheet_Range_5G_Keypad_Latch_022018.pdf",
+        "fileName": "Data_Sheet_Range_5G_Keypad_Latch_022018.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let installGuidesKeypad = [
+    {
+      "title": "Range Install Guide 5G",
+      "file": {
+        "url": "//downloads.ctfassets.net/q5vaqi9g69zw/4op84XotvzlIFeSp7N2CLb/337b65d0486d805f476d02df027f17a3/IG-Nextlock-Range-5G.pdf",
+        "fileName": "IG-Nextlock-Range-5G.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let productGuidesKeypad = [
+    {
+      "title": "Range Product Guide Keypad Flex key Managed -  E Function",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/7fOJHTpUdthAvx7v1L1rqV/d8632fd255f56c74660e0a2fc65e9914/PG-NLRK-E-DEN.pdf",
+        "fileName": "PG-NLRK-E-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Range Product Guide Keypad Latch",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1mUNnTQljSr88U5r7nmfJC/03935a569616462dd0596484a21f96c7/PG-NLRK-AP-DEN.pdf",
+        "fileName": "PG-NLRK-AP-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Range Product Guide Keypad Bolt",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1ZF3U2pwWB6gKBhVOt63az/cbb962aacb94289aa49245c606592fa4/PG-NLRK-AD-DEN.pdf",
+        "fileName": "PG-NLRK-AD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+
+  let datasheetsRFID = [
+    {
+      "title": "Range Data Sheet RFID Latch",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/66MKhxic9OUfWfR87qREsM/e2699b5991de47fa227badad8bd18ce8/Data_Sheet_Range_5G_RFID_Latch_022018.pdf",
+        "fileName": "Data_Sheet_Range_5G_RFID_Latch_022018.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Range Data Sheet RFID Bolt",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/p7k2J0nGiVeky2ZuGhnE4/979dd79c57bbaae20d549f319677e0f8/Data_Sheet_Range_5G_RFID_Bolt_022018.pdf",
+        "fileName": "Data_Sheet_Range_5G_RFID_Bolt_022018.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let installGuidesRFID = [
+    {
+      "title": "Range Install Guide 5G",
+      "file": {
+        "url": "//downloads.ctfassets.net/q5vaqi9g69zw/4op84XotvzlIFeSp7N2CLb/337b65d0486d805f476d02df027f17a3/IG-Nextlock-Range-5G.pdf",
+        "fileName": "IG-Nextlock-Range-5G.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let productGuidesRFID = [
+    {
+      "title": "Range Product Guide RFID Bolt",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/2V0TubGaY7Q8pRAKxVpaVU/fa3b22d8d6579b2fe929ff64cd9b3366/PG-NLRR-AD-DEN.pdf",
+        "fileName": "PG-NLRR-AD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
 
   return (
       <div className={'tab-container'}>
@@ -454,6 +547,53 @@ const Tab = (props) => {
                         **After unlocking, the latch will automatically relock in 6 seconds.
                       </p>
 
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              datasheetsKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              installGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              productGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>
@@ -956,6 +1096,55 @@ const Tab = (props) => {
                             Two sets of two-tone beeps will be heard and the LED will turn off.
                           </figcaption>
                         </figure>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+                      <p>
+                        <div className="step-images">
+                          <ul>
+                            {
+                                datasheetsRFID.map( (doc, index) => (
+                                        <li key={index}>
+                                          <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                        </li>
+                                    )
+                                )
+                            }
+                          </ul>
+                        </div>
+                      </p>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              installGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              productGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
                       </div>
                     </div>
                   </Accordion>
