@@ -73,6 +73,179 @@ let youTubeVideos = {
   "fr": "https://www.youtube.com/embed/videoseries?list=PLXWP8g8Rnc_ZPwxap7QizFNXTcz_--wiY"
 };
 
+let datasheetsKeyManaged = [
+  {
+    "title": "Cue Data Sheet Keypad Motorized Latch",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6tMvk5YrZOc0U0K5FfGlPD/1a1af39b6774c2b4820e3f72e8a1052b/Keypad-Motorized-Latch.pdf",
+      "fileName": "Keypad-Motorized-Latch.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Data Sheet Keypad Motorized Bolt",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2XVd3SnTtJcKYtXPQzutbd/403be65576819c94bae52b98670bb366/Keypad-Motorized-Bolt.pdf",
+      "fileName": "Keypad-Motorized-Bolt.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesKeyManaged = [
+  {
+    "title": "Cue Install Guide",
+    "file": {
+      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/52o5ian6fL68lulvwU832i/0b582f00f0f87670879de1c6fa868536/Keypad-RFID-Install-Guide.pdf",
+      "fileName": "Keypad-RFID-Install-Guide.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesKeyManaged = [
+  {
+    "title": "Cue Product Guide Keypad Code Managed With Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/4zZo9qNLgreUR7VRU4eifW/506fc44a4f2ecd542be01d8d80af24f3/Keypad-Code-Managed-With-Assigned-Use-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Code Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7Ls29DK4RELzH0ClAAtNm2/86004e028e16cc3f19d197d8b4975451/Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Key Managed WIth Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5sgT1SJow9wmNZkcGlM0Xk/a846f7b5de541f2ee79f6ab4c736de29/Keypad-Key-Managed-WIth-Assigned-Use-Functionality.pdf",
+      "fileName": "Keypad-Key-Managed-WIth-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Key Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7dvoRqzSBMYKk5C5S529o1/a12138bda5ec66e167d299f721312ad1/Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let datasheetsCodeManaged = [
+  {
+    "title": "Cue Data Sheet Keypad Motorized Latch",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6tMvk5YrZOc0U0K5FfGlPD/1a1af39b6774c2b4820e3f72e8a1052b/Keypad-Motorized-Latch.pdf",
+      "fileName": "Keypad-Motorized-Latch.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Data Sheet Keypad Motorized Bolt",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2XVd3SnTtJcKYtXPQzutbd/403be65576819c94bae52b98670bb366/Keypad-Motorized-Bolt.pdf",
+      "fileName": "Keypad-Motorized-Bolt.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesCodeManaged = [
+  {
+    "title": "Cue Install Guide",
+    "file": {
+      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/52o5ian6fL68lulvwU832i/0b582f00f0f87670879de1c6fa868536/Keypad-RFID-Install-Guide.pdf",
+      "fileName": "Keypad-RFID-Install-Guide.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesCodeManaged = [
+  {
+    "title": "Cue Product Guide Keypad Code Managed With Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/4zZo9qNLgreUR7VRU4eifW/506fc44a4f2ecd542be01d8d80af24f3/Keypad-Code-Managed-With-Assigned-Use-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Code Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7Ls29DK4RELzH0ClAAtNm2/86004e028e16cc3f19d197d8b4975451/Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Code-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Key Managed WIth Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5sgT1SJow9wmNZkcGlM0Xk/a846f7b5de541f2ee79f6ab4c736de29/Keypad-Key-Managed-WIth-Assigned-Use-Functionality.pdf",
+      "fileName": "Keypad-Key-Managed-WIth-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide Keypad Key Managed With Dual Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7dvoRqzSBMYKk5C5S529o1/a12138bda5ec66e167d299f721312ad1/Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "fileName": "Keypad-Key-Managed-With-Dual-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let datasheetsRFID = [
+  {
+    "title": "Cue Data Sheet RFID Motorized Latch",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1U4OThEmV1hCtMtqwPQf5Y/74d1d04b48f9d55a6de0a805bd596980/RFID-Motorized-Latch.pdf",
+      "fileName": "RFID-Motorized-Latch.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Data Sheet RFID Motorized Bolt",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2cIrFhe5RLCPbfrGXqvePP/53d06cc59dfdb5388db9231bca89a0a5/RFID-Motorized-Bolt.pdf",
+      "fileName": "RFID-Motorized-Bolt.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesRFID = [
+  {
+    "title": "Cue Install Guide",
+    "file": {
+      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/52o5ian6fL68lulvwU832i/0b582f00f0f87670879de1c6fa868536/Keypad-RFID-Install-Guide.pdf",
+      "fileName": "Keypad-RFID-Install-Guide.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesRFID = [
+  {
+    "title": "Cue Product Guide RFID Key Managed With Assigned Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/3re3LsOZMdbobDrwcQTagg/350643e893e53bf56b99a497bf983aa5/RFID-Key-Managed-With-Assigned-Use-Functionality.pdf",
+      "fileName": "RFID-Key-Managed-With-Assigned-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Cue Product Guide RFID Key Managed With Shared Use Functionality",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/7kL6TB7sTapbYZBahTCUhr/0e4783c6f8ac53373a7796d92ec03d43/RFID-Key-Managed-With-Shared-Use-Functionality.pdf",
+      "fileName": "RFID-Key-Managed-With-Shared-Use-Functionality.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
 const Tab = (props) => {
   const {changeLanguage} = useI18next();
   const context = React.useContext(I18nextContext);
@@ -699,6 +872,57 @@ const Tab = (props) => {
                     </div>
                   </Accordion>
                 </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsKeyManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesKeyManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesKeyManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        {
+                                            doc.title.indexOf('Key Managed') > -1 && <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                        }
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
                 {/*SUPPORT*/}
                 <div label="Troubleshooting">
                   <Accordion clsName={'next-support'}>
@@ -841,6 +1065,58 @@ const Tab = (props) => {
               <Accordion clsName={'next-support'}>
                 <div label="Instructional Videos">
                   <YouTube videos={youTubeVideos} lang={context.language} videoTitle={'Cue Instructional Videos'} />
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesCodeManaged.map( (doc, index) => (
+                                      <li key={index}>
+                                        {
+                                            doc.title.indexOf('Code Managed') > -1 && <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                        }
+
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
                 </div>
                 {/*SUPPORT*/}
                 <div label="Troubleshooting">
@@ -1388,6 +1664,55 @@ const Tab = (props) => {
                       <p className="smaller-text">
                         * If a valid Manager Key is used to relock, the previous user credential will continue to operate the lock.
                       </p>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>

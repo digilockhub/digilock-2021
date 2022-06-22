@@ -58,15 +58,90 @@ import addManagerKeysFourRfid from './images/rfid/add-manager-keys-four.png';
 import replaceKeysOneABRfid from './images/rfid/replace-keys-one-a-b.png';
 import replaceKeysTwoABRfid from './images/rfid/replace-keys-two-a-b.png';
 
-import operatingInstructionsOneRfid from './images/rfid/operating-instruction-one.png'
-import operatingInstructionsTwoRfid from './images/rfid/operating-instruction-two.png'
-import operatingInstructionsThreeRfid from './images/rfid/operating-instruction-three.png'
-import operatingInstructionsFourRfid from './images/rfid/operating-instruction-four.png'
+import operatingInstructionsOneRfid from './images/rfid/operating-instruction-one.png';
+import operatingInstructionsTwoRfid from './images/rfid/operating-instruction-two.png';
+import operatingInstructionsThreeRfid from './images/rfid/operating-instruction-three.png';
+import operatingInstructionsFourRfid from './images/rfid/operating-instruction-four.png';
+
+let datasheetsKeypad = [
+  {
+    "title": "Axis Data Sheet Standard Keypad",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1mqkUr6noOXzEZ202IkO5N/f6ca36426454d11aed68c8598cf24175/nk_ds_axis-stdKeypad-e712d3748fecceb10e1eb45527c73ddd.pdf",
+      "fileName": "nk_ds_axis-stdKeypad-e712d3748fecceb10e1eb45527c73ddd.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesKeypad = [
+  {
+    "title": "Axis Install Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6q8XmmZSIB4Uh5EAX6VyqE/f2a4da955ac47b6351e6814b183d5af5/nk-ig-axis-52ed56f2b351e16e89dfad6bbafdef63.pdf",
+      "fileName": "nk-ig-axis-52ed56f2b351e16e89dfad6bbafdef63.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesKeypad = [
+  {
+    "title": "Axis Product Guide Standard Keypad Assigned Use",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6u5UzrRrc1nZkQt8OXJk8e/686734fbb56fd3532980fdb18409e1df/PG-NLSK-AP-DEN-2e52e7ab2e0e77a6f35c18ff3413c97c.pdf",
+      "fileName": "PG-NLSK-AP-DEN-2e52e7ab2e0e77a6f35c18ff3413c97c.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Axis Product Guide Standard Keypad Shared Use",
+    "file": {
+      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/2UePfH7EgIWoPr0zaxt3jA/c99e5c76010716f96f94d47db24c6a91/PG-NLSK-AD-DEN-8fecb6fab1f8d693db229ac22be589b3.pdf",
+      "fileName": "PG-NLSK-AD-DEN-8fecb6fab1f8d693db229ac22be589b3.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let datasheetsRFID = [
+  {
+    "title": "Axis Data Sheet Touch RFID",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/4KxLdh3aaoTSOdZFGsMAit/14ffe795e73540f8c6d443f21284ea63/nk_ds_axis-touchRFID-83fc4bd643bedd35c4b559c2b0b9c4e0.pdf",
+      "fileName": "nk_ds_axis-touchRFID-83fc4bd643bedd35c4b559c2b0b9c4e0.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesRFID = [
+  {
+    "title": "Axis Install Guide",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6q8XmmZSIB4Uh5EAX6VyqE/f2a4da955ac47b6351e6814b183d5af5/nk-ig-axis-52ed56f2b351e16e89dfad6bbafdef63.pdf",
+      "fileName": "nk-ig-axis-52ed56f2b351e16e89dfad6bbafdef63.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuideRFID = [
+  {
+    "title": "Axis Product Guide Touch RFID Assigned Use",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6jh8dcMX8HUAgXoO07mIT3/ea93ca793c97cb0866c0e59c146658c4/PG-NLTR-AP-DEN-89306e6b2d3c67fb7fe91fd462842c39.pdf",
+      "fileName": "PG-NLTR-AP-DEN-89306e6b2d3c67fb7fe91fd462842c39.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Axis Product Guide Touch RFID Shared Use",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6ro9xlrOjIixk8PGgfitCp/5e164428ee4d5abaf17ec9a4ebb4d8f4/PG-NLTR-AT-DEN-74b5c9e9248e6a907b3e4d3f580cb84b.pdf",
+      "fileName": "PG-NLTR-AT-DEN-74b5c9e9248e6a907b3e4d3f580cb84b.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
 
 const Tab = (props) => {
-
   const [toggleState, setToggleState] = useState(1);
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -636,6 +711,55 @@ const Tab = (props) => {
                     </div>
                   </Accordion>
                 </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <li key={index}>
+                                          <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                        </li>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
                 {/*SUPPORT*/}
                 <div label="Troubleshooting">
                   <Accordion clsName={'next-support'}>
@@ -1089,6 +1213,55 @@ const Tab = (props) => {
                       <p className="smaller-text">
                         *If a Manager Key or the Programming Key is used to relock, the previous user credential will continue to operate the lock.
                       </p>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuideRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>

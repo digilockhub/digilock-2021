@@ -17,6 +17,205 @@ let youTubeVideos = {
   }
 }
 
+let datasheetsDialCombo = [
+  {
+    "title": "Mech Data Sheet Dial Combo",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/4XMvA0Z6zQhjUXrI5fgd1R/90ee4a6634291a30ca434f2f7f435c09/DS-NLMD-DEN.pdf",
+      "fileName": "DS-NLMD-DEN.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let installGuidesDialCombo = [
+  {
+    "title": "Mech Install Guide Dial Combo",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/4xYfG00abmheWTjQSIrzqX/ee01868c6af27afa392a438a4e54f7b7/mechDiaComboInstallGuide.pdf",
+      "fileName": "mechDiaComboInstallGuide.pdf",
+      "contentType": "application/pdf"
+    }
+  },
+  {
+    "title": "Mech Install Guide Dial Assigned Use",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/5QxAUDUYOY4JvpzlGDDM30/2349451bbdbe7700edb18628e6fb1bd8/PG-NLME-RCBL-ASSIGNED-.pdf",
+      "fileName": "PG-NLME-RCBL-ASSIGNED-.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+let productGuidesDialCombo = [
+  {
+    "title": "Mech Product Guide Dial Combo Shared Use",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1vjQH9ur8gBcFHIqKwcyxP/997368c33736d745fffaa56ec0bf1d31/PG-NLMD-DEN.pdf",
+      "fileName": "PG-NLMD-DEN.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let documentsHasp = {
+  "title": "Mech",
+  "catalog": [
+    {
+      "title": "NextLock Catalog",
+      "file": {
+        "url": "//downloads.ctfassets.net/q5vaqi9g69zw/TpnXOdrbDqZ3YbjKR5RHc/c657c3e58d9d29c2ba51ca999d479188/nl_catalog-18154d572b7bac3453c6b4d9d2e3f065.pdf",
+        "fileName": "nl_catalog-18154d572b7bac3453c6b4d9d2e3f065.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "dataSheets": [
+    {
+      "title": "Mech Data Sheet Dial Combo",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/4XMvA0Z6zQhjUXrI5fgd1R/90ee4a6634291a30ca434f2f7f435c09/DS-NLMD-DEN.pdf",
+        "fileName": "DS-NLMD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Mech Data Sheet for Hasp or Laser Cam",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1KdeG3m5h7JCYkO2ev5zpL/c67f54bb3042ebf72dab4a38803a862f/DS-NLMHL-DEN.pdf",
+        "fileName": "DS-NLMHL-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "installGuides": [
+    {
+      "title": "Mech Install Guide Dial Combo",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/4xYfG00abmheWTjQSIrzqX/ee01868c6af27afa392a438a4e54f7b7/mechDiaComboInstallGuide.pdf",
+        "fileName": "mechDiaComboInstallGuide.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Mech Install Guide Dial Assigned Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/5QxAUDUYOY4JvpzlGDDM30/2349451bbdbe7700edb18628e6fb1bd8/PG-NLME-RCBL-ASSIGNED-.pdf",
+        "fileName": "PG-NLME-RCBL-ASSIGNED-.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "productGuides": [
+    {
+      "title": "Mech Product Guide Dial Combo Shared Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1vjQH9ur8gBcFHIqKwcyxP/997368c33736d745fffaa56ec0bf1d31/PG-NLMD-DEN.pdf",
+        "fileName": "PG-NLMD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "salesSheet": [
+    {
+      "title": "Mech Sales Sheet",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/3QIp6HWFOXnIDTyDWDyD2l/cd3e0607e1cc50f393c1a302b4b8522c/mechSalesSheet.pdf",
+        "fileName": "mechSalesSheet.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ]
+};
+let datasheetsHasp = [
+  {
+    "title": "Mech Data Sheet for Hasp or Laser Cam",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1KdeG3m5h7JCYkO2ev5zpL/c67f54bb3042ebf72dab4a38803a862f/DS-NLMHL-DEN.pdf",
+      "fileName": "DS-NLMHL-DEN.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
+let documentsLaser = {
+  "title": "Mech",
+  "catalog": [
+    {
+      "title": "NextLock Catalog",
+      "file": {
+        "url": "//downloads.ctfassets.net/q5vaqi9g69zw/TpnXOdrbDqZ3YbjKR5RHc/c657c3e58d9d29c2ba51ca999d479188/nl_catalog-18154d572b7bac3453c6b4d9d2e3f065.pdf",
+        "fileName": "nl_catalog-18154d572b7bac3453c6b4d9d2e3f065.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "dataSheets": [
+    {
+      "title": "Mech Data Sheet Dial Combo",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/4XMvA0Z6zQhjUXrI5fgd1R/90ee4a6634291a30ca434f2f7f435c09/DS-NLMD-DEN.pdf",
+        "fileName": "DS-NLMD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Mech Data Sheet for Hasp or Laser Cam",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1KdeG3m5h7JCYkO2ev5zpL/c67f54bb3042ebf72dab4a38803a862f/DS-NLMHL-DEN.pdf",
+        "fileName": "DS-NLMHL-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "installGuides": [
+    {
+      "title": "Mech Install Guide Dial Combo",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/4xYfG00abmheWTjQSIrzqX/ee01868c6af27afa392a438a4e54f7b7/mechDiaComboInstallGuide.pdf",
+        "fileName": "mechDiaComboInstallGuide.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Mech Install Guide Dial Assigned Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/5QxAUDUYOY4JvpzlGDDM30/2349451bbdbe7700edb18628e6fb1bd8/PG-NLME-RCBL-ASSIGNED-.pdf",
+        "fileName": "PG-NLME-RCBL-ASSIGNED-.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "productGuides": [
+    {
+      "title": "Mech Product Guide Dial Combo Shared Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/1vjQH9ur8gBcFHIqKwcyxP/997368c33736d745fffaa56ec0bf1d31/PG-NLMD-DEN.pdf",
+        "fileName": "PG-NLMD-DEN.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ],
+  "salesSheet": [
+    {
+      "title": "Mech Sales Sheet",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/3QIp6HWFOXnIDTyDWDyD2l/cd3e0607e1cc50f393c1a302b4b8522c/mechSalesSheet.pdf",
+        "fileName": "mechSalesSheet.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ]
+};
+let datasheetsLaser = [
+  {
+    "title": "Mech Data Sheet for Hasp or Laser Cam",
+    "file": {
+      "url": "//assets.ctfassets.net/q5vaqi9g69zw/1KdeG3m5h7JCYkO2ev5zpL/c67f54bb3042ebf72dab4a38803a862f/DS-NLMHL-DEN.pdf",
+      "fileName": "DS-NLMHL-DEN.pdf",
+      "contentType": "application/pdf"
+    }
+  }
+];
+
 const Tab = (props) => {
   const {changeLanguage} = useI18next();
   const context = React.useContext(I18nextContext);
@@ -269,6 +468,55 @@ const Tab = (props) => {
                 <div label="Instructional Video">
                   <YouTube videos={youTubeVideos.mech} lang={context.language} videoTitle={'Mech Dial Combo Instructional Video'} />
                 </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsDialCombo.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesDialCombo.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesDialCombo.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
               </Accordion>
             </div>
           </div>
@@ -286,7 +534,77 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-             FPO Copy
+              <Accordion clsName={'next-support'}>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Catalog" style={{display: 'none'}}>
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && documentsHasp.catalog.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsHasp.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                  </Accordion>
+                </div>
+                <div label="Document Library 2">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Catalog" style={{display: 'none'}}>
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && documentsHasp.catalog.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsHasp.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                  </Accordion>
+                </div>
+              </Accordion>
             </div>
           </div>
           {/*Laser Cam*/}
@@ -303,9 +621,77 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
+              <Accordion clsName={'next-support'}>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Catalog" style={{display: 'none'}}>
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && documentsLaser.catalog.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Data Sheets">
 
-                FPO copy
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsLaser.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
 
+                    </div>
+                  </Accordion>
+                </div>
+                <div label="Document Library 2">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Catalog" style={{display: 'none'}}>
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && documentsLaser.catalog.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{documents.catalog[index].title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsLaser.map((doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                  </Accordion>
+                </div>
+              </Accordion>
             </div>
           </div>
         </div>

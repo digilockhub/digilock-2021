@@ -14,10 +14,10 @@ import replaceBatteryThree from './images/battery-replace-three.png'
 import replaceBatteryFour from './images/battery-replace-four.png'
 
 
+
 const Tab = (props) => {
 
   const [toggleState, setToggleState] = useState(1);
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -25,6 +25,83 @@ const Tab = (props) => {
   const getActiveClass = (index, className) => {
     return toggleState === index ? className : '';
   };
+
+  let datasheetsKeypad = [
+    {
+      "title": "Classic Data Sheet Keypad",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/3o9DXYHYtaVvFY1MwFYLWG/aacce8b997d28eaf2a220cbbfa83846f/nk_ds_classic-Keypad.pdf",
+        "fileName": "nk_ds_classic-Keypad.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let installGuidesKeypad = [
+    {
+      "title": "Classic Install Guide",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/5vPxUFB3jaguyh1d98iGRT/a28f5a6f3b4bcb611f220bab25b1aa7a/dl-il-classic.pdf",
+        "fileName": "dl-il-classic.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let productGuidesKeypad = [
+    {
+      "title": "Classic Product Guide Keypad Shared Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/7JvTaUq9rMM5M3F2UTEH8u/63bf02eb35f744a69ac9f9980429d60d/classicKeypadSharedUseProductGuide.pdf",
+        "fileName": "classicKeypadSharedUseProductGuide.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Classic Product Guide Keypad Assigned Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/j71D97XF5ApH5uyosJatD/3fbfee5fff9caa790ab6f98de7fa1cac/classickeypadAssigendUseProductGuice.pdf",
+        "fileName": "classickeypadAssigendUseProductGuice.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let datasheetsRFID = [
+    {
+      "title": "Classic Data Sheet RFID",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/2d135mjxJqyToSMcThgTl7/8aafa3b03ca2b8acef87d7904a931119/nk_ds_classic-RFID.pdf",
+        "fileName": "nk_ds_classic-RFID.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let installGuidesRFID = [
+    {
+      "title": "Classic Install Guide",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/5vPxUFB3jaguyh1d98iGRT/a28f5a6f3b4bcb611f220bab25b1aa7a/dl-il-classic.pdf",
+        "fileName": "dl-il-classic.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
+  let productGuidesRFID = [
+    {
+      "title": "Classic Product Guide RFID Shared Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/MGRBGfgNZAmV1irkhg7JQ/6841af6eee982988480447400375c23d/classicRfidSharedUseProductGuide.pdf",
+        "fileName": "classicRfidSharedUseProductGuide.pdf",
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "title": "Classic Product Guide RFID Assigned Use",
+      "file": {
+        "url": "//assets.ctfassets.net/q5vaqi9g69zw/6BBfp4qo7G4911C1N42kd4/357b02b72cbb53c0bb51c67449f109bd/classicRfidAssignedUseProductGuide.pdf",
+        "fileName": "classicRfidAssignedUseProductGuide.pdf",
+        "contentType": "application/pdf"
+      }
+    }
+  ];
 
   return (
       <div className={'tab-container'}>
@@ -243,6 +320,55 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                           continue to operate the lock.
                         </li>
                       </ul>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesKeypad.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>
@@ -532,6 +658,55 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
                           Card or User Key will continue to operate the lock.
                         </li>
                       </ul>
+                    </div>
+                  </Accordion>
+                </div>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Data Sheets">
+
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && datasheetsRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && installGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                              canUseDOM && productGuidesRFID.map( (doc, index) => (
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                  )
+                              )
+                          }
+                        </ul>
+                      </div>
                     </div>
                   </Accordion>
                 </div>
