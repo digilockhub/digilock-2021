@@ -9,7 +9,6 @@ import {Link} from "gatsby-plugin-react-i18next";
 const Locks = () => {
   const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
   const urlDirectory = isSupport ? '/support/' : '/products/';
-
   return (
       <>
         <section className="smart-locks">
@@ -35,7 +34,7 @@ const Locks = () => {
 
               <div className="smart-lock-wrap">
 
-                <a href="#">
+                <Link to={urlDirectory+'smart-locks/'}>
                   <div className="thumbnail">
                     <StaticImage
                         src={'../../images/locks/DL22-net-aspire-600x497.png'}
@@ -50,8 +49,8 @@ const Locks = () => {
                       <span>Aspire<sup>&trade;</sup></span>
                     </p>
                   </div>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to={urlDirectory+'smart-locks/'}>
                   <div className="thumbnail">
                     <StaticImage
                         src={'../../images/locks/DL22-net-versa-600x497.png'}
@@ -66,8 +65,8 @@ const Locks = () => {
                       <span>Versa<sup>&trade;</sup></span>
                     </p>
                   </div>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to={urlDirectory+'smart-locks/'}>
                   <div className="thumbnail">
                     <StaticImage
                         src={'../../images/locks/DL22-net-orbit-600x497.png'}
@@ -82,14 +81,14 @@ const Locks = () => {
                       <span>Orbit<sup>&trade;</sup></span>
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <img src={mobileSmartDivider} className={'mobile-smart-divider'} alt=""/>
 
               <div className="digilink-lock">
                 <img src={desktopSmartDivider} alt=""/>
-                <a href="#">
+                <Link to={urlDirectory+'smart-locks/'}>
                   <div className="thumbnail">
                     <StaticImage
                         src={'../../images/locks/DL22-digilink-600x497.png'}
@@ -104,7 +103,7 @@ const Locks = () => {
                       <span>Digilink<sup>&trade;</sup></span>
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -142,7 +141,7 @@ const Locks = () => {
               </Trans>
             </p>
             <div className="row">
-              <a href="#">
+              <Link to={urlDirectory+'electronic-locks/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-aspire-600x497.png'}
@@ -157,8 +156,8 @@ const Locks = () => {
                     <span>Aspire<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to={urlDirectory+'electronic-locks/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-versa-600x497.png'}
@@ -173,8 +172,8 @@ const Locks = () => {
                     <span>Versa<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to={urlDirectory+'electronic-locks/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-orbit-600x497.png'}
@@ -189,7 +188,7 @@ const Locks = () => {
                     <span>Orbit<sup>&trade;</sup></span>
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -200,7 +199,7 @@ const Locks = () => {
                 legacy_locks
               </Trans>
             </h2>
-            <div className="row">
+            <div className="row legacy">
               <Link to={urlDirectory+'electronic-locks/axis/'}>
                 <div className="thumbnail">
                   <StaticImage
@@ -412,9 +411,5 @@ const Locks = () => {
         </section>
       </>
   )
-
-
 };
-
-
 export default Locks;
