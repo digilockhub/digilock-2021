@@ -40,8 +40,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-aspire-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Aspire Smart Lock"
@@ -56,8 +56,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-versa-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Versa Smart Lock"
@@ -72,8 +72,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-net-orbit-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Orbit Smart Lock"
@@ -94,8 +94,8 @@ const Locks = () => {
                     <StaticImage
                         src={'../../images/locks/DL22-digilink-600x497.png'}
                         loading={'lazy'}
-                        width={'200'}
-                        height={'148'}
+                        width={200}
+                        height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
                         alt="Digilink Smart Lock"
@@ -113,8 +113,8 @@ const Locks = () => {
                 <StaticImage
                     src={'../../images/locks/DL22-digilink-600x497.png'}
                     loading={'lazy'}
-                    width={'200'}
-                    height={'148'}
+                    width={200}
+                    height={148}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="Digilink Smart Lock"
@@ -147,8 +147,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-aspire-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Aspire Electronic Lock"
@@ -163,8 +163,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-versa-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Versa Electronic Lock"
@@ -179,8 +179,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-orbit-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Orbit Electronic Lock"
@@ -206,8 +206,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-axis-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Axis Electronic Lock"
@@ -222,8 +222,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-cue-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Cue Electronic Lock"
@@ -238,8 +238,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-sola-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Sola Electronic Lock"
@@ -254,8 +254,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-range-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Range Electronic Lock"
@@ -273,8 +273,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-4Gstand-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Standard"
@@ -287,8 +287,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-4Gvertical-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'150'}
+                      width={200}
+                      height={150}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Vertical"
@@ -301,8 +301,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-classiccam-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'150'}
+                      width={200}
+                      height={150}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="Vertical"
@@ -319,8 +319,8 @@ const Locks = () => {
                         <StaticImage
                             src={'../../images/locks/DL22-tseries-600x497.png'}
                             loading={'lazy'}
-                            width={'200'}
-                            height={'150'}
+                            width={200}
+                            height={150}
                             quality={100}
                             formats={["auto", "webp", "avif"]}
                             alt="T-series"
@@ -333,8 +333,8 @@ const Locks = () => {
                         <StaticImage
                             src={'../../images/locks/DL22-ktekpe-600x497.png'}
                             loading={'lazy'}
-                            width={'200'}
-                            height={'150'}
+                            width={200}
+                            height={150}
                             quality={100}
                             formats={["auto", "webp", "avif"]}
                             alt="KTE/KPE"
@@ -347,8 +347,8 @@ const Locks = () => {
                         <StaticImage
                             src={'../../images/locks/DL22-2G-600x497.png'}
                             loading={'lazy'}
-                            width={'200'}
-                            height={'150'}
+                            width={200}
+                            height={150}
                             quality={100}
                             formats={["auto", "webp", "avif"]}
                             alt="2nd Generation"
@@ -361,8 +361,8 @@ const Locks = () => {
                         <StaticImage
                             src={'../../images/locks/DL22-1G-600x497.png'}
                             loading={'lazy'}
-                            width={'200'}
-                            height={'150'}
+                            width={200}
+                            height={150}
                             quality={100}
                             formats={["auto", "webp", "avif"]}
                             alt="1st Generation"
@@ -396,8 +396,8 @@ const Locks = () => {
                   <StaticImage
                       src={'../../images/locks/DL22-mech-600x497.png'}
                       loading={'lazy'}
-                      width={'200'}
-                      height={'148'}
+                      width={200}
+                      height={148}
                       quality={100}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"

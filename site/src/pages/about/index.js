@@ -142,7 +142,7 @@ const IndexPage = () => {
                 <figure>
                   <StaticImage
                       src="../../images/about/offices-americas.png"
-                      width={'258'}
+                      width={258}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />
@@ -153,7 +153,7 @@ const IndexPage = () => {
                 <figure>
                   <StaticImage
                       src="../../images/about/offices-chicago.png"
-                      width={'258'}
+                      width={258}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />
@@ -164,7 +164,7 @@ const IndexPage = () => {
                 <figure>
                   <StaticImage
                       src="../../images/about/offices-europe.png"
-                      width={'258'}
+                      width={258}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />
@@ -175,7 +175,7 @@ const IndexPage = () => {
                 <figure>
                   <StaticImage
                       src="../../images/about/offices-asia.png"
-                      width={'258'}
+                      width={258}
                       formats={["auto", "webp", "avif"]}
                       alt="NEED ALT TAG"
                   />

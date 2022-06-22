@@ -96,8 +96,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/second-generation/KTS-2Prng.gif'}
                     loading={'lazy'}
-                    width={'160'}
-                    height={'164'}
+                    width={160}
+                    height={164}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="KTS/WTS Electronic Lock"
@@ -108,8 +108,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/second-generation/KPS-2Prng.gif'}
                     loading={'lazy'}
-                    width={'160'}
-                    height={'164'}
+                    width={160}
+                    height={164}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="KPS/WPS Electronic Lock"
@@ -120,8 +120,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/second-generation/KTH-2Prng.gif'}
                     loading={'lazy'}
-                    width={'160'}
-                    height={'164'}
+                    width={160}
+                    height={164}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="KTH/WTH Electronic Lock"

@@ -125,8 +125,8 @@ const Tab = (props) => {
               <StaticImage
                   src={'./images/keypad-front.png'}
                   loading={'lazy'}
-                  width={'696'}
-                  height={'331'}
+                  width={696}
+                  height={331}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
@@ -134,8 +134,8 @@ const Tab = (props) => {
               <StaticImage
                   src={'./images/keypad-rear.png'}
                   loading={'lazy'}
-                  width={'696'}
-                  height={'331'}
+                  width={696}
+                  height={331}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
@@ -486,8 +486,8 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
               <StaticImage
                   src={'./images/rfid-front.png'}
                   loading={'lazy'}
-                  width={'696'}
-                  height={'333'}
+                  width={696}
+                  height={333}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
@@ -495,8 +495,8 @@ All previously registered Manager Bypass Key(s) have been erased from the lock.<
               <StaticImage
                   src={'./images/rfid-rear.png'}
                   loading={'lazy'}
-                  width={'696'}
-                  height={'333'}
+                  width={696}
+                  height={333}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"

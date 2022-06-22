@@ -256,8 +256,8 @@ const Tab = (props) => {
               <StaticImage
                   src={'./images/dial-combo.jpg'}
                   loading={'lazy'}
-                  width={'600'}
-                  height={'408'}
+                  width={600}
+                  height={408}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"

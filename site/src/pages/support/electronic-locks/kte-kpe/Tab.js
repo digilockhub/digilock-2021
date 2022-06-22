@@ -38,8 +38,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/EmployeeLock.jpg'}
                     loading={'lazy'}
-                    width={'150'}
-                    height={'166'}
+                    width={150}
+                    height={166}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt=" KTE/KPE Electronic Lock"

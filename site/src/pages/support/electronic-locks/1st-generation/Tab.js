@@ -57,8 +57,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/first-generation/KT-LED.jpg'}
                     loading={'lazy'}
-                    width={'124'}
-                    height={'159'}
+                    width={124}
+                    height={159}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="KT Electronic Lock"
@@ -69,8 +69,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/first-generation/WT-LED.jpg'}
                     loading={'lazy'}
-                    width={'146'}
-                    height={'151'}
+                    width={146}
+                    height={151}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="WT Electronic Lock"
@@ -81,8 +81,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/first-generation/KP-LED.jpg'}
                     loading={'lazy'}
-                    width={'124'}
-                    height={'159'}
+                    width={124}
+                    height={159}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="KP Electronic Lock"
@@ -93,8 +93,8 @@ const Tab = (props) => {
                 <StaticImage
                     src={'../../../../images/locks/first-generation/WP-LED.jpg'}
                     loading={'lazy'}
-                    width={'147'}
-                    height={'161'}
+                    width={147}
+                    height={161}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt="WT Electronic Lock"
