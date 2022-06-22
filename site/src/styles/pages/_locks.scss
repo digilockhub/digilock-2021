@@ -31,4 +31,7 @@
 
 .smart-locks-container, .row {
   padding-bottom: 0 !important;
+  &.legacy {
+    padding-top: 1rem !important;
+  }
 }
