@@ -7,7 +7,7 @@
   }
 
   h2 {
-    &.legacy {
+    &.legacy, &.numeris {
       color: $color-text-grey;
       text-align: center;
       @include md() {

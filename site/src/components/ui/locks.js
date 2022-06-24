@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "react-i18next";
 import mobileSmartDivider from "../../images/locks/mobile-divider.svg";
@@ -7,7 +7,7 @@ import {globalHistory} from "@reach/router";
 import {Link} from "gatsby-plugin-react-i18next";
 
 const Locks = () => {
-  const isSupport = globalHistory.location.pathname.indexOf('support') > -1;
+  const [isSupport, setIsSupport] = useState(globalHistory.location.pathname.indexOf('support') > -1);
   const urlDirectory = isSupport ? '/support/' : '/products/';
   return (
       <>
@@ -192,6 +192,53 @@ const Locks = () => {
             </div>
           </div>
         </section>
+        {
+          isSupport ?
+              <section className="electronic-locks numeris">
+                <div className="container legacy">
+                  <h2 className="sub numeris">
+                    <Trans>
+                      numeris_locks
+                    </Trans>
+                  </h2>
+                  <div className="row numeris">
+                    <Link to={urlDirectory+'electronic-locks/aspire/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-ba-aspire-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Aspire Electronic Lock"
+                        />
+                        <p>
+                          <span>Aspire<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                    <Link to={urlDirectory+'electronic-locks/versa/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-cue-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Versa Electronic Lock"
+                        />
+                        <p>
+                          <span>Versa<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+              : null
+        }
         <section className="legacy-locks">
           <div className="container legacy">
             <h2 className="sub legacy">

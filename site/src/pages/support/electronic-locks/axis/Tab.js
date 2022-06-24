@@ -179,13 +179,13 @@ const Tab = (props) => {
                   alt="Aspire Smart Lock"
               />
               <StaticImage
-                  src={'./images/features-rear-unit.png'}
+                  src={'../../../../images/shared/features-rear-unit.png'}
                   loading={'lazy'}
                   width={'995'}
                   height={'824'}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
-                  alt="Aspire Smart Lock"
+                  alt="Axis Smart Lock"
               />
             </div>
             <div className="lists">
@@ -894,7 +894,7 @@ const Tab = (props) => {
                   alt="Aspire Smart Lock"
               />
               <StaticImage
-                  src={'./images/features-rear-unit.png'}
+                  src={'../../../../images/shared/features-rear-unit.png'}
                   loading={'lazy'}
                   width={'995'}
                   height={'824'}
