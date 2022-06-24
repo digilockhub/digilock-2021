@@ -221,7 +221,7 @@ const Locks = () => {
                     <Link to={urlDirectory+'electronic-locks/versa/'}>
                       <div className="thumbnail">
                         <StaticImage
-                            src={'../../images/locks/DL22-cue-600x497.png'}
+                            src={'../../images/locks/DL22-versa-600x497.png'}
                             loading={'lazy'}
                             width={200}
                             height={148}
