@@ -1,5 +1,9 @@
 .where-to-buy {
 
+  section:first-of-type {
+    padding-bottom: 0;
+  }
+
   h4 {
     color: $color-black;
     text-transform: capitalize;
