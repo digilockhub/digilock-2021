@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
@@ -8,6 +8,18 @@ import Dealers from '../../components/dealers/dealers';
 
 const IndexPage = () => {
   const {t} = useTranslation();
+  function handleScrollTo(elmID) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: document.getElementById(elmID).offsetTop - 150
+    });
+  }
+  useEffect(() => {
+    if (document.location.hash === '#gotoPartners') {
+      handleScrollTo("partners");
+    }
+  }, []);
   return (
       <Layout>
         <Seo

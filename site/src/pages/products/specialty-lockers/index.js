@@ -18,20 +18,16 @@ const IndexPage = () => {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: document.getElementById(elmID).offsetTop-150
+      top: document.getElementById(elmID).offsetTop - 150
     });
   }
 
   useEffect(() => {
-    if (document.location.hash === '#gotoJuiceBar'){
-      setTimeout(() =>{
-        handleScrollTo("juiceBar");
-      }, 500);
+    if (document.location.hash === '#gotoJuiceBar') {
+      handleScrollTo("juiceBar");
     }
-    if (document.location.hash === '#gotoPackageHold'){
-      setTimeout(() =>{
-        handleScrollTo("packageHold");
-      }, 500);
+    if (document.location.hash === '#gotoPackageHold') {
+      handleScrollTo("packageHold");
     }
   }, []);
 
@@ -63,7 +59,9 @@ const IndexPage = () => {
                 <div className="grid-two-col-item-single center">
                   <h2><Trans>packagehold</Trans></h2>
                   <p><Trans>package_solutions_copy</Trans></p>
-                  <a onClick={(e) => {handleScrollTo('packageHold')}}><Trans>learn_more_about</Trans><Trans>packagehold</Trans></a>
+                  <a onClick={(e) => {
+                    handleScrollTo('packageHold')
+                  }}><Trans>learn_more_about</Trans><Trans>packagehold</Trans></a>
                   <StaticImage
                       src="../../../images/lockers/locker-solutions-ph.png"
                       loading={'lazy'}
@@ -78,7 +76,9 @@ const IndexPage = () => {
                 <div className="grid-two-col-item-single center">
                   <h2><Trans>juicebar</Trans></h2>
                   <p><Trans>juice_solutions_copy</Trans></p>
-                  <a onClick={(e) => {handleScrollTo('juiceBar')}}><Trans>learn_more_about</Trans><Trans>juicebar</Trans></a>
+                  <a onClick={(e) => {
+                    handleScrollTo('juiceBar')
+                  }}><Trans>learn_more_about</Trans><Trans>juicebar</Trans></a>
                   <StaticImage
                       src="../../../images/lockers/locker-solutions-jb.png"
                       loading={'lazy'}
@@ -92,7 +92,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div id={'packageHold'} className="section-delimeter container" />
+          <div id={'packageHold'} className="section-delimeter container"/>
           <section className="packagehold">
             <div className="container">
               <img src={phLogo} alt="PackageHold" width={'306'} height={'56'}/>
@@ -174,7 +174,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div id={'juiceBar'} className="section-delimeter container" />
+          <div id={'juiceBar'} className="section-delimeter container"/>
           <section className="juicebar">
             <div className="container">
               <img className={'logo-jb'} src={jbLogo} alt="PackageHold" width={'272'} height={'64'}/>
