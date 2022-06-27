@@ -6,7 +6,7 @@
   color: $color-white;
   z-index: 1000;
 
-  a {
+  a, li.solutions {
     color: $color-white;
     font-size: 1rem;
     text-decoration: none;
@@ -17,7 +17,6 @@
       //pointer-events: none;
     }
   }
-
   .contact {
     height: var(--header-contact-height);
     background-color: $color-browser-chrome;

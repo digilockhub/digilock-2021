@@ -98,7 +98,7 @@ const Header = () => {
                  data-visible={'false'}
                  aria-label={'primary navigation'}>
               <ul className="menu-main unstyled-list flex">
-                <li className={checkSiteLocation('/solutions/') ? 'selected has-dropdown' : 'has-dropdown'}>
+                <li className={checkSiteLocation('/solutions/') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
                   <Trans>industries</Trans>
                   <ul className={'dropdown unstyled-list'}>
                     <li>
