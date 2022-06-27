@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
@@ -7,9 +7,7 @@ import CompanySettings from "../../constants/company/settings";
 import Dealers from '../../components/dealers/dealers';
 
 const IndexPage = () => {
-
   const {t} = useTranslation();
-
   return (
       <Layout>
         <Seo
@@ -102,7 +100,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container" />
+          <div id={'partners'} className="section-delimeter container" />
           <Dealers />
         </div>
       </Layout>

@@ -109,7 +109,7 @@ const Footer = () => {
               <h4><Trans>customer_care</Trans></h4>
               <ul className={'unstyled-list'}>
                 <li>
-                  <Link to={'/find-dealers/'}>
+                  <Link to={'/where-to-buy/#partners'}>
                     <Trans>find_dealers</Trans>
                   </Link>
                 </li>
