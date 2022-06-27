@@ -422,7 +422,7 @@ const Locks = () => {
           </div>
         </section>
         <div className="section-delimeter container"/>
-        <section className="mechanical-locks">
+        <section className="electronic-locks">
           <div className="container mech">
             <h2 className="sub">
               <a href="#">
@@ -436,7 +436,7 @@ const Locks = () => {
                 mechanical_lock_copy
               </Trans>
             </p>
-            <div className="row">
+            <div className="row mech">
               <Link to={urlDirectory+'mechanical-locks/mech/'}>
                 <div className="thumbnail">
                   <StaticImage
