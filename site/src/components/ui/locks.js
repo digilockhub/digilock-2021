@@ -97,10 +97,10 @@ const Locks = () => {
                         height={148}
                         quality={100}
                         formats={["auto", "webp", "avif"]}
-                        alt="Digilink Smart Lock"
+                        alt="DigiLink Smart Lock"
                     />
                     <p>
-                      <span>Digilink<sup>&trade;</sup></span>
+                      <span>DigiLink<sup>&reg;</sup></span>
                     </p>
                   </div>
                 </Link>
@@ -116,10 +116,10 @@ const Locks = () => {
                     height={148}
                     quality={100}
                     formats={["auto", "webp", "avif"]}
-                    alt="Digilink Smart Lock"
+                    alt="DigiLink Smart Lock"
                 />
                 <p>
-                  <span>Digilink<sup>&trade;</sup></span>
+                  <span>DigiLink<sup>&reg;</sup></span>
                 </p>
               </div>
             </div>
@@ -422,8 +422,8 @@ const Locks = () => {
           </div>
         </section>
         <div className="section-delimeter container"/>
-        <section className="electronic-locks">
-          <div className="container">
+        <section className="mechanical-locks">
+          <div className="container mech">
             <h2 className="sub">
               <a href="#">
                 <Trans>

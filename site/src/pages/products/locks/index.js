@@ -31,7 +31,7 @@ const IndexPage = () => {
             />
             <h6>
               <Trans>
-                why_digilock
+                locks_overview
               </Trans>
             </h6>
           </section>
