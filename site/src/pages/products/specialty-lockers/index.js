@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
@@ -15,13 +15,25 @@ const IndexPage = () => {
   const [showModal, setShowModal] = useState(false);
 
   function handleScrollTo(elmID) {
-    console.log();
     window.scroll({
       behavior: 'smooth',
       left: 0,
       top: document.getElementById(elmID).offsetTop-150
     });
   }
+
+  useEffect(() => {
+    if (document.location.hash === '#gotoJuiceBar'){
+      setTimeout(() =>{
+        handleScrollTo("juiceBar");
+      }, 500);
+    }
+    if (document.location.hash === '#gotoPackageHold'){
+      setTimeout(() =>{
+        handleScrollTo("packageHold");
+      }, 500);
+    }
+  }, []);
 
   return (
       <Layout>

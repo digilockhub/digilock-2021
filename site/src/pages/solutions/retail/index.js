@@ -200,7 +200,7 @@ const IndexPage = () => {
                     <Trans>merch_displays</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/specialty-lockers/'} className="uses-item">
+                <Link to={'/products/specialty-lockers/#gotoJuiceBar'} className="uses-item">
                   <StaticImage
                       src="./images/applications/08-1-application-03a.jpg"
                       loading={'lazy'}
@@ -214,7 +214,7 @@ const IndexPage = () => {
                     <Trans>juicebar_charging_lockers</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/locks/'} className="uses-item">
+                <Link to={'/products/specialty-lockers/#gotoPackageHold'} className="uses-item">
                   <StaticImage
                       src="./images/applications/08-1-application-04a.jpg"
                       loading={'lazy'}

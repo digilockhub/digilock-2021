@@ -200,7 +200,7 @@ const IndexPage = () => {
                     <Trans>library_storage</Trans>
                   </p>
                 </Link>
-                <Link to={'/products/specialty-lockers/'} className="uses-item">
+                <Link to={'/products/specialty-lockers/#gotoJuiceBar'} className="uses-item">
                   <StaticImage
                       src="./images/applications/05-1-application-03a.jpg"
                       loading={'lazy'}
