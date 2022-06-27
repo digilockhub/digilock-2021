@@ -234,9 +234,10 @@ const IndexPage = (props) => {
 
   return (
       <Layout>
-        <Seo title={t('About')}/>
+        <Seo title={t('Digilock Blog')}/>
         <div className="blog">
           <section className="hero">
+            <h1>Digilock <Trans>blog</Trans></h1>
             <div className="container">
               {/*{*/}
               {/*  !this.state.blogCategories &&*/}
