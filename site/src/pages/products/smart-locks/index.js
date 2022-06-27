@@ -51,11 +51,6 @@ const IndexPage = () => {
                   sl_headline
                 </Trans>
               </h1>
-              <p>
-                <Trans>
-                  sl_headline_copy
-                </Trans>
-              </p>
               <div className="center">
                 <ul>
                   <li><Trans>sl_headline_list_1</Trans></li>
