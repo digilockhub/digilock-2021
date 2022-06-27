@@ -42,8 +42,25 @@ const Footer = () => {
                 <li>
                   <a href="mailto:sales@digilock.com">sales@digilock.com</a>
                 </li>
-                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></li>
-                <li>Toll-Free <a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a></li>
+                <li>
+                  <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tr>
+                      <td>Telephone</td>
+                      <td>&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></td>
+                    </tr>
+                  </table>
+                </li>
+                <li>
+                  <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tr>
+                      <td>Toll-Free</td>
+                      <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                </li>
               </ul>
               <div className="social-icons">
                 <h4>Follow U.S</h4>
@@ -63,8 +80,24 @@ const Footer = () => {
                 <li>
                   <a href="mailto:sales@digilock.com">sales@digilock.com</a>
                 </li>
-                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></li>
-                <li>Toll-Free <a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a></li>
+                <li>
+                  <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tr>
+                      <td>Telephone</td>
+                      <td>&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></td>
+                    </tr>
+                  </table>
+                </li>
+                <li>
+                  <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tr>
+                      <td>Toll-Free</td>
+                      <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
+                      </td>
+                    </tr>
+                  </table>
+                </li>
               </ul>
             </div>
 
