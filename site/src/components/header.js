@@ -157,40 +157,24 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <CustomLocalizedLink
-                      goto={'/products/locks/'}
-                      cls={checkSiteLocation('/locks/') ? 'selected has-dropdown' : 'has-dropdown'}
-                      label={t('locks')}/>
+                <li className={checkSiteLocation('locks/') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
+                  <Trans>locks</Trans>
                   <ul className="dropdown unstyled-list">
+                    <li>
+                      <CustomLocalizedLink
+                          goto={'/products/locks/'}
+                          label={t('locks_overview')}
+                          cls={checkSiteLocation('/locks/') ? 'selected' : ''}
+                      />
+
+                    </li>
                     <li>
                       <CustomLocalizedLink
                           goto={'/products/smart-locks/'}
                           label={t('smart_locks')}
                           cls={checkSiteLocation('/smart-locks') ? 'selected' : ''}
                       />
-                      {/*<ul className="subdrop unstyled-list">*/}
-                      {/*  <li>*/}
-                      {/*    <Link to={'#'}>*/}
-                      {/*      Network Aspire*/}
-                      {/*    </Link>*/}
-                      {/*  </li>*/}
-                      {/*  <li>*/}
-                      {/*    <Link to={'#'}>*/}
-                      {/*      Network Versa*/}
-                      {/*    </Link>*/}
-                      {/*  </li>*/}
-                      {/*  <li>*/}
-                      {/*    <Link to={'#'}>*/}
-                      {/*      Network Orbit*/}
-                      {/*    </Link>*/}
-                      {/*  </li>*/}
-                      {/*  <li>*/}
-                      {/*    <Link to={'#'}>*/}
-                      {/*      Digilink*/}
-                      {/*    </Link>*/}
-                      {/*  </li>*/}
-                      {/*</ul>*/}
+
                     </li>
                     <li>
                       <CustomLocalizedLink
@@ -198,54 +182,12 @@ const Header = () => {
                           cls={checkSiteLocation('/electronic-locks/') ? 'selected has-dropdown' : 'has-dropdown'}
                           label={t('electronic_locks')}/>
                     </li>
-                    {/*<li>*/}
-                    {/*  /!*<span className={'indent'}><Trans>legacy_designs</Trans></span>*!/*/}
-                    {/*  <ul className="subdrop unstyled-list">*/}
-                    {/*    <li>*/}
-                    {/*      <CustomLocalizedLink*/}
-                    {/*          goto={'/products/electronic-locks/axis/'}*/}
-                    {/*          label={'Axis'}*/}
-                    {/*          cls={checkSiteLocation('axis') ? 'selected' : ''}*/}
-                    {/*      />*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*      <CustomLocalizedLink*/}
-                    {/*          goto={'/products/electronic-locks/cue/'}*/}
-                    {/*          label={'Cue'}*/}
-                    {/*          cls={checkSiteLocation('cue') ? 'selected' : ''}*/}
-                    {/*      />*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*      <CustomLocalizedLink*/}
-                    {/*          goto={'/products/electronic-locks/sola/'}*/}
-                    {/*          label={'Sola'}*/}
-                    {/*          cls={checkSiteLocation('sola') ? 'selected' : ''}*/}
-                    {/*      />*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*      <CustomLocalizedLink*/}
-                    {/*          goto={'/products/electronic-locks/range/'}*/}
-                    {/*          label={'Range'}*/}
-                    {/*          cls={checkSiteLocation('range') ? 'selected' : ''}*/}
-                    {/*      />*/}
-                    {/*    </li>*/}
-                    {/*  </ul>*/}
-                    {/*</li>*/}
                     <li>
                       <CustomLocalizedLink
                           goto={'/products/mechanical-locks/'}
                           cls={checkSiteLocation('/mech/') ? 'selected' : ''}
                           label={'Mechanical Lock'}
                       />
-                      {/*<ul className="subdrop unstyled-list">*/}
-                      {/*  <li>*/}
-                      {/*    <CustomLocalizedLink*/}
-                      {/*        goto={'/products/mechanical-locks/mech/'}*/}
-                      {/*        cls={checkSiteLocation('/mech/') ? 'selected' : ''}*/}
-                      {/*        label={'Mech'}*/}
-                      {/*    />*/}
-                      {/*  </li>*/}
-                      {/*</ul>*/}
                     </li>
                   </ul>
                 </li>
