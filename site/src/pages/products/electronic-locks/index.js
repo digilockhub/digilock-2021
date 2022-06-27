@@ -99,7 +99,11 @@ const IndexPage = () => {
                     <li><Trans>el_aspire_list3</Trans></li>
                     <li><Trans>el_aspire_list4</Trans></li>
                     <li><Trans>el_aspire_list5</Trans></li>
-                    <li><Trans>el_aspire_list6</Trans></li>
+                    <li>
+                      <Trans>el_aspire_list6_pre</Trans>
+                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Trans>el_aspire_list6_post</Trans>
+                    </li>
                   </ul>
                   <div className="sl-buttons">
                     {/*<a href="/products/locks/" className="btn btn--orange">*/}
@@ -133,7 +137,11 @@ const IndexPage = () => {
                     <li><Trans>el_versa_list4</Trans></li>
                     <li><Trans>el_versa_list5</Trans></li>
                     <li><Trans>el_versa_list6</Trans></li>
-                    <li><Trans>el_versa_list7</Trans></li>
+                    <li>
+                      <Trans>el_versa_list7_pre</Trans>
+                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Trans>el_versa_list7_post</Trans>
+                    </li>
                   </ul>
                   <div className="sl-buttons">
                     {/*<a href="/products/locks/" className="btn btn--orange">*/}
@@ -189,7 +197,11 @@ const IndexPage = () => {
                     <li><Trans>el_orbit_list4</Trans></li>
                     <li><Trans>el_orbit_list5</Trans></li>
                     <li><Trans>el_orbit_list6</Trans></li>
-                    <li><Trans>el_orbit_list7</Trans></li>
+                    <li>
+                      <Trans>el_orbit_list7_pre</Trans>
+                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Trans>el_orbit_list7_post</Trans>
+                    </li>
                   </ul>
                   <div className="sl-buttons">
                     {/*<a href="/products/locks/" className="btn btn--orange">*/}
