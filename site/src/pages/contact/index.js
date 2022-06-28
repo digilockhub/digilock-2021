@@ -7,10 +7,12 @@ import Settings from '../../constants/company/settings';
 import ContinentSettings from '../../constants/continents/geo-continents';
 import SecondaryLocations from '../../components/contact/secondary-locations';
 import InfoCardCurrent from '../../components/contact/info-card-current';
+import hubspotSettings from "../../constants/company/settings";
+import Cookies from 'js-cookie'
 
 const IndexPage = () => {
 
-  const isBrowser = typeof window !== "undefined";
+  let isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
 
   const [formData, setFormData] = useState({
@@ -19,11 +21,13 @@ const IndexPage = () => {
     companyName: '',
     email: '',
     phoneNumber: '',
+    message: '',
+    formSelected: 'sales',
+    department: hubspotSettings.SALES_EMAIL,
     country: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY)) ?
-             sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
+        sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
     state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : '',
-    message: ''
+        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : ''
   });
 
   //TODO
@@ -32,6 +36,78 @@ const IndexPage = () => {
   const submit = (e) => {
     e.preventDefault();
     alert('submit: '+JSON.stringify(formData));
+    // const postSubmit = hubspotSettings.CONTACT_FORM_ENDPOINT;
+    // const hutk = isBrowser ? Cookies.get('hubspotutk') : null;
+    // const pageUri = isBrowser ? window.location.href : null;
+    // const pageName = isBrowser ? document.title : null;
+    // const body = {
+    //
+    //   fields: [
+    //     {
+    //       name: 'firstname',
+    //       value: formData.firstName,
+    //     },
+    //     {
+    //       name: 'lastname',
+    //       value: formData.lastName,
+    //     },
+    //     {
+    //       name: 'company',
+    //       value: formData.companyName,
+    //     },
+    //     {
+    //       name: 'email',
+    //       value: formData.email,
+    //     },
+    //     {
+    //       name: 'phone',
+    //       value: formData.phoneNumber,
+    //     },
+    //     {
+    //       name: 'department',
+    //       value: formData.department,
+    //     },
+    //     {
+    //       name: 'country_hubspot',
+    //       value: formData.country,
+    //     },
+    //     {
+    //       name: 'state',
+    //       value: formData.state,
+    //     },
+    //     {
+    //       name: 'message',
+    //       value: formData.message,
+    //     },
+    //     {
+    //       name: 'leadsource',
+    //       value: 'Web',
+    //     },
+    //   ],
+    //
+    //   context: {
+    //     hutk,
+    //     pageUri,
+    //     pageName,
+    //   },
+    // }
+    //
+    // fetch(postSubmit, {
+    //   method: 'post',
+    //   body: JSON.stringify(body),
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     Accept: 'application/json, application/xml, text/plain, text/html, *.*',
+    //   },
+    // })
+    //     // .then(res => res.json())
+    //     .then((res) => {
+    //
+    //       this.handleSubmitSuccess();
+    //     })
+    //     .catch(err => {
+    //       alert(err)
+    //     })
   };
 
   const [infoCurrent, setInfoCurrent] = useState({

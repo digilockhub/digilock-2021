@@ -27,7 +27,7 @@ const Footer = () => {
             >
               <Trans>button_contact</Trans>
             </a>
-            <a href="#"
+            <a href="/support/"
                className="btn btn--trans white lower-case"
                style={{textTransform: 'uppercase'}}>
               <Trans>button_faq</Trans>

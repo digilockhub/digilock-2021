@@ -19,11 +19,11 @@ const IndexPage = (props) => {
     companyName: '',
     email: '',
     phoneNumber: '',
+    message: '',
     country: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY)) ?
         sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
     state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : '',
-    message: ''
+        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : ''
   });
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
