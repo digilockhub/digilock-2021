@@ -1,14 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
 
-import logoVw from '../../images/home/client-logos/logo-vw.jpg';
-import logoTesla from '../../images/home/client-logos/logo-tesla.jpg';
-import logoSales from '../../images/home/client-logos/logo-salesforce.jpg';
+import logoVw from '../../images/home/client-logos/VW_Volkswagen.svg';
+import logoTesla from '../../images/home/client-logos/Tesla-logo.svg';
+import logoSales from '../../images/home/client-logos/salesforce.svg';
 import logoNike from '../../images/home/client-logos/logo-nike.jpg';
-import logoLouvre from '../../images/home/client-logos/logo-louvre.jpg';
-import logoIbm from '../../images/home/client-logos/logo-ibm.jpg';
-import logoArmani from '../../images/home/client-logos/logo-armani.jpg';
-import logoNiners from '../../images/home/client-logos/logo-niners.png';
+import logoLouvre from '../../images/home/client-logos/louvre.png';
+import logoIbm from '../../images/home/client-logos/ibm_logo.svg';
+import logoArmani from '../../images/home/client-logos/armani.svg';
+import logoNiners from '../../images/home/client-logos/49ers_logo.svg';
 
 
 
@@ -19,6 +19,7 @@ class ReactSlick extends React.Component {
       arrows: false,
       infinite: true,
       slidesToShow: 6,
+      swipeToSlide: true,
       slidesToScroll: 1,
       autoplay: true,
       speed: 2000,
