@@ -19,7 +19,7 @@ const InfoCardCurrent = (props) => {
           <p className={'live-chat-copy'} dangerouslySetInnerHTML={{__html: props.liveChatCopy}} />
           {
             props.showFaq ?
-                <a href="#" className={'btn btn--orange faq'}>FAQ</a>
+                <a href="/support/" className={'btn btn--orange faq'}>FAQ</a>
                 : null
           }
         </div>

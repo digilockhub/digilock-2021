@@ -100,7 +100,7 @@ const IndexPage = () => {
               </h1>
               <p className={'callout'}>
                 <Trans>looking_product_support</Trans>
-                <Link to={'#'} dangerouslySetInnerHTML={{__html: t('click_here')}}/>
+                <Link to={'/support/'} dangerouslySetInnerHTML={{__html: t('click_here')}}/>
               </p>
             </div>
           </section>
@@ -200,7 +200,7 @@ const IndexPage = () => {
                       phoneNumber={infoCurrent.phoneNumber}
                       geo={continent}
                       handleLiveChat={handleLiveChat}
-                      showFaq={true}
+                      showFaq={false}
                   />
                 </div>
                 <div>
