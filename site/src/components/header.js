@@ -157,7 +157,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={checkSiteLocation('locks/') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
+                <li className={checkSiteLocation('/products/locks/') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
                   <Trans>locks</Trans>
                   <ul className="dropdown unstyled-list">
                     <li>
@@ -172,14 +172,14 @@ const Header = () => {
                       <CustomLocalizedLink
                           goto={'/products/smart-locks/'}
                           label={t('smart_locks')}
-                          cls={checkSiteLocation('/smart-locks') ? 'selected' : ''}
+                          cls={checkSiteLocation('/products/smart-locks') ? 'selected' : ''}
                       />
 
                     </li>
                     <li>
                       <CustomLocalizedLink
                           goto={'/products/electronic-locks/'}
-                          cls={checkSiteLocation('/electronic-locks/') ? 'selected has-dropdown' : 'has-dropdown'}
+                          cls={checkSiteLocation('/products/electronic-locks/') ? 'selected has-dropdown' : 'has-dropdown'}
                           label={t('electronic_locks')}/>
                     </li>
                     <li>
