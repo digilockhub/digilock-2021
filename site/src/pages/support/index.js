@@ -47,7 +47,7 @@ const IndexPage = (props) => {
       body: encode({ 'form-name': 'contact', ...formData }),
     })
         .then(() => {
-          this.handleSubmitSuccess();
+          handleSubmitSuccess();
         })
         .catch(error => alert(error))
 
