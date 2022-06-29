@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Link, Trans, useTranslation, useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
@@ -13,23 +13,44 @@ import AccordionWrapper from '../../components/ui/Accordions/AccordionWrapper';
 const IndexPage = (props) => {
   const isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
+  const {changeLanguage} = useI18next();
+  const context = React.useContext(I18nextContext);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     companyName: '',
     email: '',
     phoneNumber: '',
-    message: '',
-    country: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
-    state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : ''
+    message: ''
   });
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+  };
+  let handleSubmitSuccess = () => {
+    if (context.language !== 'en') {
+      window.location.href = '/' + context.language + '/support/thank-you/';
+    } else {
+      window.location.href = '/support/thank-you/';
+    }
+  }
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
   const submit = (e) => {
+
     e.preventDefault();
     alert('submit: ' + JSON.stringify(formData));
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+        .then(() => {
+          this.handleSubmitSuccess();
+        })
+        .catch(error => alert(error))
+
   };
   const [infoCurrent, setInfoCurrent] = useState({
     header: t('digilock_americas'),
@@ -115,10 +136,12 @@ const IndexPage = (props) => {
             <div className="container">
               <div className="sales-form">
                 <div className="container">
-                  <form id={'salesForm'}
+                  <form id={'supportForm'}
                         action="#"
                         className={'sales-contact-form'}
                         onSubmit={submit}
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
                   >
                     <div className="row">
                       <div className="input-container first-name">

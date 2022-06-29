@@ -24,18 +24,13 @@ const IndexPage = () => {
     phoneNumber: '',
     message: '',
     formSelected: 'sales',
-    department: hubspotSettings.SALES_EMAIL,
-    country: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_COUNTRY) : '',
-    state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
-        sessionStorage.getItem(ContinentSettings.SESSION_STATE) : ''
+    department: hubspotSettings.SALES_EMAIL
   });
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
 
   const submit = (e) => {
     e.preventDefault();
-    alert('submit: '+JSON.stringify(formData));
     const postSubmit = hubspotSettings.CONTACT_FORM_ENDPOINT;
     const hutk = isBrowser ? Cookies.get('hubspotutk') : null;
     const pageUri = isBrowser ? window.location.href : null;
@@ -66,14 +61,6 @@ const IndexPage = () => {
         {
           name: 'department',
           value: formData.department,
-        },
-        {
-          name: 'country_hubspot',
-          value: formData.country,
-        },
-        {
-          name: 'state',
-          value: formData.state,
         },
         {
           name: 'message',
