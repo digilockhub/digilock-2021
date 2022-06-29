@@ -188,6 +188,8 @@ const IndexPage = () => {
                         action="#"
                         className={'sales-contact-form'}
                         onSubmit={submit}
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
                   >
                     <div className="row">
                       <div className="input-container first-name">
