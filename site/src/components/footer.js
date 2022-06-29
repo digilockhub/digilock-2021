@@ -22,8 +22,8 @@ const Footer = () => {
             </a>
             <a href="/contact/"
                className={globalHistory.location.pathname.indexOf('/contact/') > -1 ?
-                "btn btn--trans white lower-case selected" :
-                "btn btn--trans white lower-case"}
+                   "btn btn--trans white lower-case selected" :
+                   "btn btn--trans white lower-case"}
             >
               <Trans>button_contact</Trans>
             </a>
@@ -44,20 +44,27 @@ const Footer = () => {
                 </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tbody>
                     <tr>
                       <td>Telephone</td>
-                      <td>&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></td>
+                      <td>&nbsp;<a
+                          href={'tel:' + CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a>
+                      </td>
                     </tr>
+                    </tbody>
                   </table>
                 </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tbody>
                     <tr>
                       <td>Toll-Free</td>
                       <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                          href={'tel:' + CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
                       </td>
                     </tr>
+                    </tbody>
                   </table>
 
                 </li>
@@ -82,20 +89,27 @@ const Footer = () => {
                 </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tbody>
                     <tr>
                       <td>Telephone</td>
-                      <td>&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a></td>
+                      <td>&nbsp;<a
+                          href={'tel:' + CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a>
+                      </td>
                     </tr>
+                    </tbody>
                   </table>
                 </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
+                    <tbody>
                     <tr>
                       <td>Toll-Free</td>
                       <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href={'tel:'+CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                          href={'tel:' + CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
                       </td>
                     </tr>
+                    </tbody>
                   </table>
                 </li>
               </ul>
@@ -106,7 +120,8 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>The Netherlands</li>
                 <li><span>Contact Sales / Europe</span></li>
-                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_EUROPE}>{CompanySettings.PHONE_SALES_EUROPE}</a></li>
+                <li>Telephone <a
+                    href={'tel:' + CompanySettings.PHONE_SALES_EUROPE}>{CompanySettings.PHONE_SALES_EUROPE}</a></li>
               </ul>
               <div className="social-icons">
                 <h4>Follow Europe</h4>
@@ -123,7 +138,8 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>Hong Kong</li>
                 <li><span>Contact Sales / Asia</span></li>
-                <li>Telephone <a href={'tel:'+CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a></li>
+                <li>Telephone <a href={'tel:' + CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a>
+                </li>
               </ul>
               <div className="social-icons">
                 <h4>Follow Asia</h4>
