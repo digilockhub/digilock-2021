@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {Link, Trans, useTranslation, useI18next, I18nextContext} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
@@ -8,13 +8,14 @@ import ContinentSettings from '../../constants/continents/geo-continents';
 import SecondaryLocations from '../../components/contact/secondary-locations';
 import InfoCardCurrent from '../../components/contact/info-card-current';
 import hubspotSettings from "../../constants/company/settings";
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
 
 const IndexPage = () => {
 
   let isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
-
+  const {changeLanguage} = useI18next();
+  const context = React.useContext(I18nextContext);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -29,87 +30,93 @@ const IndexPage = () => {
     state: (isBrowser && sessionStorage.getItem(ContinentSettings.SESSION_STATE)) ?
         sessionStorage.getItem(ContinentSettings.SESSION_STATE) : ''
   });
-
   //TODO
   const isFormValid = formData.email != null && formData.email.trim().length > 0;
 
   const submit = (e) => {
     e.preventDefault();
     alert('submit: '+JSON.stringify(formData));
-    // const postSubmit = hubspotSettings.CONTACT_FORM_ENDPOINT;
-    // const hutk = isBrowser ? Cookies.get('hubspotutk') : null;
-    // const pageUri = isBrowser ? window.location.href : null;
-    // const pageName = isBrowser ? document.title : null;
-    // const body = {
-    //
-    //   fields: [
-    //     {
-    //       name: 'firstname',
-    //       value: formData.firstName,
-    //     },
-    //     {
-    //       name: 'lastname',
-    //       value: formData.lastName,
-    //     },
-    //     {
-    //       name: 'company',
-    //       value: formData.companyName,
-    //     },
-    //     {
-    //       name: 'email',
-    //       value: formData.email,
-    //     },
-    //     {
-    //       name: 'phone',
-    //       value: formData.phoneNumber,
-    //     },
-    //     {
-    //       name: 'department',
-    //       value: formData.department,
-    //     },
-    //     {
-    //       name: 'country_hubspot',
-    //       value: formData.country,
-    //     },
-    //     {
-    //       name: 'state',
-    //       value: formData.state,
-    //     },
-    //     {
-    //       name: 'message',
-    //       value: formData.message,
-    //     },
-    //     {
-    //       name: 'leadsource',
-    //       value: 'Web',
-    //     },
-    //   ],
-    //
-    //   context: {
-    //     hutk,
-    //     pageUri,
-    //     pageName,
-    //   },
-    // }
-    //
-    // fetch(postSubmit, {
-    //   method: 'post',
-    //   body: JSON.stringify(body),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     Accept: 'application/json, application/xml, text/plain, text/html, *.*',
-    //   },
-    // })
-    //     // .then(res => res.json())
-    //     .then((res) => {
-    //
-    //       this.handleSubmitSuccess();
-    //     })
-    //     .catch(err => {
-    //       alert(err)
-    //     })
+    const postSubmit = hubspotSettings.CONTACT_FORM_ENDPOINT;
+    const hutk = isBrowser ? Cookies.get('hubspotutk') : null;
+    const pageUri = isBrowser ? window.location.href : null;
+    const pageName = isBrowser ? document.title : null;
+    const body = {
+
+      fields: [
+        {
+          name: 'firstname',
+          value: formData.firstName,
+        },
+        {
+          name: 'lastname',
+          value: formData.lastName,
+        },
+        {
+          name: 'company',
+          value: formData.companyName,
+        },
+        {
+          name: 'email',
+          value: formData.email,
+        },
+        {
+          name: 'phone',
+          value: formData.phoneNumber,
+        },
+        {
+          name: 'department',
+          value: formData.department,
+        },
+        {
+          name: 'country_hubspot',
+          value: formData.country,
+        },
+        {
+          name: 'state',
+          value: formData.state,
+        },
+        {
+          name: 'message',
+          value: formData.message,
+        },
+        {
+          name: 'leadsource',
+          value: 'Web',
+        },
+      ],
+
+      context: {
+        hutk,
+        pageUri,
+        pageName,
+      },
+    }
+
+    fetch(postSubmit, {
+      method: 'post',
+      body: JSON.stringify(body),
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json, application/xml, text/plain, text/html, *.*',
+      },
+    })
+        // .then(res => res.json())
+        .then((res) => {
+
+          handleSubmitSuccess();
+        })
+        .catch(err => {
+          alert(err)
+        })
   };
 
+  let handleSubmitSuccess = () => {
+    if (context.language !== 'en') {
+      window.location.href = '/' + context.language + '/contact/thank-you/'
+    } else {
+      window.location.href = '/contact/thank-you/'
+    }
+  }
   const [infoCurrent, setInfoCurrent] = useState({
     header: t('digilock_americas'),
     address: t('digilock_americas_address'),
@@ -123,7 +130,6 @@ const IndexPage = () => {
     tollFreeNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS,
     phoneNumber: Settings.PHONE_SALES_TOLL_FREE_AMERICAS
   });
-
   const [continent, setContinent] = useState(isBrowser ? sessionStorage.getItem(ContinentSettings.SESSION_CONTINENT) : 'North America');
 
   function handleInfoCurrentChange() {
