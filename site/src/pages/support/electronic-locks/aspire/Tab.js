@@ -4,7 +4,6 @@ import {Trans} from "gatsby-plugin-react-i18next";
 import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
 import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
 import {jumpAccordion} from "../../../../utils/utils";
-import KeypadKeyManagedRfid from "../../faq/KeypadKeyManagedRfid";
 
 //IMAGES
 import supportOne from './images/setup-one.png'

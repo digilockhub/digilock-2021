@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
 import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
-import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion} from "../../../../utils/utils";
 
 
 let datasheetsKeypad = [
@@ -116,61 +114,30 @@ const Tab = (props) => {
               className={getActiveClass(1, 'active')}
               onClick={() => toggleTab(1)}
           >
-            FPO
-          </li>
-          <li
-              className={getActiveClass(2, 'active')}
-              onClick={() => toggleTab(2)}
-          >
-            FPO
+            Digilink
           </li>
         </ul>
         <div className="tab-content-container">
           <div className={"tab-content "+getActiveClass(1, 'active')}>
             <div className="front-rear">
               <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
+                  src={'../../../../images/locks/DL22-digilink-600x497.png'}
                   loading={'lazy'}
-                  width={'995'}
-                  height={'889'}
+                  width={600}
+                  height={497}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
               />
-              <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
-                  loading={'lazy'}
-                  width={'795'}
-                  height={'624'}
-                  quality={100}
-                  formats={["auto", "webp", "avif"]}
-                  alt="Aspire Smart Lock"
-              />
-            </div>
-            <div className="lists">
-              Lists FPO...
-            </div>
-          </div>
-          <div className={"tab-content "+getActiveClass(2, 'active')}>
-            <div className="front-rear">
-              <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
-                  loading={'lazy'}
-                  width={'995'}
-                  height={'877'}
-                  quality={100}
-                  formats={["auto", "webp", "avif"]}
-                  alt="Aspire Smart Lock"
-              />
-              <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
-                  loading={'lazy'}
-                  width={'995'}
-                  height={'824'}
-                  quality={100}
-                  formats={["auto", "webp", "avif"]}
-                  alt="Aspire Smart Lock"
-              />
+              {/*<StaticImage*/}
+              {/*    src={'../../../../images/locks/fpo.png'}*/}
+              {/*    loading={'lazy'}*/}
+              {/*    width={'795'}*/}
+              {/*    height={'624'}*/}
+              {/*    quality={100}*/}
+              {/*    formats={["auto", "webp", "avif"]}*/}
+              {/*    alt="Aspire Smart Lock"*/}
+              {/*/>*/}
             </div>
             <div className="lists">
               Lists FPO...

@@ -116,23 +116,23 @@ const Tab = (props) => {
               className={getActiveClass(1, 'active')}
               onClick={() => toggleTab(1)}
           >
-            FPO
+            Orbit <Trans>rfid</Trans> <Trans>smart_lock</Trans>
           </li>
           <li
               className={getActiveClass(2, 'active')}
               onClick={() => toggleTab(2)}
           >
-            FPO
+            Orbit <Trans>mobile_id</Trans> <Trans>Smart Lock</Trans>
           </li>
         </ul>
         <div className="tab-content-container">
           <div className={"tab-content "+getActiveClass(1, 'active')}>
             <div className="front-rear">
               <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
+                  src={'../../../../images/locks/DL22-net-orbit-600x497.png'}
                   loading={'lazy'}
-                  width={'995'}
-                  height={'889'}
+                  width={1200}
+                  height={889}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
@@ -154,10 +154,10 @@ const Tab = (props) => {
           <div className={"tab-content "+getActiveClass(2, 'active')}>
             <div className="front-rear">
               <StaticImage
-                  src={'../../../../images/locks/fpo.png'}
+                  src={'../../../../images/locks/DL22-net-orbit-600x497.png'}
                   loading={'lazy'}
-                  width={'995'}
-                  height={'877'}
+                  width={1200}
+                  height={889}
                   quality={100}
                   formats={["auto", "webp", "avif"]}
                   alt="Aspire Smart Lock"
