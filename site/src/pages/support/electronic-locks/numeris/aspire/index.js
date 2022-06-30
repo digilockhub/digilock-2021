@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
-import Layout from "../../../../components/layout";
-import Seo from "../../../../components/seo";
+import Layout from "../../../../../components/layout";
+import Seo from "../../../../../components/seo";
 import {graphql} from 'gatsby';
 import Tab from './Tab';
 

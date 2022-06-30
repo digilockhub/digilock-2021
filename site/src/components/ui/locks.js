@@ -300,7 +300,7 @@ const Locks = () => {
                     </Trans>
                   </h2>
                   <div className="row numeris">
-                    <Link to={urlDirectory + 'electronic-locks/aspire/'}>
+                    <Link to={urlDirectory + 'electronic-locks/numeris/aspire/'}>
                       <div className="thumbnail">
                         <StaticImage
                             src={'../../images/locks/DL22-ba-aspire-600x497.png'}
@@ -316,7 +316,7 @@ const Locks = () => {
                         </p>
                       </div>
                     </Link>
-                    <Link to={urlDirectory + 'electronic-locks/versa/'}>
+                    <Link to={urlDirectory + 'electronic-locks/numeris/versa/'}>
                       <div className="thumbnail">
                         <StaticImage
                             src={'../../images/locks/DL22-versa-600x497.png'}

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
-import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
-import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion} from "../../../../utils/utils";
+import Accordion from '../../../../../components/ui/legacy/Accordion/Accordion'
+import DigiSymbol from '../../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
+import {jumpAccordion} from "../../../../../utils/utils";
 
 
 //IMAGES
@@ -134,8 +134,8 @@ import operateAssignedSix from './images/rfid/operate-assigned-six.png'
 import batteryReplacement from './images/rfid/battery-replace.png'
 
 import catalog from './documents/DigilockCatalogNumeris2019.pdf';
-import VersaKeypadFaq from '../../faq/VersaKeypad';
-import VersaRfidFaq from '../../faq/VersaKeypad';
+import VersaKeypadFaq from '../../../faq/VersaKeypad';
+import VersaRfidFaq from '../../../faq/VersaKeypad';
 
 let datasheetsKeypad = [
   {
@@ -523,7 +523,7 @@ const Tab = (props) => {
                                width={'404'}
                                height={'161'}/>
                           <figcaption>
-                            Contact <a href="/contact/">Digilock Support</a> to purchase a replacement Programming Key.
+                            Contact <a href="/contact">Digilock Support</a> to purchase a replacement Programming Key.
                           </figcaption>
                         </figure>
                       </div>
@@ -1312,7 +1312,7 @@ const Tab = (props) => {
                       <p>
                         The lock does not recognize the Programming Key. If the Programming Key has been replaced,
                         operate with the Replacement
-                        Programming Key. <a href="/contact/">Contact Digilock support</a> for additional assistance.
+                        Programming Key. <a href="/contact">Contact Digilock support</a> for additional assistance.
                       </p>
                     </div>
                     <div label={['No Audible Feedback when ', <DigiSymbol ds={'buttonC'}/>, ' is Pressed']}>
@@ -1625,7 +1625,7 @@ const Tab = (props) => {
                                width={'404'}
                                height={'161'}/>
                           <figcaption>
-                            Contact <a href="/contact/">Digilock Support</a> to purchase a replacement Programming Key.
+                            Contact <a href="/contact">Digilock Support</a> to purchase a replacement Programming Key.
                           </figcaption>
                         </figure>
                       </div>
@@ -1699,7 +1699,7 @@ const Tab = (props) => {
                           />
                           <figcaption>
                             To change the functionality of the locks
-                            (between shared use and assigned use), <a href="/contact/">contact
+                            (between shared use and assigned use), <a href="/contact">contact
                             Digilock Support</a> to request a Function Key.
                           </figcaption>
                         </figure>
@@ -2343,7 +2343,7 @@ const Tab = (props) => {
                       <p>
                         The lock does not recognize the Programming Key. If the Programming Key has been replaced,
                         operate with the Replacement Programming
-                        Key. <a href="/contact/">Contact Digilock support</a> for additional assistance.
+                        Key. <a href="/contact">Contact Digilock support</a> for additional assistance.
                       </p>
                     </div>
                     <div label={['No Audible Feedback when ', <DigiSymbol ds={'buttonKey'}/>, ' is Touched']}>

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
-import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
-import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion} from "../../../../utils/utils";
+import Accordion from '../../../../../components/ui/legacy/Accordion/Accordion'
+import DigiSymbol from '../../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
+import {jumpAccordion} from "../../../../../utils/utils";
 
 //IMAGES
 import supportOne from './images/setup-one.png'
@@ -86,8 +86,8 @@ import operatingInsThree from './images/operate-ins-rfid-three.png'
 import operatingInsFour from './images/operate-ins-rfid-four.png'
 
 import catalog from './documents/DigilockCatalogNumeris2019.pdf';
-import AspireRfidFaq from "../../faq/VersaRfid";
-import AspireKeypadFaq from "../../faq/VersaKeypad";
+import AspireRfidFaq from "../../../faq/VersaRfid";
+import AspireKeypadFaq from "../../../faq/VersaKeypad";
 
 let datasheetsKeypad = [
   {
@@ -199,13 +199,13 @@ const Tab = (props) => {
               className={getActiveClass(1, 'active')}
               onClick={() => toggleTab(1)}
           >
-            Versa <Trans>keypad</Trans>
+            Aspire <Trans>keypad</Trans>
           </li>
           <li
               className={getActiveClass(2, 'active')}
               onClick={() => toggleTab(2)}
           >
-            Versa <Trans>rfid</Trans>
+            Aspire <Trans>rfid</Trans>
           </li>
         </ul>
         <div className="tab-content-container">
@@ -437,7 +437,7 @@ const Tab = (props) => {
                                width={'405'}
                                height={'161'}/>
                           <figcaption>
-                            Contact <a href="/support/">Digilock Support</a> to purchase a replacement Programming Key.
+                            Contact <a href="/support">Digilock Support</a> to purchase a replacement Programming Key.
                           </figcaption>
                         </figure>
                         <figure className={'wide'}>
@@ -1033,7 +1033,7 @@ const Tab = (props) => {
                     <div label="Does not Operate with the Programming Key">
                       <p>
                         The lock does not recognize the Programming Key. If the Programming Key has been replaced, operate with the Replacement
-                        Programming Key. <a href="/contact/">Contact Digilock support</a> for additional assistance.
+                        Programming Key. <a href="/contact">Contact Digilock support</a> for additional assistance.
                       </p>
                     </div>
                     <div label={['No Audible Feedback when ',
@@ -1319,7 +1319,7 @@ const Tab = (props) => {
                                width={'405'}
                                height={'161'}/>
                           <figcaption>
-                            Contact <a href="/contact/">Digilock Support</a> to purchase a replacement Programming Key.
+                            Contact <a href="/contact">Digilock Support</a> to purchase a replacement Programming Key.
                           </figcaption>
                         </figure>
                       </div>
@@ -1665,7 +1665,7 @@ const Tab = (props) => {
                       <ul>
                         <li>The lock is binding which means that either door alignment or stored items are preventing the
                           lock from operating. Press on the door while
-                          operating the lock. If error condition persists, contact <a href="/contact/">Digilock support</a> for assistance.
+                          operating the lock. If error condition persists, contact <a href="/contact">Digilock support</a> for assistance.
                         </li>
                       </ul>
                       <p>
@@ -1690,7 +1690,7 @@ const Tab = (props) => {
                     <div label="Does not Operate with a Programming Key">
                       <p>
                         The lock does not recognize the Programming Key. If the Programming Key has been replaced, operate with the Replacement
-                        Programming Key. Contact <a href="/contact/">Digilock support</a> for additional assistance.
+                        Programming Key. Contact <a href="/contact">Digilock support</a> for additional assistance.
                       </p>
                     </div>
                     <div label={['No Audible Feedback when ', <DigiSymbol ds={'buttonKey'} />, ' is Pressed']}>
