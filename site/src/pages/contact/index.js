@@ -12,7 +12,7 @@ import Cookies from 'js-cookie';
 
 const IndexPage = () => {
 
-  let isBrowser = typeof window !== "undefined";
+    let isBrowser = typeof window !== "undefined";
   const {t} = useTranslation();
   const {changeLanguage} = useI18next();
   const context = React.useContext(I18nextContext);
