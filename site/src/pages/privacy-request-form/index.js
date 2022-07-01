@@ -40,10 +40,6 @@ const IndexPage = () => {
           value: formData.lastName,
         },
         {
-          name: 'company',
-          value: formData.companyName,
-        },
-        {
           name: 'email',
           value: formData.email,
         },
@@ -52,16 +48,12 @@ const IndexPage = () => {
           value: formData.phoneNumber,
         },
         {
-          name: 'department',
-          value: formData.department,
+          name: 'privacy_request',
+          value: formData.dataPrivacyRequest,
         },
         {
           name: 'message',
           value: formData.message,
-        },
-        {
-          name: 'leadsource',
-          value: 'Web',
         },
       ],
 
@@ -82,7 +74,6 @@ const IndexPage = () => {
     })
         // .then(res => res.json())
         .then((res) => {
-
           handleSubmitSuccess();
         })
         .catch(err => {
