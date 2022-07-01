@@ -4,6 +4,11 @@
     padding-bottom: 0;
   }
 
+  h1.wtb {
+    margin-bottom: var(--nav-gap);
+
+  }
+
   h4 {
     color: $color-black;
     text-transform: capitalize;

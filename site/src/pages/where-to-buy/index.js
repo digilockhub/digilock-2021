@@ -29,7 +29,7 @@ const IndexPage = () => {
         <div className="where-to-buy">
           <section className="hero">
             <div className="container">
-              <h1>
+              <h1 className={'wtb'}>
                 <Trans>
                   where_buy
                 </Trans>
