@@ -1,0 +1,46 @@
+.privacy-policy {
+  text-align: left;
+  font-size: .9em;
+  padding-right: .5em;
+  .hero {
+    padding-left: 1em;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+    padding-top: 2em;
+    color: $color-numeris-blue;
+
+  }
+
+  h2 {
+    color: $color-numeris-blue;
+    margin-bottom: 20px;
+  }
+
+  p, ul {
+    margin-top: 0;
+  }
+
+  ul {
+    li {
+      margin-bottom: 5px;
+
+      >ul {
+        li {
+          font-size: unset;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $color-numeris-blue;
+    text-decoration: underline;
+  }
+
+  section.gdpr-statement {
+    margin-top: 80px;
+  }
+
+}
