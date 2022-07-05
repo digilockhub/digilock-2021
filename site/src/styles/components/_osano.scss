@@ -1,0 +1,20 @@
+
+.osano-cm-dialog {
+  background: rgba(0,154,191,0.77);
+  color: #fff;
+  font-family: AvenirRegular;
+  font-size: 14px;
+}
+
+.osano-cm-dialog__buttons {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.osano-cm-button {
+  border: none !important;
+  max-width: 166px !important;
+  font-weight: normal;
+}
+
+.osano-cm-widget{display: none;}
