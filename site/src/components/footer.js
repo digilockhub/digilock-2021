@@ -188,11 +188,6 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={'/mission/'}>
-                    <Trans>mission</Trans>
-                  </Link>
-                </li>
-                <li>
                   <Link to={'/blog/'}>
                     <Trans>blog</Trans>
                   </Link>
