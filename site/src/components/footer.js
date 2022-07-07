@@ -42,9 +42,9 @@ const Footer = () => {
               <h4>Digilock Americas</h4>
               <ul className={'unstyled-list'}>
                 <li>Petaluma, Ca | United States</li>
-                <li><span>Contact Sales / US</span></li>
+                <li><a href={'mailto:'+CompanySettings.SALES_EMAIL}><span>Contact Sales / US</span></a></li>
                 <li>
-                  <a href="mailto:sales@digilock.com">sales@digilock.com</a>
+                  <a href={'mailto:'+CompanySettings.SALES_EMAIL}>sales@digilock.com</a>
                 </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
@@ -123,7 +123,7 @@ const Footer = () => {
               <h4>Digilock Europe BV</h4>
               <ul className={'unstyled-list'}>
                 <li>The Netherlands</li>
-                <li><span>Contact Sales / Europe</span></li>
+                <li><a href={'mailto:'+CompanySettings.SALES_EMAIL_EUROPE}><span>Contact Sales / Europe</span></a></li>
                 <li>Telephone <a
                     href={'tel:' + CompanySettings.PHONE_SALES_EUROPE}>{CompanySettings.PHONE_SALES_EUROPE}</a></li>
               </ul>
@@ -141,7 +141,7 @@ const Footer = () => {
               <h4>Digilock Asia</h4>
               <ul className={'unstyled-list'}>
                 <li>Hong Kong</li>
-                <li><span>Contact Sales / Asia</span></li>
+                <li><a href={'mailto:'+CompanySettings.SALES_EMAIL_ASIA}><span>Contact Sales / Asia</span></a></li>
                 <li>Telephone <a href={'tel:' + CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a>
                 </li>
               </ul>
