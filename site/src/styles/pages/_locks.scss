@@ -1,12 +1,11 @@
 .locks {
   .hero {
     position: relative;
-    padding-bottom: 0;
   }
 
   .what-to-expect {
     background-color: $color-faded-blue;
-
+    margin-top: -4rem;
     .expect-containers {
       display: flex;
       flex-wrap: nowrap;
