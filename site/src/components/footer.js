@@ -9,6 +9,10 @@ import youtube from '../images/shared/youtube.svg';
 const Footer = () => {
   const {t} = useTranslation();
 
+  function openOsanoDrawer() {
+    window.Osano.cm.showDrawer();
+  }
+
   return (
 
       <footer>
@@ -203,9 +207,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={'#'}>
-                    <Trans>manage_cookies</Trans>
-                  </Link>
+                    <a href={'#'} onClick={() => openOsanoDrawer()}>
+                      <Trans>manage_cookies</Trans>
+                    </a>
+
                 </li>
                 <li>
                   <Link to={'/patents/'}>
