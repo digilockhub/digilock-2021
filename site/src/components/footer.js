@@ -87,7 +87,7 @@ const Footer = () => {
               <h4>Digilock Showroom</h4>
               <ul className={'unstyled-list'}>
                 <li>theMart | Chicago, IL 60654</li>
-                <li><span><a href="#">Discover Our Showroom</a></span></li>
+                <li><span><a href="/about/digilock-showroom/">Discover Our Showroom</a></span></li>
                 <li>
                   <a href="mailto:sales@digilock.com">sales@digilock.com</a>
                 </li>
