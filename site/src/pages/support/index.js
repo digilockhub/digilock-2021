@@ -97,16 +97,31 @@ const IndexPage = (props) => {
     alert("FPO: This will spawn a live Sales chat session");
   }
 
+  function handleScrollTo(elmID) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: document.getElementById(elmID).offsetTop - 150
+    });
+  }
+
   const accordionFunctionality = props.data.allSupportGeneralFaqXlsxLockFunctionality.edges;
   const accordionProgramming = props.data.allSupportGeneralFaqXlsxSetupProgramming.edges;
   const accordionTroubleshooting = props.data.allSupportGeneralFaqXlsxTroubleShooting.edges;
   const accordionOrders = props.data.allSupportGeneralFaqXlsxOrdersSupport.edges;
 
   useEffect(() => {
+
     if (isBrowser) {
       handleInfoCurrentChange();
     }
+
+    if (document.location.hash === '#gotoFaq') {
+      handleScrollTo("genFaq");
+    }
+
   }, []);
+
 
   return (
       <Layout>
@@ -235,8 +250,8 @@ const IndexPage = (props) => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container"/>
-          <section className="general-faq">
+          <div id={'genFaq'} className="section-delimeter container"/>
+          <section id={'genFaq'} className="general-faq">
             <div className="container">
               <h2>General FAQ</h2>
               <AccordionWrapper label={t('lock_functionality')} data={accordionFunctionality}/>
