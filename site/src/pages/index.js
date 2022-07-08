@@ -79,47 +79,47 @@ const IndexPage = () => {
               <h1>Solutions tailored to your industry</h1>
 
               <div className="industries-grid">
-                <Link to={'/industries/workspace/'}>
+                <Link to={'/solutions/workspace/'}>
                   <div className="col btn-industry workspace">
                     <span><Trans>workspace</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/education/'}>
+                <Link to={'/solutions/education/'}>
                   <div className="col btn-industry education">
                     <span><Trans>education</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/health-fitness/'}>
+                <Link to={'/solutions/health-fitness/'}>
                   <div className="col btn-industry health-fitness">
                     <span><Trans>health_fitness</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/healthcare/'}>
+                <Link to={'/solutions/healthcare/'}>
                   <div className="col btn-industry healthcare">
                     <span><Trans>healthcare</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/retail/'}>
+                <Link to={'/solutions/retail/'}>
                   <div className="col btn-industry retail">
                     <span><Trans>retail</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/hospitality/'}>
+                <Link to={'/solutions/hospitality/'}>
                   <div className="col btn-industry hospitality">
                     <span><Trans>hospitality</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/pro-sports/'}>
+                <Link to={'/solutions/pro-sports/'}>
                   <div className="col btn-industry pro-sports">
                     <span><Trans>pro_sports</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/manufacturing/'}>
+                <Link to={'/solutions/manufacturing/'}>
                   <div className="col btn-industry manufacturing">
                     <span><Trans>manufacturing</Trans></span>
                   </div>
                 </Link>
-                <Link to={'/industries/government/'}>
+                <Link to={'/solutions/government/'}>
                   <div className="col btn-industry government">
                     <span><Trans>government</Trans></span>
                   </div>
