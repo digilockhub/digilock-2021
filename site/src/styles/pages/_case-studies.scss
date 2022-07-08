@@ -3,7 +3,6 @@ $letterSpacing: 3px;
 
 
 .about-digilock-showroom {
-  text-align: left;
   .hero-img-container {
     position: relative;
     h1 {
@@ -71,7 +70,7 @@ $letterSpacing: 3px;
 }
 
 .case-studies-workspace, .about-digilock-showroom {
-
+  text-align: left;
   .hero {
     display: flex;
     flex-direction: column;
