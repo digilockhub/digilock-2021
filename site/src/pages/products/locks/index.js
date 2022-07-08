@@ -131,15 +131,15 @@ const IndexPage = () => {
             </div>
           </section>
           <Locks />
-          <section className="compare-grid">
-            <div className="container">
-              <div className="buttons">
-                <a href="javascript:alert('Do we have this document ready?')" className="btn btn--orange">
-                  <Trans>download_grid</Trans>
-                </a>
-              </div>
-            </div>
-          </section>
+          {/*<section className="compare-grid">*/}
+          {/*  <div className="container">*/}
+          {/*    <div className="buttons">*/}
+          {/*      <a href="javascript:alert('Do we have this document ready?')" className="btn btn--orange">*/}
+          {/*        <Trans>download_grid</Trans>*/}
+          {/*      </a>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</section>*/}
         </div>
       </Layout>
   )
