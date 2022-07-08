@@ -101,7 +101,7 @@ const IndexPage = () => {
                     <li><Trans>el_aspire_list5</Trans></li>
                     <li>
                       <Trans>el_aspire_list6_pre</Trans>
-                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Link to={'/products/smart-locks/#gotoAspire'}>{t('smart_lock')}</Link>
                       <Trans>el_aspire_list6_post</Trans>
                     </li>
                   </ul>
@@ -139,7 +139,7 @@ const IndexPage = () => {
                     <li><Trans>el_versa_list6</Trans></li>
                     <li>
                       <Trans>el_versa_list7_pre</Trans>
-                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Link to={'/products/smart-locks/#gotoVersa'}>{t('smart_lock')}</Link>
                       <Trans>el_versa_list7_post</Trans>
                     </li>
                   </ul>
@@ -199,7 +199,7 @@ const IndexPage = () => {
                     <li><Trans>el_orbit_list6</Trans></li>
                     <li>
                       <Trans>el_orbit_list7_pre</Trans>
-                      <Link to={'/products/smart-locks/'}>{t('smart_lock')}</Link>
+                      <Link to={'/products/smart-locks/#gotoOrbit'}>{t('smart_lock')}</Link>
                       <Trans>el_orbit_list7_post</Trans>
                     </li>
                   </ul>

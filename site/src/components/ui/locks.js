@@ -21,7 +21,7 @@ const Locks = () => {
                     </Trans>
                   </h2>
                   <h2 className="sub">
-                    <a href="#">
+                    <a href="/products/smart-locks/">
                       <Trans>
                         smart_locks
                       </Trans>
@@ -36,7 +36,7 @@ const Locks = () => {
 
                     <div className="smart-lock-wrap">
 
-                      <Link to={urlDirectory + 'smart-locks/'}>
+                      <Link to={urlDirectory + 'smart-locks/#gotoAspire'}>
                         <div className="thumbnail">
                           <StaticImage
                               src={'../../images/locks/DL22-net-aspire-600x497.png'}
@@ -52,7 +52,7 @@ const Locks = () => {
                           </p>
                         </div>
                       </Link>
-                      <Link to={urlDirectory + 'smart-locks/'}>
+                      <Link to={urlDirectory + 'smart-locks/#gotoVersa'}>
                         <div className="thumbnail">
                           <StaticImage
                               src={'../../images/locks/DL22-net-versa-600x497.png'}
@@ -68,7 +68,7 @@ const Locks = () => {
                           </p>
                         </div>
                       </Link>
-                      <Link to={urlDirectory + 'smart-locks/'}>
+                      <Link to={urlDirectory + 'smart-locks/#gotoOrbit'}>
                         <div className="thumbnail">
                           <StaticImage
                               src={'../../images/locks/DL22-net-orbit-600x497.png'}
@@ -90,7 +90,7 @@ const Locks = () => {
 
                     <div className="digilink-lock">
                       <img src={desktopSmartDivider} alt=""/>
-                      <Link to={urlDirectory + 'smart-locks/'}>
+                      <Link to={urlDirectory + 'smart-locks/#gotoDigilink'}>
                         <div className="thumbnail">
                           <StaticImage
                               src={'../../images/locks/DL22-digilink-600x497.png'}
