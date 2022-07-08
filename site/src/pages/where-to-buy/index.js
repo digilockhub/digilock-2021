@@ -1,13 +1,17 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import {graphql} from 'gatsby';
 import CompanySettings from "../../constants/company/settings";
 import Dealers from '../../components/dealers/dealers';
+import ContinentSettings from "../../constants/continents/geo-continents";
 
 const IndexPage = () => {
   const {t} = useTranslation();
+  const [salesEmail, setSalesEmail] = useState(CompanySettings.SALES_EMAIL);
+  const [salesPhone, setSalesPhone] = useState(CompanySettings.PHONE_SALES_AMERICAS);
+
   function handleScrollTo(elmID) {
     window.scroll({
       behavior: 'smooth',
@@ -15,11 +19,25 @@ const IndexPage = () => {
       top: document.getElementById(elmID).offsetTop - 150
     });
   }
+
   useEffect(() => {
     if (document.location.hash === '#gotoPartners') {
       handleScrollTo("partners");
     }
+
+    if (localStorage.getItem(ContinentSettings.SESSION_CONTINENT) !== null) {
+      let cs = localStorage.getItem(ContinentSettings.SESSION_CONTINENT);
+      if (cs === ContinentSettings.ASIA) {
+        setSalesEmail(CompanySettings.SALES_EMAIL_ASIA);
+        setSalesPhone(CompanySettings.PHONE_SALES_ASIA);
+      } else if (cs === ContinentSettings.EUROPE) {
+        setSalesEmail(CompanySettings.SALES_EMAIL_EUROPE);
+        setSalesPhone(CompanySettings.PHONE_SALES_EUROPE);
+      }
+    }
+
   }, []);
+
   return (
       <Layout>
         <Seo
@@ -40,10 +58,10 @@ const IndexPage = () => {
                 </Trans>
               </p>
               <div className="buttons">
-                <a href="" className="btn btn--orange">
+                <a href={"mailto:"+salesEmail} className="btn btn--orange">
                   <Trans>email</Trans>
                 </a>
-                <a href="" className="btn btn--orange">
+                <a href={"tel:"+salesPhone} className="btn btn--orange">
                   <Trans>call</Trans>
                 </a>
                 <a href="" className="btn btn--orange">
@@ -52,8 +70,8 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div id={'partners'} className="section-delimeter container" />
-          <Dealers />
+          <div id={'partners'} className="section-delimeter container"/>
+          <Dealers/>
         </div>
       </Layout>
   )
