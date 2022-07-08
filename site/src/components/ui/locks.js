@@ -527,11 +527,6 @@ const Locks = () => {
                 mechanical_lock
               </Trans>
             </h2>
-            <p>
-              <Trans>
-                mechanical_lock_copy
-              </Trans>
-            </p>
             <div className="row mech">
               <Link to={urlDirectory + 'mechanical-locks/mech/'}>
                 <div className="thumbnail">
