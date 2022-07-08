@@ -15,10 +15,14 @@ const IndexPage = () => {
   const [showModal, setShowModal] = useState(false);
 
   function handleScrollTo(elmID) {
+    let offset = 150;
+    if(elmID === 'juiceBar') {
+      offset = 180;
+    }
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: document.getElementById(elmID).offsetTop - 150
+      top: document.getElementById(elmID).offsetTop - offset
     });
   }
 
@@ -174,8 +178,8 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div id={'juiceBar'} className="section-delimeter container"/>
-          <section className="juicebar">
+          <div className="section-delimeter container"/>
+          <section id={'juiceBar'} className="juicebar">
             <div className="container">
               <img className={'logo-jb'} src={jbLogo} alt="PackageHold" width={'272'} height={'64'}/>
               <div className="grid-two-col">
