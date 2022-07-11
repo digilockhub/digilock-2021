@@ -28,7 +28,7 @@ const IndexPage = () => {
         <div className="home">
           <section className="hero">
             <BCResponsivePlayerDynId
-                vid={'6302604050001'}
+                vid={'6309382544112'}
                 dynId={'HeroVideo'}
                 translation={t('hero_video_caption')}
             />
