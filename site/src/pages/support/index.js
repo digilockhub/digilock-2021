@@ -93,10 +93,6 @@ const IndexPage = (props) => {
     }
   }
 
-  function handleLiveChat() {
-    alert("FPO: This will spawn a live Sales chat session");
-  }
-
   function handleScrollTo(elmID) {
     window.scroll({
       behavior: 'smooth',
@@ -243,8 +239,8 @@ const IndexPage = (props) => {
                       tollFreeNumber={infoCurrent.tollFreeNumber}
                       phoneNumber={infoCurrent.phoneNumber}
                       geo={continent}
-                      handleLiveChat={handleLiveChat}
                       showFaq={false}
+                      section={'support'}
                   />
                 </div>
               </div>

@@ -145,10 +145,6 @@ const IndexPage = () => {
     }
   }
 
-  function handleLiveChat() {
-    alert("FPO: This will spawn a live Sales chat session");
-  }
-
   useEffect(() => {
     if (isBrowser) {
       handleInfoCurrentChange();
@@ -270,8 +266,8 @@ const IndexPage = () => {
                       tollFreeNumber={infoCurrent.tollFreeNumber}
                       phoneNumber={infoCurrent.phoneNumber}
                       geo={continent}
-                      handleLiveChat={handleLiveChat}
                       showFaq={false}
+                      section={'contact'}
                   />
                 </div>
                 <div>
