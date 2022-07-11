@@ -1,5 +1,10 @@
-.video-js {
+#HeroVideo {
+  .video-js {
+    padding-top: 37.25% !important;
+  }
+}
 
+.video-js {
   .vjs-dock-text {
     display: none;
   }
@@ -28,7 +33,6 @@
   }
   .video-js {
     height: 340px;
-    padding-top: 37.25% !important;
 
     video {
       background-color: $color-white;
