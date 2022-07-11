@@ -60,6 +60,8 @@
   "download_brochure": "download brochure",
   "download_keypad_brochure": "download keypad brochure",
   "download_rfid_brochure": "download rfid brochure",
+  "network": "Network",
+  "networked": "Networked",
   "key_managed": "Key Managed",
   "code_managed": "Code Managed",
   "button_chat": "Let's Chat",

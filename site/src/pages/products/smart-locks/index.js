@@ -29,6 +29,7 @@ const IndexPage = () => {
       top: document.getElementById(elmID).offsetTop - 150
     });
   }
+
   useEffect(() => {
     if (document.location.hash === '#gotoAspire') {
       handleScrollTo("smartAspire");
@@ -114,10 +115,10 @@ const IndexPage = () => {
                     <li><Trans>sl_aspire_list5</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    {/*<a href="javascript:alert('We don\'t have this page. Should we remove for now?')"  className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a href="https://landing.digilock.com/aspire/network" target={'_blank'} className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
@@ -143,10 +144,10 @@ const IndexPage = () => {
                     <li><Trans>sl_versa_list6</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    {/*<a href="javascript:alert('We don\'t have this page. Should we remove for now?')" className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a href="https://landing.digilock.com/versa/network" target={'_blank'} className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
@@ -194,10 +195,10 @@ const IndexPage = () => {
                     <li><Trans>sl_orbit_list6</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
-                      <Trans>see_specs</Trans>
-                    </a>
-                    <a href="/products/locks/" className="btn btn--orange">
+                    {/*<a href="javascript:alert('We don\'t have this page. Should we remove for now?')" className="btn btn--orange">*/}
+                    {/*  <Trans>see_specs</Trans>*/}
+                    {/*</a>*/}
+                    <a href="https://landing.digilock.com/orbit/network" target={'_blank'} className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>
@@ -223,7 +224,7 @@ const IndexPage = () => {
                     <li><Trans>sl_digilink_list5</Trans></li>
                   </ul>
                   <div className="sl-buttons">
-                    <a href="/products/locks/" className="btn btn--orange">
+                    <a href="javascript:alert('We need a brochure for Digilink. ')" className="btn btn--orange">
                       <Trans>download_brochure</Trans>
                     </a>
                   </div>

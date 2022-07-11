@@ -116,13 +116,13 @@ const Tab = (props) => {
               className={getActiveClass(1, 'active')}
               onClick={() => toggleTab(1)}
           >
-            Aspire <Trans>keypad</Trans> <Trans>smart_lock</Trans>
+            Aspire <Trans>network</Trans> <Trans>keypad</Trans>
           </li>
           <li
               className={getActiveClass(2, 'active')}
               onClick={() => toggleTab(2)}
           >
-            Aspire <Trans>rfid</Trans> <Trans>smart_lock</Trans>
+            Aspire <Trans>network</Trans> <Trans>rfid</Trans>
           </li>
         </ul>
         <div className="tab-content-container">
