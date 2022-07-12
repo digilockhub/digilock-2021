@@ -221,11 +221,11 @@ const Header = () => {
                       cls={checkSiteLocation('/support/') ? 'selected' : ''}
                       label={t('support')}/>
                 </li>
-                <li>
-                  <Link to="#">
-                    <Trans>search</Trans>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link to="#">*/}
+                {/*    <Trans>search</Trans>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
               </ul>
             </nav>
           </div>

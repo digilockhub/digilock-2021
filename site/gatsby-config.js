@@ -34,6 +34,21 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     policy: [
+    //       {
+    //         resolve: 'gatsby-plugin-robots-txt',
+    //         options: {
+    //           host: 'https://www.digilock.com',
+    //           sitemap: 'https://www.digilock.com/sitemap.xml',
+    //           policy: [{userAgent: '*', allow: '/'}]
+    //         }
+    //       }
+    //     ],
+    //   },
+    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
