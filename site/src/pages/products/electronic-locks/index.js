@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from "../../../components/layout";
 import Seo from "../../../components/seo";
@@ -24,6 +24,26 @@ const IndexPage = () => {
     setShowModal(prevShowModal => !prevShowModal);
     bodyElm.classList.toggle('stop-body-scroll');
   }
+
+  function handleScrollTo(elmID) {
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: document.getElementById(elmID).offsetTop - 150
+    });
+  }
+
+  useEffect(() => {
+    if (document.location.hash === '#gotoAspire') {
+      handleScrollTo("aspire");
+    }
+    if (document.location.hash === '#gotoVersa') {
+      handleScrollTo("versa");
+    }
+    if (document.location.hash === '#gotoOrbit') {
+      handleScrollTo("orbit");
+    }
+  }, []);
 
   return (
       <Layout>
@@ -73,7 +93,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container"/>
+          <div id={'aspire'} className="section-delimeter container"/>
           <section className="smart-aspire">
             <div className="container">
               <div className="grid-two-col">
@@ -121,7 +141,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container"/>
+          <div id={'versa'} className="section-delimeter container"/>
           <section className="smart-versa">
             <div className="container">
               <div className="grid-two-col">
@@ -170,7 +190,7 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-          <div className="section-delimeter container"/>
+          <div id={'orbit'} className="section-delimeter container"/>
           <section className="smart-orbit">
             <div className="container">
               <div className="grid-two-col">
