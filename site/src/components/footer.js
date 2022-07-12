@@ -44,9 +44,6 @@ const Footer = () => {
                 <li>Petaluma, Ca | United States</li>
                 <li><a href={'mailto:'+CompanySettings.SALES_EMAIL}><span>Contact Sales / US</span></a></li>
                 <li>
-                  <a href={'mailto:'+CompanySettings.SALES_EMAIL}>sales@digilock.com</a>
-                </li>
-                <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
                     <tr>
@@ -75,10 +72,10 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow U.S</h4>
-                <a href={CompanySettings.LINKEDIN_USA}>
+                <a href={CompanySettings.LINKEDIN_USA} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
-                <a href="#">
+                <a href={CompanySettings.YOUTUBE_AMERICAS} target={'_blank'}>
                   <img src={youtube} alt="follow us on YouTube"/>
                 </a>
               </div>
@@ -88,9 +85,6 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>theMart | Chicago, IL 60654</li>
                 <li><span><a href="/about/digilock-showroom/">Discover Our Showroom</a></span></li>
-                <li>
-                  <a href="mailto:sales@digilock.com">sales@digilock.com</a>
-                </li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
@@ -129,10 +123,10 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow Europe</h4>
-                <a href={CompanySettings.LINKEDIN_EUROPE}>
+                <a href={CompanySettings.LINKEDIN_EUROPE} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
-                <a href="#">
+                <a href={CompanySettings.YOUTUBE_EUROPE} target={'_blank'}>
                   <img src={youtube} alt="follow us on YouTube"/>
                 </a>
               </div>
@@ -147,10 +141,10 @@ const Footer = () => {
               </ul>
               <div className="social-icons">
                 <h4>Follow Asia</h4>
-                <a href={CompanySettings.LINKEDIN_ASIA}>
+                <a href={CompanySettings.LINKEDIN_ASIA} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
-                <a href="#">
+                <a href={CompanySettings.YOUTUBE_ASIA} target={'_blank'}>
                   <img src={youtube} alt="follow us on YouTube"/>
                 </a>
               </div>

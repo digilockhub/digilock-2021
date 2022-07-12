@@ -14,6 +14,9 @@ module.exports = {
   PHONE_SALES_EUROPE: '+31 0 20 303 3060',
   LINKEDIN_ASIA: 'https://www.linkedin.com/company/digilock-asia-limited/',
   LINKEDIN_USA: 'https://www.linkedin.com/company/digilock/',
-  LINKEDIN_EUROPE: 'https://www.linkedin.com/company/digilock-europe-bv/'
+  LINKEDIN_EUROPE: 'https://www.linkedin.com/company/digilock-europe-bv/',
+  YOUTUBE_AMERICAS: 'https://www.youtube.com/user/digilock/',
+  YOUTUBE_EUROPE: 'https://www.youtube.com/channel/UC5qWdANNTz_bONDXd4kZcxQ/',
+  YOUTUBE_ASIA: 'https://www.youtube.com/channel/UC_7_LQvGtgUqzp-nr6b3dSQ'
 
 };
