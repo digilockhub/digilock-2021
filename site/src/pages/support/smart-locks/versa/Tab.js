@@ -2,34 +2,24 @@ import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
 import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
-import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion} from "../../../../utils/utils";
 
 
-let datasheetsKeypad = [
+let brochuresKeypad = [
   {
-    "title": "Aspire Data Sheet Keypad Dual",
+    "title": "Versa Brochure",
     "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2GUI7FMfdl4xgKyUhFpKlV/783b35343c10a3ab58661aecb3dcbf58/DS-Aspire-Dual-Keypad.pdf",
-      "fileName": "DS-Aspire-Dual-Keypad.pdf",
-      "contentType": "application/pdf"
-    }
-  },
-  {
-    "title": "Aspire Data Sheet Keypad Assigned",
-    "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2d7Jc88koSwaTpZvlCfhl6/f34db2dfe0a4b7d3808bfdb1d5cbea8e/DS-Aspire-Assigned-Keypad.pdf",
-      "fileName": "DS-Aspire-Assigned-Keypad.pdf",
+      "url": "https://assets.ctfassets.net/q5vaqi9g69zw/5EUsFgbo80VOudFysJQ3pq/09e809048043a655fe6fe2dba94414b7/DIGILOCK-VERSA-KEYPAD-NETWORK-PRODUCT-BROCHURE.pdf",
+      "fileName": "DIGILOCK-VERSA-KEYPAD-NETWORK-PRODUCT-BROCHURE.pdf",
       "contentType": "application/pdf"
     }
   }
 ];
 let installGuidesKeypad = [
   {
-    "title": "Aspire Install Guide",
+    "title": "Versa Install Guide",
     "file": {
-      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/45AECNHMwyt8usbChi4fMt/ce6e3f89d22ba4d4a1355d898e7b633a/IG-Numeris-Aspire-5G.pdf",
-      "fileName": "IG-Numeris-Aspire-5G.pdf",
+      "url": "https://downloads.ctfassets.net/q5vaqi9g69zw/1n1QeKsv4OscPUUfyeYFd8/e8c68f4fedb55e15f8f5608e44de4382/IG-D6VHN-KR-DEN.pdf",
+      "fileName": "IG-D6VHN-KR-DEN.pdf",
       "contentType": "application/pdf"
     }
   }
@@ -52,30 +42,22 @@ let productGuidesKeypad = [
     }
   }
 ];
-let datasheetsRFID = [
+let brochuresRFID = [
   {
-    "title": "Aspire Data Sheet RFID Shared",
+    "title": "Versa Brochure",
     "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6o8MpogIcPCHgQkthu0w09/3ca7cf851ca8765030a9b33f874b7794/DS-Aspire-Shared-RFID.pdf",
-      "fileName": "DS-Aspire-Shared-RFID.pdf",
-      "contentType": "application/pdf"
-    }
-  },
-  {
-    "title": "Aspire Data Sheet RFID Assigned",
-    "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/37Bmv596QvnGUd8Pnz6Uat/12c94f34401b29cdd1fe625a85d6e092/DS-Aspire-Assigned-RFID.pdf",
-      "fileName": "DS-Aspire-Assigned-RFID.pdf",
+      "url": "https://assets.ctfassets.net/q5vaqi9g69zw/2DdCbpEyE5ISo1hsywS8tV/da7b5602223b3d528a8d9566e887fb9c/DIGILOCK-VERSA-RFID-NETWORK-PRODUCT-BROCHURE.pdf",
+      "fileName": "DIGILOCK-VERSA-RFID-NETWORK-PRODUCT-BROCHURE.pdf",
       "contentType": "application/pdf"
     }
   }
 ];
 let installGuidesRFID = [
   {
-    "title": "Aspire Install Guide",
+    "title": "Versa Install Guide",
     "file": {
-      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/45AECNHMwyt8usbChi4fMt/ce6e3f89d22ba4d4a1355d898e7b633a/IG-Numeris-Aspire-5G.pdf",
-      "fileName": "IG-Numeris-Aspire-5G.pdf",
+      "url": "https://downloads.ctfassets.net/q5vaqi9g69zw/1n1QeKsv4OscPUUfyeYFd8/e8c68f4fedb55e15f8f5608e44de4382/IG-D6VHN-KR-DEN.pdf",
+      "fileName": "IG-D6VHN-KR-DEN.pdf",
       "contentType": "application/pdf"
     }
   }
@@ -148,7 +130,41 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              Lists FPO...
+              {/*DOCUMENTS*/}
+              <div label="Document Library">
+                <Accordion clsName={'next-support'}>
+                  <div label="Brochures">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          brochuresKeypad.map((doc, index) => (
+                                  <li key={index}>
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                  <div label="Install Guides">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          installGuidesKeypad.map((doc, index) => (
+                                  <li key={index}>
+                                    <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                </Accordion>
+              </div>
             </div>
           </div>
           <div className={"tab-content "+getActiveClass(2, 'active')}>
@@ -173,7 +189,55 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              Lists FPO...
+              {/*DOCUMENTS*/}
+              <div label="Document Library">
+                <Accordion clsName={'next-support'}>
+                  <div label="Brochures">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          brochuresRFID.map((doc, index) => (
+                                  <li key={index}>
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                  <div label="Install Guides">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          installGuidesRFID.map((doc, index) => (
+                                  <li key={index}>
+                                    <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
+                    </div>
+                  </div>
+                  {/*<div label="Product Guides">*/}
+                  {/*  <div className="step-images">*/}
+                  {/*    <ul>*/}
+                  {/*      {*/}
+                  {/*        productGuidesRFID.map((doc, index) => (*/}
+                  {/*                <li key={index}>*/}
+                  {/*                  <a href={doc.file.url} target={'_blank'}>{doc.title}</a>*/}
+                  {/*                </li>*/}
+                  {/*            )*/}
+                  {/*        )*/}
+                  {/*      }*/}
+                  {/*    </ul>*/}
+                  {/*  </div>*/}
+                  {/*</div>*/}
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>

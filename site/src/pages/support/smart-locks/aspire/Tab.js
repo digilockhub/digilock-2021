@@ -2,13 +2,11 @@ import React, {useState} from 'react';
 import {StaticImage} from "gatsby-plugin-image";
 import {Trans} from "gatsby-plugin-react-i18next";
 import Accordion from '../../../../components/ui/legacy/Accordion/Accordion'
-import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
-import {jumpAccordion} from "../../../../utils/utils";
 
 
 let brochuresKeypad = [
   {
-    "title": "Aspire V0.6 - coming soon.",
+    "title": "Aspire Brochure",
     "file": {
       "url": "#",
       "fileName": "DS-Aspire-Dual-Keypad.pdf",
@@ -132,105 +130,41 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              <Accordion clsName={'next-support'}>
-                {/*DOCUMENTS*/}
-                <div label="Document Library">
-                  <Accordion clsName={'next-support'}>
-                    <div label="Brochures">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            brochuresKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                      </li>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                    <div label="Install Guides">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            installGuidesKeypad.map((doc, index) => (
+              {/*DOCUMENTS*/}
+              <div label="Document Library">
+                <Accordion clsName={'next-support'}>
+                  <div label="Brochures">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          brochuresKeypad.map((doc, index) => (
+                                  <li key={index}>
                                     <li key={index}>
                                       <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
                                     </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
                     </div>
-                    {/*<div label="Product Guides">*/}
-                    {/*  <div className="step-images">*/}
-                    {/*    <ul>*/}
-                    {/*      {*/}
-                    {/*        productGuidesKeypad.map((doc, index) => (*/}
-                    {/*                <li key={index}>*/}
-                    {/*                  <a href={doc.file.url} target={'_blank'}>{doc.title}</a>*/}
-                    {/*                </li>*/}
-                    {/*            )*/}
-                    {/*        )*/}
-                    {/*      }*/}
-                    {/*    </ul>*/}
-                    {/*  </div>*/}
-                    {/*</div>*/}
-                  </Accordion>
-                </div>
-                <div label="Document Library">
-                  <Accordion clsName={'next-support hide'}>
-                    <div label="Brochures">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            brochuresKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                      </li>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
+                  </div>
+                  <div label="Install Guides">
+                    <div className="step-images">
+                      <ul>
+                        {
+                          installGuidesKeypad.map((doc, index) => (
+                                  <li key={index}>
+                                    <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                  </li>
+                              )
+                          )
+                        }
+                      </ul>
                     </div>
-                    <div label="Install Guides">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            installGuidesKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                    <div label="Product Guides">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            productGuidesKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                  </Accordion>
-                </div>
-              </Accordion>
+                  </div>
+                </Accordion>
+              </div>
             </div>
           </div>
           <div className={"tab-content " + getActiveClass(2, 'active')}>
@@ -255,7 +189,6 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              <Accordion clsName={'next-support'}>
                 {/*DOCUMENTS*/}
                 <div label="Document Library">
                   <Accordion clsName={'next-support'}>
@@ -305,59 +238,9 @@ const Tab = (props) => {
                     {/*</div>*/}
                   </Accordion>
                 </div>
-                <div label="Document Library">
-                  <Accordion clsName={'next-support hide'}>
-                    <div label="Brochures">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            brochuresKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <li key={index}>
-                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                      </li>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                    <div label="Install Guides">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            installGuidesKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                    <div label="Product Guides">
-                      <div className="step-images">
-                        <ul>
-                          {
-                            productGuidesKeypad.map((doc, index) => (
-                                    <li key={index}>
-                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
-                                    </li>
-                                )
-                            )
-                          }
-                        </ul>
-                      </div>
-                    </div>
-                  </Accordion>
-                </div>
-              </Accordion>
             </div>
           </div>
         </div>
-
       </div>
   );
 };
