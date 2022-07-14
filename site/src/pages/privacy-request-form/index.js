@@ -89,7 +89,7 @@ const IndexPage = () => {
   }
   return (
       <Layout>
-        <Seo title={t('About')}/>
+        <Seo title={t('Privacy Policy Request Form | Digilock')}/>
         <div className="about">
           <section className="hero">
             <div className="container">

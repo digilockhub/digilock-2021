@@ -6,7 +6,6 @@ import {graphql} from 'gatsby';
 
 import heroImage from './images/cs-sf-hero.jpg';
 import blockQuoteImage from './images/PR_pullquote.svg';
-import subheadLine from './images/subhead-line.png';
 import officeImage from './images/showroom.jpg';
 import skylineImage from './images/middle.jpg';
 

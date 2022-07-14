@@ -15,4 +15,9 @@
     cursor: pointer;
   }
 
+  &.smart-aspire {
+    .accordion-section:nth-child(2) {
+      //display: none;
+    }
+  }
 }

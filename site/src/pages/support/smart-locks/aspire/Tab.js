@@ -6,30 +6,22 @@ import DigiSymbol from '../../../../components/ui/legacy/DigiSymbols/DigiSymbol'
 import {jumpAccordion} from "../../../../utils/utils";
 
 
-let datasheetsKeypad = [
+let brochuresKeypad = [
   {
-    "title": "Aspire Data Sheet Keypad Dual",
+    "title": "Aspire V0.6 - coming soon.",
     "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2GUI7FMfdl4xgKyUhFpKlV/783b35343c10a3ab58661aecb3dcbf58/DS-Aspire-Dual-Keypad.pdf",
+      "url": "#",
       "fileName": "DS-Aspire-Dual-Keypad.pdf",
-      "contentType": "application/pdf"
-    }
-  },
-  {
-    "title": "Aspire Data Sheet Keypad Assigned",
-    "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/2d7Jc88koSwaTpZvlCfhl6/f34db2dfe0a4b7d3808bfdb1d5cbea8e/DS-Aspire-Assigned-Keypad.pdf",
-      "fileName": "DS-Aspire-Assigned-Keypad.pdf",
       "contentType": "application/pdf"
     }
   }
 ];
 let installGuidesKeypad = [
   {
-    "title": "Aspire Install Guide",
+    "title": "Aspire Install Guice",
     "file": {
-      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/45AECNHMwyt8usbChi4fMt/ce6e3f89d22ba4d4a1355d898e7b633a/IG-Numeris-Aspire-5G.pdf",
-      "fileName": "IG-Numeris-Aspire-5G.pdf",
+      "url": "https://downloads.ctfassets.net/q5vaqi9g69zw/5OopVVVMyPXOmt8GNlBVqR/ac1d0db9e6dfe6e8767b822af8d7b028/IG-D6AN-KR-DEN.pdf",
+      "fileName": "IG-D6AN-KR-DEN.pdf",
       "contentType": "application/pdf"
     }
   }
@@ -52,20 +44,12 @@ let productGuidesKeypad = [
     }
   }
 ];
-let datasheetsRFID = [
+let brochuresRFID = [
   {
-    "title": "Aspire Data Sheet RFID Shared",
+    "title": "Aspire Brochure",
     "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/6o8MpogIcPCHgQkthu0w09/3ca7cf851ca8765030a9b33f874b7794/DS-Aspire-Shared-RFID.pdf",
-      "fileName": "DS-Aspire-Shared-RFID.pdf",
-      "contentType": "application/pdf"
-    }
-  },
-  {
-    "title": "Aspire Data Sheet RFID Assigned",
-    "file": {
-      "url": "//assets.ctfassets.net/q5vaqi9g69zw/37Bmv596QvnGUd8Pnz6Uat/12c94f34401b29cdd1fe625a85d6e092/DS-Aspire-Assigned-RFID.pdf",
-      "fileName": "DS-Aspire-Assigned-RFID.pdf",
+      "url": "https://assets.ctfassets.net/q5vaqi9g69zw/5l4Od8Jce0NCYqDepMHYK5/bb49d1a1fb6fbf1641c6a4d55351d90b/DIGILOCK-ASPIRE-RFID-NETWORK-PRODUCT-BROCHURE.pdf",
+      "fileName": "DIGILOCK-ASPIRE-RFID-NETWORK-PRODUCT-BROCHURE.pdf",
       "contentType": "application/pdf"
     }
   }
@@ -74,8 +58,8 @@ let installGuidesRFID = [
   {
     "title": "Aspire Install Guide",
     "file": {
-      "url": "//downloads.ctfassets.net/q5vaqi9g69zw/45AECNHMwyt8usbChi4fMt/ce6e3f89d22ba4d4a1355d898e7b633a/IG-Numeris-Aspire-5G.pdf",
-      "fileName": "IG-Numeris-Aspire-5G.pdf",
+      "url": "https://downloads.ctfassets.net/q5vaqi9g69zw/6iDWITTIFq35t8MG2AXy17/66d9930f9da8ec23a9a621371ee2f5a8/IG-D6AN-KR-DEN.pdf",
+      "fileName": "IG-D6AN-KR-DEN.pdf",
       "contentType": "application/pdf"
     }
   }
@@ -126,7 +110,7 @@ const Tab = (props) => {
           </li>
         </ul>
         <div className="tab-content-container">
-          <div className={"tab-content "+getActiveClass(1, 'active')}>
+          <div className={"tab-content " + getActiveClass(1, 'active')}>
             <div className="front-rear">
               <StaticImage
                   src={'../../../../images/locks/DL22-net-aspire-600x497.png'}
@@ -148,10 +132,108 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              Lists FPO...
+              <Accordion clsName={'next-support'}>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Brochures">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            brochuresKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            installGuidesKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    {/*<div label="Product Guides">*/}
+                    {/*  <div className="step-images">*/}
+                    {/*    <ul>*/}
+                    {/*      {*/}
+                    {/*        productGuidesKeypad.map((doc, index) => (*/}
+                    {/*                <li key={index}>*/}
+                    {/*                  <a href={doc.file.url} target={'_blank'}>{doc.title}</a>*/}
+                    {/*                </li>*/}
+                    {/*            )*/}
+                    {/*        )*/}
+                    {/*      }*/}
+                    {/*    </ul>*/}
+                    {/*  </div>*/}
+                    {/*</div>*/}
+                  </Accordion>
+                </div>
+                <div label="Document Library">
+                  <Accordion clsName={'next-support hide'}>
+                    <div label="Brochures">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            brochuresKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            installGuidesKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            productGuidesKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
+              </Accordion>
             </div>
           </div>
-          <div className={"tab-content "+getActiveClass(2, 'active')}>
+          <div className={"tab-content " + getActiveClass(2, 'active')}>
             <div className="front-rear">
               <StaticImage
                   src={'../../../../images/locks/DL22-net-aspire-600x497.png'}
@@ -173,7 +255,105 @@ const Tab = (props) => {
               />
             </div>
             <div className="lists">
-              Lists FPO...
+              <Accordion clsName={'next-support'}>
+                {/*DOCUMENTS*/}
+                <div label="Document Library">
+                  <Accordion clsName={'next-support'}>
+                    <div label="Brochures">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            brochuresRFID.map((doc, index) => (
+                                    <li key={index}>
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            installGuidesRFID.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    {/*<div label="Product Guides">*/}
+                    {/*  <div className="step-images">*/}
+                    {/*    <ul>*/}
+                    {/*      {*/}
+                    {/*        productGuidesRFID.map((doc, index) => (*/}
+                    {/*                <li key={index}>*/}
+                    {/*                  <a href={doc.file.url} target={'_blank'}>{doc.title}</a>*/}
+                    {/*                </li>*/}
+                    {/*            )*/}
+                    {/*        )*/}
+                    {/*      }*/}
+                    {/*    </ul>*/}
+                    {/*  </div>*/}
+                    {/*</div>*/}
+                  </Accordion>
+                </div>
+                <div label="Document Library">
+                  <Accordion clsName={'next-support hide'}>
+                    <div label="Brochures">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            brochuresKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <li key={index}>
+                                        <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                      </li>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Install Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            installGuidesKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                    <div label="Product Guides">
+                      <div className="step-images">
+                        <ul>
+                          {
+                            productGuidesKeypad.map((doc, index) => (
+                                    <li key={index}>
+                                      <a href={doc.file.url} target={'_blank'}>{doc.title}</a>
+                                    </li>
+                                )
+                            )
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </Accordion>
+                </div>
+              </Accordion>
             </div>
           </div>
         </div>

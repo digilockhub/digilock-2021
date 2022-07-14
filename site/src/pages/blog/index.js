@@ -234,7 +234,7 @@ const IndexPage = (props) => {
 
   return (
       <Layout>
-        <Seo title={t('Digilock Blog')}/>
+        <Seo title={t('Digilock Blog Posts and Articles')}/>
         <div className="blog">
           <section className="hero">
             <h1>Digilock <Trans>blog</Trans></h1>

@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
       <Layout>
         <Seo title={t('Aspire Smart Lock Support')}/>
-        <div className="support smart-aspire">
+        <div className="support">
           <section className="hero">
             <div className="container">
               <Tab />

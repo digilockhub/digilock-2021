@@ -13,7 +13,7 @@ const IndexPage = () => {
       <Layout>
         <Seo
             title={t('Digilock is the leader in electronic locking solutions.')}
-            description={t('Digilock is the leader in electronic locking solutions.')}
+            description={t('Digilock has been the leader in electronic locking solutions for personal storage for over 40 years, and continues to develop innovative new products and technologies that improve the daily lives of our customers.')}
         />
         <div className="patents">
           <section className="hero">

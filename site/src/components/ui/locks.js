@@ -231,65 +231,129 @@ const Locks = () => {
         }
 
         <div className="section-delimeter container"/>
-        <section className="electronic-locks">
-          <div className="container">
-            <h2 className="sub">
-              <Trans>
-                electronic_locks
-              </Trans>
-            </h2>
-            <div className="row">
-              <Link to={urlDirectory + 'electronic-locks/#gotoAspire'}>
-                <div className="thumbnail">
-                  <StaticImage
-                      src={'../../images/locks/DL22-aspire-600x497.png'}
-                      loading={'lazy'}
-                      width={200}
-                      height={148}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="Aspire Electronic Lock"
-                  />
-                  <p>
-                    <span>Aspire<sup>&trade;</sup></span>
-                  </p>
+        {
+          !isSupport ?
+              <section className="electronic-locks">
+                <div className="container">
+                  <h2 className="sub">
+                    <Trans>
+                      electronic_locks
+                    </Trans>
+                  </h2>
+                  <div className="row">
+                    <Link to={urlDirectory + 'electronic-locks/#gotoAspire'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-aspire-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Aspire Electronic Lock"
+                        />
+                        <p>
+                          <span>Aspire<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                    <Link to={urlDirectory + 'electronic-locks/#gotoVersa'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-versa-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Versa Electronic Lock"
+                        />
+                        <p>
+                          <span>Versa<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                    <Link to={urlDirectory + 'electronic-locks/#gotoOrbit'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-orbit-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Orbit Electronic Lock"
+                        />
+                        <p>
+                          <span>Orbit<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-              </Link>
-              <Link to={urlDirectory + 'electronic-locks/#gotoVersa'}>
-                <div className="thumbnail">
-                  <StaticImage
-                      src={'../../images/locks/DL22-versa-600x497.png'}
-                      loading={'lazy'}
-                      width={200}
-                      height={148}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="Versa Electronic Lock"
-                  />
-                  <p>
-                    <span>Versa<sup>&trade;</sup></span>
-                  </p>
+              </section>
+              :
+              <section className="electronic-locks">
+                <div className="container">
+                  <h2 className="sub">
+                    <Trans>
+                      electronic_locks
+                    </Trans>
+                  </h2>
+                  <div className="row">
+                    <Link to={urlDirectory + 'electronic-locks/aspire/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-aspire-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Aspire Electronic Lock"
+                        />
+                        <p>
+                          <span>Aspire<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                    <Link to={urlDirectory + 'electronic-locks/versa/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-versa-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Versa Electronic Lock"
+                        />
+                        <p>
+                          <span>Versa<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                    <Link to={urlDirectory + 'electronic-locks/orbit/'}>
+                      <div className="thumbnail">
+                        <StaticImage
+                            src={'../../images/locks/DL22-orbit-600x497.png'}
+                            loading={'lazy'}
+                            width={200}
+                            height={148}
+                            quality={100}
+                            formats={["auto", "webp", "avif"]}
+                            alt="Orbit Electronic Lock"
+                        />
+                        <p>
+                          <span>Orbit<sup>&trade;</sup></span>
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-              </Link>
-              <Link to={urlDirectory + 'electronic-locks/#gotoOrbit'}>
-                <div className="thumbnail">
-                  <StaticImage
-                      src={'../../images/locks/DL22-orbit-600x497.png'}
-                      loading={'lazy'}
-                      width={200}
-                      height={148}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="Orbit Electronic Lock"
-                  />
-                  <p>
-                    <span>Orbit<sup>&trade;</sup></span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
+              </section>
+        }
+
         {
           isSupport ?
               <section className="electronic-locks numeris">
