@@ -42,12 +42,14 @@ const Footer = () => {
               <h4>Digilock Americas</h4>
               <ul className={'unstyled-list'}>
                 <li>Petaluma, Ca | United States</li>
-                <li><a href={'mailto:'+CompanySettings.SALES_EMAIL}><span>Contact Sales / US</span></a></li>
+                <li><a href={'mailto:'+CompanySettings.SALES_EMAIL}><span><Trans>contact</Trans> <Trans>sales</Trans> / US</span></a></li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
                     <tr>
-                      <td>Telephone</td>
+                      <td>
+                        <Trans>telephone</Trans>
+                      </td>
                       <td>&nbsp;<a
                           href={'tel:' + CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a>
                       </td>
@@ -59,7 +61,9 @@ const Footer = () => {
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
                     <tr>
-                      <td>Toll-Free</td>
+                      <td>
+                        <Trans>toll_free</Trans>
+                      </td>
                       <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                           href={'tel:' + CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
@@ -71,7 +75,7 @@ const Footer = () => {
                 </li>
               </ul>
               <div className="social-icons">
-                <h4>Follow U.S</h4>
+                <h4><Trans>follow</Trans> U.S</h4>
                 <a href={CompanySettings.LINKEDIN_USA} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
@@ -81,15 +85,17 @@ const Footer = () => {
               </div>
             </div>
             <div className="location showroom">
-              <h4>Digilock Showroom</h4>
+              <h4>Digilock <Trans>showroom</Trans></h4>
               <ul className={'unstyled-list'}>
                 <li>theMart | Chicago, IL 60654</li>
-                <li><span><a href="/about/digilock-showroom/">Discover Our Showroom</a></span></li>
+                <li><span><a href="/about/digilock-showroom/"><Trans>discover_showroom</Trans></a></span></li>
                 <li>
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
                     <tr>
-                      <td>Telephone</td>
+                      <td>
+                        <Trans>telephone</Trans>
+                      </td>
                       <td>&nbsp;<a
                           href={'tel:' + CompanySettings.PHONE_SALES_AMERICAS}>{CompanySettings.PHONE_SALES_AMERICAS}</a>
                       </td>
@@ -101,7 +107,9 @@ const Footer = () => {
                   <table cellPadding={'0'} cellSpacing={'0'}>
                     <tbody>
                     <tr>
-                      <td>Toll-Free</td>
+                      <td>
+                        <Trans>toll_free</Trans>
+                      </td>
                       <td>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                           href={'tel:' + CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}>{CompanySettings.PHONE_SALES_TOLL_FREE_AMERICAS}</a>
@@ -118,11 +126,11 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>The Netherlands</li>
                 <li><a href={'mailto:'+CompanySettings.SALES_EMAIL_EUROPE}><span>Contact Sales / Europe</span></a></li>
-                <li>Telephone <a
+                <li><Trans>telephone</Trans> <a
                     href={'tel:' + CompanySettings.PHONE_SALES_EUROPE}>{CompanySettings.PHONE_SALES_EUROPE}</a></li>
               </ul>
               <div className="social-icons">
-                <h4>Follow Europe</h4>
+                <h4><Trans>follow</Trans> Europe</h4>
                 <a href={CompanySettings.LINKEDIN_EUROPE} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
@@ -136,11 +144,11 @@ const Footer = () => {
               <ul className={'unstyled-list'}>
                 <li>Hong Kong</li>
                 <li><a href={'mailto:'+CompanySettings.SALES_EMAIL_ASIA}><span>Contact Sales / Asia</span></a></li>
-                <li>Telephone <a href={'tel:' + CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a>
+                <li><Trans>telephone</Trans> <a href={'tel:' + CompanySettings.PHONE_SALES_ASIA}>{CompanySettings.PHONE_SALES_ASIA}</a>
                 </li>
               </ul>
               <div className="social-icons">
-                <h4>Follow Asia</h4>
+                <h4><Trans>follow</Trans> Asia</h4>
                 <a href={CompanySettings.LINKEDIN_ASIA} target={'_blank'}>
                   <img src={linkedIn} alt="follow us on linkedin"/>
                 </a>
@@ -216,7 +224,7 @@ const Footer = () => {
           </div>
 
           <div className={'copyright container'}>
-            &copy; {new Date().getFullYear()} Digilock. All rights reserved.
+            &copy; {new Date().getFullYear()} Digilock. <Trans>rights_reserved</Trans>.
           </div>
         </div>
       </footer>

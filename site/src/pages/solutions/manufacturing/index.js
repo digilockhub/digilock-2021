@@ -76,39 +76,39 @@ const IndexPage = () => {
   ];
   const projectAsides = [
     '<h2>Tesla<span>California</span></h2><br />' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Cue</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Cue</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Vreugdenhil Dairy Foods</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Standard</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Versa Standard</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Huybregts</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Bohemilk</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">NextLock</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Axis</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>Fitbit</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>',
 
     '<h2>Volkswagen</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Aspire</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Numeris</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Aspire</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">RFID</a></p>',
 
     '<h2>LIG Nex1</h2><br>' +
-    '<p>Brand: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
-    '<p>Product: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
-    '<p>Interface: <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
+    '<p>'+t('brand')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Digilock</a></p>' +
+    '<p>'+t('product')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">4G</a></p>' +
+    '<p>'+t('interface')+': <a href="'+returnLocaleURL(sl, '/products/locks/')+'">Keypad</a></p>'
   ];
   const ProjectAside = _ => <aside className={'dynamic-aside'}
                                    dangerouslySetInnerHTML={createMarkup(projectAsides[0])} />;

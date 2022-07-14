@@ -6,10 +6,7 @@ import {graphql} from 'gatsby';
 import BCResponsivePlayerDynId from '../components/video-player/BCResponsivePlayerDynId'
 import BCResponsivePlayer from '../components/video-player/BCResponsivePlayer'
 import SlickSlider from '../components/carousel/SlickSlider';
-import Modal from '../components/modals/modal'
 
-
-import clientLogos from '../images/home/client-logos/logos_group.png'
 
 const IndexPage = () => {
   const [showModal, setShowModal] = useState(false);
@@ -65,7 +62,7 @@ const IndexPage = () => {
           <section className="clients">
             <div className="container">
               <h2>
-                Known and Trusted
+                <Trans>known_trusted</Trans>
               </h2>
               <div>
                 <SlickSlider />
@@ -76,7 +73,9 @@ const IndexPage = () => {
           <div className="section-delimeter bump-up container"/>
           <section className="industries">
             <div className="container">
-              <h1>Solutions tailored to your industry</h1>
+              <h1>
+                <Trans>solutions_industry</Trans>
+              </h1>
 
               <div className="industries-grid">
                 <Link to={'/solutions/workspace/'}>

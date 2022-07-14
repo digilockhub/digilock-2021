@@ -10,6 +10,7 @@
   "support": "Support",
   "search": "Search",
   "contact": "Contact",
+  "sales": "Sales",
   "workspace": "Workspace",
   "healthcare": "Healthcare",
   "pro_sports": "Pro Sports",
@@ -23,6 +24,8 @@
   "lets_chat": "Let's Chat",
   "contact_us": "Contact Us",
   "faq": "FAQ",
+  "showroom": "Showroom",
+  "discover_showroom": "Discover Our Showroom",
   "customer_care": "Customer Care",
   "digilock": "Digilock",
   "find_dealers": "Find Dealers",
@@ -112,5 +115,9 @@
   "staff_office_furniture": "Staff Office Furniture",
   "tool_storage": "Tool Storage",
   "evidence_lockers": "Evidence Lockers",
-  "workplace_storage": "Workplace Storage"
+  "workplace_storage": "Workplace Storage",
+  "rights_reserved": "All rights reserved",
+  "brand": "Brand",
+  "product": "Product",
+  "interface": "Interface"
 }
