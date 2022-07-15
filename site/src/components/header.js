@@ -157,7 +157,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={checkSiteLocation('locks') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
+                <li className={checkSiteLocation('/products/') && checkSiteLocation('locks') ? 'solutions selected has-dropdown' : 'solutions has-dropdown'}>
                   <Trans>locks</Trans>
                   <ul className="dropdown unstyled-list">
                     <li>
