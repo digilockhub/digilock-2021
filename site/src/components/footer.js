@@ -219,6 +219,11 @@ const Footer = () => {
                     <Trans>patents</Trans>
                   </Link>
                 </li>
+                <li>
+                  <Link to={'/terms-and-conditions/'}>
+                    Terms and Conditions
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -1,0 +1,38 @@
+.toc {
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
+  h1, p {
+    margin-bottom: var(--section-gutter-gap) !important;
+  }
+
+  span {
+    font-family: "AvenirDemi", sans-serif;
+  }
+
+  ol {
+    counter-reset: item;
+    li {
+      list-style-type: none;
+      margin:0;
+      text-indent: -1.6em;
+      counter-increment: item;
+      margin-bottom: var(--nav-gap);
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:before {
+        display:inline-block;
+        width:1.5em;
+        padding-right:0.5em;
+        font-family: "AvenirDemi", sans-serif;
+        text-align:right;
+        content:counter(item) ".";
+      }
+    }
+  }
+
+
+}
