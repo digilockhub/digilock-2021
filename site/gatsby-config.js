@@ -11,6 +11,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
     },
+    // {
+    //   resolve: `gatsby-plugin-linkedin-insight`,
+    //   options: {
+    //     partnerId: `1643266`,
+    //
+    //     // Include LinkedIn Insight in development.
+    //     // Defaults to false meaning LinkedIn Insight will only be loaded in production.
+    //     includeInDevelopment: false,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
