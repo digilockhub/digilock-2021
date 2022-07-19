@@ -8,7 +8,9 @@ import {Link} from "gatsby-plugin-react-i18next";
 
 const Locks = () => {
   const [isSupport, setIsSupport] = useState(globalHistory.location.pathname.indexOf('support') > -1);
-  const urlDirectory = isSupport ? '/support/' : '/products/';
+  let urlDirectory = isSupport ? '/support/' : '/products/';
+
+
   return (
       <>
         {
@@ -476,7 +478,7 @@ const Locks = () => {
 
             </div>
             <div className="row">
-              <Link to={urlDirectory + 'electronic-locks/a-series-standard/'}>
+              <Link to={'/support/electronic-locks/a-series-standard/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-4Gstand-600x497.png'}
@@ -490,7 +492,7 @@ const Locks = () => {
                   <p>A Series Standard</p>
                 </div>
               </Link>
-              <Link to={urlDirectory + 'electronic-locks/a-series-vertical/'}>
+              <Link to={'/support/electronic-locks/a-series-vertical/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-4Gvertical-600x497.png'}
@@ -504,7 +506,7 @@ const Locks = () => {
                   <p>A Series Vertical</p>
                 </div>
               </Link>
-              <Link to={urlDirectory + 'electronic-locks/classic-cam/'}>
+              <Link to={'/support/electronic-locks/classic-cam/'}>
                 <div className="thumbnail">
                   <StaticImage
                       src={'../../images/locks/DL22-classiccam-600x497.png'}
