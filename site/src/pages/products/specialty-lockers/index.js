@@ -7,12 +7,34 @@ import {StaticImage} from "gatsby-plugin-image";
 import phLogo from '../../../images/logos/logo-packagehold.svg';
 import jbLogo from '../../../images/logos/logo-juicebar.svg';
 import CustomLocalizedLink from "../../../components/locales/custom-localized-link";
+import packageHoldImage from '../../../images/lockers/rollovers/packagehold.png';
+import packageHoldImageOver from '../../../images/lockers/rollovers/packagehold-over.png';
+import juiceBarImage from '../../../images/lockers/rollovers/juicebox.png';
+import juiceBarImageOver from '../../../images/lockers/rollovers/juicebox-over.png';
 
 
 const IndexPage = () => {
 
   const {t} = useTranslation();
   const [showModal, setShowModal] = useState(false);
+  const [packageImage, setPackageImage] = useState(packageHoldImage);
+  const [juiceImage, setJuiceImage] = useState(juiceBarImage);
+
+  const handlePackageOver = () => {
+    setPackageImage(packageHoldImageOver);
+  }
+
+  const handlePackageOut = () => {
+    setPackageImage(packageHoldImage);
+  }
+
+  const handleJuicebarOver = () => {
+    setJuiceImage(juiceBarImageOver);
+  }
+
+  const handleJuicebarOut = () => {
+    setJuiceImage(juiceBarImage);
+  }
 
   function handleScrollTo(elmID) {
     let offset = 150;
@@ -66,15 +88,12 @@ const IndexPage = () => {
                   <a onClick={(e) => {
                     handleScrollTo('packageHold')
                   }}><Trans>learn_more_about</Trans><Trans>packagehold</Trans></a>
-                  <StaticImage
-                      src="../../../images/lockers/locker-solutions-ph.png"
-                      loading={'lazy'}
-                      width={508}
-                      height={307}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <div className={'img-rollover'}>
+                    <img onMouseOver={handlePackageOver}
+                         onMouseOut={handlePackageOut}
+                         src={packageImage}
+                         alt={'foo'} />
+                  </div>
                 </div>
                 <div className="section-delimeter spacer"></div>
                 <div className="grid-two-col-item-single center">
@@ -83,15 +102,10 @@ const IndexPage = () => {
                   <a onClick={(e) => {
                     handleScrollTo('juiceBar')
                   }}><Trans>learn_more_about</Trans><Trans>juicebar</Trans></a>
-                  <StaticImage
-                      src="../../../images/lockers/locker-solutions-jb.png"
-                      loading={'lazy'}
-                      width={508}
-                      height={307}
-                      quality={100}
-                      formats={["auto", "webp", "avif"]}
-                      alt="NEED ALT TAG"
-                  />
+                  <img onMouseOver={handleJuicebarOver}
+                       onMouseOut={handleJuicebarOut}
+                       src={juiceImage}
+                       alt={'foo'} />
                 </div>
               </div>
             </div>
