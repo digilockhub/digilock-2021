@@ -23,11 +23,11 @@ const Locks = () => {
                     </Trans>
                   </h2>
                   <h2 className="sub">
-                    <a href="/products/smart-locks/">
+                    <Link to="/products/smart-locks/">
                       <Trans>
                         smart_locks
                       </Trans>
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     <Trans>
@@ -238,9 +238,11 @@ const Locks = () => {
               <section className="electronic-locks">
                 <div className="container">
                   <h2 className="sub">
+                    <Link to={'/products/electronic-locks/'}>
                     <Trans>
                       electronic_locks
                     </Trans>
+                    </Link>
                   </h2>
                   <p><Trans>electronic_locks_copy</Trans></p>
                   <div className="row">
@@ -590,9 +592,18 @@ const Locks = () => {
         <section className="electronic-locks">
           <div className="container mech">
             <h2 className="sub">
-              <Trans>
-                mechanical_lock
-              </Trans>
+              {
+                !isSupport ?
+                    <Link to={'/products/mechanical-locks/mech/'}>
+                    <Trans>
+                      mechanical_lock
+                    </Trans>
+                    </Link>
+                    :
+                    <Trans>
+                      mechanical_lock
+                    </Trans>
+              }
             </h2>
             {
               !isSupport ?
