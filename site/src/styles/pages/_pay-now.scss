@@ -3,6 +3,9 @@
   .grid-spacer {
     display: none;
   }
+  .form-submit {
+    margin-top: var(--section-gutter-gap);
+  }
 }
   #payFrame {
     //position: absolute;
